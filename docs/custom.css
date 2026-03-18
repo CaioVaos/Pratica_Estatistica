@@ -3,7 +3,7 @@
 .reveal {
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 30px;
-  background-color: #eef2f7; /* fundo suave, cinza-azulado pastel */
+  background-color: #f5f9ff; /* fundo azul bem claro */
   color: #0f172a;
 }
 
@@ -19,19 +19,19 @@
 .reveal h1 {
   font-size: 2.4em;
   font-weight: 800;
-  color: #336699;
+  color: #1d4ed8; /* azul forte */
 }
 
 .reveal h2 {
   font-size: 1.7em;
   font-weight: 700;
-  color: #336699;
+  color: #1d4ed8;
 }
 
 .reveal h3 {
   font-size: 1.3em;
   font-weight: 600;
-  color: #336699;
+  color: #1d4ed8;
 }
 
 
@@ -39,11 +39,11 @@
 .reveal .title-slide {
   background: linear-gradient(
     135deg,
-    #2563eb99 0%,   /* azul com transparência */
-    #7c3aed99 50%,   /* roxo com transparência */
-    #05966999 100%   /* verde com transparência */
+    #1d4ed8 0%,   /* azul */
+    #3b82f6 50%,  /* azul mais claro */
+    #facc15 100%  /* amarelo */
   );
-  color: #336699;
+  color: white;
 }
 
 .reveal .title-slide h1,
@@ -60,37 +60,30 @@
 
 /* ===== Listas ===== */
 .reveal ul li::marker {
-  color: #2563eb;
+  color: #facc15; /* amarelo */
 }
 
 /* ===== Caixas coloridas ===== */
 .box-blue {
-  border-left: 8px solid #2563eb;
+  border-left: 8px solid #1d4ed8;
   background: #eff6ff;
   padding: 0.7em;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.box-purple {
-  border-left: 8px solid #7c3aed;
-  background: #f5f3ff;
+.box-yellow {
+  border-left: 8px solid #facc15;
+  background: #fefce8;
   padding: 0.7em;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.box-green {
-  border-left: 8px solid #059669;
-  background: #ecfdf5;
-  padding: 0.7em;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.box-orange {
-  border-left: 8px solid #ea580c;
-  background: #fff7ed;
+/* (opcional manter outras cores mais neutras) */
+.box-gray {
+  border-left: 8px solid #94a3b8;
+  background: #f1f5f9;
   padding: 0.7em;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -98,22 +91,12 @@
 
 /* ===== Destaques ===== */
 .highlight-blue {
-  color: #2563eb;
+  color: #1d4ed8;
   font-weight: 700;
 }
 
-.highlight-purple {
-  color: #7c3aed;
-  font-weight: 700;
-}
-
-.highlight-green {
-  color: #059669;
-  font-weight: 700;
-}
-
-.highlight-orange {
-  color: #ea580c;
+.highlight-yellow {
+  color: #eab308;
   font-weight: 700;
 }
 
@@ -131,4 +114,3 @@
   font-size: 0.5em;
   color: #64748b;
 }
-
