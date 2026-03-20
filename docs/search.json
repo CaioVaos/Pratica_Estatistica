@@ -1,0 +1,163 @@
+[
+  {
+    "objectID": "index.html#sobre",
+    "href": "index.html#sobre",
+    "title": "Prática Estatística II",
+    "section": "📚 Sobre",
+    "text": "📚 Sobre\nEste hub reúne apresentações desenvolvidas ao longo da disciplina de Prática Estatística.\n\n📍 Universidade Federal Fluminense\n\n👨‍🎓 Autor: Caio Salviano\n\n📅 2026"
+  },
+  {
+    "objectID": "index.html#avaliações",
+    "href": "index.html#avaliações",
+    "title": "Prática Estatística II",
+    "section": "🎓 Avaliações",
+    "text": "🎓 Avaliações\n\n\n🔵 Avaliação 1\n🔗 Acessar apresentação\n\n\n🟡 Avaliação 2\n🔗 Acessar apresentação\n\n\n🔵 Avaliação 3\n🔗 Acessar apresentação\n\n\n🟡 Avaliação 4\n🔗 Acessar apresentação\n\n\n🔵 Avaliação 5\n🔗 Acessar apresentação\n\n\n🟡 Avaliação 6\n🔗 Acessar apresentação\n\n\n🔵 Avaliação 7\n🔗 Acessar apresentação\n\n\n🟡 Avaliação 8\n🔗 Acessar apresentação\n\n\n🔵 Avaliação 9\n🔗 Acessar apresentação\n\n\n🟡 Avaliação 10\n🔗 Acessar apresentação\n\n\n🔵 Avaliação 11\n🔗 Acessar apresentação\n\n\n🟡 Avaliação 12\n🔗 Acessar apresentação\n\n\n🔵 Avaliação 13\n🔗 Acessar apresentação"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#artigo-e-autores",
+    "href": "Avaliacao_1/index.html#artigo-e-autores",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Artigo e autores:",
+    "text": "Artigo e autores:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#motivação",
+    "href": "Avaliacao_1/index.html#motivação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Motivação:",
+    "text": "Motivação:\n\n\nExpansão do uso de tecnologias digitais na adolescência;\nElevada exposição a telas (especialmente no período noturno), evidências apontam impacto negativo no padrão do sono;\nA luz azul emitida por dispositivos:\n\nInibe a secreção de melatonina e altera o ritmo circadiano.\n\nRelevância epidemiológica:\n\nDistúrbios do sono em adolescentes são problema de saúde pública."
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#objetivo",
+    "href": "Avaliacao_1/index.html#objetivo",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "OBJETIVO:",
+    "text": "OBJETIVO:\n\n\nObjetivo geral\n\nAvaliar a associação entre qualidade do sono e tempo de tela em adolescentes\n\nObjetivos específicos\n\nDescrever o padrão de uso de dispositivos eletrônicos\nClassificar a qualidade do sono"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#coleta-da-amostra",
+    "href": "Avaliacao_1/index.html#coleta-da-amostra",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Coleta da amostra :",
+    "text": "Coleta da amostra :\n\n\nAmostra: 128 adolescentes;\nFaixa etária: 15 a 19 anos;\nLocal: escola pública (Recife – PE);\nCritérios de exclusão\n\nDistúrbios do sono em tratamento;\nLimitações cognitivas.\n\nInstrumentos utilizados:\n\nQuestionário online (Google Forms);\nQuestionário sociodemográfico;\nÍndice de Qualidade do Sono de Pittsburgh (PSQI);\nQuestionário de mídias eletrônicas."
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#variáveis-analisadas",
+    "href": "Avaliacao_1/index.html#variáveis-analisadas",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Variáveis analisadas:",
+    "text": "Variáveis analisadas:\n\n\nDesfecho:\n\nQualidade do sono (PSQI)\n\nBoa;\nMá.\n\n\nFatores de exposição:\n\nTempo de uso de telas (≥ 4h/dia);\nUso de celular, computador e televisão;\nUso de telas no período noturno (após 22h)."
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#testes-aplicados",
+    "href": "Avaliacao_1/index.html#testes-aplicados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Testes Aplicados:",
+    "text": "Testes Aplicados:\n\n\nTeste Exato de Fisher;\nQui-quadrado de Pearson;\nNível de significância: 5%."
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#notação",
+    "href": "Avaliacao_1/index.html#notação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Notação:",
+    "text": "Notação:\n\n\nTeste Qui-quadrado : \\(p^{(1)}\\)\nTeste Exato de Fisher: \\(p^{(2)}\\)"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-1.1",
+    "href": "Avaliacao_1/index.html#tabela-1.1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 1.1:",
+    "text": "Tabela 1.1:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-1.2",
+    "href": "Avaliacao_1/index.html#tabela-1.2",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 1.2:",
+    "text": "Tabela 1.2:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-1.3",
+    "href": "Avaliacao_1/index.html#tabela-1.3",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 1.3:",
+    "text": "Tabela 1.3:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-1.4",
+    "href": "Avaliacao_1/index.html#tabela-1.4",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 1.4:",
+    "text": "Tabela 1.4:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-2.1",
+    "href": "Avaliacao_1/index.html#tabela-2.1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 2.1:",
+    "text": "Tabela 2.1:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-2.2",
+    "href": "Avaliacao_1/index.html#tabela-2.2",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 2.2:",
+    "text": "Tabela 2.2:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-2.3",
+    "href": "Avaliacao_1/index.html#tabela-2.3",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 2.3:",
+    "text": "Tabela 2.3:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-3.1",
+    "href": "Avaliacao_1/index.html#tabela-3.1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 3.1:",
+    "text": "Tabela 3.1:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-3.2",
+    "href": "Avaliacao_1/index.html#tabela-3.2",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 3.2:",
+    "text": "Tabela 3.2:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-3.3",
+    "href": "Avaliacao_1/index.html#tabela-3.3",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 3.3:",
+    "text": "Tabela 3.3:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-3.4",
+    "href": "Avaliacao_1/index.html#tabela-3.4",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 3.4:",
+    "text": "Tabela 3.4:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-3.5",
+    "href": "Avaliacao_1/index.html#tabela-3.5",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 3.5:",
+    "text": "Tabela 3.5:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-3.6",
+    "href": "Avaliacao_1/index.html#tabela-3.6",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 3.6:",
+    "text": "Tabela 3.6:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#tabela-3.7",
+    "href": "Avaliacao_1/index.html#tabela-3.7",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Tabela 3.7:",
+    "text": "Tabela 3.7:"
+  }
+]
