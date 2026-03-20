@@ -38,11 +38,15 @@
 /* ===== Slide de título ===== */
 .reveal .title-slide {
   background: linear-gradient(
-    135deg,
-    #1d4ed8 0%,   /* azul */
-    #3b82f6 50%,  /* azul mais claro */
-    #facc15 100%  /* amarelo */
-  );
+      135deg,
+      rgba(29, 78, 216, 0.6),
+      rgba(59, 130, 246, 0.6),
+      rgba(250, 204, 21, 0.6)
+    ),
+    url("imagens/transicao.jpg");
+
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 
@@ -113,4 +117,16 @@
 .reveal .footer {
   font-size: 0.5em;
   color: #64748b;
+}
+
+/* ===== Apêndices ===== */
+/* Todas as linhas (amarelo leve) */
+.tabela-estilo table tbody tr {
+  background-color: #fefce8; /* amarelo bem suave */
+}
+
+/* Linhas 3 e 4 (azul leve) */
+.tabela-estilo table tbody tr:nth-child(3),
+.tabela-estilo table tbody tr:nth-child(4) {
+  background-color: #eff6ff; /* azul bem suave */
 }
