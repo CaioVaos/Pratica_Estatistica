@@ -17,147 +17,175 @@
     "objectID": "Avaliacao_1/index.html#artigo-e-autores",
     "href": "Avaliacao_1/index.html#artigo-e-autores",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Artigo e autores:",
-    "text": "Artigo e autores:"
+    "section": "1.1 Artigo e autores:",
+    "text": "1.1 Artigo e autores:"
   },
   {
     "objectID": "Avaliacao_1/index.html#motivação",
     "href": "Avaliacao_1/index.html#motivação",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Motivação:",
-    "text": "Motivação:\n\n\nExpansão do uso de tecnologias digitais na adolescência;\nElevada exposição a telas (especialmente no período noturno), evidências apontam impacto negativo no padrão do sono;\nA luz azul emitida por dispositivos:\n\nInibe a secreção de melatonina e altera o ritmo circadiano.\n\nRelevância epidemiológica:\n\nDistúrbios do sono em adolescentes são problema de saúde pública."
+    "section": "1.2 Motivação:",
+    "text": "1.2 Motivação:\n\n\nExpansão do uso de tecnologias digitais na adolescência;\nElevada exposição a telas (especialmente no período noturno), evidências apontam impacto negativo no padrão do sono;\nA luz azul emitida por dispositivos:\n\nInibe a secreção de melatonina e altera o ritmo circadiano.\n\nRelevância epidemiológica:\n\nDistúrbios do sono em adolescentes são problema de saúde pública."
   },
   {
     "objectID": "Avaliacao_1/index.html#objetivo",
     "href": "Avaliacao_1/index.html#objetivo",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "OBJETIVO:",
-    "text": "OBJETIVO:\n\n\nObjetivo geral\n\nAvaliar a associação entre qualidade do sono e tempo de tela em adolescentes\n\nObjetivos específicos\n\nDescrever o padrão de uso de dispositivos eletrônicos\nClassificar a qualidade do sono"
+    "section": "1.3 OBJETIVO:",
+    "text": "1.3 OBJETIVO:\n\n\nObjetivo geral\n\nAvaliar a associação entre qualidade do sono e tempo de tela em adolescentes\n\nObjetivos específicos\n\nDescrever o padrão de uso de dispositivos eletrônicos\nClassificar a qualidade do sono"
   },
   {
     "objectID": "Avaliacao_1/index.html#coleta-da-amostra",
     "href": "Avaliacao_1/index.html#coleta-da-amostra",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Coleta da amostra :",
-    "text": "Coleta da amostra :\n\n\nAmostra: 128 adolescentes;\nFaixa etária: 15 a 19 anos;\nLocal: escola pública (Recife – PE);\nCritérios de exclusão\n\nDistúrbios do sono em tratamento;\nLimitações cognitivas.\n\nInstrumentos utilizados:\n\nQuestionário online (Google Forms);\nQuestionário sociodemográfico;\nÍndice de Qualidade do Sono de Pittsburgh (PSQI);\nQuestionário de mídias eletrônicas."
+    "section": "1.4 Coleta da amostra :",
+    "text": "1.4 Coleta da amostra :\n\n\nAmostra: 128 adolescentes;\nFaixa etária: 15 a 19 anos;\nLocal: escola pública (Recife – PE);\nCritérios de exclusão\n\nDistúrbios do sono em tratamento;\nLimitações cognitivas.\n\nInstrumentos utilizados:\n\nQuestionário online (Google Forms);\nQuestionário sociodemográfico;\nÍndice de Qualidade do Sono de Pittsburgh (PSQI);\nQuestionário de mídias eletrônicas."
   },
   {
     "objectID": "Avaliacao_1/index.html#variáveis-analisadas",
     "href": "Avaliacao_1/index.html#variáveis-analisadas",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Variáveis analisadas:",
-    "text": "Variáveis analisadas:\n\n\nDesfecho:\n\nQualidade do sono (PSQI)\n\nBoa;\nMá.\n\n\nFatores de exposição:\n\nTempo de uso de telas (≥ 4h/dia);\nUso de celular, computador e televisão;\nUso de telas no período noturno (após 22h)."
+    "section": "2.1 Variáveis analisadas:",
+    "text": "2.1 Variáveis analisadas:\n\n\nDesfecho:\n\nQualidade do sono (PSQI)\n\nBoa;\nMá.\n\n\nFatores de exposição:\n\nTempo de uso de telas (≥ 4h/dia);\nUso de celular, computador e televisão;\nUso de telas no período noturno (após 22h)."
   },
   {
     "objectID": "Avaliacao_1/index.html#testes-aplicados",
     "href": "Avaliacao_1/index.html#testes-aplicados",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Testes Aplicados:",
-    "text": "Testes Aplicados:\n\n\nTeste Exato de Fisher;\nQui-quadrado de Pearson;\nNível de significância: 5%."
+    "section": "2.2 Testes Aplicados:",
+    "text": "2.2 Testes Aplicados:\n\n\nTeste Exato de Fisher;\nQui-quadrado de Pearson;\nNível de significância: 5%."
   },
   {
     "objectID": "Avaliacao_1/index.html#notação",
     "href": "Avaliacao_1/index.html#notação",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Notação:",
-    "text": "Notação:\n\n\nTeste Qui-quadrado : \\(p^{(1)}\\)\nTeste Exato de Fisher: \\(p^{(2)}\\)"
+    "section": "3.1 Notação:",
+    "text": "3.1 Notação:\n\n\nTeste Qui-quadrado : \\(p^{(1)}\\)\nTeste Exato de Fisher: \\(p^{(2)}\\)"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-1.1",
     "href": "Avaliacao_1/index.html#tabela-1.1",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 1.1:",
-    "text": "Tabela 1.1:"
+    "section": "3.2 Tabela 1.1:",
+    "text": "3.2 Tabela 1.1:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-1.2",
     "href": "Avaliacao_1/index.html#tabela-1.2",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 1.2:",
-    "text": "Tabela 1.2:"
+    "section": "3.3 Tabela 1.2:",
+    "text": "3.3 Tabela 1.2:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-1.3",
     "href": "Avaliacao_1/index.html#tabela-1.3",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 1.3:",
-    "text": "Tabela 1.3:"
+    "section": "3.4 Tabela 1.3:",
+    "text": "3.4 Tabela 1.3:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-1.4",
     "href": "Avaliacao_1/index.html#tabela-1.4",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 1.4:",
-    "text": "Tabela 1.4:"
+    "section": "3.5 Tabela 1.4:",
+    "text": "3.5 Tabela 1.4:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-2.1",
     "href": "Avaliacao_1/index.html#tabela-2.1",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 2.1:",
-    "text": "Tabela 2.1:"
+    "section": "3.6 Tabela 2.1:",
+    "text": "3.6 Tabela 2.1:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-2.2",
     "href": "Avaliacao_1/index.html#tabela-2.2",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 2.2:",
-    "text": "Tabela 2.2:"
+    "section": "3.7 Tabela 2.2:",
+    "text": "3.7 Tabela 2.2:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-2.3",
     "href": "Avaliacao_1/index.html#tabela-2.3",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 2.3:",
-    "text": "Tabela 2.3:"
+    "section": "3.8 Tabela 2.3:",
+    "text": "3.8 Tabela 2.3:\n\n\n\n\n\n\n\nValores Esperados\n\n\n\n\n\nMá\nBoa\n\n\n\n\nInternet\n32\n13\n\n\nWhatsApp\n31\n12\n\n\nVídeos\n15\n4\n\n\nJogar\n8\n3\n\n\nMúsicas/Ler\n7\n3"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-3.1",
     "href": "Avaliacao_1/index.html#tabela-3.1",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 3.1:",
-    "text": "Tabela 3.1:"
+    "section": "3.9 Tabela 3.1:",
+    "text": "3.9 Tabela 3.1:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-3.2",
     "href": "Avaliacao_1/index.html#tabela-3.2",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 3.2:",
-    "text": "Tabela 3.2:"
+    "section": "3.10 Tabela 3.2:",
+    "text": "3.10 Tabela 3.2:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-3.3",
     "href": "Avaliacao_1/index.html#tabela-3.3",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 3.3:",
-    "text": "Tabela 3.3:"
+    "section": "3.11 Tabela 3.3:",
+    "text": "3.11 Tabela 3.3:\n\n\n\n\n\nValores Esperados\n\n\n\n\n\nMá\nBoa\n\n\n\n\nSim\n81\n33\n\n\nNão\n9\n3"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-3.4",
     "href": "Avaliacao_1/index.html#tabela-3.4",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 3.4:",
-    "text": "Tabela 3.4:"
+    "section": "3.12 Tabela 3.4:",
+    "text": "3.12 Tabela 3.4:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-3.5",
     "href": "Avaliacao_1/index.html#tabela-3.5",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 3.5:",
-    "text": "Tabela 3.5:"
+    "section": "3.13 Tabela 3.5:",
+    "text": "3.13 Tabela 3.5:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-3.6",
     "href": "Avaliacao_1/index.html#tabela-3.6",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 3.6:",
-    "text": "Tabela 3.6:"
+    "section": "3.14 Tabela 3.6:",
+    "text": "3.14 Tabela 3.6:"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-3.7",
     "href": "Avaliacao_1/index.html#tabela-3.7",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "Tabela 3.7:",
-    "text": "Tabela 3.7:"
+    "section": "3.15 Tabela 3.7:",
+    "text": "3.15 Tabela 3.7:"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#resultados-1",
+    "href": "Avaliacao_1/index.html#resultados-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.16 Resultados:",
+    "text": "3.16 Resultados:\n\n\n\nVariável (Exposição)\nValor de p\n\n\n\n\nUso de computador após 22h\n&lt; 0,001\n\n\nRedes sociais após 22h\n&lt; 0,001\n\n\nCelular ≥ 4h/dia (semana)\n0,002\n\n\nCelular ≥ 4h/dia (fds)\n0,007\n\n\nCelular após 22h\n0,002\n\n\nAssistir TV após 22h\n0,011"
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#principais-achados",
+    "href": "Avaliacao_1/index.html#principais-achados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.1 Principais Achados:",
+    "text": "4.1 Principais Achados:\n\n\nObservou-se alta prevalência de má qualidade do sono entre os adolescentes;\nO uso de telas por ≥ 4 horas/dia esteve associado a pior qualidade do sono;\nO uso noturno (após 22h) apresentou as associações mais fortes."
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#importância-do-teste-de-associação",
+    "href": "Avaliacao_1/index.html#importância-do-teste-de-associação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.2 Importância do Teste de Associação:",
+    "text": "4.2 Importância do Teste de Associação:\n\n\nOs testes de Qui-quadrado e Exato de Fisher foram essenciais para verificar a existência de associação entre o uso de telas e a qualidade do sono;\nPermitiram identificar quais fatores apresentam relação estatisticamente significativa com o desfecho."
+  },
+  {
+    "objectID": "Avaliacao_1/index.html#contribuição-para-a-sociedade",
+    "href": "Avaliacao_1/index.html#contribuição-para-a-sociedade",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.3 Contribuição para a Sociedade:",
+    "text": "4.3 Contribuição para a Sociedade:\n\n\nEvidencia a necessidade de redução do uso de telas no período noturno;\nReforça a importância de ações educativas sobre higiene do sono;\nPode subsidiar intervenções em escolas e famílias para prevenir problemas como:\n\ndistúrbios do sono;\nprejuízos à saúde mental e física."
   }
 ]
