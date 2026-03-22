@@ -4,14 +4,14 @@
     "href": "index.html#sobre",
     "title": "Prática Estatística II",
     "section": "📚 Sobre",
-    "text": "📚 Sobre\nEste hub reúne apresentações desenvolvidas ao longo da disciplina de Prática Estatística.\n\n📍 Universidade Federal Fluminense\n\n👨‍🎓 Autores: Caio Salviano & Milena Labre\n📅 2026 .1"
+    "text": "📚 Sobre\nEste hub reúne as apresentações da disciplina Prática Estatística II.\n\nUniversidade: Universidade Federal Fluminense\nAutores: Caio Salviano & Milena Labre\nPeríodo: 2026.1"
   },
   {
     "objectID": "index.html#avaliações",
     "href": "index.html#avaliações",
     "title": "Prática Estatística II",
     "section": "🎓 Avaliações",
-    "text": "🎓 Avaliações\n\n\nAvaliação 1\n🔗 Acessar apresentação\n\n\nAvaliação 2\n🔗\n\n\nAvaliação 3\n🔗\n\n\nAvaliação 4\n🔗\n\n\nAvaliação 5\n🔗\n\n\nAvaliação 6\n🔗\n\n\nAvaliação 7\n🔗\n\n\nAvaliação 8\n🔗\n\n\nAvaliação 9\n🔗\n\n\nAvaliação 10\n🔗\n\n\nAvaliação 11\n🔗\n\n\nAvaliação 12\n🔗\n\n\nAvaliação 13\n🔗"
+    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nEm breve\n\n\n📊 Avaliação 3\nEm breve\n\n\n\n\n📊 Avaliação 4\nEm breve\n\n\n📊 Avaliação 5\nEm breve\n\n\n📊 Avaliação 6\nEm breve"
   },
   {
     "objectID": "Avaliacao_1/index.html#artigo-e-autores",
@@ -32,14 +32,14 @@
     "href": "Avaliacao_1/index.html#objetivos",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "1.3 Objetivos:",
-    "text": "1.3 Objetivos:\n\n\nObjetivo geral\n\nAvaliar a associação entre qualidade do sono e tempo de tela em adolescentes\n\nObjetivos específicos\n\nDescrever o padrão de uso de dispositivos eletrônicos\nClassificar a qualidade do sono"
+    "text": "1.3 Objetivos:\n\n\nObjetivo geral:\n\nAvaliar a associação entre qualidade do sono e tempo de tela em adolescentes.\n\nObjetivos específicos:\n\nDescrever o padrão de uso de dispositivos eletrônicos;\nClassificar a qualidade do sono."
   },
   {
     "objectID": "Avaliacao_1/index.html#coleta-da-amostra",
     "href": "Avaliacao_1/index.html#coleta-da-amostra",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "1.4 Coleta da amostra :",
-    "text": "1.4 Coleta da amostra :\n\n\nAmostra: 128 adolescentes;\nFaixa etária: 15 a 19 anos;\nLocal: escola pública (Recife – PE);\nCritérios de exclusão\n\nDistúrbios do sono em tratamento;\nLimitações cognitivas.\n\nInstrumentos utilizados:\n\nQuestionário online (Google Forms);\nQuestionário sociodemográfico;\nÍndice de Qualidade do Sono de Pittsburgh (PSQI);\nQuestionário de mídias eletrônicas."
+    "text": "1.4 Coleta da amostra :\n\n\nAmostra: 128 adolescentes;\nFaixa etária: 15 a 19 anos;\nLocal: escola pública (Recife – PE);\nCritérios de exclusão:\n\nDistúrbios do sono em tratamento;\nLimitações cognitivas.\n\nInstrumentos utilizados:\n\nQuestionário online (Google Forms);\nQuestionário sociodemográfico;\nÍndice de Qualidade do Sono de Pittsburgh (PSQI);\nQuestionário de mídias eletrônicas."
   },
   {
     "objectID": "Avaliacao_1/index.html#variáveis-analisadas",
@@ -60,7 +60,7 @@
     "href": "Avaliacao_1/index.html#notação",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "3.1 Notação:",
-    "text": "3.1 Notação:\n\n\nTeste Qui-quadrado : \\(p^{(1)}\\)\nTeste Exato de Fisher: \\(p^{(2)}\\)"
+    "text": "3.1 Notação:\n\n\nTeste Qui-quadrado : \\(p^{(1)}\\);\nTeste Exato de Fisher: \\(p^{(2)}\\)"
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-6.1",
