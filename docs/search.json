@@ -53,7 +53,7 @@
     "href": "Avaliacao_1/index.html#testes-aplicados",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "2.2 Testes Aplicados:",
-    "text": "2.2 Testes Aplicados:\n\n\nTeste Exato de Fisher \\(p^{(2)}\\);\nQui-quadrado de Pearson \\(p^{(1)}\\);\nHipóteses: \\[\n\\begin{cases}\nH_0: \\text{as variáveis são independentes.} \\\\\nH_1: \\text{as variáveis são não independentes.}\n\\end{cases}\n\\]\nNível de significância: \\(\\alpha = 0{,}05\\) (5%)."
+    "text": "2.2 Testes Aplicados:\n\n\nTeste Exato de Fisher \\(p^{(2)}\\);\nQui-quadrado de Pearson \\(p^{(1)}\\);\nHipóteses: \\[\n\\begin{cases}\nH_0: \\text{as variáveis são independentes.} \\\\\nH_1: \\text{as variáveis são dependentes.}\n\\end{cases}\n\\]\nNível de significância: \\(\\alpha = 0{,}05\\) (5%)."
   },
   {
     "objectID": "Avaliacao_1/index.html#tabela-6.1",

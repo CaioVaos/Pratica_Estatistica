@@ -105,22 +105,22 @@ format:
 ## Testes Aplicados:
 
 ::: box-blue
-- Teste Exato de Fisher;
+- Teste Exato de Fisher $p^{(2)}$;
 
-- Qui-quadrado de Pearson;
+- Qui-quadrado de Pearson $p^{(1)}$;
 
-- Nível de significância: 5%.
+- Hipóteses:
+$$
+\begin{cases}
+H_0: \text{as variáveis são independentes.} \\
+H_1: \text{as variáveis são dependentes.}
+\end{cases}
+$$
+
+- Nível de significância: $\alpha = 0{,}05$ (5%).
 :::
 
 # Resultados:
-
-## Notação:
-
-::: box-blue
-- Teste Qui-quadrado : $p^{(1)}$;
-
-- Teste Exato de Fisher:  $p^{(2)}$
-:::
 
 ## Tabela 6.1:
 
