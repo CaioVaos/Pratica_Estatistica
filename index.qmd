@@ -1,0 +1,71 @@
+---
+title: "Prática Estatística II"
+subtitle: "Hub de Avaliações"
+format:
+  html:
+    theme: solar
+    toc: false
+    page-layout: full
+---
+
+---
+
+## 📚 Sobre
+
+Este hub reúne as apresentações da disciplina **Prática Estatística II**.
+
+- **Universidade:** Universidade Federal Fluminense  
+
+- **Autores:** Caio Salviano & Milena Labre  
+
+- **Período:** 2026.1
+
+---
+
+## 🎓 Avaliações
+
+::: {.grid}
+
+::: {.g-col-4}
+#### 📊 Avaliação 1  
+
+[Visualizar](Avaliacao_1/){.btn .btn-primary}
+:::
+
+::: {.g-col-4}
+#### 📊 Avaliação 2  
+
+[Em breve]{.btn .btn-secondary}
+:::
+
+::: {.g-col-4}
+#### 📊 Avaliação 3
+
+[Em breve]{.btn .btn-secondary}
+:::
+
+:::
+
+::: {.grid}
+
+::: {.g-col-4}
+
+#### 📊 Avaliação 4
+
+[Em breve]{.btn .btn-secondary}
+
+:::
+
+::: {.g-col-4}
+#### 📊 Avaliação 5
+
+[Em breve]{.btn .btn-secondary}
+:::
+
+::: {.g-col-4}
+#### 📊 Avaliação 6
+
+[Em breve]{.btn .btn-secondary}
+:::
+
+:::

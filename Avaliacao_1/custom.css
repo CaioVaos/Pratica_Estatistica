@@ -1,0 +1,132 @@
+/* ===== Base ===== */
+
+.reveal {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 30px;
+  background-color: #f5f9ff; /* fundo azul bem claro */
+  color: #0f172a;
+}
+
+.reveal .slides section li{
+    text-align: justify;
+}
+
+.reveal .slides {
+  text-align: justify;
+}
+
+/* ===== Títulos ===== */
+.reveal h1 {
+  font-size: 2.4em;
+  font-weight: 800;
+  color: #1d4ed8; /* azul forte */
+}
+
+.reveal h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+
+/* ===== Slide de título ===== */
+.reveal .title-slide {
+  background: linear-gradient(
+      135deg,
+      rgba(29, 78, 216, 0.6),
+      rgba(59, 130, 246, 0.6),
+      rgba(250, 204, 21, 0.6)
+    ),
+    url("imagens/transicao.jpg");
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.reveal .title-slide h1,
+.reveal .title-slide h2,
+.reveal .title-slide p {
+  color: white;
+}
+
+/* ===== Texto ===== */
+.reveal p,
+.reveal li {
+  line-height: 1.45;
+}
+
+/* ===== Listas ===== */
+.reveal ul li::marker {
+  color: #facc15; /* amarelo */
+}
+
+/* ===== Caixas coloridas ===== */
+.box-blue {
+  border-left: 8px solid #1d4ed8;
+  background: #eff6ff;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.box-yellow {
+  border-left: 8px solid #facc15;
+  background: #fefce8;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* (opcional manter outras cores mais neutras) */
+.box-gray {
+  border-left: 8px solid #94a3b8;
+  background: #f1f5f9;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== Destaques ===== */
+.highlight-blue {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.highlight-yellow {
+  color: #eab308;
+  font-weight: 700;
+}
+
+/* ===== Código ===== */
+.reveal pre code {
+  font-size: 0.78em;
+  background: #020617;
+  color: #e5e7eb;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+/* ===== Rodapé ===== */
+.reveal .footer {
+  font-size: 0.5em;
+  color: #64748b;
+}
+
+/* ===== Apêndices ===== */
+/* Todas as linhas (amarelo leve) */
+.tabela-estilo table tbody tr {
+  background-color: #fefce8; /* amarelo bem suave */
+}
+
+/* Linhas 3 e 4 (azul leve) */
+.tabela-estilo table tbody tr:nth-child(3),
+.tabela-estilo table tbody tr:nth-child(4) {
+  background-color: #eff6ff; /* azul bem suave */
+}

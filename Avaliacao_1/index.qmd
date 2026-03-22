@@ -1,0 +1,290 @@
+---
+title: "<span style='color: #FFC107;'>PRÁTICA ESTATÍSTICA II</span>"
+subtitle: "**ATIVIDADE AVALIATIVA 1**"
+author: "Caio Salviano (<caiosalviano@id.uff.br>) <br> Milena Labre (<milenalabre@id.uff.br>)"
+date: 2026-03-23
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: custom.css
+    slide-number: true
+    incremental: false
+    transition: slide
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    number-sections: true
+    title-slide-attributes:
+      data-background-image: "imagens/capa1.png"
+      data-background-size: cover
+---
+
+# Introdução: 
+
+## Artigo e autores:
+
+![](imagens/autores.jpg)
+
+## Motivação:
+
+::: box-blue
+- Expansão do uso de tecnologias digitais na adolescência;
+
+- Elevada exposição a telas (especialmente no período noturno), evidências apontam impacto negativo no padrão do sono;
+
+- A luz azul emitida por dispositivos:
+
+  - Inibe a secreção de melatonina e altera o ritmo circadiano.
+
+- Relevância epidemiológica:
+
+  - Distúrbios do sono em adolescentes são problema de saúde pública.
+
+:::
+
+## Objetivos:
+
+::: box-blue
+- Objetivo geral:
+
+  - Avaliar a associação entre qualidade do sono e tempo de tela em adolescentes.
+
+- Objetivos específicos:
+
+  - Descrever o padrão de uso de dispositivos eletrônicos;
+
+  - Classificar a qualidade do sono.
+:::
+
+## Coleta da amostra :
+
+::: {.box-blue style="font-size: 0.9em;"}
+- Amostra: 128 adolescentes;
+
+- Faixa etária: 15 a 19 anos;
+
+- Local: escola pública (Recife – PE);
+
+- Critérios de exclusão:
+
+  -  Distúrbios do sono em tratamento;
+
+  - Limitações cognitivas.
+
+- Instrumentos utilizados: 
+  - Questionário online (Google Forms);
+  - Questionário sociodemográfico;
+  - Índice de Qualidade do Sono de Pittsburgh (PSQI);
+  - Questionário de mídias eletrônicas.
+:::
+
+# Metodologia Estatística:
+
+## Variáveis analisadas:
+
+::: box-blue
+- Desfecho:
+
+  - Qualidade do sono (PSQI)
+
+    - Boa;
+
+    - Má.
+- Fatores de exposição:
+
+  - Tempo de uso de telas (≥ 4h/dia);
+
+  - Uso de celular, computador e televisão;
+
+  - Uso de telas no período noturno (após 22h).
+:::
+
+## Testes Aplicados:
+
+::: box-blue
+- Teste Exato de Fisher;
+
+- Qui-quadrado de Pearson;
+
+- Nível de significância: 5%.
+:::
+
+# Resultados:
+
+## Notação:
+
+::: box-blue
+- Teste Qui-quadrado : $p^{(1)}$;
+
+- Teste Exato de Fisher:  $p^{(2)}$
+:::
+
+## Tabela 6.1:
+
+![](imagens/tabela11.jpg)
+
+## Tabela 6.2:
+
+![](imagens/tabela12.jpg)
+
+## Tabela 6.3: {.scrollable}
+
+![](imagens/tabela13.jpg)
+
+## Tabela 6.4: {.scrollable}
+
+![](imagens/tabela14.jpg)
+
+## Tabela 7.1:
+
+![](imagens/tabela21.jpg)
+
+## Tabela 7.2:
+
+![](imagens/tabela22.jpg)
+
+## Tabela 7.3: 
+
+:::: columns
+
+::: {.column width="70%" .scrollable}
+
+<div style="max-height: 500px; overflow-y: scroll;">
+
+![](imagens/tabela23.jpg)
+
+</div>
+
+:::
+
+::: {.column width="30%"}
+
+<p style="text-align: center;"><strong>Valores Esperados</strong></p>
+
+|              | Má | Boa |
+|:------------:|:--:|:---:|
+| Internet     | 32 | 13  |
+| WhatsApp     | 31 | 12  |
+| Vídeos       | 15 | <span style="background-color:#fee2e2; padding:4px 8px; border-radius:6px;">4</span>    |
+| Jogar        | 8  | <span style="background-color:#fee2e2; padding:4px 8px; border-radius:6px;">3</span>    |
+| Músicas/Ler  | 7  | <span style="background-color:#fee2e2; padding:4px 8px; border-radius:6px;">3</span>    |
+
+:::
+
+::::
+
+## Tabela 8.1:
+
+![](imagens/tabela31.jpg)
+
+## Tabela 8.2:
+
+![](imagens/tabela32.jpg)
+
+## Tabela 8.3:
+
+:::: columns
+
+::: {.column width="70%"}
+
+![](imagens/tabela33.jpg)
+
+:::
+
+::: {.column width="30%"}
+
+<p style="text-align: center;"><strong>Valores Esperados</strong></p>
+
+|       | Má | Boa |
+|:-----:|:--:|:---:|
+| Sim   | 81 | 33  |
+| Não   | 9  | <span style="background-color:#fee2e2; padding:4px 8px; border-radius:6px;">3</span>  |
+
+:::
+
+::::
+
+
+## Tabela 8.4: {.scrollable}
+
+![](imagens/tabela34.jpg)
+
+## Tabela 8.5: {.scrollable}
+
+![](imagens/tabela35.jpg)
+
+## Tabela 8.6: {.scrollable}
+
+![](imagens/tabela36.jpg)
+
+## Tabela 8.7: {.scrollable}
+
+![](imagens/tabela37.jpg)
+
+## Resultados:
+
+::: {.tabela-estilo}
+
+| Variáveis                        | Valor de p |
+|----------------------------------|------------|
+| Uso de computador após 22h       | < 0,001    |
+| Redes sociais após 22h           | < 0,001    |
+| Celular ≥ 4h/dia (semana)        | 0,002      |
+| Celular ≥ 4h/dia (fds)           | 0,007      |
+| Celular após 22h                 | 0,002      |
+| Assistir TV após 22h             | 0,011      |
+
+:::
+
+# Conclusão:
+
+## Principais Achados:
+
+::: box-blue
+
+- Observou-se **alta prevalência de má qualidade do sono** entre os adolescentes;
+
+- O uso de telas por **≥ 4 horas/dia** esteve associado a pior qualidade do sono;
+
+- O **uso noturno (após 22h)** apresentou as associações mais fortes.
+
+:::
+
+## Importância do Teste de Associação:
+
+::: box-blue
+
+- Os testes de Qui-quadrado e Exato de Fisher foram essenciais para verificar a existência de associação entre o uso de telas e a qualidade do sono;
+
+- Permitiram identificar quais fatores apresentam relação estatisticamente significativa com o desfecho.
+
+:::
+
+## Contribuição para a Sociedade:
+
+::: box-blue
+
+- Evidencia a necessidade de **redução do uso de telas no período noturno**;
+
+- Reforça a importância de ações educativas sobre **higiene do sono**;
+
+- Pode subsidiar intervenções em escolas e famílias para prevenir problemas como:
+  - distúrbios do sono;
+  - prejuízos à saúde mental e física.
+
+:::
+
+## Conclusão dos autores:
+
+::: box-blue
+
+"Sugere-se que outros estudos sejam realizados com uma maior amostra de alunos, de diferentes municípios
+pernambucanos e com estudantes da rede privada de ensino para investigar se há diferença comportamental entre eles e os
+estudantes da rede pública."
+
+::: 
+
+# Fim. {.unnumbered}
