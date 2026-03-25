@@ -4,14 +4,14 @@
     "href": "index.html#sobre",
     "title": "Prática Estatística II",
     "section": "📚 Sobre",
-    "text": "📚 Sobre\nEste hub reúne as apresentações da disciplina Prática Estatística II.\n\nUniversidade: Universidade Federal Fluminense\nAutores: Caio Salviano & Milena Labre\nPeríodo: 2026.1"
+    "text": "📚 Sobre\nEste hub reúne as avaliações da disciplina Prática Estatística II.\n\nUniversidade: Universidade Federal Fluminense\nAutores: Caio Salviano & Milena Labre\nPeríodo: 2026.1"
   },
   {
     "objectID": "index.html#avaliações",
     "href": "index.html#avaliações",
     "title": "Prática Estatística II",
     "section": "🎓 Avaliações",
-    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nEm breve\n\n\n📊 Avaliação 3\nEm breve\n\n\n\n\n📊 Avaliação 4\nEm breve\n\n\n📊 Avaliação 5\nEm breve\n\n\n📊 Avaliação 6\nEm breve"
+    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nEm breve\n\n\n\n\n📊 Avaliação 4\nEm breve\n\n\n📊 Avaliação 5\nEm breve\n\n\n📊 Avaliação 6\nEm breve"
   },
   {
     "objectID": "Avaliacao_1/index.html#artigo-e-autores",
@@ -187,5 +187,12 @@
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "4.4 Conclusão dos autores:",
     "text": "4.4 Conclusão dos autores:\n\n“Sugere-se que outros estudos sejam realizados com uma maior amostra de alunos, de diferentes municípios pernambucanos e com estudantes da rede privada de ensino para investigar se há diferença comportamental entre eles e os estudantes da rede pública.”"
+  },
+  {
+    "objectID": "Avaliacao_2/index.html#tabela-1",
+    "href": "Avaliacao_2/index.html#tabela-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.1 Tabela",
+    "text": "1.1 Tabela\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariáveis\n\nSatisfação com o conforto do assento\n\nValor-p\nCramér\n\n\nInsatisfeito44 (23%)\nNeutro37 (19%)\nSatisfeito114 (58%)\n\n\n\n\nGêneroQ\n\n\n\n\n\n\n0,487\n0,086\n\n\n    Feminino\n20 (20%)\n17 (17%)\n62 (63%)\n\n\n\n\n\n\n    Masculino\n24 (25%)\n20 (21%)\n52 (54%)\n\n\n\n\n\n\nTipo de ClienteQ\n\n\n\n\n\n\n0,115\n0,149\n\n\n    Cliente Fiel\n34 (20%)\n30 (18%)\n102 (61%)\n\n\n\n\n\n\n    Cliente Nao Fiel\n10 (34%)\n7 (24%)\n12 (41%)\n\n\n\n\n\n\nIdadeQ\n\n\n\n\n\n\n0,001\n0,213\n\n\n    Entre 30 e 50 anos\n17 (20%)\n12 (14%)\n56 (66%)\n\n\n\n\n\n\n    Maior que 50 anos\n7 (13%)\n9 (17%)\n38 (70%)\n\n\n\n\n\n\n    Menor que 30 anos\n20 (36%)\n16 (29%)\n20 (36%)\n\n\n\n\n\n\nTipo de ViagemQ\n\n\n\n\n\n\n0,034\n0,187\n\n\n    Viagem a Negocios\n25 (19%)\n21 (16%)\n85 (65%)\n\n\n\n\n\n\n    Viagem Pessoal\n19 (30%)\n16 (25%)\n29 (45%)\n\n\n\n\n\n\nClasseF\n\n\n\n\n\n\n0,001\n0,213\n\n\n    Economica\n22 (34%)\n16 (25%)\n27 (42%)\n\n\n\n\n\n\n    Economica Plus\n6 (25%)\n7 (29%)\n11 (46%)\n\n\n\n\n\n\n    Executiva\n16 (15%)\n14 (13%)\n76 (72%)\n\n\n\n\n\n\nDistânciaQ\n\n\n\n\n\n\n0,493\n0,093\n\n\n    Entre 500 e 1500 km\n20 (24%)\n18 (22%)\n45 (54%)\n\n\n\n\n\n\n    Maior que 1500 km\n15 (19%)\n11 (14%)\n51 (66%)\n\n\n\n\n\n\n    Menor que 500 km\n9 (26%)\n8 (23%)\n18 (51%)\n\n\n\n\n\n\nAtraso na PartidaQ\n\n\n\n\n\n\n0,001\n0,258\n\n\n    Com atraso\n18 (33%)\n16 (29%)\n21 (38%)\n\n\n\n\n\n\n    Sem atraso\n26 (19%)\n21 (15%)\n93 (66%)\n\n\n\n\n\n\nAtraso na ChegadaQ\n\n\n\n\n\n\n0,139\n0,142\n\n\n    Com atraso\n10 (22%)\n13 (29%)\n22 (49%)\n\n\n\n\n\n\n    Sem atraso\n34 (23%)\n24 (16%)\n92 (61%)"
   }
 ]
