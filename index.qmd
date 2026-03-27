@@ -12,9 +12,9 @@ format:
 
 ## 📚 Sobre
 
-Este hub reúne as apresentações da disciplina **Prática Estatística II**.
+Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 
-- **Universidade:** Universidade Federal Fluminense  
+- **Instituição:** Universidade Federal Fluminense (UFF)
 
 - **Autores:** Caio Salviano & Milena Labre  
 
@@ -35,7 +35,7 @@ Este hub reúne as apresentações da disciplina **Prática Estatística II**.
 ::: {.g-col-4}
 #### 📊 Avaliação 2  
 
-[Em breve]{.btn .btn-secondary}
+[Vizualizar](Avaliacao_2/){.btn .btn-primary}
 :::
 
 ::: {.g-col-4}

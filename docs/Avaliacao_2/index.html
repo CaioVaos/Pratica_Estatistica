@@ -178,7 +178,7 @@ Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalvian
 <li><p>Tipo de cliente;</p></li>
 <li><p>Idade;</p></li>
 <li><p>Classe;</p></li>
-<li><p>Tipo de viage;</p></li>
+<li><p>Tipo de viagem;</p></li>
 <li><p>Distância;</p></li>
 <li><p>Atraso na partida;</p></li>
 <li><p>Atraso na chegada.</p></li>
@@ -190,44 +190,40 @@ Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalvian
 <h2><span class="header-section-number">1.2</span> Metodologia</h2>
 <div class="columns">
 <div class="column" style="width:48%;">
-<div class="fragment">
+<div style="font-size: 0.75em;">
 <div class="box-blue">
-<p><strong>1. Tabela de contingência</strong><br>
-Organização dos dados para análise conjunta entre as variáveis.</p>
-</div>
+<p><strong>1. Tabela de contingência</strong></p>
+<p>Organização dos dados para análise conjunta entre as variáveis.</p>
 </div>
 <p><br></p>
-<div class="fragment">
 <div class="box-blue">
 <p><strong>2. Testes de independência</strong></p>
 <ul>
-<li>Teste do qui-quadrado de Pearson<br>
-</li>
+<li>Teste do qui-quadrado de Pearson</li>
 <li>Teste exato de Fisher</li>
 </ul>
 </div>
-</div>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<div class="fragment">
+<p><br></p>
 <div class="box-blue">
 <p><strong>3. Medida de associação</strong></p>
 <p>Coeficiente de Cramér para avaliar a intensidade das associações significativas.</p>
 </div>
 </div>
-<p><br></p>
-<div class="fragment">
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
 <div class="box-blue">
-<p><strong>4. Análise dos resíduos</strong></p>
-<p>Identificação das células responsáveis pelas associações observadas.</p>
+<p><strong>4. Análise dos resíduos padronizados</strong></p>
+<p>Identificação das células responsáveis pelas associações observadas. Sendo:</p>
+<p><span class="math display">\[
+O = \text{Frequência observada} \\
+E = \text{Frequência esperada} \\
+Z = \frac{O - E}{\sqrt{E}}
+\]</span></p>
 </div>
-</div>
-</div></div>
 <p><br></p>
-<div class="fragment">
 <p><span style="font-size: 0.8em; opacity: 0.75;"> Observação: <span class="math inline">\(\alpha = 0{,}05\)</span> em toda etapa da análise. </span></p>
-</div>
+</div></div>
 </section></section>
 <section>
 <section id="tabela" class="title-slide slide level1 center" data-number="2">
@@ -238,23 +234,23 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
 <h2><span class="header-section-number">2.1</span> Tabela</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="gwiejnhuwo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#gwiejnhuwo table {
+<div id="yiruvrvpjh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#yiruvrvpjh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#gwiejnhuwo thead, #gwiejnhuwo tbody, #gwiejnhuwo tfoot, #gwiejnhuwo tr, #gwiejnhuwo td, #gwiejnhuwo th {
+#yiruvrvpjh thead, #yiruvrvpjh tbody, #yiruvrvpjh tfoot, #yiruvrvpjh tr, #yiruvrvpjh td, #yiruvrvpjh th {
   border-style: none;
 }
 
-#gwiejnhuwo p {
+#yiruvrvpjh p {
   margin: 0;
   padding: 0;
 }
 
-#gwiejnhuwo .gt_table {
+#yiruvrvpjh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -280,12 +276,12 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-left-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_caption {
+#yiruvrvpjh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#gwiejnhuwo .gt_title {
+#yiruvrvpjh .gt_title {
   color: #333333;
   font-size: 26px;
   font-weight: initial;
@@ -297,7 +293,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-bottom-width: 0;
 }
 
-#gwiejnhuwo .gt_subtitle {
+#yiruvrvpjh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -309,7 +305,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-top-width: 0;
 }
 
-#gwiejnhuwo .gt_heading {
+#yiruvrvpjh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -321,13 +317,13 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-right-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_bottom_border {
+#yiruvrvpjh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_col_headings {
+#yiruvrvpjh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -342,7 +338,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-right-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_col_heading {
+#yiruvrvpjh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 22px;
@@ -362,7 +358,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   overflow-x: hidden;
 }
 
-#gwiejnhuwo .gt_column_spanner_outer {
+#yiruvrvpjh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 22px;
@@ -374,15 +370,15 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   padding-right: 4px;
 }
 
-#gwiejnhuwo .gt_column_spanner_outer:first-child {
+#yiruvrvpjh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gwiejnhuwo .gt_column_spanner_outer:last-child {
+#yiruvrvpjh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gwiejnhuwo .gt_column_spanner {
+#yiruvrvpjh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -394,11 +390,11 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   width: 100%;
 }
 
-#gwiejnhuwo .gt_spanner_row {
+#yiruvrvpjh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#gwiejnhuwo .gt_group_heading {
+#yiruvrvpjh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -424,7 +420,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   text-align: left;
 }
 
-#gwiejnhuwo .gt_empty_group_heading {
+#yiruvrvpjh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -439,15 +435,15 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   vertical-align: middle;
 }
 
-#gwiejnhuwo .gt_from_md > :first-child {
+#yiruvrvpjh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gwiejnhuwo .gt_from_md > :last-child {
+#yiruvrvpjh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gwiejnhuwo .gt_row {
+#yiruvrvpjh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -466,7 +462,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   overflow-x: hidden;
 }
 
-#gwiejnhuwo .gt_stub {
+#yiruvrvpjh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -479,7 +475,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   padding-right: 5px;
 }
 
-#gwiejnhuwo .gt_stub_row_group {
+#yiruvrvpjh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -493,15 +489,15 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   vertical-align: top;
 }
 
-#gwiejnhuwo .gt_row_group_first td {
+#yiruvrvpjh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#gwiejnhuwo .gt_row_group_first th {
+#yiruvrvpjh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#gwiejnhuwo .gt_summary_row {
+#yiruvrvpjh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -511,16 +507,16 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   padding-right: 5px;
 }
 
-#gwiejnhuwo .gt_first_summary_row {
+#yiruvrvpjh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_first_summary_row.thick {
+#yiruvrvpjh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#gwiejnhuwo .gt_last_summary_row {
+#yiruvrvpjh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -530,7 +526,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_grand_summary_row {
+#yiruvrvpjh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -540,7 +536,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   padding-right: 5px;
 }
 
-#gwiejnhuwo .gt_first_grand_summary_row {
+#yiruvrvpjh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -550,7 +546,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-top-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_last_grand_summary_row_top {
+#yiruvrvpjh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -560,11 +556,11 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_striped {
+#yiruvrvpjh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gwiejnhuwo .gt_table_body {
+#yiruvrvpjh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -573,7 +569,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_footnotes {
+#yiruvrvpjh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -587,7 +583,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-right-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_footnote {
+#yiruvrvpjh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -596,7 +592,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   padding-right: 5px;
 }
 
-#gwiejnhuwo .gt_sourcenotes {
+#yiruvrvpjh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -610,7 +606,7 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   border-right-color: #D3D3D3;
 }
 
-#gwiejnhuwo .gt_sourcenote {
+#yiruvrvpjh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -618,72 +614,72 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
   padding-right: 5px;
 }
 
-#gwiejnhuwo .gt_left {
+#yiruvrvpjh .gt_left {
   text-align: left;
 }
 
-#gwiejnhuwo .gt_center {
+#yiruvrvpjh .gt_center {
   text-align: center;
 }
 
-#gwiejnhuwo .gt_right {
+#yiruvrvpjh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gwiejnhuwo .gt_font_normal {
+#yiruvrvpjh .gt_font_normal {
   font-weight: normal;
 }
 
-#gwiejnhuwo .gt_font_bold {
+#yiruvrvpjh .gt_font_bold {
   font-weight: bold;
 }
 
-#gwiejnhuwo .gt_font_italic {
+#yiruvrvpjh .gt_font_italic {
   font-style: italic;
 }
 
-#gwiejnhuwo .gt_super {
+#yiruvrvpjh .gt_super {
   font-size: 65%;
 }
 
-#gwiejnhuwo .gt_footnote_marks {
+#yiruvrvpjh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#gwiejnhuwo .gt_asterisk {
+#yiruvrvpjh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#gwiejnhuwo .gt_indent_1 {
+#yiruvrvpjh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#gwiejnhuwo .gt_indent_2 {
+#yiruvrvpjh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#gwiejnhuwo .gt_indent_3 {
+#yiruvrvpjh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#gwiejnhuwo .gt_indent_4 {
+#yiruvrvpjh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#gwiejnhuwo .gt_indent_5 {
+#yiruvrvpjh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#gwiejnhuwo .katex-display {
+#yiruvrvpjh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#gwiejnhuwo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#yiruvrvpjh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -776,15 +772,15 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
 </td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Idade<sup>Q</sup></td>
-<td class="gt_row gt_center" headers="stat_1"><br>
+<td class="gt_row gt_left" headers="label" style="font-weight: bold; background-color: #FEF9C3">Idade<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="stat_2"><br>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="stat_3"><br>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="p.value" style="font-weight: bold">0,001</td>
-<td class="gt_row gt_center" headers="**Cramér**">0,213</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,213</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Entre 30 e 50 anos</td>
@@ -817,15 +813,15 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
 </td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Tipo de Viagem<sup>Q</sup></td>
-<td class="gt_row gt_center" headers="stat_1"><br>
+<td class="gt_row gt_left" headers="label" style="font-weight: bold; background-color: #FEF9C3">Tipo de Viagem<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="stat_2"><br>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="stat_3"><br>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="p.value" style="font-weight: bold">0,034</td>
-<td class="gt_row gt_center" headers="**Cramér**">0,187</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">0,034</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,187</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Viagem a Negocios</td>
@@ -848,15 +844,15 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
 </td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Classe<sup>F</sup></td>
-<td class="gt_row gt_center" headers="stat_1"><br>
+<td class="gt_row gt_left" headers="label" style="font-weight: bold; background-color: #FEF9C3">Classe<sup>F</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="stat_2"><br>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="stat_3"><br>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="p.value" style="font-weight: bold">0,001</td>
-<td class="gt_row gt_center" headers="**Cramér**">0,213</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,213</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Economica</td>
@@ -930,15 +926,15 @@ Organização dos dados para análise conjunta entre as variáveis.</p>
 </td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Atraso na Partida<sup>Q</sup></td>
-<td class="gt_row gt_center" headers="stat_1"><br>
+<td class="gt_row gt_left" headers="label" style="font-weight: bold; background-color: #FEF9C3">Atraso na Partida<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="stat_2"><br>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="stat_3"><br>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
 </td>
-<td class="gt_row gt_center" headers="p.value" style="font-weight: bold">0,001</td>
-<td class="gt_row gt_center" headers="**Cramér**">0,258</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,258</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Com atraso</td>

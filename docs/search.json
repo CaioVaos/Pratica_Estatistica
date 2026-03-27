@@ -193,14 +193,14 @@
     "href": "Avaliacao_2/index.html#objetivo",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "1.1 Objetivo:",
-    "text": "1.1 Objetivo:\n\n\n\nInvestigar a associação entre a satisfação com o conforto do assento e fatores de exposição.\n\n\n\nVariável resposta categórica nominal com niveis:\n\nInsatisfeito;\nNeutro;\nSatisfeito.\n\n\n\n\n\n\nFatores de exposição:\n\nGênero;\nTipo de cliente;\nIdade;\nClasse;\nTipo de viage;\nDistância;\nAtraso na partida;\nAtraso na chegada."
+    "text": "1.1 Objetivo:\n\n\n\nInvestigar a associação entre a satisfação com o conforto do assento e fatores de exposição.\n\n\n\nVariável resposta categórica nominal com niveis:\n\nInsatisfeito;\nNeutro;\nSatisfeito.\n\n\n\n\n\n\nFatores de exposição:\n\nGênero;\nTipo de cliente;\nIdade;\nClasse;\nTipo de viagem;\nDistância;\nAtraso na partida;\nAtraso na chegada."
   },
   {
     "objectID": "Avaliacao_2/index.html#metodologia",
     "href": "Avaliacao_2/index.html#metodologia",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "1.2 Metodologia",
-    "text": "1.2 Metodologia\n\n\n\n\n1. Tabela de contingência\nOrganização dos dados para análise conjunta entre as variáveis.\n\n\n\n\n\n2. Testes de independência\n\nTeste do qui-quadrado de Pearson\n\nTeste exato de Fisher\n\n\n\n\n\n\n\n\n3. Medida de associação\nCoeficiente de Cramér para avaliar a intensidade das associações significativas.\n\n\n\n\n\n4. Análise dos resíduos\nIdentificação das células responsáveis pelas associações observadas.\n\n\n\n\n\n Observação: \\(\\alpha = 0{,}05\\) em toda etapa da análise."
+    "text": "1.2 Metodologia\n\n\n\n\n1. Tabela de contingência\nOrganização dos dados para análise conjunta entre as variáveis.\n\n\n\n2. Testes de independência\n\nTeste do qui-quadrado de Pearson\nTeste exato de Fisher\n\n\n\n\n3. Medida de associação\nCoeficiente de Cramér para avaliar a intensidade das associações significativas.\n\n\n\n\n\n\n4. Análise dos resíduos padronizados\nIdentificação das células responsáveis pelas associações observadas. Sendo:\n\\[\nO = \\text{Frequência observada} \\\\\nE = \\text{Frequência esperada} \\\\\nZ = \\frac{O - E}{\\sqrt{E}}\n\\]\n\n\n Observação: \\(\\alpha = 0{,}05\\) em toda etapa da análise."
   },
   {
     "objectID": "Avaliacao_2/index.html#tabela-1",
