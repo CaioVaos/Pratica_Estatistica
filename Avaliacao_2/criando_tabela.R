@@ -147,3 +147,48 @@ tabela <- tabela %>%
     )
   )
 
+tabela <- tabela %>%
+  # ── Azul: Insatisfeito ──────────────────────────────────────────
+  tab_style(
+    style = cell_fill(color = "#dbeafe"),
+    locations = cells_body(
+      columns = stat_1,
+      rows = (variable == "Idade"          & label == "Maior que 50 anos") |
+        (variable == "Classe"         & label == "Executiva")         |
+        (variable == "Atraso_Partida" & label == "Sem atraso")
+    )
+  ) %>%
+  # ── Azul: Satisfeito ────────────────────────────────────────────
+  tab_style(
+    style = cell_fill(color = "#dbeafe"),
+    locations = cells_body(
+      columns = stat_3,
+      rows = (variable == "Idade"          & label == "Menor que 30 anos") |
+        (variable == "Tipo_Viagem"    & label == "Viagem Pessoal")    |
+        (variable == "Classe"         & label == "Economica")         |
+        (variable == "Atraso_Partida" & label == "Com atraso")
+    )
+  ) %>%
+  # ── Verde: Insatisfeito ─────────────────────────────────────────
+  tab_style(
+    style = cell_fill(color = "#dcfce7"),
+    locations = cells_body(
+      columns = stat_1,
+      rows = (variable == "Idade"          & label == "Menor que 30 anos") |
+        (variable == "Classe"         & label == "Economica")         |
+        (variable == "Atraso_Partida" & label == "Com atraso")
+    )
+  ) %>%
+  # ── Verde: Satisfeito ───────────────────────────────────────────
+  tab_style(
+    style = cell_fill(color = "#dcfce7"),
+    locations = cells_body(
+      columns = stat_3,
+      rows = (variable == "Idade"          & label == "Maior que 50 anos")   |
+        (variable == "Tipo_Viagem"    & label == "Viagem a Negocios")   |
+        (variable == "Classe"         & label == "Executiva")           |
+        (variable == "Atraso_Partida" & label == "Sem atraso")
+    )
+  )
+
+gt::gtsave(tabela, "Avaliacao_2/media/tabela.html")
