@@ -1,20 +1,19 @@
-#Pacotes----
+##############Criar Tabela Testes de Independência##############################
+# Setup ------------------------------------------------------------------------
 require(openxlsx)            # Leitura de base de dados
 require(dplyr)               # Manipulação de base de dados
 require(gtsummary)           # Tabelas automáticas
 require(gt)                  # Tabelas automáticas
 require(rstatix)             # Coeficiente de Cramer
-#--------------------------------------------------------
-#linguagem de pontuação em português---- 
-theme_gtsummary_language("pt", big.mark = ".", decimal.mark = ",") # formatação em português (vírgula pra decimais e ponto para milhares)
-#--------------------------------------------------------
-#Carregando base de dados----
+
 Dados = read.xlsx("Avaliacao_2/data/DadosAviao.xlsx")
-#renomeando as categorias 
 
+# linguagem de pontuação em português
+# formatação em português (vírgula pra decimais e ponto para milhares)
+theme_gtsummary_language("pt", big.mark = ".", decimal.mark = ",")
 
-#--------------------------------------------------------
-#selecionando variáveis qualitativas----
+# Adequando variáveis qualitativas ---------------------------------------------
+
 DadosQuali = Dados %>% select(Conforto_Assento,Genero, Cliente, Idade,
                               Tipo_Viagem, Classe, Distancia,
                               Atraso_Partida, Atraso_Chegada)
@@ -32,7 +31,7 @@ DadosQuali <- DadosQuali %>%
                       ">1500 km"= "Maior que 1500 km",
                       " <500 km"="Menor que 500 km")
   )
-#--------------------------------------------------------
+# Tabelas de contingencia ------------------------------------------------------
 tbl_summary(data = DadosQuali)
 
 tbl_summary(data = DadosQuali,
@@ -41,8 +40,7 @@ tbl_summary(data = DadosQuali,
 tbl_summary(data = DadosQuali,
             by = Conforto_Assento ,
             percent = "row")
-#--------------------------------------------------------
-#teste qui-quadrado----
+# Verificação da Matriz Esperada -----------------------------------------------
 chisq.test(Dados$Genero,Dados$Conforto_Assento)$expected
 
 chisq.test(Dados$Cliente,Dados$Conforto_Assento)$expected
@@ -51,39 +49,40 @@ chisq.test(Dados$Idade,Dados$Conforto_Assento)$expected
 
 chisq.test(Dados$Tipo_Viagem,Dados$Conforto_Assento)$expected
 
-chisq.test(Dados$Classe,Dados$Conforto_Assento)$expected #menor que 5 fisher
+chisq.test(Dados$Classe,Dados$Conforto_Assento)$expected # menor que 5 -> fisher
 
 chisq.test(Dados$Distancia,Dados$Conforto_Assento)$expected
 
 chisq.test(Dados$Atraso_Partida,Dados$Conforto_Assento)$expected
 
 chisq.test(Dados$Atraso_Chegada,Dados$Conforto_Assento)$expected
-#-----------------------------------------------------------
+
+# Tabela com o pvalor ----------------------------------------------------------
 tbl_summary(data = DadosQuali,
             by = Conforto_Assento,
             percent = "row")%>%
-  add_p()
-#----------------------------------------------------------
-#Residuos
-#acima de 1,96 e abaixo de -1,96 na normal padrao são os caras influentes
+  add_p(
+    pvalue_fun = function(x) formatC(x, digits = 4, format = "f")
+  )
+# Residuos ---------------------------------------------------------------------
+# acima de 1,96 ou abaixo de -1,96 na normal padrao sao os caras influentes
 chisq.test(Dados$Idade,Dados$Conforto_Assento)$stdres
-
 
 chisq.test(Dados$Classe,Dados$Conforto_Assento)$stdres
 
 chisq.test(Dados$Tipo_Viagem,Dados$Conforto_Assento)$stdres
 
 chisq.test(Dados$Atraso_Partida,Dados$Conforto_Assento)$stdres
-#--------------------------------------------------
 
-# Função que calcula o coeficiente de Cramer
+# Coeficiente de Cramer --------------------------------------------------------
+
 cramer_fun <- function(data, variable, by, ...) {
   tab <- table(data[[variable]], data[[by]])
   v <- cramer_v(tab)
   tibble::tibble(`**Cramér**` = round(v, 3))
 }
 
-# Código da tabela
+# Criando tabela ---------------------------------------------------------------
 tabela <- tbl_summary(data = DadosQuali,
             by = Conforto_Assento,
             percent = "row",
@@ -136,6 +135,8 @@ tabela <- tbl_summary(data = DadosQuali,
                      Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados.")
   )
 
+## Colorindo -------------------------------------------------------------------
+
 tabela <- tabela %>%
   tab_style(
     style = list(
@@ -148,7 +149,6 @@ tabela <- tabela %>%
   )
 
 tabela <- tabela %>%
-  # ── Azul: Insatisfeito ──────────────────────────────────────────
   tab_style(
     style = cell_fill(color = "#dbeafe"),
     locations = cells_body(
@@ -158,7 +158,6 @@ tabela <- tabela %>%
         (variable == "Atraso_Partida" & label == "Sem atraso")
     )
   ) %>%
-  # ── Azul: Satisfeito ────────────────────────────────────────────
   tab_style(
     style = cell_fill(color = "#dbeafe"),
     locations = cells_body(
@@ -169,7 +168,6 @@ tabela <- tabela %>%
         (variable == "Atraso_Partida" & label == "Com atraso")
     )
   ) %>%
-  # ── Verde: Insatisfeito ─────────────────────────────────────────
   tab_style(
     style = cell_fill(color = "#dcfce7"),
     locations = cells_body(
@@ -179,7 +177,6 @@ tabela <- tabela %>%
         (variable == "Atraso_Partida" & label == "Com atraso")
     )
   ) %>%
-  # ── Verde: Satisfeito ───────────────────────────────────────────
   tab_style(
     style = cell_fill(color = "#dcfce7"),
     locations = cells_body(
@@ -191,4 +188,5 @@ tabela <- tabela %>%
     )
   )
 
+## Salvar ----------------------------------------------------------------------
 gt::gtsave(tabela, "Avaliacao_2/media/tabela.html")
