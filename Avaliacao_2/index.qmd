@@ -352,7 +352,7 @@ Associações significativas:
 ::: {.column width="48%"}
 
 ::: box-blue
-Principais padrões:
+Características do passageiro:
 
 - <span style="font-size: 0.85em;"> Passageiros **mais velhos** → maior <span style="color: #2E7D32;">satisfação</span></span>
 - <span style="font-size: 0.85em;"> Passageiros **mais jovens** → maior <span style="color: #C62828;">insatisfação</span>   </span>  
@@ -370,7 +370,7 @@ Principais padrões:
 ::: {.column width="48%"}
 
 ::: box-blue
-Efeito do contexto da viagem:
+Contexto da viagem:
 
 - **Viagens a negócios** → maior <span style="color: #2E7D32;">satisfação</span>
 - **Viagens pessoais** → maior <span style="color: #C62828;">insatisfação</span>     
