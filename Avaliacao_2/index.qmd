@@ -354,11 +354,11 @@ Associações significativas:
 ::: box-blue
 Principais padrões:
 
-- <span style="font-size: 0.85em;"> Passageiros **mais velhos** → maior satisfação</span>
-- <span style="font-size: 0.85em;"> Passageiros **mais jovens** → maior insatisfação</span>  
+- <span style="font-size: 0.85em;"> Passageiros **mais velhos** → maior <span style="color: #2E7D32;">satisfação</span></span>
+- <span style="font-size: 0.85em;"> Passageiros **mais jovens** → maior <span style="color: #C62828;">insatisfação</span>   </span>  
 
-- Classe **executiva** → maior satisfação  
-- Classe **econômica** → maior insatisfação  
+- Classe **executiva** → maior <span style="color: #2E7D32;">satisfação</span>  
+- Classe **econômica** → maior <span style="color: #C62828;">insatisfação</span>     
 :::
 
 :::
@@ -372,11 +372,11 @@ Principais padrões:
 ::: box-blue
 Efeito do contexto da viagem:
 
-- **Viagens a negócios** → maior satisfação  
-- **Viagens pessoais** → maior insatisfação  
+- **Viagens a negócios** → maior <span style="color: #2E7D32;">satisfação</span>
+- **Viagens pessoais** → maior <span style="color: #C62828;">insatisfação</span>     
 
-- **Sem atraso** → maior satisfação  
-- **Com atraso** → maior insatisfação  
+- **Sem atraso** → maior <span style="color: #2E7D32;">satisfação</span>
+- **Com atraso** → maior <span style="color: #C62828;">insatisfação</span>   
 :::
 
 :::
