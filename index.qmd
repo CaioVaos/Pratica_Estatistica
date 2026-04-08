@@ -41,7 +41,7 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 ::: {.g-col-4}
 #### 📊 Avaliação 3
 
-[Em breve]{.btn .btn-secondary}
+[Visualizar](Avaliacao_3/Gabarito_AV3.pdf){.btn .btn-primary}
 :::
 
 :::
@@ -52,7 +52,7 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 
 #### 📊 Avaliação 4
 
-[Em breve]{.btn .btn-secondary}
+[Vizualizar](Avaliacao_4/){.btn .btn-primary}
 
 :::
 

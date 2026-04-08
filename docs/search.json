@@ -11,7 +11,35 @@
     "href": "index.html#avaliações",
     "title": "Prática Estatística II",
     "section": "🎓 Avaliações",
-    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nEm breve\n\n\n\n\n📊 Avaliação 4\nEm breve\n\n\n📊 Avaliação 5\nEm breve\n\n\n📊 Avaliação 6\nEm breve"
+    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nVisualizar\n\n\n\n\n📊 Avaliação 4\nVizualizar\n\n\n📊 Avaliação 5\nEm breve\n\n\n📊 Avaliação 6\nEm breve"
+  },
+  {
+    "objectID": "Avaliacao_2/index.html#objetivo",
+    "href": "Avaliacao_2/index.html#objetivo",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.1 Objetivo:",
+    "text": "1.1 Objetivo:\n\n\n\nInvestigar a associação entre a satisfação com o conforto do assento e fatores de exposição.\n\n\n\nVariável resposta categórica nominal com niveis:\n\nInsatisfeito;\nNeutro;\nSatisfeito.\n\n\n\n\n\n\nFatores de exposição:\n\nGênero;\nTipo de cliente;\nIdade;\nClasse;\nTipo de viagem;\nDistância;\nAtraso na partida;\nAtraso na chegada."
+  },
+  {
+    "objectID": "Avaliacao_2/index.html#metodologia",
+    "href": "Avaliacao_2/index.html#metodologia",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.2 Metodologia",
+    "text": "1.2 Metodologia\n\n\n\n\n1. Tabela de contingência\nOrganização dos dados para análise conjunta entre as variáveis.\n\n\n\n2. Testes de independência\n\nTeste do qui-quadrado de Pearson\nTeste exato de Fisher\n\n\n\n\n3. Medida de associação\nCoeficiente de Cramér para avaliar a intensidade das associações significativas.\n\n\n\n\n\n\n4. Análise dos resíduos padronizados\nIdentificação das células responsáveis pelas associações observadas. Sendo:\n\\[\nO = \\text{Frequência observada} \\\\\nE = \\text{Frequência esperada} \\\\\nZ = \\frac{O - E}{\\sqrt{E}}\n\\]\n\n\n Observação: \\(\\alpha = 0{,}05\\) em toda etapa da análise."
+  },
+  {
+    "objectID": "Avaliacao_2/index.html#tabela-1",
+    "href": "Avaliacao_2/index.html#tabela-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.1 Tabela",
+    "text": "2.1 Tabela\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariáveis\n\nSatisfação com o conforto do assento\n\nValor-p\nCramér\n\n\nInsatisfeito44 (23%)\nNeutro37 (19%)\nSatisfeito114 (58%)\n\n\n\n\nGêneroQ\n\n\n\n\n\n\n0,487\n0,086\n\n\n    Feminino\n20 (20%)\n17 (17%)\n62 (63%)\n\n\n\n\n\n\n    Masculino\n24 (25%)\n20 (21%)\n52 (54%)\n\n\n\n\n\n\nTipo de ClienteQ\n\n\n\n\n\n\n0,115\n0,149\n\n\n    Cliente Fiel\n34 (20%)\n30 (18%)\n102 (61%)\n\n\n\n\n\n\n    Cliente Nao Fiel\n10 (34%)\n7 (24%)\n12 (41%)\n\n\n\n\n\n\nIdadeQ\n\n\n\n\n\n\n0,001\n0,213\n\n\n    Entre 30 e 50 anos\n17 (20%)\n12 (14%)\n56 (66%)\n\n\n\n\n\n\n    Maior que 50 anos\n7 (13%)\n9 (17%)\n38 (70%)\n\n\n\n\n\n\n    Menor que 30 anos\n20 (36%)\n16 (29%)\n20 (36%)\n\n\n\n\n\n\nTipo de ViagemQ\n\n\n\n\n\n\n0,034\n0,187\n\n\n    Viagem a Negocios\n25 (19%)\n21 (16%)\n85 (65%)\n\n\n\n\n\n\n    Viagem Pessoal\n19 (30%)\n16 (25%)\n29 (45%)\n\n\n\n\n\n\nClasseF\n\n\n\n\n\n\n0,001\n0,213\n\n\n    Economica\n22 (34%)\n16 (25%)\n27 (42%)\n\n\n\n\n\n\n    Economica Plus\n6 (25%)\n7 (29%)\n11 (46%)\n\n\n\n\n\n\n    Executiva\n16 (15%)\n14 (13%)\n76 (72%)\n\n\n\n\n\n\nDistânciaQ\n\n\n\n\n\n\n0,493\n0,093\n\n\n    Entre 500 e 1500 km\n20 (24%)\n18 (22%)\n45 (54%)\n\n\n\n\n\n\n    Maior que 1500 km\n15 (19%)\n11 (14%)\n51 (66%)\n\n\n\n\n\n\n    Menor que 500 km\n9 (26%)\n8 (23%)\n18 (51%)\n\n\n\n\n\n\nAtraso na PartidaQ\n\n\n\n\n\n\n0,001\n0,258\n\n\n    Com atraso\n18 (33%)\n16 (29%)\n21 (38%)\n\n\n\n\n\n\n    Sem atraso\n26 (19%)\n21 (15%)\n93 (66%)\n\n\n\n\n\n\nAtraso na ChegadaQ\n\n\n\n\n\n\n0,139\n0,142\n\n\n    Com atraso\n10 (22%)\n13 (29%)\n22 (49%)\n\n\n\n\n\n\n    Sem atraso\n34 (23%)\n24 (16%)\n92 (61%)\n\n\n\n\n\n\n\nQ: Teste do qui-quadrado de Pearson;  F: Teste exato de Fisher;  Valores em negrito na coluna Valor-p indicam significância estatística (p &lt; 0,05);  Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados."
+  },
+  {
+    "objectID": "Avaliacao_2/index.html#conclusão-1",
+    "href": "Avaliacao_2/index.html#conclusão-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 Conclusão",
+    "text": "3.1 Conclusão\n\n\nAssociações significativas:\n\n\n\nIdade\n\n\n\n\nClasse\n\n\n\n\nTipo de viagem\n\n\n\n\nAtraso na partida\n\n\n\n\n\n\n\nCaracterísticas do passageiro:\n\n Passageiros mais velhos → maior satisfação\n Passageiros mais jovens → maior insatisfação \nClasse executiva → maior satisfação\n\nClasse econômica → maior insatisfação\n\n\n\n\n\n\n\nContexto da viagem:\n\nViagens a negócios → maior satisfação\nViagens pessoais → maior insatisfação\nSem atraso → maior satisfação\nCom atraso → maior insatisfação"
   },
   {
     "objectID": "Avaliacao_1/index.html#artigo-e-autores",
@@ -189,31 +217,101 @@
     "text": "4.4 Conclusão dos autores:\n\n“Sugere-se que outros estudos sejam realizados com uma maior amostra de alunos, de diferentes municípios pernambucanos e com estudantes da rede privada de ensino para investigar se há diferença comportamental entre eles e os estudantes da rede pública.”"
   },
   {
-    "objectID": "Avaliacao_2/index.html#objetivo",
-    "href": "Avaliacao_2/index.html#objetivo",
+    "objectID": "Avaliacao_4/index.html#artigo-e-autoras",
+    "href": "Avaliacao_4/index.html#artigo-e-autoras",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "1.1 Objetivo:",
-    "text": "1.1 Objetivo:\n\n\n\nInvestigar a associação entre a satisfação com o conforto do assento e fatores de exposição.\n\n\n\nVariável resposta categórica nominal com niveis:\n\nInsatisfeito;\nNeutro;\nSatisfeito.\n\n\n\n\n\n\nFatores de exposição:\n\nGênero;\nTipo de cliente;\nIdade;\nClasse;\nTipo de viagem;\nDistância;\nAtraso na partida;\nAtraso na chegada."
+    "section": "1.1 Artigo e autoras:",
+    "text": "1.1 Artigo e autoras:\n\nPsicologia Clinica (PUC-Rio), 2014"
   },
   {
-    "objectID": "Avaliacao_2/index.html#metodologia",
-    "href": "Avaliacao_2/index.html#metodologia",
+    "objectID": "Avaliacao_4/index.html#motivação",
+    "href": "Avaliacao_4/index.html#motivação",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "1.2 Metodologia",
-    "text": "1.2 Metodologia\n\n\n\n\n1. Tabela de contingência\nOrganização dos dados para análise conjunta entre as variáveis.\n\n\n\n2. Testes de independência\n\nTeste do qui-quadrado de Pearson\nTeste exato de Fisher\n\n\n\n\n3. Medida de associação\nCoeficiente de Cramér para avaliar a intensidade das associações significativas.\n\n\n\n\n\n\n4. Análise dos resíduos padronizados\nIdentificação das células responsáveis pelas associações observadas. Sendo:\n\\[\nO = \\text{Frequência observada} \\\\\nE = \\text{Frequência esperada} \\\\\nZ = \\frac{O - E}{\\sqrt{E}}\n\\]\n\n\n Observação: \\(\\alpha = 0{,}05\\) em toda etapa da análise."
+    "section": "1.2 Motivação:",
+    "text": "1.2 Motivação:\n\n\nTransformações da sociedadede contemporânea que impactam a subjetividade:\n\nProcesso de globalização, avanços na industrialização, dependência da informática e da realidade virtual.\n\nAumentos de quadros associados a narcisismo, depressão, ansiedade, desesperança\nNecessidade de investigação quantitativa dessas relações em jovens universitários."
   },
   {
-    "objectID": "Avaliacao_2/index.html#tabela-1",
-    "href": "Avaliacao_2/index.html#tabela-1",
+    "objectID": "Avaliacao_4/index.html#objetivos",
+    "href": "Avaliacao_4/index.html#objetivos",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "2.1 Tabela",
-    "text": "2.1 Tabela\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariáveis\n\nSatisfação com o conforto do assento\n\nValor-p\nCramér\n\n\nInsatisfeito44 (23%)\nNeutro37 (19%)\nSatisfeito114 (58%)\n\n\n\n\nGêneroQ\n\n\n\n\n\n\n0,487\n0,086\n\n\n    Feminino\n20 (20%)\n17 (17%)\n62 (63%)\n\n\n\n\n\n\n    Masculino\n24 (25%)\n20 (21%)\n52 (54%)\n\n\n\n\n\n\nTipo de ClienteQ\n\n\n\n\n\n\n0,115\n0,149\n\n\n    Cliente Fiel\n34 (20%)\n30 (18%)\n102 (61%)\n\n\n\n\n\n\n    Cliente Nao Fiel\n10 (34%)\n7 (24%)\n12 (41%)\n\n\n\n\n\n\nIdadeQ\n\n\n\n\n\n\n0,001\n0,213\n\n\n    Entre 30 e 50 anos\n17 (20%)\n12 (14%)\n56 (66%)\n\n\n\n\n\n\n    Maior que 50 anos\n7 (13%)\n9 (17%)\n38 (70%)\n\n\n\n\n\n\n    Menor que 30 anos\n20 (36%)\n16 (29%)\n20 (36%)\n\n\n\n\n\n\nTipo de ViagemQ\n\n\n\n\n\n\n0,034\n0,187\n\n\n    Viagem a Negocios\n25 (19%)\n21 (16%)\n85 (65%)\n\n\n\n\n\n\n    Viagem Pessoal\n19 (30%)\n16 (25%)\n29 (45%)\n\n\n\n\n\n\nClasseF\n\n\n\n\n\n\n0,001\n0,213\n\n\n    Economica\n22 (34%)\n16 (25%)\n27 (42%)\n\n\n\n\n\n\n    Economica Plus\n6 (25%)\n7 (29%)\n11 (46%)\n\n\n\n\n\n\n    Executiva\n16 (15%)\n14 (13%)\n76 (72%)\n\n\n\n\n\n\nDistânciaQ\n\n\n\n\n\n\n0,493\n0,093\n\n\n    Entre 500 e 1500 km\n20 (24%)\n18 (22%)\n45 (54%)\n\n\n\n\n\n\n    Maior que 1500 km\n15 (19%)\n11 (14%)\n51 (66%)\n\n\n\n\n\n\n    Menor que 500 km\n9 (26%)\n8 (23%)\n18 (51%)\n\n\n\n\n\n\nAtraso na PartidaQ\n\n\n\n\n\n\n0,001\n0,258\n\n\n    Com atraso\n18 (33%)\n16 (29%)\n21 (38%)\n\n\n\n\n\n\n    Sem atraso\n26 (19%)\n21 (15%)\n93 (66%)\n\n\n\n\n\n\nAtraso na ChegadaQ\n\n\n\n\n\n\n0,139\n0,142\n\n\n    Com atraso\n10 (22%)\n13 (29%)\n22 (49%)\n\n\n\n\n\n\n    Sem atraso\n34 (23%)\n24 (16%)\n92 (61%)\n\n\n\n\n\n\n\nQ: Teste do qui-quadrado de Pearson;  F: Teste exato de Fisher;  Valores em negrito na coluna Valor-p indicam significância estatística (p &lt; 0,05);  Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados."
+    "section": "1.3 Objetivos:",
+    "text": "1.3 Objetivos:\n\n\nIdentificar as características narcísicas de personalidade em jovens adultos universitários e verificar suas associações com:\n\nAutoestima;\nSintomas de ansiedade;\nSintomas de depressão;\nNível de desesperança."
   },
   {
-    "objectID": "Avaliacao_2/index.html#conclusão-1",
-    "href": "Avaliacao_2/index.html#conclusão-1",
+    "objectID": "Avaliacao_4/index.html#amostra",
+    "href": "Avaliacao_4/index.html#amostra",
     "title": "PRÁTICA ESTATÍSTICA II",
-    "section": "3.1 Conclusão",
-    "text": "3.1 Conclusão\n\n\nAssociações significativas:\n\n\n\nIdade\n\n\n\n\nClasse\n\n\n\n\nTipo de viagem\n\n\n\n\nAtraso na partida\n\n\n\n\n\n\n\nCaracterísticas do passageiro:\n\n Passageiros mais velhos → maior satisfação\n Passageiros mais jovens → maior insatisfação \nClasse executiva → maior satisfação\n\nClasse econômica → maior insatisfação\n\n\n\n\n\n\n\nContexto da viagem:\n\nViagens a negócios → maior satisfação\nViagens pessoais → maior insatisfação\nSem atraso → maior satisfação\nCom atraso → maior insatisfação"
+    "section": "1.4 Amostra:",
+    "text": "1.4 Amostra:\n\n\n350 jovens adultos universitários (35,4% homens, 64,6% mulheres).\n18 a 30 anos;\nCursos das áreas:\n\nHumanas;\nExatas;\nSaúde.\n\nColeta dos dados sociodemográficos e administração dos instrumentos em sala de aula por meio de questionários padronizados."
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#instrumentos",
+    "href": "Avaliacao_4/index.html#instrumentos",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.5 Instrumentos:",
+    "text": "1.5 Instrumentos:\n\n\n\n\n\n\n\n\n\nInstrumento\nO que mede\nInterpretação do escore\nAlfa\n\n\n\n\nBAI- Inventário de Ansiedade de Beck\nIntensidade de sintomas de ansiedade\nMaior escore \\(\\rightarrow\\) maior ansiedade\n0,88\n\n\nBHS-Escala de Desesperança de Beck\nGrau de desesperança / pessimismo em relação ao futuro\nMaior escore \\(\\rightarrow\\) maior desesperança\n0,81\n\n\nBDI-II-Inventário de Depressão de Beck-II\nintensidade de sintomas depressivos\nMaior escore \\(\\rightarrow\\) maior autoestima\n0,81\n\n\nRosenberg-Escala de Rosenberg\nautoestima global\nMaior escore \\(\\rightarrow\\) maior autoestima\n0,73\n\n\nNPI-Inventário de Personalidade Narcisista\nTraços de personalidade narcisista\nMaior escore \\(\\rightarrow\\) maior narcisismo\n0,79"
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#variáveis-analisadas",
+    "href": "Avaliacao_4/index.html#variáveis-analisadas",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.1 Variáveis analisadas:",
+    "text": "2.1 Variáveis analisadas:\n\n\n\n\nDesfecho:\n\nEscore de narcisismo (NPI)\nVariável quantitativa continua\n\n\n\n\n\n\n\n\nFatores de exposição:\n\n\n\n\nVariável\nTipo\n\n\n\n\nRosenberg\nQuantitativa\n\n\nBAI\nQuantitativa\n\n\nBHS\nQuantitativa\n\n\nBDI-II\nQuantitativa\n\n\nSexo\nQualitativa binária\n\n\nCurso\nQualitativa nominal"
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#testes-aplicados",
+    "href": "Avaliacao_4/index.html#testes-aplicados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.2 Testes aplicados:",
+    "text": "2.2 Testes aplicados:\n\n\nTeste T;\nCorrelações de Pearson;\nAnova."
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#tabela-1",
+    "href": "Avaliacao_4/index.html#tabela-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 Tabela 1:",
+    "text": "3.1 Tabela 1:"
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#tabela-2",
+    "href": "Avaliacao_4/index.html#tabela-2",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Tabela 2:",
+    "text": "3.2 Tabela 2:"
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#tabela-3",
+    "href": "Avaliacao_4/index.html#tabela-3",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.3 Tabela 3:",
+    "text": "3.3 Tabela 3:"
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#resultados",
+    "href": "Avaliacao_4/index.html#resultados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.4 Resultados:",
+    "text": "3.4 Resultados:\n\n\nNarcisismo brasileiro (12,60) é inferior ao de jovens americanos (17,62);\nNarcisismo associado a dimensões saudáveis: liderança, autoridade e autossuficiência;\nNão houve correlação entre narcisismo e sintomas patológicos de ansiedade ou depressão."
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#principais-achados",
+    "href": "Avaliacao_4/index.html#principais-achados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.1 Principais Achados:",
+    "text": "4.1 Principais Achados:\n\n\nO narcisismo nesta amostra é predominantemente não-patológico e adaptativo;\nMulheres apresentam maior vulnerabilidade emocional (ansiedade e depressão);\nA escolha do curso reflete a personalidade: Humanas busca cooperação; Exatas, aspectos mais competitivos"
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#importância-do-teste-de-associação",
+    "href": "Avaliacao_4/index.html#importância-do-teste-de-associação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.2 Importância do Teste de Associação:",
+    "text": "4.2 Importância do Teste de Associação:\n\n\nValidou que o narcisismo pode estar ligado a um maior valor próprio e assertividade;\nPermitiu distinguir cientificamente traços de personalidade de sintomas clínicos."
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#contribuição-para-a-sociedade",
+    "href": "Avaliacao_4/index.html#contribuição-para-a-sociedade",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.3 Contribuição para a Sociedade:",
+    "text": "4.3 Contribuição para a Sociedade:\n\n\nOferece subsídios para a prática clínica no tratamento das “patologias do vazio”;\nAuxilia instituições de ensino a identificar grupos que necessitam de suporte psicológico (ex: mulheres e ansiedade);\nFornece dados sobre a subjetividade do jovem brasileiro em relação a padrões globais."
   }
 ]
