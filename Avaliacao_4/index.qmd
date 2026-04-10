@@ -42,7 +42,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ## Objetivos:
 
-::: box-yellow
+::: box-orange
 
 - Identificar as características narcísicas de personalidade em jovens adultos universitários e verificar suas associações com:
   - Autoestima;
@@ -54,7 +54,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ## Amostra:
 
-::: box-blue
+::: box-gray
 - 350 jovens adultos universitários (35,4% homens, 64,6% mulheres).
 - 18 a 30 anos;
 - Cursos das áreas:
@@ -67,13 +67,13 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ## Instrumentos:
 
-| Instrumento                               | O que mede                                            | Interpretação do escore                        | Alfa |
-|--------------------------------------------|--------------------------------------------------------|-------------------------------------------------|-------|
-| BAI- Inventário de Ansiedade de Beck       | Intensidade de sintomas de ansiedade                   | Maior escore   $\rightarrow$ maior ansiedade    | 0,88  |
-| BHS-Escala de Desesperança de Beck         | Grau de desesperança / pessimismo em relação ao futuro | Maior escore   $\rightarrow$ maior desesperança | 0,81  |
-| BDI-II-Inventário de Depressão de Beck-II  | intensidade de sintomas depressivos                    | Maior escore   $\rightarrow$ maior autoestima   | 0,81  |
-| Rosenberg-Escala de Rosenberg              | autoestima global                                      | Maior escore   $\rightarrow$ maior autoestima   | 0,73  |
-| NPI-Inventário de Personalidade Narcisista | Traços de personalidade narcisista                     | Maior escore   $\rightarrow$ maior narcisismo   | 0,79  |
+| Instrumento | O que mede                  | Direção do escore | $\boldsymbol{\alpha}$ |
+|:-----------:|:---------------------------:|:----------------:|:----:|
+| <b>BAI</b><br><span style="font-size: 0.5em; color: #64748b;">Inventário de Ansiedade de Beck</span> | Intensidade da **ansiedade**| $\uparrow$ escore = $\uparrow$ ansiedade | 0,88 |
+| <b>BHS</b><br><span style="font-size: 0.5em; color: #64748b;">Escala de Desesperança de Beck</span> | Grau de **desesperança**    | <span style="font-size: 0.9em;">$\uparrow$ escore = $\uparrow$ desesperança<span> | 0,81 |
+| <b>BDI-II</b><br><span style="font-size: 0.5em; color: #64748b;">Inventário de Depressão de Beck-II</span> | Intensidade da **depressão**| $\uparrow$ escore = $\uparrow$ depressão | 0,81 |
+| <b>Rosenberg</b><br><span style="font-size: 0.5em; color: #64748b;">Escala de Rosenberg</span> | **Autoestima** global       | $\uparrow$ escore = $\uparrow$ autoestima | 0,73 |
+| <b>NPI</b><br><span style="font-size: 0.5em; color: #64748b;">Inventário de Personalidade Narcisista</span> | Traços de **Narcisismo**    | $\uparrow$ escore = $\uparrow$ narcisismo | 0,79 |
 
 #  Metodologia estatística:
 
@@ -118,14 +118,30 @@ Psicologia Clinica (PUC-Rio), 2014
 ::::
 
 ## Testes aplicados:
+
 ::: box-blue
-- Teste T;
-- Correlações de Pearson;
-- Anova.
+
+- Teste t de Student
 
 :::
 
-# Tabelas:
+<br>
+
+::: box-gray
+
+- Correlação de Pearson
+
+:::
+
+<br>
+
+::: box-orange
+
+- ANOVA
+
+:::
+
+# Resultados:
 
 ## Tabela 1:
 
@@ -141,45 +157,155 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ## Tabela 3:
 
-::: {style="max-height: 600px; overflow-y: auto;sf"}
+::: {style="max-height: 600px; overflow-y: auto;"}
 
 ![](media/tabela3.png){fig-align="center" width=100%}
 
 :::
 
-## Resultados:
+## Resultados: {style="font-size: 0.75em;"}
 
 ::: box-blue
 
-- Narcisismo brasileiro (12,60) é inferior ao de jovens americanos (17,62);
+- **Homens** com maior **narcisismo**;
 
-- Narcisismo associado a dimensões saudáveis: liderança, autoridade e autossuficiência;
-
-- Não houve correlação entre narcisismo e sintomas patológicos de ansiedade ou depressão.
+- **Mulheres** com maior **autoestima**, **ansiedade** e **depressão**;
 
 :::
+
+<br>
+
+:::: columns
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="40%"}
+
+::: box-gray
+
+- Correlações significativas **positivas**: 
+
+  - Narcisismo x Autoestima;
+  - Ansiedade x Depressão;
+  - Depressão x Desesperança;
+  - Desesperança x Autoestima. **\***
+
+:::
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="40%"}
+
+::: box-gray
+
+- Correlações significativas **negativas**:
+  - Autoestima x Depressão;
+  - Autoestima x Ansiedade;
+  - Ansiedade x Depressão.
+
+:::
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::::
+
+<br>
+
+::: box-orange
+
+- **Narcisismo** por curso: **Maior** média em **Exatas** e menor em Humanas
+
+- **Autoestima** por curso: **Maior** média em **Humanas** e menor em Exatas
+
+::: 
 
 # Conclusão:
 
 ## Principais Achados:
 
-::: box-blue
+:::: columns
 
-- O narcisismo nesta amostra é predominantemente não-patológico e adaptativo;
+::: {.column width="38%" }
 
-- Mulheres apresentam maior vulnerabilidade emocional (ansiedade e depressão);
+::: box-gray
 
-- A escolha do curso reflete a personalidade: Humanas busca cooperação; Exatas, aspectos mais competitivos
+- O narcisismo nesta amostra é predominantemente **não patológico** e apresenta caráter **adaptativo**;
 
 :::
+
+<br>
+
+::: box-blue
+
+- Mulheres apresentam maior **vulnerabilidade emocional** (maiores níveis de ansiedade e depressão);
+
+::: 
+
+:::
+
+::: {.column width="2%"}
+
+::: 
+
+::: {.column width="60%"}
+
+::: box-gray
+
+- Observou-se um **padrão de correlação entre variáveis emocionais**, com associação entre ansiedade, depressão e desesperança;
+
+::: 
+
+<br>
+
+::: box-orange
+
+- A escolha do curso parece refletir características de personalidade:
+  - **Humanas**: maior cooperação
+  
+  ($\uparrow$ autoestima; $\downarrow$ narcisismo);
+  
+  - **Exatas**: traços mais competitivos
+  
+  ($\downarrow$ autoestima; $\uparrow$ narcisismo).
+
+:::
+
+::: 
+
+::::
+
 
 ## Importância do Teste de Associação:
 
 ::: box-blue
 
-- Validou que o narcisismo pode estar ligado a um maior valor próprio e assertividade;
+- **Teste t de Student**: Identificou diferenças entre os sexos  
 
-- Permitiu distinguir cientificamente traços de personalidade de sintomas clínicos.
+:::
+
+<br>
+
+::: box-gray
+
+- **Correlação de Pearson**: Evidenciou associações entre variáveis emocionais  
+
+:::
+
+<br>
+
+::: box-orange
+
+- **ANOVA**: Diferenciou perfis por área de curso  
 
 :::
 
@@ -195,4 +321,4 @@ Psicologia Clinica (PUC-Rio), 2014
 
 :::
 
-# Fim. {.unnumbered}
+# Fim. {.unnumbered .final-slide }

@@ -249,7 +249,7 @@
     "href": "Avaliacao_4/index.html#instrumentos",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "1.5 Instrumentos:",
-    "text": "1.5 Instrumentos:\n\n\n\n\n\n\n\n\n\nInstrumento\nO que mede\nInterpretação do escore\nAlfa\n\n\n\n\nBAI- Inventário de Ansiedade de Beck\nIntensidade de sintomas de ansiedade\nMaior escore \\(\\rightarrow\\) maior ansiedade\n0,88\n\n\nBHS-Escala de Desesperança de Beck\nGrau de desesperança / pessimismo em relação ao futuro\nMaior escore \\(\\rightarrow\\) maior desesperança\n0,81\n\n\nBDI-II-Inventário de Depressão de Beck-II\nintensidade de sintomas depressivos\nMaior escore \\(\\rightarrow\\) maior autoestima\n0,81\n\n\nRosenberg-Escala de Rosenberg\nautoestima global\nMaior escore \\(\\rightarrow\\) maior autoestima\n0,73\n\n\nNPI-Inventário de Personalidade Narcisista\nTraços de personalidade narcisista\nMaior escore \\(\\rightarrow\\) maior narcisismo\n0,79"
+    "text": "1.5 Instrumentos:\n\n\n\n\n\n\n\n\n\nInstrumento\nO que mede\nDireção do escore\n\\(\\boldsymbol{\\alpha}\\)\n\n\n\n\nBAIInventário de Ansiedade de Beck\nIntensidade da ansiedade\n\\(\\uparrow\\) escore = \\(\\uparrow\\) ansiedade\n0,88\n\n\nBHSEscala de Desesperança de Beck\nGrau de desesperança\n\\(\\uparrow\\) escore = \\(\\uparrow\\) desesperança\n0,81\n\n\nBDI-IIInventário de Depressão de Beck-II\nIntensidade da depressão\n\\(\\uparrow\\) escore = \\(\\uparrow\\) depressão\n0,81\n\n\nRosenbergEscala de Rosenberg\nAutoestima global\n\\(\\uparrow\\) escore = \\(\\uparrow\\) autoestima\n0,73\n\n\nNPIInventário de Personalidade Narcisista\nTraços de Narcisismo\n\\(\\uparrow\\) escore = \\(\\uparrow\\) narcisismo\n0,79"
   },
   {
     "objectID": "Avaliacao_4/index.html#variáveis-analisadas",
@@ -263,7 +263,7 @@
     "href": "Avaliacao_4/index.html#testes-aplicados",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "2.2 Testes aplicados:",
-    "text": "2.2 Testes aplicados:\n\n\nTeste T;\nCorrelações de Pearson;\nAnova."
+    "text": "2.2 Testes aplicados:\n\n\nTeste t de Student\n\n\n\n\n\nCorrelação de Pearson\n\n\n\n\n\nANOVA"
   },
   {
     "objectID": "Avaliacao_4/index.html#tabela-1",
@@ -291,21 +291,21 @@
     "href": "Avaliacao_4/index.html#resultados",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "3.4 Resultados:",
-    "text": "3.4 Resultados:\n\n\nNarcisismo brasileiro (12,60) é inferior ao de jovens americanos (17,62);\nNarcisismo associado a dimensões saudáveis: liderança, autoridade e autossuficiência;\nNão houve correlação entre narcisismo e sintomas patológicos de ansiedade ou depressão."
+    "text": "3.4 Resultados:\n\n\nHomens com maior narcisismo;\nMulheres com maior autoestima, ansiedade e depressão;\n\n\n\n\n\n\n\n\n\nCorrelações significativas positivas:\n\nNarcisismo x Autoestima;\nAnsiedade x Depressão;\nDepressão x Desesperança;\nDesesperança x Autoestima. *\n\n\n\n\n\n\n\n\nCorrelações significativas negativas:\n\nAutoestima x Depressão;\nAutoestima x Ansiedade;\nAnsiedade x Depressão.\n\n\n\n\n\n\n\n\n\nNarcisismo por curso: Maior média em Exatas e menor em Humanas\nAutoestima por curso: Maior média em Humanas e menor em Exatas"
   },
   {
     "objectID": "Avaliacao_4/index.html#principais-achados",
     "href": "Avaliacao_4/index.html#principais-achados",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "4.1 Principais Achados:",
-    "text": "4.1 Principais Achados:\n\n\nO narcisismo nesta amostra é predominantemente não-patológico e adaptativo;\nMulheres apresentam maior vulnerabilidade emocional (ansiedade e depressão);\nA escolha do curso reflete a personalidade: Humanas busca cooperação; Exatas, aspectos mais competitivos"
+    "text": "4.1 Principais Achados:\n\n\n\n\nO narcisismo nesta amostra é predominantemente não patológico e apresenta caráter adaptativo;\n\n\n\n\n\nMulheres apresentam maior vulnerabilidade emocional (maiores níveis de ansiedade e depressão);\n\n\n\n\n\n\n\nObservou-se um padrão de correlação entre variáveis emocionais, com associação entre ansiedade, depressão e desesperança;\n\n\n\n\n\nA escolha do curso parece refletir características de personalidade:\n\nHumanas: maior cooperação\n\n(\\(\\uparrow\\) autoestima; \\(\\downarrow\\) narcisismo);\n\nExatas: traços mais competitivos\n\n(\\(\\downarrow\\) autoestima; \\(\\uparrow\\) narcisismo)."
   },
   {
     "objectID": "Avaliacao_4/index.html#importância-do-teste-de-associação",
     "href": "Avaliacao_4/index.html#importância-do-teste-de-associação",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "4.2 Importância do Teste de Associação:",
-    "text": "4.2 Importância do Teste de Associação:\n\n\nValidou que o narcisismo pode estar ligado a um maior valor próprio e assertividade;\nPermitiu distinguir cientificamente traços de personalidade de sintomas clínicos."
+    "text": "4.2 Importância do Teste de Associação:\n\n\nTeste t de Student: Identificou diferenças entre os sexos\n\n\n\n\n\nCorrelação de Pearson: Evidenciou associações entre variáveis emocionais\n\n\n\n\n\nANOVA: Diferenciou perfis por área de curso"
   },
   {
     "objectID": "Avaliacao_4/index.html#contribuição-para-a-sociedade",
@@ -313,5 +313,12 @@
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "4.3 Contribuição para a Sociedade:",
     "text": "4.3 Contribuição para a Sociedade:\n\n\nOferece subsídios para a prática clínica no tratamento das “patologias do vazio”;\nAuxilia instituições de ensino a identificar grupos que necessitam de suporte psicológico (ex: mulheres e ansiedade);\nFornece dados sobre a subjetividade do jovem brasileiro em relação a padrões globais."
+  },
+  {
+    "objectID": "Avaliacao_4/index.html#resultados-1",
+    "href": "Avaliacao_4/index.html#resultados-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.4 Resultados:",
+    "text": "3.4 Resultados:\n\n\nHomens com maior narcisismo;\nMulheres com maior autoestima, ansiedade e depressão;\n\n\n\n\n\n\n\n\n\nCorrelações significativas positivas:\n\nNarcisismo x Autoestima;\nAnsiedade x Depressão;\nDepressão x Desesperança;\nDesesperança x Autoestima. *\n\n\n\n\n\n\n\n\nCorrelações significativas negativas:\n\nAutoestima x Depressão;\nAutoestima x Ansiedade;\nAnsiedade x Depressão.\n\n\n\n\n\n\n\n\n\nNarcisismo por curso: Maior média em Exatas e menor em Humanas\nAutoestima por curso: Maior média em Humanas e menor em Exatas"
   }
 ]

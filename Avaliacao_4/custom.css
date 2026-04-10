@@ -3,8 +3,8 @@
 .reveal {
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 30px;
-  background-color: #f5f9ff; /* fundo azul bem claro */
-  color: #0f172a;
+  background-color: #f8fafc; /* mais neutro */
+  color: #1e293b; /* azul grafite */
 }
 
 .reveal .slides section li{
@@ -19,19 +19,40 @@
 .reveal h1 {
   font-size: 2.4em;
   font-weight: 800;
-  color: #1d4ed8; /* azul forte */
+  color: #1e293b;
 }
 
 .reveal h2 {
   font-size: 1.7em;
   font-weight: 700;
-  color: #1d4ed8;
+  color: #1e293b;
 }
 
 .reveal h3 {
   font-size: 1.3em;
   font-weight: 600;
-  color: #1d4ed8;
+  color: #334155;
+}
+
+/* ===== Slide de título ===== */
+.reveal .title-slide {
+  background: linear-gradient(
+      135deg,
+      rgba(30, 41, 59, 0.75),   /* azul escuro */
+      rgba(51, 65, 85, 0.65),   /* azul médio */
+      rgba(194, 65, 12, 0.55)   /* laranja queimado */
+    ),
+    url("media/transicao.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.reveal .title-slide h1,
+.reveal .title-slide h2,
+.reveal .title-slide p {
+  color: white;
 }
 
 /* ===== Texto ===== */
@@ -42,29 +63,28 @@
 
 /* ===== Listas ===== */
 .reveal ul li::marker {
-  color: #facc15; /* amarelo */
+  color: #c2410c; /* laranja queimado */
 }
 
-/* ===== Caixas coloridas ===== */
+/* ===== Caixas ===== */
 .box-blue {
-  border-left: 8px solid #1d4ed8;
-  background: #eff6ff;
+  border-left: 8px solid #334155;
+  background: #f1f5f9;
   padding: 0.7em;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.box-yellow {
-  border-left: 8px solid #facc15;
-  background: #fefce8;
+.box-orange {
+  border-left: 8px solid #f59e0b;
+  background: #fffbeb;
   padding: 0.7em;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* (opcional manter outras cores mais neutras) */
 .box-gray {
-  border-left: 8px solid #94a3b8;
+  border-left: 8px solid #64748b;
   background: #f1f5f9;
   padding: 0.7em;
   border-radius: 8px;
@@ -73,12 +93,12 @@
 
 /* ===== Destaques ===== */
 .highlight-blue {
-  color: #1d4ed8;
+  color: #334155;
   font-weight: 700;
 }
 
 .highlight-yellow {
-  color: #eab308;
+  color: #c2410c; /* troquei amarelo por laranja */
   font-weight: 700;
 }
 
@@ -97,14 +117,31 @@
   color: #64748b;
 }
 
-/* ===== Apêndices ===== */
-/* Todas as linhas (amarelo leve) */
-.tabela-estilo table tbody tr {
-  background-color: #fefce8; /* amarelo bem suave */
+/* ===== Slide Final ===== */
+.reveal .final-slide {
+  background: linear-gradient(
+      135deg,
+      rgba(30, 41, 59, 0.75),
+      rgba(51, 65, 85, 0.65),
+      rgba(194, 65, 12, 0.55)
+    ),
+    url("media/final.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
-/* Linhas 3 e 4 (azul leve) */
-.tabela-estilo table tbody tr:nth-child(3),
-.tabela-estilo table tbody tr:nth-child(4) {
-  background-color: #eff6ff; /* azul bem suave */
+.reveal .final-slide h1,
+.reveal .final-slide h2,
+.reveal .final-slide p {
+  color: white;
+}
+
+/* ===== Cabeçalho da tabela ===== */
+.reveal table thead th {
+  background-color: #334155; /* azul petróleo */
+  color: #ffffff;            /* texto branco */
+  font-weight: 700;
+  border-bottom: 2px solid #c2410c; /* detalhe laranja */
 }
