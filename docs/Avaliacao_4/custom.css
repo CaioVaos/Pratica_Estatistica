@@ -66,6 +66,11 @@
   color: #c2410c; /* laranja queimado */
 }
 
+/* ===== Listas numeradas ===== */
+.reveal ol li::marker {
+  color: #c2410c; /* mesma cor do bullet */
+}
+
 /* ===== Caixas ===== */
 .box-blue {
   border-left: 8px solid #334155;

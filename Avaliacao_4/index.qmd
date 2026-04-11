@@ -100,7 +100,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: box-blue
 
-- **Fatores de exposição:**
+- **Variáveis associadas:**
 
 | Variável  | Tipo                 |
 |-----------|----------------------|
@@ -117,11 +117,18 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::::
 
-## Testes aplicados:
+## Testes aplicados: {style="font-size: 0.8em;"}
 
 ::: box-blue
 
 - **Teste t de Student**
+
+$$
+\begin{cases}
+H_0: \mu_1 = \mu_2 \\
+H_1: \mu_1 \neq \mu_2
+\end{cases}
+$$
 
 :::
 
@@ -137,7 +144,14 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: box-orange
 
-- **ANOVA**
+- **ANOVA (com pós-teste de Tukey)**
+
+$$
+\begin{cases}
+H_0: \mu_1 = \mu_2 = \cdots = \mu_k \quad \text{(todas as médias iguais)}\\ 
+H_1: \exists\, i,j \text{ tal que } \mu_i \neq \mu_j \quad \text{(pelo menos uma média difere)}
+\end{cases}
+$$
 
 :::
 
@@ -177,9 +191,9 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: box-blue
 
-- **Homens** com maior **narcisismo**;
+- **Homens** com **maior narcisismo**;
 
-- **Mulheres** com maior **autoestima**, **ansiedade** e **depressão**;
+- **Mulheres** com **maior autoestima**, **ansiedade** e **depressão**;
 
 :::
 
@@ -249,11 +263,11 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: box-gray
 
-- O narcisismo nesta amostra é predominantemente **não patológico** e apresenta caráter **adaptativo**;
+1. O narcisismo nesta amostra é predominantemente **não patológico** e apresenta caráter **adaptativo**;
 
 <br>
 
-- Observou-se um **padrão de correlação entre variáveis emocionais**, com associação entre ansiedade, depressão e desesperança;
+2. Observou-se um **padrão de correlação entre variáveis emocionais**, com associação entre ansiedade, depressão e desesperança;
 
 :::
 
@@ -267,7 +281,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: box-blue
 
-- Mulheres apresentam maior **vulnerabilidade emocional** (maiores níveis de ansiedade e depressão);
+1. Mulheres apresentam maior **vulnerabilidade emocional** (maiores níveis de ansiedade e depressão);
 
 ::: 
 
@@ -275,7 +289,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: box-orange
 
-- A escolha do curso parece refletir características de personalidade:
+4. A escolha do curso parece refletir características de personalidade:
   - **Humanas**: mais cooperativos; <span style="font-size: 0.6em;">($\uparrow$ autoestima; $\downarrow$ narcisismo)</span>
   
   - **Exatas**: mais competitivos. <span style="font-size: 0.6em;">($\downarrow$ autoestima; $\uparrow$ narcisismo)</span>
