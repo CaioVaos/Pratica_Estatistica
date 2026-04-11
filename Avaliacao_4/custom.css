@@ -145,3 +145,40 @@
   font-weight: 700;
   border-bottom: 2px solid #c2410c; /* detalhe laranja */
 }
+
+/* ===== TABSET ===== */
+
+/* container das abas */
+.reveal .panel-tabset [role="tablist"] {
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+/* botões (abas) */
+.reveal .panel-tabset [role="tab"] {
+  font-size: 0.65em;              /* 🔽 menor */
+  padding: 6px 12px;              /* 🔽 mais compacto */
+  border-radius: 6px;
+  background: #e2e8f0;            /* cinza claro */
+  color: #334155;                 /* azul grafite */
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* hover */
+.reveal .panel-tabset [role="tab"]:hover {
+  background: #cbd5f5;
+  color: #1e293b;
+}
+
+/* aba ativa */
+.reveal .panel-tabset [role="tab"][aria-selected="true"] {
+  background: #c2410c;            /* 🔥 laranja do tema */
+  color: white;
+  font-weight: 600;
+}
+
+/* linha inferior opcional */
+.reveal .panel-tabset [role="tablist"] {
+  border-bottom: 2px solid #e2e8f0;
+}

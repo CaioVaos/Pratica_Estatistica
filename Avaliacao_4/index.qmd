@@ -143,7 +143,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 # Resultados:
 
-## Tabela 1:
+## T-teste:
 
 ::: {style="max-height: 600px; overflow-y: auto;"}
 
@@ -151,15 +151,25 @@ Psicologia Clinica (PUC-Rio), 2014
 
 :::
 
-## Tabela 2: 
+## Pearson: 
 
 ![](media/tabela2.jpg){fig-align="center" width=100%}
 
-## Tabela 3:
+## ANOVA:
 
-::: {style="max-height: 600px; overflow-y: auto;"}
+::: {.panel-tabset}
+
+## Tabela
+
+::: {style="max-height: 525px; overflow-y: auto;"}
 
 ![](media/tabela3.jpg){fig-align="center" width=100%}
+
+:::
+
+## Figura
+
+![](media/figura1.jpg){fig-align="center" height=500px}
 
 :::
 
