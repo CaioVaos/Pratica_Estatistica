@@ -187,3 +187,12 @@
 .reveal .panel-tabset [role="tablist"] {
   border-bottom: 2px solid #e2e8f0;
 }
+
+/* Cor gradiente subtitle */
+.grad-subtitle {
+  background: linear-gradient(to right, #1f2937, #c2410c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

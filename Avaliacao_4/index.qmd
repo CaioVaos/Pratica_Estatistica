@@ -1,6 +1,6 @@
 ---
 title: "<span style='color: #FFC107;'>PRÁTICA ESTATÍSTICA II</span>"
-subtitle: "**ATIVIDADE AVALIATIVA 4**"
+subtitle: "<span class='grad-subtitle'>**ATIVIDADE AVALIATIVA 4**</span>"
 author: "Caio Salviano (<caiosalviano@id.uff.br>) <br> Milena Labre (<milenalabre@id.uff.br>)"
 date: 2026-04-13
 date-format: "DD/MM/YYYY"
@@ -281,7 +281,7 @@ $$
 
 ::: box-blue
 
-1. Mulheres apresentam maior **vulnerabilidade emocional** (maiores níveis de ansiedade e depressão);
+3. Mulheres apresentam maior **vulnerabilidade emocional** (maiores níveis de ansiedade e depressão);
 
 ::: 
 
