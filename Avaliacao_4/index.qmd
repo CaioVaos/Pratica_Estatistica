@@ -121,7 +121,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: box-blue
 
-- Teste t de Student
+- **Teste t de Student**
 
 :::
 
@@ -129,7 +129,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: box-gray
 
-- Correlação de Pearson
+- **Correlação de Pearson**
 
 :::
 
@@ -137,7 +137,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: box-orange
 
-- ANOVA
+- **ANOVA**
 
 :::
 
@@ -147,19 +147,19 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: {style="max-height: 600px; overflow-y: auto;"}
 
-![](media/tabela1.png){fig-align="center" width=100%}
+![](media/tabela1.jpg){fig-align="center" width=100%}
 
 :::
 
 ## Tabela 2: 
 
-![](media/tabela2.png){fig-align="center" width=100%}
+![](media/tabela2.jpg){fig-align="center" width=100%}
 
 ## Tabela 3:
 
 ::: {style="max-height: 600px; overflow-y: auto;"}
 
-![](media/tabela3.png){fig-align="center" width=100%}
+![](media/tabela3.jpg){fig-align="center" width=100%}
 
 :::
 
@@ -241,15 +241,11 @@ Psicologia Clinica (PUC-Rio), 2014
 
 - O narcisismo nesta amostra é predominantemente **não patológico** e apresenta caráter **adaptativo**;
 
-:::
-
 <br>
 
-::: box-blue
+- Observou-se um **padrão de correlação entre variáveis emocionais**, com associação entre ansiedade, depressão e desesperança;
 
-- Mulheres apresentam maior **vulnerabilidade emocional** (maiores níveis de ansiedade e depressão);
-
-::: 
+:::
 
 :::
 
@@ -259,9 +255,9 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: {.column width="60%"}
 
-::: box-gray
+::: box-blue
 
-- Observou-se um **padrão de correlação entre variáveis emocionais**, com associação entre ansiedade, depressão e desesperança;
+- Mulheres apresentam maior **vulnerabilidade emocional** (maiores níveis de ansiedade e depressão);
 
 ::: 
 
@@ -270,13 +266,9 @@ Psicologia Clinica (PUC-Rio), 2014
 ::: box-orange
 
 - A escolha do curso parece refletir características de personalidade:
-  - **Humanas**: maior cooperação
+  - **Humanas**: mais cooperativos; <span style="font-size: 0.6em;">($\uparrow$ autoestima; $\downarrow$ narcisismo)</span>
   
-  ($\uparrow$ autoestima; $\downarrow$ narcisismo);
-  
-  - **Exatas**: traços mais competitivos
-  
-  ($\downarrow$ autoestima; $\uparrow$ narcisismo).
+  - **Exatas**: mais competitivos. <span style="font-size: 0.6em;">($\downarrow$ autoestima; $\uparrow$ narcisismo)</span>
 
 :::
 
