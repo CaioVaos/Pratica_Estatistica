@@ -84,7 +84,7 @@ Psicologia Clinica (PUC-Rio), 2014
 ::: {.column width="45%"}
 
 ::: box-blue
-- **Desfecho:**
+- **Variável de interesse:**
   - Escore de narcisismo (NPI)
   - Variável quantitativa continua
   
@@ -159,7 +159,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ::: {.panel-tabset}
 
-## Tabela
+### Tabela
 
 ::: {style="max-height: 525px; overflow-y: auto;"}
 
@@ -167,7 +167,7 @@ Psicologia Clinica (PUC-Rio), 2014
 
 :::
 
-## Figura
+### Figura
 
 ![](media/figura1.jpg){fig-align="center" height=500px}
 
