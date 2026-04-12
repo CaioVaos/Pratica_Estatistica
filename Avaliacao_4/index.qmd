@@ -33,7 +33,7 @@ Psicologia Clinica (PUC-Rio), 2014
 ## Motivação:
 
 ::: box-blue
-- Transformações da sociedadede contemporânea que impactam a subjetividade:
+- Transformações da sociedade contemporânea que impactam a subjetividade:
   - Processo de globalização, avanços na industrialização, dependência da informática e da realidade virtual.
  
 - Aumentos de quadros associados a narcisismo, depressão, ansiedade, desesperança
@@ -86,7 +86,7 @@ Psicologia Clinica (PUC-Rio), 2014
 ::: box-blue
 - **Variável de interesse:**
   - Escore de narcisismo (NPI)
-  - Variável quantitativa continua
+  - Variável quantitativa contínua
   
 :::
   
@@ -191,9 +191,11 @@ $$
 
 ::: box-blue
 
-- **Homens** com **maior narcisismo**;
+- **Homens**: com **maior narcisismo** <span style="font-size: 0.7em;">(NPI; t, p < 0,001)</span>;
 
-- **Mulheres** com **maior autoestima**, **ansiedade** e **depressão**;
+- **Mulheres**: com **maior autoestima**<span style="font-size: 0.7em;">(Rosenberg; t, p = 0,01)</span>,
+**ansiedade** <span style="font-size: 0.7em;">(BAI; t, p < 0,001)</span> e 
+**depressão** <span style="font-size: 0.7em;">(BDI; t, p = 0,008)</span>
 
 :::
 
@@ -247,9 +249,9 @@ $$
 
 ::: box-orange
 
-- **Narcisismo** por curso: **Maior** média em **Exatas** e menor em Humanas
+- **Narcisismo** por curso: **Maior** média em **Exatas** e menor em Humanas <span style="font-size: 0.7em;">(NPI; F, p < 0,001)</span>
 
-- **Autoestima** por curso: **Maior** média em **Humanas** e menor em Exatas
+- **Autoestima** por curso: **Maior** média em **Humanas** e menor em Exatas <span style="font-size: 0.7em;">(Rosenberg; F, p < 0,001)</span>
 
 ::: 
 
