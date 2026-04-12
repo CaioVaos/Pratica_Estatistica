@@ -67,13 +67,13 @@ Psicologia Clinica (PUC-Rio), 2014
 
 ## Instrumentos:
 
-| Instrumento | O que mede                  | Direção do escore | $\boldsymbol{\alpha}$ |
-|:-----------:|:---------------------------:|:----------------:|:----:|
-| <b>BAI</b><br><span style="font-size: 0.5em; color: #64748b;">Inventário de Ansiedade de Beck</span> | Intensidade da **ansiedade**| $\uparrow$ escore = $\uparrow$ ansiedade | 0,88 |
-| <b>BHS</b><br><span style="font-size: 0.5em; color: #64748b;">Escala de Desesperança de Beck</span> | Grau de **desesperança**    | <span style="font-size: 0.9em;">$\uparrow$ escore = $\uparrow$ desesperança<span> | 0,81 |
-| <b>BDI-II</b><br><span style="font-size: 0.5em; color: #64748b;">Inventário de Depressão de Beck-II</span> | Intensidade da **depressão**| $\uparrow$ escore = $\uparrow$ depressão | 0,81 |
-| <b>Rosenberg</b><br><span style="font-size: 0.5em; color: #64748b;">Escala de Rosenberg</span> | **Autoestima** global       | $\uparrow$ escore = $\uparrow$ autoestima | 0,73 |
-| <b>NPI</b><br><span style="font-size: 0.5em; color: #64748b;">Inventário de Personalidade Narcisista</span> | Traços de **Narcisismo**    | $\uparrow$ escore = $\uparrow$ narcisismo | 0,79 |
+| Instrumento | O que mede                  | Direção do escore |
+|:-----------:|:---------------------------:|:----------------:|
+| <b>BAI</b><br><span style="font-size: 0.5em; color: #64748b;">Inventário de Ansiedade de Beck</span> | Intensidade da **ansiedade**| $\uparrow$ escore = $\uparrow$ ansiedade |
+| <b>BHS</b><br><span style="font-size: 0.5em; color: #64748b;">Escala de Desesperança de Beck</span> | Grau de **desesperança**    | $\uparrow$ escore = $\uparrow$ desesperança |
+| <b>BDI-II</b><br><span style="font-size: 0.5em; color: #64748b;">Inventário de Depressão de Beck-II</span> | Intensidade da **depressão**| $\uparrow$ escore = $\uparrow$ depressão |
+| <b>Rosenberg</b><br><span style="font-size: 0.5em; color: #64748b;">Escala de Rosenberg</span> | **Autoestima** global       | $\uparrow$ escore = $\uparrow$ autoestima |
+| <b>NPI</b><br><span style="font-size: 0.5em; color: #64748b;">Inventário de Personalidade Narcisista</span> | Traços de **Narcisismo**    | $\uparrow$ escore = $\uparrow$ narcisismo |
 
 #  Metodologia estatística:
 
