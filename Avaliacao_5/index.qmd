@@ -1,0 +1,275 @@
+---
+title: "<span style='color: #FFC107;'>ANOVA de Welch e Games-Howell</span>"
+subtitle: "<span class='grad-subtitle'>**ATIVIDADE AVALIATIVA 5**</span>"
+author: "Caio Salviano (<caiosalviano@id.uff.br>) <br> Milena Labre (<milenalabre@id.uff.br>)"
+date: 2026-04-27
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: custom.css
+    slide-number: true
+    incremental: false
+    transition: slide
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    number-sections: true
+    title-slide-attributes:
+      data-background-image: "media/capa.jpeg"
+      data-background-size: cover
+---
+
+# Contextualização: 
+
+## ANOVA Clássica
+
+:::: columns
+
+::: {.column width="55%"}
+
+::: box-blue
+
+**Hipótese:**
+
+$$
+\begin{cases}
+H_0: \mu_1 = \mu_2 = \cdots = \mu_k \\ 
+H_1: \exists\, i,j \text{ tal que } \mu_i \neq \mu_j
+\end{cases}
+$$
+
+**Estatística de teste:**
+
+$$
+F =
+\frac{QM_{Entre}}{QM_{Dentro}}
+=
+\frac{\frac{SQ_{Entre}}{k-1}}
+{\frac{SQ_{Dentro}}{N-k}}
+$$
+
+:::
+
+:::
+
+::: {.column width="45%"}
+
+::: box-yellow
+**Suposições:**
+
+- Independência  
+- Normalidade  
+- **Homogeneidade das variâncias**
+
+$$
+\sigma_1^2 = \cdots = \sigma_k^2
+$$
+
+:::
+
+:::
+
+::::
+
+## Homogeneidade na ANOVA clássica:
+
+:::: columns
+
+::: {.column width="45%"}
+
+::: box-blue
+
+**Onde é usada?**
+
+No denominador:
+
+$$
+QM_{\text{Dentro}}
+$$
+
+- Estima uma variância comum
+
+:::
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="50%"}
+
+::: box-yellow
+
+**Problema:**
+
+Se:
+
+$$
+\sigma_i^2 \neq \sigma_j^2
+$$
+
+- QM dentro não representa bem o erro  
+- A estatística F perde validade  
+
+:::
+
+:::
+
+::::
+
+::: box-orange
+
+### Teste de Tukey {.unnumbered}
+
+$$
+q_{ij} =
+\frac{\bar{Y}_i - \bar{Y}_j}
+{\sqrt{\frac{QM_{\text{Dentro}}}{n}}}
+$$
+
+- Depende de variância comum
+
+:::
+
+# ANOVA De Welch:
+
+## Ideia:
+
+- Substituir variância comum por variâncias específicas: $w_i = \frac{n_i}{s_i^2}$
+
+<br>
+
+:::: columns
+
+::: {.column width="55%"}
+
+::: box-blue
+
+### Estatística {.unnumbered}
+
+$$
+F_W =
+\frac{\sum w_i (\bar{Y}_i - \bar{Y}_w)^2/(k-1)}
+{1 + \frac{2(k-2)}{k^2-1}
+\sum \frac{1}{n_i - 1}
+\left(1 - \frac{w_i}{\sum w_i}\right)^2}
+$$
+
+:::
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="40%"}
+
+::: box-yellow
+
+### Interpretação {.unnumbered}
+
+- Numerador: variação entre grupos (ponderada)  
+- Denominador: correção da heterogeneidade  
+- Estatística robusta
+
+:::
+
+:::
+
+::::
+
+# Teste de Games-Howell:
+
+## Teste de Games-Howell
+
+:::: columns
+
+::: {.column width="45%"}
+
+::: box-blue
+
+**Problema do Tukey**
+
+$$
+\sqrt{QM_{\text{Dentro}}}
+$$
+
+- mesma variância para todos os pares 
+
+:::
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+::: box-yellow
+
+**Estatística**
+
+$$
+q_{ij} =
+\frac{\bar{Y}_i - \bar{Y}_j}
+{\sqrt{\frac{s_i^2}{n_i} + \frac{s_j^2}{n_j}}}
+$$
+
+:::
+
+:::
+
+::::
+
+:::: columns
+
+::: {.column width="45%"}
+
+**Interpretação**
+
+- Cada comparação usa sua própria variância  
+- Não há variância comum  
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+**Lógica estatística**
+
+- ANOVA → variância única  
+- Welch → variância ponderada  
+- Games-Howell → variância por comparação  
+
+:::
+
+::::
+
+# Referências
+
+## Referências
+
+::: box-blue
+
+- WELCH, B. L. (1951). *On the comparison of several mean values: An alternative approach*. Biometrika, 38(3/4), 330–336.  
+
+- GAMES, P. A.; HOWELL, J. F. (1976). *Pairwise multiple comparison procedures with unequal n's and/or variances: A Monte Carlo study*. Journal of Educational Statistics, 1(2), 113–125.  
+
+- MONTGOMERY, D. C. (2019). *Design and Analysis of Experiments*. 10th ed. New York: Wiley.  
+
+- KUTNER, M. H.; NACHTSHEIM, C. J.; NETER, J.; LI, W. (2005). *Applied Linear Statistical Models*. 5th ed. McGraw-Hill.  
+
+- FIELD, A. (2013). *Discovering Statistics Using IBM SPSS Statistics*. 4th ed. Sage Publications.  
+
+:::
+
+# Fim {.unnumbered}

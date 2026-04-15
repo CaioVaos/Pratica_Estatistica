@@ -59,7 +59,7 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 ::: {.g-col-4}
 #### 📊 Avaliação 5
 
-[Em breve]{.btn .btn-secondary}
+[Vizualizar](Avaliacao_5/){.btn .btn-primary}
 :::
 
 ::: {.g-col-4}

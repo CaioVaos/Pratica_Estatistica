@@ -11,7 +11,7 @@
     "href": "index.html#avaliações",
     "title": "Prática Estatística II",
     "section": "🎓 Avaliações",
-    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nVisualizar\n\n\n\n\n📊 Avaliação 4\nVizualizar\n\n\n📊 Avaliação 5\nEm breve\n\n\n📊 Avaliação 6\nEm breve"
+    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nVisualizar\n\n\n\n\n📊 Avaliação 4\nVizualizar\n\n\n📊 Avaliação 5\nVizualizar\n\n\n📊 Avaliação 6\nEm breve"
   },
   {
     "objectID": "Avaliacao_2/index.html#objetivo",
@@ -348,5 +348,68 @@
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "3.3 ANOVA:",
     "text": "3.3 ANOVA:\n\nTabelaFigura"
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#anova-clássica",
+    "href": "Avaliacao_5/index.html#anova-clássica",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "1.1 ANOVA Clássica",
+    "text": "1.1 ANOVA Clássica\n\n\n\nHipótese:\n\\[\n\\begin{cases}\nH_0: \\mu_1 = \\mu_2 = \\cdots = \\mu_k \\\\\nH_1: \\exists\\, i,j \\text{ tal que } \\mu_i \\neq \\mu_j\n\\end{cases}\n\\]\nEstatística de teste:\n\\[\nF =\n\\frac{QM_{Entre}}{QM_{Dentro}}\n=\n\\frac{\\frac{SQ_{Entre}}{k-1}}\n{\\frac{SQ_{Dentro}}{N-k}}\n\\]\n\n\n\nSuposições:\n\nIndependência\n\nNormalidade\n\nHomogeneidade das variâncias\n\n\\[\n\\sigma_1^2 = \\cdots = \\sigma_k^2\n\\]"
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#homogeneidade-na-anova-clássica",
+    "href": "Avaliacao_5/index.html#homogeneidade-na-anova-clássica",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "1.2 Homogeneidade na ANOVA clássica:",
+    "text": "1.2 Homogeneidade na ANOVA clássica:\n\n\n\nOnde é usada?\nNo denominador:\n\\[\nQM_{\\text{Dentro}}\n\\]\n\nEstima uma variância comum\n\n\n\n\n\n\nProblema:\nSe:\n\\[\n\\sigma_i^2 \\neq \\sigma_j^2\n\\]\n\nQM dentro não representa bem o erro\n\nA estatística F perde validade\n\n\n\n\nTeste de Tukey\n\\[\nq_{ij} =\n\\frac{\\bar{Y}_i - \\bar{Y}_j}\n{\\sqrt{\\frac{QM_{\\text{Dentro}}}{n}}}\n\\]\n\nDepende de variância comum"
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#ideia",
+    "href": "Avaliacao_5/index.html#ideia",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "2.1 Ideia:",
+    "text": "2.1 Ideia:\n\nSubstituir variância comum por variâncias específicas: \\(w_i = \\frac{n_i}{s_i^2}\\)\n\n\n\n\n\nEstatística\n\\[\nF_W =\n\\frac{\\sum w_i (\\bar{Y}_i - \\bar{Y}_w)^2/(k-1)}\n{1 + \\frac{2(k-2)}{k^2-1}\n\\sum \\frac{1}{n_i - 1}\n\\left(1 - \\frac{w_i}{\\sum w_i}\\right)^2}\n\\]\n\n\n\n\n\nInterpretação\n\nNumerador: variação entre grupos (ponderada)\n\nDenominador: correção da heterogeneidade\n\nEstatística robusta"
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#referências",
+    "href": "Avaliacao_5/index.html#referências",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "3.1 REFERÊNCIAS",
+    "text": "3.1 REFERÊNCIAS\n\n\nWELCH, B. L. (1951). On the comparison of several mean values: An alternative approach. Biometrika, 38(3/4), 330–336.\nGAMES, P. A.; HOWELL, J. F. (1976). Pairwise multiple comparison procedures with unequal n’s and/or variances: A Monte Carlo study. Journal of Educational Statistics, 1(2), 113–125.\nMONTGOMERY, D. C. (2019). Design and Analysis of Experiments. 10th ed. New York: Wiley.\nKUTNER, M. H.; NACHTSHEIM, C. J.; NETER, J.; LI, W. (2005). Applied Linear Statistical Models. 5th ed. McGraw-Hill.\nFIELD, A. (2013). Discovering Statistics Using IBM SPSS Statistics. 4th ed. Sage Publications."
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#teste-de-games-howell",
+    "href": "Avaliacao_5/index.html#teste-de-games-howell",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "2.2 Teste de Games-Howell:",
+    "text": "2.2 Teste de Games-Howell:\n\n\n\nProblema do Tukey\n\\[\n\\sqrt{QM_{\\text{Dentro}}}\n\\]\n\nmesma variância para todos os pares\n\n\n\n\n\n\nEstatística\n\\[\nq_{ij} =\n\\frac{\\bar{Y}_i - \\bar{Y}_j}\n{\\sqrt{\\frac{s_i^2}{n_i} + \\frac{s_j^2}{n_j}}}\n\\]\n\n\n\nInterpretação\n\nCada comparação usa sua própria variância\n\nNão há variância comum\n\nLógica estatística\n\nANOVA → variância única\n\nWelch → variância ponderada\n\nGames-Howell → variância por comparação"
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#problema-do-tukey",
+    "href": "Avaliacao_5/index.html#problema-do-tukey",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "Problema do Tukey",
+    "text": "Problema do Tukey\n\\[\n\\sqrt{QM_{\\text{Dentro}}}\n\\]\n\nmesma variância para todos os pares"
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#estatística-1",
+    "href": "Avaliacao_5/index.html#estatística-1",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "Estatística",
+    "text": "Estatística\n\\[\nq_{ij} =\n\\frac{\\bar{Y}_i - \\bar{Y}_j}\n{\\sqrt{\\frac{s_i^2}{n_i} + \\frac{s_j^2}{n_j}}}\n\\]\n\nInterpretação\n\nCada comparação usa sua própria variância\n\nNão há variância comum\n\nLógica estatística\n\nANOVA → variância única\n\nWelch → variância ponderada\n\nGames-Howell → variância por comparação"
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#referências-1",
+    "href": "Avaliacao_5/index.html#referências-1",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "4.1 Referências",
+    "text": "4.1 Referências\n\n\nWELCH, B. L. (1951). On the comparison of several mean values: An alternative approach. Biometrika, 38(3/4), 330–336.\nGAMES, P. A.; HOWELL, J. F. (1976). Pairwise multiple comparison procedures with unequal n’s and/or variances: A Monte Carlo study. Journal of Educational Statistics, 1(2), 113–125.\nMONTGOMERY, D. C. (2019). Design and Analysis of Experiments. 10th ed. New York: Wiley.\nKUTNER, M. H.; NACHTSHEIM, C. J.; NETER, J.; LI, W. (2005). Applied Linear Statistical Models. 5th ed. McGraw-Hill.\nFIELD, A. (2013). Discovering Statistics Using IBM SPSS Statistics. 4th ed. Sage Publications."
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#teste-de-games-howell-1",
+    "href": "Avaliacao_5/index.html#teste-de-games-howell-1",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "3.1 Teste de Games-Howell",
+    "text": "3.1 Teste de Games-Howell\n\n\n\nProblema do Tukey\n\\[\n\\sqrt{QM_{\\text{Dentro}}}\n\\]\n\nmesma variância para todos os pares\n\n\n\n\n\n\nEstatística\n\\[\nq_{ij} =\n\\frac{\\bar{Y}_i - \\bar{Y}_j}\n{\\sqrt{\\frac{s_i^2}{n_i} + \\frac{s_j^2}{n_j}}}\n\\]\n\n\n\n\nInterpretação\n\nCada comparação usa sua própria variância\n\nNão há variância comum\n\n\n\n\nLógica estatística\n\nANOVA → variância única\n\nWelch → variância ponderada\n\nGames-Howell → variância por comparação"
   }
 ]
