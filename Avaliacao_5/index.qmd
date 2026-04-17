@@ -32,6 +32,12 @@ format:
 
 ::: box-blue
 
+**Objetivo:**  
+
+Comparar médias de *k* grupos
+
+---
+
 **Hipótese:**
 
 $$
@@ -40,6 +46,8 @@ H_0: \mu_1 = \mu_2 = \cdots = \mu_k \\
 H_1: \exists\, i,j \text{ tal que } \mu_i \neq \mu_j
 \end{cases}
 $$
+
+---
 
 **Estatística de teste:**
 
@@ -55,14 +63,18 @@ $$
 
 :::
 
-::: {.column width="45%"}
+::: {.column width="3%"}
+
+:::
+
+::: {.column width="42%"}
 
 ::: box-yellow
 **Suposições:**
 
 - Independência  
 - Normalidade  
-- **Homogeneidade das variâncias**
+- **Homocedasticidade**
 
 $$
 \sigma_1^2 = \cdots = \sigma_k^2
@@ -92,6 +104,16 @@ $$
 
 - Estima uma variância comum
 
+---
+
+$$
+F =
+\frac{QM_{Entre}}{\color{red}{QM_{Dentro}}}
+=
+\frac{\frac{SQ_{Entre}}{k-1}}
+{\frac{\color{red}{SQ_{Dentro}}}{N-k}}
+$$
+
 :::
 
 :::
@@ -104,7 +126,7 @@ $$
 
 ::: box-yellow
 
-**Problema:**
+**O problema da heterogeneidade:**
 
 Se:
 
@@ -112,7 +134,7 @@ $$
 \sigma_i^2 \neq \sigma_j^2
 $$
 
-- QM dentro não representa bem o erro  
+- $QM_{\text{Dentro}}$ não representa bem o erro  
 - A estatística F perde validade  
 
 :::
@@ -121,39 +143,54 @@ $$
 
 ::::
 
-::: box-orange
+## Teste de Tukey
 
-### Teste de Tukey {.unnumbered}
+::: box-gray
+
+**Objetivo:**  
+
+Identificar **quais médias diferem** após rejeitar a ANOVA
+
+---
+
+**Estatística:**
 
 $$
 q_{ij} =
-\frac{\bar{Y}_i - \bar{Y}_j}
-{\sqrt{\frac{QM_{\text{Dentro}}}{n}}}
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{\frac{{QM_{Dentro}}}{n}}}
 $$
 
-- Depende de variância comum
+- Compara pares de médias $i$ e $j$
+- Valores altos de $q_{ij}$ indicam diferença significativa  
 
 :::
 
-# ANOVA De Welch:
+# ANOVA de Welch
 
-## Ideia:
-
-- Substituir variância comum por variâncias específicas: $w_i = \frac{n_i}{s_i^2}$
-
-<br>
+## ANOVA de Welch
 
 :::: columns
 
-::: {.column width="55%"}
+::: {.column width="50%"}
+
+::: box-gray
+
+**Quando usar?**
+
+Quando a homocedasticidade é violada
+
+:::
+
+<br>
 
 ::: box-blue
 
-### Estatística {.unnumbered}
+**Estatística**
 
 $$
 F_W =
-\frac{\sum w_i (\bar{Y}_i - \bar{Y}_w)^2/(k-1)}
+\frac{\sum w_i (\bar{y}_i - \bar{y}_w)^2/(k-1)}
 {1 + \frac{2(k-2)}{k^2-1}
 \sum \frac{1}{n_i - 1}
 \left(1 - \frac{w_i}{\sum w_i}\right)^2}
@@ -163,102 +200,215 @@ $$
 
 :::
 
-::: {.column width="5%"}
+::: {.column width="3%"}
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="47%" }
 
-::: box-yellow
+::: {.box-gray style="font-size: 0.70em;"}
 
-### Interpretação {.unnumbered}
+**Ideia**
 
-- Numerador: variação entre grupos (ponderada)  
-- Denominador: correção da heterogeneidade  
-- Estatística robusta
-
-:::
-
-:::
-
-::::
-
-# Teste de Games-Howell:
-
-## Teste de Games-Howell
-
-:::: columns
-
-::: {.column width="45%"}
-
-::: box-blue
-
-**Problema do Tukey**
+- Cada grupo tem sua própria variância  
+- Grupos com **menor variância** recebem **mais peso**
 
 $$
-\sqrt{QM_{\text{Dentro}}}
-$$
-
-- mesma variância para todos os pares 
-
-:::
-
-:::
-
-::: {.column width="10%"}
-
-:::
-
-::: {.column width="45%"}
-
-::: box-yellow
-
-**Estatística**
-
-$$
-q_{ij} =
-\frac{\bar{Y}_i - \bar{Y}_j}
-{\sqrt{\frac{s_i^2}{n_i} + \frac{s_j^2}{n_j}}}
+w_i = \frac{n_i}{s_i^2}
 $$
 
 :::
 
-:::
+<br>
 
-::::
-
-:::: columns
-
-::: {.column width="45%"}
+::: {.box-yellow style="font-size: 0.8em;"}
 
 **Interpretação**
 
-- Cada comparação usa sua própria variância  
-- Não há variância comum  
+- **Numerador:** diferença entre médias (ponderada)  
+- **Denominador:** corrige variâncias diferentes  
 
 :::
-
-::: {.column width="10%"}
-
-:::
-
-::: {.column width="45%"}
-
-**Lógica estatística**
-
-- ANOVA → variância única  
-- Welch → variância ponderada  
-- Games-Howell → variância por comparação  
 
 :::
 
 ::::
 
-# Referências
+## Comparação da Estatística
 
-## Referências
+::: box-gray
+
+$$
+F =
+\frac{
+\color{blue}{QM_{\text{Entre}}}
+}{
+\color{red}{QM_{\text{Dentro}}}
+}
+=
+\frac{
+\color{blue}{\frac{SQ_{\text{Entre}}}{k-1}}
+}{
+\color{red}{\frac{SQ_{\text{Dentro}}}{N-k}}
+}
+=
+\frac{
+\color{blue}{
+\frac{1}{\color{purple}{k-1}}
+\sum_{i=1}^k 
+\color{orange}{n_i}
+(\bar{y}_i - \color{green}{\bar{y}})^2
+}
+}{
+\color{red}{
+\frac{1}{\color{purple}{N-k}}
+\sum_{i=1}^k \sum_{j=1}^{\color{orange}{n_i}} 
+(y_{ij} - \bar{y}_i)^2
+}
+}
+$$
+
+---
+
+$$
+F_W =
+\frac{
+\color{blue}{
+\frac{1}{\color{purple}{k-1}}
+\sum 
+\color{orange}{w_i}
+(\bar{y}_i - \color{green}{\bar{y}_w})^2
+}
+}{
+\color{red}{
+1 +
+\frac{2(\color{purple}{k-2})}{k^2-1}
+\sum 
+\frac{1}{\color{orange}{n_i - 1}}
+\left(
+1 - \frac{\color{orange}{w_i}}{\sum \color{orange}{w_i}}
+\right)^2
+}
+}
+$$
+
+:::
+
+# Teste de Games-Howell
+
+## Comparação das comparações múltiplas
+
+:::: columns
+
+::: {.column width="48%"}
 
 ::: box-blue
+
+**Limitação do Tukey**
+
+$$
+q_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{\frac{\color{red}{QM_{\text{Dentro}}}}{n}}}
+$$
+
+- Necessita de **homocedasticidade**  
+- Usa o mesmo erro para todos os pares
+
+:::
+
+:::
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="48%"}
+
+::: box-yellow
+
+**Estatística de Games-Howell**
+
+$$
+q_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{
+\color{orange}{
+\frac{s_i^2}{n_i} + \frac{s_j^2}{n_j}
+}
+}}
+$$
+
+- Cada par $(i,j)$ usa **variância específica**  
+- Não existe variância comum  
+- Generaliza o teste t de Welch  
+
+:::
+
+:::
+
+::::
+
+## Lógica
+
+:::: columns
+
+::: {.column width="30%"}
+
+::: box-anova
+**ANOVA**
+
+- Uma única variância para todos os grupos
+
+- Homocedasticidade
+
+- Pós teste de Tukey
+
+:::
+
+:::
+
+::: {.column width="3%"}
+
+:::
+
+::: {.column width="30%"}
+
+::: box-welch
+**Welch**
+
+- Variância por grupo  
+- Ponderação pela precisão
+
+:::
+
+:::
+
+::: {.column width="3%"}
+
+:::
+
+::: {.column width="30%"}
+
+::: box-gh
+**Games-Howell**
+
+- Variância por grupo 
+- Comparação múltipla
+
+:::
+
+:::
+
+::::
+
+<br>
+
+::: {.box-gray style="text-align: center; font-size: 0.9em;"}
+Flexibilidade ↑ Suposições ↓
+:::
+
+# Referências
 
 - WELCH, B. L. (1951). *On the comparison of several mean values: An alternative approach*. Biometrika, 38(3/4), 330–336.  
 
@@ -269,7 +419,5 @@ $$
 - KUTNER, M. H.; NACHTSHEIM, C. J.; NETER, J.; LI, W. (2005). *Applied Linear Statistical Models*. 5th ed. McGraw-Hill.  
 
 - FIELD, A. (2013). *Discovering Statistics Using IBM SPSS Statistics*. 4th ed. Sage Publications.  
-
-:::
 
 # Fim {.unnumbered}

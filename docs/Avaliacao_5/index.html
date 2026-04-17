@@ -157,6 +157,9 @@ Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalvian
 <div class="columns">
 <div class="column" style="width:55%;">
 <div class="box-blue">
+<p><strong>Objetivo:</strong></p>
+<p>Comparar médias de <em>k</em> grupos</p>
+<hr>
 <p><strong>Hipótese:</strong></p>
 <p><span class="math display">\[
 \begin{cases}
@@ -164,6 +167,7 @@ H_0: \mu_1 = \mu_2 = \cdots = \mu_k \\
 H_1: \exists\, i,j \text{ tal que } \mu_i \neq \mu_j
 \end{cases}
 \]</span></p>
+<hr>
 <p><strong>Estatística de teste:</strong></p>
 <p><span class="math display">\[
 F =
@@ -173,7 +177,9 @@ F =
 {\frac{SQ_{Dentro}}{N-k}}
 \]</span></p>
 </div>
-</div><div class="column" style="width:45%;">
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:42%;">
 <div class="box-yellow">
 <p><strong>Suposições:</strong></p>
 <ul>
@@ -181,7 +187,7 @@ F =
 </li>
 <li>Normalidade<br>
 </li>
-<li><strong>Homogeneidade das variâncias</strong></li>
+<li><strong>Homocedasticidade</strong></li>
 </ul>
 <p><span class="math display">\[
 \sigma_1^2 = \cdots = \sigma_k^2
@@ -202,132 +208,242 @@ QM_{\text{Dentro}}
 <ul>
 <li>Estima uma variância comum</li>
 </ul>
+<hr>
+<p><span class="math display">\[
+F =
+\frac{QM_{Entre}}{\color{red}{QM_{Dentro}}}
+=
+\frac{\frac{SQ_{Entre}}{k-1}}
+{\frac{\color{red}{SQ_{Dentro}}}{N-k}}
+\]</span></p>
 </div>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:50%;">
 <div class="box-yellow">
-<p><strong>Problema:</strong></p>
+<p><strong>O problema da heterogeneidade:</strong></p>
 <p>Se:</p>
 <p><span class="math display">\[
 \sigma_i^2 \neq \sigma_j^2
 \]</span></p>
 <ul>
-<li>QM dentro não representa bem o erro<br>
+<li><span class="math inline">\(QM_{\text{Dentro}}\)</span> não representa bem o erro<br>
 </li>
 <li>A estatística F perde validade</li>
 </ul>
 </div>
 </div></div>
-<section id="teste-de-tukey" class="unnumbered box-orange">
-<h3 class="unnumbered">Teste de Tukey</h3>
+</section>
+<section id="teste-de-tukey" class="slide level2" data-number="1.3">
+<h2><span class="header-section-number">1.3</span> Teste de Tukey</h2>
+<div class="box-gray">
+<p><strong>Objetivo:</strong></p>
+<p>Identificar <strong>quais médias diferem</strong> após rejeitar a ANOVA</p>
+<hr>
+<p><strong>Estatística:</strong></p>
 <p><span class="math display">\[
 q_{ij} =
-\frac{\bar{Y}_i - \bar{Y}_j}
-{\sqrt{\frac{QM_{\text{Dentro}}}{n}}}
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{\frac{{QM_{Dentro}}}{n}}}
 \]</span></p>
 <ul>
-<li>Depende de variância comum</li>
+<li>Compara pares de médias <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span></li>
+<li>Valores altos de <span class="math inline">\(q_{ij}\)</span> indicam diferença significativa</li>
 </ul>
-</section>
+</div>
 </section></section>
 <section>
 <section id="anova-de-welch" class="title-slide slide level1 center" data-number="2">
-<h1><span class="header-section-number">2</span> ANOVA De Welch:</h1>
+<h1><span class="header-section-number">2</span> ANOVA de Welch</h1>
 
 </section>
-<section id="ideia" class="slide level2" data-number="2.1">
-<h2><span class="header-section-number">2.1</span> Ideia:</h2>
-<ul>
-<li>Substituir variância comum por variâncias específicas: <span class="math inline">\(w_i = \frac{n_i}{s_i^2}\)</span></li>
-</ul>
-<p><br></p>
+<section id="anova-de-welch-1" class="slide level2" data-number="2.1">
+<h2><span class="header-section-number">2.1</span> ANOVA de Welch</h2>
 <div class="columns">
-<div class="column" style="width:55%;">
-<section id="estatística" class="unnumbered box-blue">
-<h3 class="unnumbered">Estatística</h3>
+<div class="column" style="width:50%;">
+<div class="box-gray">
+<p><strong>Quando usar?</strong></p>
+<p>Quando a homocedasticidade é violada</p>
+</div>
+<p><br></p>
+<div class="box-blue">
+<p><strong>Estatística</strong></p>
 <p><span class="math display">\[
 F_W =
-\frac{\sum w_i (\bar{Y}_i - \bar{Y}_w)^2/(k-1)}
+\frac{\sum w_i (\bar{y}_i - \bar{y}_w)^2/(k-1)}
 {1 + \frac{2(k-2)}{k^2-1}
 \sum \frac{1}{n_i - 1}
 \left(1 - \frac{w_i}{\sum w_i}\right)^2}
 \]</span></p>
-</section>
-</div><div class="column" style="width:5%;">
+</div>
+</div><div class="column" style="width:3%;">
 
-</div><div class="column" style="width:40%;">
-<section id="interpretação" class="unnumbered box-yellow">
-<h3 class="unnumbered">Interpretação</h3>
+</div><div class="column" style="width:47%;">
+<div class="box-gray" style="font-size: 0.70em;">
+<p><strong>Ideia</strong></p>
 <ul>
-<li>Numerador: variação entre grupos (ponderada)<br>
+<li>Cada grupo tem sua própria variância<br>
 </li>
-<li>Denominador: correção da heterogeneidade<br>
-</li>
-<li>Estatística robusta</li>
+<li>Grupos com <strong>menor variância</strong> recebem <strong>mais peso</strong></li>
 </ul>
-</section>
+<p><span class="math display">\[
+w_i = \frac{n_i}{s_i^2}
+\]</span></p>
+</div>
+<p><br></p>
+<div class="box-yellow" style="font-size: 0.8em;">
+<p><strong>Interpretação</strong></p>
+<ul>
+<li><strong>Numerador:</strong> diferença entre médias (ponderada)<br>
+</li>
+<li><strong>Denominador:</strong> corrige variâncias diferentes</li>
+</ul>
+</div>
 </div></div>
+</section>
+<section id="comparação-da-estatística" class="slide level2" data-number="2.2">
+<h2><span class="header-section-number">2.2</span> Comparação da Estatística</h2>
+<div class="box-gray">
+<p><span class="math display">\[
+F =
+\frac{
+\color{blue}{QM_{\text{Entre}}}
+}{
+\color{red}{QM_{\text{Dentro}}}
+}
+=
+\frac{
+\color{blue}{\frac{SQ_{\text{Entre}}}{k-1}}
+}{
+\color{red}{\frac{SQ_{\text{Dentro}}}{N-k}}
+}
+=
+\frac{
+\color{blue}{
+\frac{1}{\color{purple}{k-1}}
+\sum_{i=1}^k
+\color{orange}{n_i}
+(\bar{y}_i - \color{green}{\bar{y}})^2
+}
+}{
+\color{red}{
+\frac{1}{\color{purple}{N-k}}
+\sum_{i=1}^k \sum_{j=1}^{\color{orange}{n_i}}
+(y_{ij} - \bar{y}_i)^2
+}
+}
+\]</span></p>
+<hr>
+<p><span class="math display">\[
+F_W =
+\frac{
+\color{blue}{
+\frac{1}{\color{purple}{k-1}}
+\sum
+\color{orange}{w_i}
+(\bar{y}_i - \color{green}{\bar{y}_w})^2
+}
+}{
+\color{red}{
+1 +
+\frac{2(\color{purple}{k-2})}{k^2-1}
+\sum
+\frac{1}{\color{orange}{n_i - 1}}
+\left(
+1 - \frac{\color{orange}{w_i}}{\sum \color{orange}{w_i}}
+\right)^2
+}
+}
+\]</span></p>
+</div>
 </section></section>
 <section>
 <section id="teste-de-games-howell" class="title-slide slide level1 center" data-number="3">
-<h1><span class="header-section-number">3</span> Teste de Games-Howell:</h1>
+<h1><span class="header-section-number">3</span> Teste de Games-Howell</h1>
 
 </section>
-<section id="teste-de-games-howell-1" class="slide level2" data-number="3.1">
-<h2><span class="header-section-number">3.1</span> Teste de Games-Howell</h2>
+<section id="comparação-das-comparações-múltiplas" class="slide level2" data-number="3.1">
+<h2><span class="header-section-number">3.1</span> Comparação das comparações múltiplas</h2>
 <div class="columns">
-<div class="column" style="width:45%;">
+<div class="column" style="width:48%;">
 <div class="box-blue">
-<p><strong>Problema do Tukey</strong></p>
-<p><span class="math display">\[
-\sqrt{QM_{\text{Dentro}}}
-\]</span></p>
-<ul>
-<li>mesma variância para todos os pares</li>
-</ul>
-</div>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column" style="width:45%;">
-<div class="box-yellow">
-<p><strong>Estatística</strong></p>
+<p><strong>Limitação do Tukey</strong></p>
 <p><span class="math display">\[
 q_{ij} =
-\frac{\bar{Y}_i - \bar{Y}_j}
-{\sqrt{\frac{s_i^2}{n_i} + \frac{s_j^2}{n_j}}}
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{\frac{\color{red}{QM_{\text{Dentro}}}}{n}}}
 \]</span></p>
+<ul>
+<li>Necessita de <strong>homocedasticidade</strong><br>
+</li>
+<li>Usa o mesmo erro para todos os pares</li>
+</ul>
+</div>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<div class="box-yellow">
+<p><strong>Estatística de Games-Howell</strong></p>
+<p><span class="math display">\[
+q_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{
+\color{orange}{
+\frac{s_i^2}{n_i} + \frac{s_j^2}{n_j}
+}
+}}
+\]</span></p>
+<ul>
+<li>Cada par <span class="math inline">\((i,j)\)</span> usa <strong>variância específica</strong><br>
+</li>
+<li>Não existe variância comum<br>
+</li>
+<li>Generaliza o teste t de Welch</li>
+</ul>
 </div>
 </div></div>
+</section>
+<section id="lógica" class="slide level2" data-number="3.2">
+<h2><span class="header-section-number">3.2</span> Lógica</h2>
 <div class="columns">
-<div class="column" style="width:45%;">
-<p><strong>Interpretação</strong></p>
+<div class="column" style="width:30%;">
+<div class="box-anova">
+<p><strong>ANOVA</strong></p>
 <ul>
-<li>Cada comparação usa sua própria variância<br>
-</li>
-<li>Não há variância comum</li>
+<li><p>Uma única variância para todos os grupos</p></li>
+<li><p>Homocedasticidade</p></li>
+<li><p>Pós teste de Tukey</p></li>
 </ul>
-</div><div class="column" style="width:10%;">
+</div>
+</div><div class="column" style="width:3%;">
 
-</div><div class="column" style="width:45%;">
-<p><strong>Lógica estatística</strong></p>
+</div><div class="column" style="width:30%;">
+<div class="box-welch">
+<p><strong>Welch</strong></p>
 <ul>
-<li>ANOVA → variância única<br>
+<li>Variância por grupo<br>
 </li>
-<li>Welch → variância ponderada<br>
-</li>
-<li>Games-Howell → variância por comparação</li>
+<li>Ponderação pela precisão</li>
 </ul>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:30%;">
+<div class="box-gh">
+<p><strong>Games-Howell</strong></p>
+<ul>
+<li>Variância por grupo</li>
+<li>Comparação múltipla</li>
+</ul>
+</div>
 </div></div>
+<p><br></p>
+<div class="box-gray" style="text-align: center; font-size: 0.9em;">
+<p>Flexibilidade ↑ Suposições ↓</p>
+</div>
 </section></section>
-<section>
 <section id="referências" class="title-slide slide level1 center" data-number="4">
 <h1><span class="header-section-number">4</span> Referências</h1>
-
-</section>
-<section id="referências-1" class="slide level2" data-number="4.1">
-<h2><span class="header-section-number">4.1</span> Referências</h2>
-<div class="box-blue">
 <ul>
 <li><p>WELCH, B. L. (1951). <em>On the comparison of several mean values: An alternative approach</em>. Biometrika, 38(3/4), 330–336.</p></li>
 <li><p>GAMES, P. A.; HOWELL, J. F. (1976). <em>Pairwise multiple comparison procedures with unequal n’s and/or variances: A Monte Carlo study</em>. Journal of Educational Statistics, 1(2), 113–125.</p></li>
@@ -335,8 +451,8 @@ q_{ij} =
 <li><p>KUTNER, M. H.; NACHTSHEIM, C. J.; NETER, J.; LI, W. (2005). <em>Applied Linear Statistical Models</em>. 5th ed.&nbsp;McGraw-Hill.</p></li>
 <li><p>FIELD, A. (2013). <em>Discovering Statistics Using IBM SPSS Statistics</em>. 4th ed.&nbsp;Sage Publications.</p></li>
 </ul>
-</div>
-</section></section>
+</section>
+
 <section id="fim" class="title-slide slide level1 unnumbered center">
 <h1>Fim</h1>
 

@@ -19,7 +19,7 @@
 .reveal h1 {
   font-size: 2.4em;
   font-weight: 800;
-  color: #1d4ed8; /* azul forte */
+  color: #1e3a8a; /* mais escuro */
 }
 
 .reveal h2 {
@@ -31,7 +31,7 @@
 .reveal h3 {
   font-size: 1.3em;
   font-weight: 600;
-  color: #1d4ed8;
+  color: #3b82f6; /* mais claro */
 }
 
 
@@ -117,4 +117,37 @@
 .reveal .footer {
   font-size: 0.5em;
   color: #64748b;
+}
+
+/* ===== Hierarquia em escala de verde ===== */
+
+/* ANOVA → mais básico (verde bem claro) */
+.box-anova {
+  border-left: 6px solid #86efac;
+  background: #f0fdf4;
+  color: #14532d;
+  padding: 0.9em;
+  border-radius: 10px;
+  opacity: 0.85;
+}
+
+/* Welch → intermediário */
+.box-welch {
+  border-left: 6px solid #22c55e;
+  background: #dcfce7;
+  color: #14532d;
+  padding: 0.9em;
+  border-radius: 10px;
+  transform: scale(1.02);
+}
+
+/* Games-Howell → destaque máximo (verde forte) */
+.box-gh {
+  border-left: 8px solid #166534;
+  background: #bbf7d0;
+  color: #052e16;
+  padding: 1em;
+  border-radius: 12px;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
