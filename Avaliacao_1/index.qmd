@@ -28,6 +28,10 @@ format:
 
 ![](imagens/autores.jpg)
 
+::: {.footer}
+[Ver artigo](references/Artigo5.pdf)
+:::
+
 ## Motivação:
 
 ::: box-blue

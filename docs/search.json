@@ -11,7 +11,7 @@
     "href": "index.html#avaliações",
     "title": "Prática Estatística II",
     "section": "🎓 Avaliações",
-    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nVisualizar\n\n\n\n\n📊 Avaliação 4\nVizualizar\n\n\n📊 Avaliação 5\nVizualizar\n\n\n📊 Avaliação 6\nEm breve"
+    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nVisualizar\n\n\n\n\n📊 Avaliação 4\nVizualizar\n\n\n📊 Avaliação 5\nVizualizar\n\n\n📊 Avaliação 6\nEm breve\n\n\n\n\n📊 Avaliação 7\nEm breve\n\n\n📊 Avaliação 8\nEm breve\n\n\n📊 Avaliação 9\nEm breve"
   },
   {
     "objectID": "Avaliacao_2/index.html#objetivo",
@@ -46,7 +46,7 @@
     "href": "Avaliacao_1/index.html#artigo-e-autores",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "1.1 Artigo e autores:",
-    "text": "1.1 Artigo e autores:"
+    "text": "1.1 Artigo e autores:\n\n\nVer artigo"
   },
   {
     "objectID": "Avaliacao_1/index.html#motivação",
@@ -221,7 +221,7 @@
     "href": "Avaliacao_4/index.html#artigo-e-autoras",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "1.1 Artigo e autoras:",
-    "text": "1.1 Artigo e autoras:\n\nPsicologia Clinica (PUC-Rio), 2014"
+    "text": "1.1 Artigo e autoras:\n\n\nPsicologia Clinica (PUC-Rio), 2014; Ver artigo"
   },
   {
     "objectID": "Avaliacao_4/index.html#motivação",
@@ -354,7 +354,7 @@
     "href": "Avaliacao_5/index.html#anova-clássica",
     "title": "ANOVA de Welch e Games-Howell",
     "section": "1.1 ANOVA Clássica",
-    "text": "1.1 ANOVA Clássica\n\n\n\nObjetivo:\nComparar médias de k grupos\n\nHipótese:\n\\[\n\\begin{cases}\nH_0: \\mu_1 = \\mu_2 = \\cdots = \\mu_k \\\\\nH_1: \\exists\\, i,j \\text{ tal que } \\mu_i \\neq \\mu_j\n\\end{cases}\n\\]\n\nEstatística de teste:\n\\[\nF =\n\\frac{QM_{Entre}}{QM_{Dentro}}\n=\n\\frac{\\frac{SQ_{Entre}}{k-1}}\n{\\frac{SQ_{Dentro}}{N-k}}\n\\]\n\n\n\n\n\nSuposições:\n\nIndependência\n\nNormalidade\n\nHomocedasticidade\n\n\\[\n\\sigma_1^2 = \\cdots = \\sigma_k^2\n\\]"
+    "text": "1.1 ANOVA Clássica\n\n\n\nObjetivo:\nComparar médias de k grupos\n\nHipótese:\n\\[\n\\begin{cases}\nH_0: \\mu_1 = \\mu_2 = \\cdots = \\mu_k \\\\\nH_1: \\exists\\, i,j \\text{ tal que } \\mu_i \\neq \\mu_j\n\\end{cases}\n\\]\n\nEstatística de teste:\n\\[\nF =\n\\frac{QM_{Entre}}{QM_{Dentro}}\n=\n\\frac{\\frac{SQ_{Entre}}{k-1}}\n{\\frac{SQ_{Dentro}}{N-k}}\n\\]\n\n\n\n\n\nSuposições:\n\nIndependência\n\nNormalidade\n\nHomocedasticidade\n\n\\[\n\\sigma_1^2 = \\cdots = \\sigma_k^2\n\\]\n\n\n\n\\(QM_{Dentro}\\) é um estimador não viesado para \\(\\sigma^2\\)\n\\[\nE(QM_{Dentro}) = \\sigma^2\n\\]"
   },
   {
     "objectID": "Avaliacao_5/index.html#homogeneidade-na-anova-clássica",

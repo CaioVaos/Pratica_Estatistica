@@ -82,6 +82,18 @@ $$
 
 :::
 
+<br>
+
+::: {.box-gray style="font-size: 0.70em;"}
+
+$QM_{Dentro}$ é um estimador não viesado para $\sigma^2$
+
+$$
+E(QM_{Dentro}) = \sigma^2
+$$
+
+:::
+
 :::
 
 ::::
@@ -408,7 +420,7 @@ $$
 Flexibilidade ↑ Suposições ↓
 :::
 
-# Referências
+# Referências {.glass}
 
 - WELCH, B. L. (1951). *On the comparison of several mean values: An alternative approach*. Biometrika, 38(3/4), 330–336.  
 

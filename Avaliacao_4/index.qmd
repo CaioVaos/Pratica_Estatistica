@@ -28,7 +28,9 @@ format:
 
 ![](media/titulo.png)
 
-Psicologia Clinica (PUC-Rio), 2014
+::: {.footer}
+Psicologia Clinica (PUC-Rio), 2014; [Ver artigo](references/Artigo7.pdf)
+:::
 
 ## Motivação:
 

@@ -50,6 +50,12 @@
   color: white;
 }
 
+.reveal .slides section.glass {
+  background: rgba(15, 23, 42, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
 .reveal .title-slide h1,
 .reveal .title-slide h2,
 .reveal .title-slide p {
@@ -119,33 +125,30 @@
   color: #64748b;
 }
 
-/* ===== Hierarquia em escala de verde ===== */
+/* ===== Hierarquia (azul puro) ===== */
 
-/* ANOVA → mais básico (verde bem claro) */
 .box-anova {
-  border-left: 6px solid #86efac;
-  background: #f0fdf4;
-  color: #14532d;
+  border-left: 5px solid #93c5fd;
+  background: #eff6ff;
+  color: #1e3a8a;
   padding: 0.9em;
   border-radius: 10px;
   opacity: 0.85;
 }
 
-/* Welch → intermediário */
 .box-welch {
-  border-left: 6px solid #22c55e;
-  background: #dcfce7;
-  color: #14532d;
+  border-left: 6px solid #3b82f6;
+  background: #dbeafe;
+  color: #1e40af;
   padding: 0.9em;
   border-radius: 10px;
   transform: scale(1.02);
 }
 
-/* Games-Howell → destaque máximo (verde forte) */
 .box-gh {
-  border-left: 8px solid #166534;
-  background: #bbf7d0;
-  color: #052e16;
+  border-left: 8px solid #1e3a8a;
+  background: #bfdbfe;
+  color: #172554;
   padding: 1em;
   border-radius: 12px;
   transform: scale(1.05);
