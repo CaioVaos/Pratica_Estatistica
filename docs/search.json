@@ -11,7 +11,7 @@
     "href": "index.html#avaliações",
     "title": "Prática Estatística II",
     "section": "🎓 Avaliações",
-    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nVisualizar\n\n\n\n\n📊 Avaliação 4\nVizualizar\n\n\n📊 Avaliação 5\nVizualizar\n\n\n📊 Avaliação 6\nEm breve\n\n\n\n\n📊 Avaliação 7\nEm breve\n\n\n📊 Avaliação 8\nEm breve\n\n\n📊 Avaliação 9\nEm breve"
+    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nVisualizar\n\n\n\n\n📊 Avaliação 4\nVizualizar\n\n\n📊 Avaliação 5\nVizualizar\n\n\n📊 Avaliação 6\nVizualizar\n\n\n\n\n📊 Avaliação 7\nEm breve\n\n\n📊 Avaliação 8\nEm breve\n\n\n📊 Avaliação 9\nEm breve"
   },
   {
     "objectID": "Avaliacao_2/index.html#objetivo",
@@ -488,5 +488,82 @@
     "title": "ANOVA de Welch e Games-Howell",
     "section": "3.1 Comparação das comparações múltiplas",
     "text": "3.1 Comparação das comparações múltiplas\n\n\n\nLimitação do Tukey\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\\frac{\\color{red}{QM_{\\text{Dentro}}}}{n}}}\n\\]\n\nNecessita de homocedasticidade\n\nUsa o mesmo erro para todos os pares\n\n\n\n\n\n\nEstatística de Games-Howell\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\color{orange}{\n\\frac{s_i^2}{n_i} + \\frac{s_j^2}{n_j}\n}\n}}\n\\]\n\nCada par \\((i,j)\\) usa variância específica\n\nNão existe variância comum\n\nGeneraliza o teste t de Welch"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#slide1",
+    "href": "Avaliacao_6/index.html#slide1",
+    "title": "PROJETO I",
+    "section": "1.1 Slide1",
+    "text": "1.1 Slide1\n\n\ntexto\ntexto\n\n\n\n\n\ntexto\ntexto\n\n\n\n\n\ntexto\ntexto"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#a-pesquisa",
+    "href": "Avaliacao_6/index.html#a-pesquisa",
+    "title": "PROJETO I",
+    "section": "1.1 A Pesquisa",
+    "text": "1.1 A Pesquisa\n\nContexto\n\nA pandemia de COVID-19 impactou profundamente a vida da população;\nMudanças sociais, econômicas e comportamentais ;\nMedidas de isolamento social alteraram a rotina diária.\n\n\n\n\nMotivação\n\nMudanças na rotina influenciaram o comportamento alimentar;\nFatores emocionais (estresse, ansiedade) ganharam relevância;\nPossível aumento no consumo de alimentos ultraprocessados;\nDestaque para o consumo de doces."
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#objetivo",
+    "href": "Avaliacao_6/index.html#objetivo",
+    "title": "PROJETO I",
+    "section": "1.2 Objetivo",
+    "text": "1.2 Objetivo\n\nProblema de pesquisa\n\nQuais fatores estão associados às mudanças no consumo de doces?\n\n\n\n\n\n\nVariável Desfecho\n\nDoces: mudança no consumo durante a pandemia:\n\nAumentou;\nDiminuiu;\nNão alterou;\nNão consumo.\n\n\n\n\n\n\n\nVariáveis Explicativas\n\nSociodemográficas;\n\nEconômicas;\n\nComportamentais;\n\nRelacionadas à pandemia."
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#a-pesquisa-1",
+    "href": "Avaliacao_6/index.html#a-pesquisa-1",
+    "title": "PROJETO I",
+    "section": "2.1 A Pesquisa",
+    "text": "2.1 A Pesquisa"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#sobre-os-dados",
+    "href": "Avaliacao_6/index.html#sobre-os-dados",
+    "title": "PROJETO I",
+    "section": "2.1 Sobre os dados",
+    "text": "2.1 Sobre os dados\n\n\n\nOrigem\n\nquestionário online aplicado em 2022\n\nAmostra\n\n2310 indivíduos\n\n\n\n\nResumo da estrutura das variáveis\n\nVariáveis categóricas: 15 variáveis;\nVariáveis numéricas: 4 variáveis;\nVariável aberta: 1 variável;\nVariável resposta: Doces\n\n\n\n\n\n\nEstutura das variáveis\n\n\n\n\n\n\n\n\nVariável\nTipo\nClassificação\n\n\n\n\nGênero\nCategórica\nNominal dicotômica\n\n\nRaça/Cor\nCategórica\nNominal politômica\n\n\nRegião\nCategórica\nNominal politômica\n\n\nIsolamento\nCategórica\nNominal dicotômica\n\n\nTrabalha\nCategórica\nNominal dicotômica\n\n\nProfissional Saúde\nCategórica\nNominal dicotômica\n\n\nRenda familiar\nCategórica\nOrdinal\n\n\nEscolaridade\nCategórica\nOrdinal\n\n\nCovid\nCategórica\nNominal dicotômica\n\n\nConsulta Nutricionista\nCategórica\nNominal dicotômica\n\n\nDificuldade Financeira\nCategórica\nNominal dicotômica\n\n\nAcesso Alimento\nCategórica\nNominal dicotômica\n\n\nTempo Preparo Refeição\nCategórica\nNominal politômica\n\n\nCigarro\nCategórica\nNominal dicotômica\n\n\nAtividade Fisica Pandemia\nCategórica\nNominal politômica\n\n\nIdade\nNumérica\nContínua\n\n\nAltura\nNumérica\nContínua\n\n\nPeso\nNumérica\nContínua\n\n\nIMC\nNumérica\nContínua\n\n\nSentimentos Pandemia\nQualitativa\nVariável aberta\n\n\nDoces\nCategórica\nNominal politômica (resposta)"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#testes-aplicados",
+    "href": "Avaliacao_6/index.html#testes-aplicados",
+    "title": "PROJETO I",
+    "section": "2.2 Testes aplicados",
+    "text": "2.2 Testes aplicados\n\n\nAnálise descritiva: Disribuição da variável Doces.\n\n\n\n\n\n\nVariáveis categóricas\n\nTeste qui-quadrado;\nTeste exato de Fisher;\n\nCoeficiente V de Cramer;\nAnálise de resíduos.\n\n\n\n\nVariáveis numéricas\n\nANOVA one-way;\nANOVA de Welch;\n\nComparações múltiplas de Games-Howell.\n\n\n\n\nVariável aberta\n\nNuvem de palavras."
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#proporção-do-consumo-de-doces",
+    "href": "Avaliacao_6/index.html#proporção-do-consumo-de-doces",
+    "title": "PROJETO I",
+    "section": "3.1 Proporção do Consumo de Doces",
+    "text": "3.1 Proporção do Consumo de Doces"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#categóricas",
+    "href": "Avaliacao_6/index.html#categóricas",
+    "title": "PROJETO I",
+    "section": "3.2 Categóricas",
+    "text": "3.2 Categóricas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariáveis\n\nMudança no consumo de doces\n\np-value\nCramér\n\n\nAumentou1042 (45%)\nDiminuiu476 (21%)\nNão alterou683 (30%)\nNão consumo109 (4.7%)\n\n\n\n\nGêneroQ\n\n\n\n\n\n\n\n\n&lt;0.001\n0.179\n\n\n    Feminino\n867 (50%)\n346 (20%)\n453 (26%)\n69 (4.0%)\n\n\n\n\n\n\n    Masculino\n175 (30%)\n130 (23%)\n230 (40%)\n40 (7.0%)\n\n\n\n\n\n\nRaça/CorF\n\n\n\n\n\n\n\n\n0.082\n0.058\n\n\n    Amarela\n10 (34%)\n10 (34%)\n8 (28%)\n1 (3.4%)\n\n\n\n\n\n\n    Branca\n688 (47%)\n271 (19%)\n431 (30%)\n66 (4.5%)\n\n\n\n\n\n\n    Indígena\n6 (60%)\n1 (10%)\n2 (20%)\n1 (10%)\n\n\n\n\n\n\n    Outro\n2 (40%)\n0 (0%)\n3 (60%)\n0 (0%)\n\n\n\n\n\n\n    Parda\n265 (42%)\n149 (23%)\n195 (31%)\n29 (4.5%)\n\n\n\n\n\n\n    Preta\n71 (41%)\n45 (26%)\n44 (26%)\n12 (7.0%)\n\n\n\n\n\n\nRegiãoQ\n\n\n\n\n\n\n\n\n0.008\n0.062\n\n\n    Centro-oeste\n83 (38%)\n39 (18%)\n78 (36%)\n17 (7.8%)\n\n\n\n\n\n\n    Nordeste\n140 (47%)\n62 (21%)\n83 (28%)\n12 (4.0%)\n\n\n\n\n\n\n    Norte\n131 (38%)\n84 (24%)\n106 (31%)\n23 (6.7%)\n\n\n\n\n\n\n    Sudeste\n458 (48%)\n201 (21%)\n267 (28%)\n36 (3.7%)\n\n\n\n\n\n\n    Sul\n230 (47%)\n90 (18%)\n149 (30%)\n21 (4.3%)\n\n\n\n\n\n\nIsolamentoQ\n\n\n\n\n\n\n\n\n0.011\n0.070\n\n\n    Não\n429 (42%)\n201 (20%)\n335 (33%)\n50 (4.9%)\n\n\n\n\n\n\n    Sim\n613 (47%)\n275 (21%)\n348 (27%)\n59 (4.6%)\n\n\n\n\n\n\nTrabalhaQ\n\n\n\n\n\n\n\n\n&lt;0.001\n0.144\n\n\n    Não\n322 (46%)\n195 (28%)\n151 (22%)\n31 (4.4%)\n\n\n\n\n\n\n    Sim\n720 (45%)\n281 (17%)\n532 (33%)\n78 (4.8%)\n\n\n\n\n\n\nProfissional de SaúdeQ\n\n\n\n\n\n\n\n\n0.004\n0.076\n\n\n    Não\n764 (43%)\n385 (22%)\n533 (30%)\n89 (5.0%)\n\n\n\n\n\n\n    Sim\n278 (52%)\n91 (17%)\n150 (28%)\n20 (3.7%)\n\n\n\n\n\n\nRenda FamiliarQ\n\n\n\n\n\n\n\n\n&lt;0.001\n0.073\n\n\n    até R$ 1254,00\n109 (40%)\n83 (30%)\n69 (25%)\n14 (5.1%)\n\n\n\n\n\n\n    entre R$ 1.255 - R$ 8.640\n623 (47%)\n262 (20%)\n376 (28%)\n65 (4.9%)\n\n\n\n\n\n\n    mais de R$ 8.640\n310 (44%)\n131 (18%)\n238 (34%)\n30 (4.2%)\n\n\n\n\n\n\nEscolaridadeF\n\n\n\n\n\n\n\n\n&lt;0.001\n0.079\n\n\n    Analfabeto\n2 (100%)\n0 (0%)\n0 (0%)\n0 (0%)\n\n\n\n\n\n\n    Ensino Fundamental Completo\n13 (33%)\n13 (33%)\n13 (33%)\n1 (2.5%)\n\n\n\n\n\n\n    Ensino Médio Completo\n433 (48%)\n214 (24%)\n211 (23%)\n42 (4.7%)\n\n\n\n\n\n\n    Ensino Superior Completo\n182 (45%)\n84 (21%)\n120 (30%)\n16 (4.0%)\n\n\n\n\n\n\n    Pós-graduação\n412 (43%)\n165 (17%)\n339 (35%)\n50 (5.2%)\n\n\n\n\n\n\nCovid\n\n\n\n\n\n\n\n\n0.2\n0.045\n\n\n    Não\n744 (44%)\n361 (21%)\n511 (30%)\n77 (4.5%)\n\n\n\n\n\n\n    Sim\n298 (48%)\n115 (19%)\n172 (28%)\n32 (5.2%)\n\n\n\n\n\n\nConsulta ao NutricionistaQ\n\n\n\n\n\n\n\n\n&lt;0.001\n0.085\n\n\n    Não\n842 (45%)\n378 (20%)\n580 (31%)\n76 (4.1%)\n\n\n\n\n\n\n    Sim\n200 (46%)\n98 (23%)\n103 (24%)\n33 (7.6%)\n\n\n\n\n\n\nDificuldade FinanceiraQ\n\n\n\n\n\n\n\n\n&lt;0.001\n0.178\n\n\n    Não\n873 (46%)\n329 (17%)\n601 (32%)\n84 (4.5%)\n\n\n\n\n\n\n    Sim\n169 (40%)\n147 (35%)\n82 (19%)\n25 (5.9%)\n\n\n\n\n\n\nAcesso ao AlimentoQ\n\n\n\n\n\n\n\n\n&lt;0.001\n0.158\n\n\n    Não\n878 (46%)\n341 (18%)\n603 (32%)\n87 (4.6%)\n\n\n\n\n\n\n    Sim\n164 (41%)\n135 (34%)\n80 (20%)\n22 (5.5%)\n\n\n\n\n\n\nTempo de Preparo da RefeiçãoQ\n\n\n\n\n\n\n\n\n&lt;0.001\n0.104\n\n\n    Aumentou\n549 (47%)\n249 (21%)\n322 (27%)\n51 (4.4%)\n\n\n\n\n\n\n    Diminuiu\n176 (59%)\n51 (17%)\n59 (20%)\n13 (4.3%)\n\n\n\n\n\n\n    Não alterou\n317 (38%)\n176 (21%)\n302 (36%)\n45 (5.4%)\n\n\n\n\n\n\nCigarroQ\n\n\n\n\n\n\n\n\n0.011\n0.070\n\n\n    Não\n998 (45%)\n450 (20%)\n655 (30%)\n97 (4.4%)\n\n\n\n\n\n\n    Sim\n44 (40%)\n26 (24%)\n28 (25%)\n12 (11%)\n\n\n\n\n\n\nAtividade Física na PandemiaQ\n\n\n\n\n\n\n\n\n&lt;0.001\n0.095\n\n\n    Aumentou\n248 (39%)\n164 (25%)\n206 (32%)\n26 (4.0%)\n\n\n\n\n\n\n    Diminuiu\n546 (53%)\n182 (18%)\n265 (26%)\n42 (4.1%)\n\n\n\n\n\n\n    Não alterou\n116 (36%)\n57 (18%)\n125 (39%)\n21 (6.6%)\n\n\n\n\n\n\n    Não tenho o hábito\n132 (42%)\n73 (23%)\n87 (28%)\n20 (6.4%)\n\n\n\n\n\n\n\nQ: Teste do qui-quadrado de Pearson;  F: Teste exato de Fisher;  Valores em negrito na coluna Valor-p indicam significância estatística (p &lt; 0,05);  Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados."
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#numérica",
+    "href": "Avaliacao_6/index.html#numérica",
+    "title": "PROJETO I",
+    "section": "3.3 Numérica",
+    "text": "3.3 Numérica\n\nANOVAGrupos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariáveis\n\nMudança no consumo de doces\n\np-value\nComparações Múltiplas\n\n\nAumentou1042 (45%)\nDiminuiu476 (21%)\nNão alterou683 (30%)\nNão consumo109 (4.7%)\n\n\n\n\nIdadeW\n30 (11)\n34 (15)\n36 (13)\n39 (15)\n&lt;0.001\nAumentou = aDiminuiu = bNão alterou = bcNão consumo = c\n\n\nAlturaW\n1.65 (0.08)\n1.65 (0.09)\n1.67 (0.09)\n1.67 (0.09)\n&lt;0.001\nAumentou = aDiminuiu = abNão alterou = bNão consumo = ab\n\n\nPesoA\n69 (16)\n70 (16)\n70 (16)\n70 (16)\n0.817\nAumentou = aDiminuiu = aNão alterou = aNão consumo = a\n\n\nIMCA\n25.5 (5.1)\n25.4 (5.3)\n25.1 (4.8)\n25.2 (4.9)\n0.555\nAumentou = aDiminuiu = aNão alterou = aNão consumo = a\n\n\n\nA: ANOVA One-Way;  W: ANOVA de Welch;  Valores em negrito indicam significância estatística (p &lt; 0,05);  Comparação múltipla aplicada: Games-Howell"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#aberta",
+    "href": "Avaliacao_6/index.html#aberta",
+    "title": "PROJETO I",
+    "section": "3.4 Aberta",
+    "text": "3.4 Aberta"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#resultados-1",
+    "href": "Avaliacao_6/index.html#resultados-1",
+    "title": "PROJETO I",
+    "section": "3.5 Resultados",
+    "text": "3.5 Resultados\n3.5.1 Conclusão"
   }
 ]

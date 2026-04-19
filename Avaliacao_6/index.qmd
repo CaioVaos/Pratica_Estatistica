@@ -1,0 +1,293 @@
+---
+title: "<span style='color: #ffffff; font-weight: 800; text-shadow: 0 2px 6px rgba(0,0,0,0.6);'>PROJETO I</span>"
+subtitle: "<span class='grad-subtitle'>**ATIVIDADE AVALIATIVA 6**</span>"
+author: "Caio Salviano (<caiosalviano@id.uff.br>)"
+date: 2026-05-11
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: custom.css
+    slide-number: true
+    incremental: false
+    transition: slide
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    number-sections: true
+    title-slide-attributes:
+      data-background-image: "media/capa.png"
+      data-background-size: cover
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+
+# Introdução
+
+## A Pesquisa {style="font-size: 0.9em;"}
+
+::: box-salmon
+
+<u>**Contexto**</u>
+
+- A **pandemia de COVID-19** impactou profundamente a vida da população; 
+- Mudanças sociais, econômicas e comportamentais  ;
+- Medidas de isolamento social alteraram a rotina diária.
+
+:::
+
+<br>
+
+::: box-purple
+
+<u>**Motivação**</u>
+
+- Mudanças na rotina influenciaram o **comportamento alimentar**;
+
+- Fatores emocionais (estresse, ansiedade) ganharam relevância;
+
+- Possível aumento no consumo de alimentos ultraprocessados;
+
+- Destaque para o **consumo de doces**.
+
+:::
+
+## Objetivo
+
+::: box-salmon
+
+<u>**Problema de pesquisa**</u>
+
+- Quais fatores estão associados às mudanças no consumo de doces?  
+
+:::
+
+<br>
+
+:::: {.columns style="font-size: 0.85em;"}
+
+::: {.column width="48%"}
+
+::: box-purple
+
+<u>**Variável Desfecho**</u> 
+
+- **Doces**: mudança no consumo durante a pandemia:
+  - Aumentou;
+  - Diminuiu; 
+  - Não alterou;
+  - Não consumo.
+  
+:::
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+
+::: box-purple
+
+<u>**Variáveis Explicativas**</u>
+
+- Sociodemográficas;  
+- Econômicas;  
+- Comportamentais;  
+- Relacionadas à pandemia.  
+  
+:::
+
+:::
+
+::::
+
+# Metodologia
+
+## Sobre os dados
+
+:::: columns
+
+::: {.column width="48%"}
+
+::: {.box-purple style="font-size: 0.7em;"}
+
+<u>**Origem**</u>
+
+- questionário online aplicado em 2022
+
+<u>**Amostra**</u>
+
+- 2310 indivíduos
+
+:::
+
+<br>
+
+::: {.box-salmon style="font-size: 0.8em;"}
+
+<u>**Resumo da estrutura das variáveis**</u>
+
+- Variáveis categóricas: 15 variáveis;
+- Variáveis numéricas: 4 variáveis;
+- Variável aberta: 1 variável;
+- Variável resposta: **Doces**
+
+:::
+
+:::
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="48%"}
+
+::: {.box-salmon style="font-size: 0.75em; max-height: 550px; overflow-y: auto;"}
+
+<u>**Estutura das variáveis**</u>
+
+| Variável                     | Tipo            | Classificação                    |
+|-----------------------------|-----------------|----------------------------------|
+| Gênero                      | Categórica      | Nominal dicotômica              |
+| Raça/Cor                    | Categórica      | Nominal politômica              |
+| Região                      | Categórica      | Nominal politômica              |
+| Isolamento                  | Categórica      | Nominal dicotômica              |
+| Trabalha                    | Categórica      | Nominal dicotômica              |
+| Profissional Saúde          | Categórica      | Nominal dicotômica              |
+| Renda familiar              | Categórica      | Ordinal                         |
+| Escolaridade                | Categórica      | Ordinal                         |
+| Covid                       | Categórica      | Nominal dicotômica              |
+| Consulta Nutricionista      | Categórica      | Nominal dicotômica              |
+| Dificuldade Financeira      | Categórica      | Nominal dicotômica              |
+| Acesso Alimento             | Categórica      | Nominal dicotômica              |
+| Tempo Preparo Refeição      | Categórica      | Nominal politômica              |
+| Cigarro                     | Categórica      | Nominal dicotômica              |
+| Atividade Fisica Pandemia   | Categórica      | Nominal politômica              |
+| Idade                       | Numérica        | Contínua                        |
+| Altura                      | Numérica        | Contínua                        |
+| Peso                        | Numérica        | Contínua                        |
+| IMC                         | Numérica        | Contínua                        |
+| Sentimentos Pandemia        | Qualitativa     | Variável aberta                 |
+| Doces                       | Categórica      | Nominal politômica (resposta)   |
+
+:::
+
+:::
+
+::::
+
+## Testes aplicados
+
+::: box-gray
+
+- Análise descritiva: Disribuição da variável Doces.
+
+:::
+
+<br>
+
+:::: columns
+
+::: {.column width="33%"}
+
+::: box-purple
+
+<u>**Variáveis categóricas**</u>
+
+- Teste qui-quadrado;
+- Teste exato de Fisher;  
+- Coeficiente V de Cramer; 
+- Análise de resíduos.
+
+:::
+
+:::
+
+::: {.column width="33%"}
+
+::: box-salmon
+
+<u>**Variáveis numéricas**</u>
+
+- ANOVA one-way;
+- ANOVA de Welch;  
+- Comparações múltiplas de Games-Howell.
+
+:::
+
+:::
+
+::: {.column width="33%"}
+
+::: box-teal
+
+<u>**Variável aberta**</u>
+
+- Nuvem de palavras.
+
+:::
+
+:::
+
+::::
+
+# Resultados
+
+## Proporção do Consumo de Doces
+
+::: box-purple
+
+```{r cache=TRUE}
+plot_porp_doce_1 <- readRDS("data/plot_porp_doce_1.rds")
+plot_porp_doce_1
+```
+
+:::
+
+## Categóricas
+
+::: {style="max-height: 500px; overflow-y: auto; position: relative;"}
+```{r cache=TRUE}
+tabela_categorica <- readRDS("data/tabela_categorica.rds")
+tabela_categorica
+```
+
+:::
+
+## Numérica
+
+::: {.panel-tabset}
+
+### ANOVA
+
+::: {style="max-height: 500px; overflow-y: auto; position: relative;"}
+
+```{r cache=TRUE}
+tabela_numerica <- readRDS("data/tabela_numerica.rds")
+tabela_numerica
+```
+
+:::
+
+### Grupos
+
+```{r cache=TRUE}
+plot_medias_rect <- readRDS("data/plot_medias_rect.rds")
+plot_medias_rect
+```
+
+:::
+
+## Aberta
+
+## Resultados
+
+### Conclusão
+
+# Fim. {.unnumbered}
