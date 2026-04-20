@@ -169,15 +169,15 @@ library(scales)
 | Consulta Nutricionista      | Categórica      | Nominal dicotômica              |
 | Dificuldade Financeira      | Categórica      | Nominal dicotômica              |
 | Acesso Alimento             | Categórica      | Nominal dicotômica              |
-| Tempo Preparo Refeição      | Categórica      | Nominal politômica              |
+| Tempo Preparo Refeição      | Categórica      | Ordinal                         |
 | Cigarro                     | Categórica      | Nominal dicotômica              |
-| Atividade Fisica Pandemia   | Categórica      | Nominal politômica              |
+| Atividade Fisica Pandemia   | Categórica      | Ordinal politômica              |
 | Idade                       | Numérica        | Contínua                        |
 | Altura                      | Numérica        | Contínua                        |
 | Peso                        | Numérica        | Contínua                        |
 | IMC                         | Numérica        | Contínua                        |
 | Sentimentos Pandemia        | Qualitativa     | Variável aberta                 |
-| Doces                       | Categórica      | Nominal politômica (resposta)   |
+| **Doces**                   | Categórica      | Ordinal politômica (resposta)   |
 
 : {.tabela-tema}
 
@@ -189,15 +189,21 @@ library(scales)
 
 ## Testes aplicados
 
-::: box-gray
+::: {.box-gray style="font-size: 0.8em;"}
 
-- Análise descritiva: Disribuição da variável Doces.
+<u>**Verificação de Suposições**</u>
+
+- Normalidade: avaliação gráfica (Densidade e QQ-plot);
+
+- Homocedasticidade: testes de Levene e Bartlett;
+
+- Independência: assumida com base no delineamento do estudo.
 
 :::
 
 <br>
 
-:::: columns
+:::: {.columns style="font-size: 0.8em;"}
 
 ::: {.column width="33%"}
 
@@ -207,8 +213,8 @@ library(scales)
 
 - Teste qui-quadrado;
 - Teste exato de Fisher;  
-- Coeficiente V de Cramer; 
-- Análise de resíduos.
+- Coeficiente de Cramer; 
+- <span style="font-size: 0.75em;">Análise de resíduos padronizados.</span>
 
 :::
 
@@ -222,7 +228,7 @@ library(scales)
 
 - ANOVA one-way;
 - ANOVA de Welch;  
-- Comparações múltiplas de Games-Howell.
+- <span style="font-size: 0.75em;">Comparações múltiplas de Games-Howell.</span>
 
 :::
 
@@ -260,23 +266,23 @@ plot_prop_doce_1
 
 ```{r }
 #| cache: true
-cabecalho <- readRDS("data/tabela_categorica_cabecalho.rds")
-corpo     <- readRDS("data/tabela_categorica_corpo.rds")
-rodape    <- readRDS("data/tabela_categorica_rodape.rds")
+cabecalho_categorica <- readRDS("data/tabela_categorica_cabecalho.rds")
+corpo_categorica <- readRDS("data/tabela_categorica_corpo.rds")
+rodape_categorica <- readRDS("data/tabela_categorica_rodape.rds")
 
-altura_scroll <- "420px"
+altura_scroll <- "450px"
 
 htmltools::HTML(paste0(
   '<div class="tabela-header">',
-    '<table class="gt_table">', cabecalho, '</table>',
+    '<table class="gt_table">', cabecalho_categorica, '</table>',
   '</div>',
   
   '<div class="tabela-body-scroll" style="max-height:', altura_scroll, ';">',
-    '<table class="gt_table">', corpo, '</table>',
+    '<table class="gt_table">', corpo_categorica, '</table>',
   '</div>',
   
   '<div class="tabela-footer">',
-    '<table class="gt_table">', rodape, '</table>',
+    '<table class="gt_table">', rodape_categorica, '</table>',
   '</div>'
 ))
 ```
@@ -289,23 +295,23 @@ htmltools::HTML(paste0(
 
 ```{r }
 #| cache: true
-cabecalho <- readRDS("data/tabela_categorica_cabecalho.rds")
-corpo     <- readRDS("data/tabela_numerica_corpo.rds")
-rodape    <- readRDS("data/tabela_numerica_rodape.rds")
+cabecalho_numerica <- readRDS("data/tabela_numerica_cabecalho.rds")
+corpo_numerica <- readRDS("data/tabela_numerica_corpo.rds")
+rodape_numerica <- readRDS("data/tabela_numerica_rodape.rds")
 
 altura_scroll <- "350px"  # ← controle aqui
 
 htmltools::HTML(paste0(
   '<div class="tabela-header">',
-    '<table class="gt_table">', cabecalho, '</table>',
+    '<table class="gt_table">', cabecalho_numerica, '</table>',
   '</div>',
   
   '<div class="tabela-body-scroll" style="max-height:', altura_scroll, ';">',
-    '<table class="gt_table">', corpo, '</table>',
+    '<table class="gt_table">', corpo_numerica, '</table>',
   '</div>',
   
   '<div class="tabela-footer">',
-    '<table class="gt_table">', rodape, '</table>',
+    '<table class="gt_table">', rodape_numerica, '</table>',
   '</div>'
 ))
 ```

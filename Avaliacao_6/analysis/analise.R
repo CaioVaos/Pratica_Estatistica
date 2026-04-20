@@ -638,7 +638,7 @@ tabela <- tabela %>%
     )
   ) %>% 
   tab_options(
-    source_notes.font.size = "15px"
+    source_notes.font.size = "14px"
   ) %>%
   tab_style(
     style = cell_text(color = "#666666"),
