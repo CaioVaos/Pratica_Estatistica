@@ -5,79 +5,19 @@ require(gt)                  # Tabelas automáticas
 require(rstatix)             # Coeficiente de Cramer
 require(qqplotr)             # Gráficos qqplot
 require(DescTools)           # Teste de Levene
-library(scales)
 
-df <- openxlsx::read.xlsx("Avaliacao_6/data/Nutricao.xlsx") %>%  select(1:20, "Doces")
+df <- openxlsx::read.xlsx("Avaliacao_6/data/Nutricao.xlsx") %>% 
+  select(1:20, "Doces") %>% 
+  filter(Doces != "Não consumo")
 
 # formatação em português (vírgula pra decimais e ponto para milhares)
 theme_gtsummary_language("pt", big.mark = ".", decimal.mark = ",")
 
 # Doces ------------------------------------------------------------------------
+library(ggplot2)
+library(scales)
 
-
-plot_prop_doce_1 <- ggplot(df, aes(x = Doces)) +
-  geom_bar(fill = "#c07068", color = "#2d2f45", width = 0.7) +
-  
-  # percentual dentro da barra
-  geom_text(
-    stat = "count",
-    aes(label = percent(after_stat(count / sum(count)))),
-    position = position_stack(vjust = 0.5),
-    color = "white",
-    size = 5,
-    fontface = "bold"
-  ) +
-  
-  # frequência no topo (caixinha estilizada)
-  geom_label(
-    stat = "count",
-    aes(
-      y = after_stat(count),
-      label = after_stat(count)
-    ),
-    vjust = 0.3,
-    size = 4,
-    fill = "white",
-    color = "#2d2f45",
-    label.size = 0.6,
-    label.r = unit(0.2, "lines")  # cantos levemente arredondados
-  ) +
-  
-  labs(
-    title = "Mudança no consumo de doces",
-    x = NULL,
-    y = "Frequência"
-  ) +
-  
-  theme_minimal(base_family = "Inter") +
-  
-  theme(
-    plot.title = element_text(
-      hjust = 0.5,
-      size = 18,
-      face = "bold",
-      color = "#2d2f45"
-    ),
-    
-    axis.text = element_text(color = "#2d2f45"),
-    axis.title.y = element_text(color = "#5c607a"),
-    
-    panel.grid.major.x = element_blank(),
-    panel.grid.minor = element_blank(),
-    
-    panel.grid.major.y = element_line(
-      color = "#e5e7eb",
-      linewidth = 0.6
-    ),
-    
-    axis.line = element_line(color = "#2d2f45"),
-    
-    legend.position = "none"
-  )
-
-# saveRDS(plot_prop_doce_1, file = "Avaliacao_6/data/plot_prop_doce_1.rds")
-
-plot_prop_doce_2 <- ggplot(df %>% filter(Doces != "Não consumo"), aes(x = Doces)) +
+plot_porp_doce_1 <- ggplot(df, aes(x = Doces)) +
   geom_bar(aes(y = after_stat(prop), group = 1),
            fill = "#c07068") +
   scale_y_continuous(labels = percent_format()) +
@@ -87,7 +27,19 @@ plot_prop_doce_2 <- ggplot(df %>% filter(Doces != "Não consumo"), aes(x = Doces
   theme_classic()+
   theme(plot.title = element_text(hjust = 0.5))
 
-# saveRDS(plot_prop_doce_2, file = "Avaliacao_6/data/plot_prop_doce_2.rds")
+# saveRDS(plot_porp_doce_1, file = "Avaliacao_6/data/plot_porp_doce_1.rds")
+
+plot_porp_doce_2 <- ggplot(df %>% filter(Doces != "Não consumo"), aes(x = Doces)) +
+  geom_bar(aes(y = after_stat(prop), group = 1),
+           fill = "#c07068") +
+  scale_y_continuous(labels = percent_format()) +
+  labs(title = "Mudança no consumo de doces (%)",
+       x = NULL,
+       y = "Proporção") +
+  theme_classic()+
+  theme(plot.title = element_text(hjust = 0.5))
+
+# saveRDS(plot_porp_doce_2, file = "Avaliacao_6/data/plot_porp_doce_2.rds")
 
 # Qualitativa ------------------------------------------------------------------
 
@@ -133,6 +85,30 @@ chisq.test(df_quali$cigarro,df_quali$Doces)$expected
 
 chisq.test(df_quali$atividade_fisica_pandemia,df_quali$Doces)$expected
 
+### manipulações ----
+
+glimpse(df_quali)
+
+#### Raça
+
+df_quali_sem_ind <- df_quali %>%
+  mutate(Raca_cor = recode(Raca_cor,
+                           "Indígena" = "Outro"))
+
+chisq.test(df_quali_sem_ind$Raca_cor,df_quali_sem_ind$Doces)$expected # casela menor que 5
+fisher.test(df_quali_sem_ind$Raca_cor,df_quali_sem_ind$Doces)
+
+df_quali <- df_quali %>%
+  mutate(Raca_cor = recode(Raca_cor,
+                           "Indígena" = "Outro"))
+
+#### Escolaridade
+
+df_quali_sem_ana <- df_quali %>%
+  filter(Escolaridade != "Analfabeto")
+
+chisq.test(df_quali_sem_ana$Escolaridade,df_quali_sem_ana$Doces)$expected # casela menor que 5
+
 ## Tabela com o pvalor ----------------------------------------------------------
 tbl_summary(
   data = df_quali,
@@ -144,10 +120,6 @@ tbl_summary(
       Escolaridade ~ "fisher.test",
       Raca_cor     ~ "fisher.test",
       everything() ~ "chisq.test"
-    ),
-    test.args = list(
-      Escolaridade = list(simulate.p.value = TRUE, B = 1000),
-      Raca_cor     = list(simulate.p.value = TRUE, B = 1000)
     )
   ) %>% 
   bold_p(t = 0.05)
@@ -155,6 +127,8 @@ tbl_summary(
 ## Residuos ---------------------------------------------------------------------
 # acima de 1,96 ou abaixo de -1,96 na normal padrao sao os influentes
 chisq.test(df_quali$Genero,df_quali$Doces)$stdres
+
+chisq.test(df_quali$Raca_cor,df_quali$Doces)$stdres
 
 chisq.test(df_quali$Regiao,df_quali$Doces)$stdres
 
@@ -228,18 +202,18 @@ tabela <- tbl_summary(
   modify_footnote(everything() ~ NA) %>%
   
   ### negrito nas caselas ----
-  # stat_1 = Aumentou
-  modify_table_styling(columns = stat_1, text_format = "bold",
-                       rows = (variable == "Genero"                 & label %in% c("Feminino", "Masculino"))             |
-                         (variable == "Regiao"                 & label %in% c("Centro-oeste", "Norte", "Sudeste"))   |
-                         (variable == "Isolamento"             & label %in% c("Não", "Sim"))                         |
-                         (variable == "Profissional_Saude"     & label %in% c("Não", "Sim"))                         |
-                         (variable == "Renda_familiar"         & label == "entre R$ 1.255 - R$ 8.640")               |
-                         (variable == "Escolaridade"           & label %in% c("Ensino Médio Completo", "Pós-graduação")) |
-                         (variable == "Dificuldade_Financeira" & label %in% c("Não", "Sim"))                         |
-                         (variable == "Tempo_Preparo_Refeicao" & label %in% c("Diminuiu", "Não alterou"))            |
-                         (variable == "atividade_fisica_pandemia" & label %in% c("Aumentou", "Diminuiu", "Não alterou"))
-  ) %>%
+# stat_1 = Aumentou
+modify_table_styling(columns = stat_1, text_format = "bold",
+                     rows = (variable == "Genero"                 & label %in% c("Feminino", "Masculino"))             |
+                       (variable == "Regiao"                 & label %in% c("Centro-oeste", "Norte", "Sudeste"))   |
+                       (variable == "Isolamento"             & label %in% c("Não", "Sim"))                         |
+                       (variable == "Profissional_Saude"     & label %in% c("Não", "Sim"))                         |
+                       (variable == "Renda_familiar"         & label == "entre R$ 1.255 - R$ 8.640")               |
+                       (variable == "Escolaridade"           & label %in% c("Ensino Médio Completo", "Pós-graduação")) |
+                       (variable == "Dificuldade_Financeira" & label %in% c("Não", "Sim"))                         |
+                       (variable == "Tempo_Preparo_Refeicao" & label %in% c("Diminuiu", "Não alterou"))            |
+                       (variable == "atividade_fisica_pandemia" & label %in% c("Aumentou", "Diminuiu", "Não alterou"))
+) %>%
   
   # stat_2 = Diminuiu
   modify_table_styling(columns = stat_2, text_format = "bold",
@@ -293,21 +267,13 @@ tabela <- tabela %>%
 
 ### nota roda pé ----
 
-tabela_categorica <- tabela %>%
+tabela <- tabela %>%
   tab_source_note(
-  source_note = md("**Q**: Teste do qui-quadrado de Pearson; <br>
+    source_note = md("**Q**: Teste do qui-quadrado de Pearson; <br>
                      **F**: Teste exato de Fisher; <br>
                      Valores em negrito na coluna *Valor-p* indicam significância estatística (p < 0,05); <br>
                      Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados.")
-) %>% 
-  tab_options(
-    source_notes.font.size = "13px"
-  ) %>%
-  tab_style(
-    style = cell_text(color = "#666666"),
-    locations = cells_source_notes()
   )
-tabela_categorica
 
 ### salvar ----
 
@@ -639,15 +605,9 @@ tabela <- tabela %>%
   ) %>% 
   tab_options(
     source_notes.font.size = "15px"
-  ) %>%
-  tab_style(
-    style = cell_text(color = "#666666"),
-    locations = cells_source_notes()
   )
 
 #### salvar ----
-
-tabela_numerica <- tabela
 
 # saveRDS(tabela_numerica, file = "Avaliacao_6/data/tabela_numerica.rds")
 
@@ -826,23 +786,7 @@ grupos <- tribble(
     Doces    = factor(Doces,    levels = c("Aumentou", "Diminuiu", "Não alterou", "Não consumo")),
     Variavel = factor(Variavel, levels = c("Idade", "Altura", "Peso", "IMC"))
   )
-df_long <- df_quant %>%
-  pivot_longer(cols = c(Idade, Altura, Peso, IMC),
-               names_to = "Variavel", values_to = "Valor") %>%
-  mutate(
-    Doces   = factor(Doces, levels = c("Aumentou", "Diminuiu", "Não alterou", "Não consumo")),
-    Variavel = factor(Variavel, levels = c("Idade", "Altura", "Peso", "IMC"))
-  )
-df_summary <- df_long %>%
-  group_by(Variavel, Doces) %>%
-  summarise(
-    media = mean(Valor, na.rm = TRUE),
-    se    = sd(Valor, na.rm = TRUE) / sqrt(n()),
-    .groups = "drop"
-  )
-y_ranges <- df_summary %>%
-  group_by(Variavel) %>%
-  summarise(y_range = diff(range(media)), .groups = "drop")
+
 df_rect_params <- grupos %>%
   left_join(df_summary, by = c("Variavel", "Doces")) %>%
   group_by(Variavel, grupo) %>%
@@ -873,95 +817,31 @@ df_rect_params <- grupos %>%
   )
 
 plot_medias_rect <- ggplot(df_summary, aes(x = as.numeric(Doces), y = media)) +
-  
   geom_rect(
-    data = df_rect_params,
-    aes(
-      xmin = xmin, xmax = xmax,
-      ymin = ymin, ymax = ymax,
-      fill = grupo,
-      color = grupo
-    ),
+    data        = df_rect_params,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax, color = grupo),
     inherit.aes = FALSE,
-    alpha = 0.10,
-    linetype = "solid",
-    linewidth = 0.7
+    fill        = NA,
+    linetype    = "dashed",
+    linewidth   = 0.6
   ) +
-  
-  scale_fill_manual(
-    name   = "Grupo",
-    values = c(
-      "a" = "#c07068",
-      "b" = "#5c607a",
-      "c" = "#4c9a92"
-    )
-  ) +
-  
   scale_color_manual(
     name   = "Grupo",
-    values = c(
-      "a" = "#c07068",
-      "b" = "#5c607a",
-      "c" = "#4c9a92"
-    )
+    values = c("a" = "#D85A30", "b" = "#378ADD", "c" = "#1D9E75")
   ) +
-  
-  geom_point(
-    size = 2.8,
-    color = "#2d2f45"
-  ) +
-  
-  geom_errorbar(
-    aes(
-      ymin = media - 1.96 * se,
-      ymax = media + 1.96 * se
-    ),
-    width = 0.15,
-    color = "#2d2f45",
-    linewidth = 0.6
-  ) +
-  
+  geom_point(size = 2.6) +
+  geom_errorbar(aes(ymin = media - 1.96 * se,
+                    ymax = media + 1.96 * se),
+                width = 0.2) +
   scale_x_continuous(
     breaks = 1:4,
     labels = c("Aumentou", "Diminuiu", "Não alterou", "Não consumo"),
     guide  = guide_axis(n.dodge = 2)
   ) +
-  
   facet_wrap(~ Variavel, scales = "free_y", ncol = 2) +
-  
-  labs(
-    x = NULL,
-    y = "Média (IC 95%)"
-  ) +
-  
-  theme_minimal(base_family = "Inter") +
-  
-  theme(
-    plot.title = element_text(
-      hjust = 0.5,
-      size = 18,
-      face = "bold",
-      color = "#2d2f45"
-    ),
-    axis.text = element_text(color = "#2d2f45"),
-    axis.title.y = element_text(color = "#5c607a"),
-    panel.grid.major.x = element_blank(),
-    panel.grid.minor = element_blank(),
-    panel.grid.major.y = element_line(
-      color = "#e5e7eb",
-      linewidth = 0.6
-    ),
-    axis.line = element_line(color = "#2d2f45"),
-    strip.text = element_text(
-      face = "bold",
-      color = "#2d2f45",
-      size = 12
-    ),
-    legend.position = "right",
-    legend.title = element_text(color = "#5c607a"),
-    legend.text = element_text(color = "#2d2f45")
-  )
-
+  labs(x = NULL, y = "Média (IC 95%)") +
+  theme_classic() +
+  theme(legend.position = "bottom")
 
 plot_medias_rect
 

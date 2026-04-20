@@ -136,30 +136,28 @@
 }
 
 /* ===== Cabeçalho ===== */
-.reveal table thead th {
-  background-color: #4c9a92;
-  color: #ffffff;
+.reveal table.tabela-tema thead th {
+  background-color: #4c9a92 !important;
+  color: #ffffff !important;
   font-weight: 700;
   padding: 10px;
   text-align: left;
   border-bottom: 3px solid #c07068;
 }
-
-/* ===== Linhas ===== */
-.reveal table tbody td {
+.reveal table.tabela-tema tbody td {
   padding: 8px 10px;
   border-bottom: 1px solid #e5e7eb;
 }
-
-/* ===== Zebra (linhas alternadas) ===== */
-.reveal table tbody tr:nth-child(even) {
+.reveal table.tabela-tema tbody tr:nth-child(even) {
   background-color: #f8fafc;
 }
-
-/* ===== Hover (quando passa o mouse) ===== */
-.reveal table tbody tr:hover {
+.reveal table.tabela-tema tbody tr:hover {
   background-color: #e0f2fe;
   transition: 0.2s;
+}
+.reveal table.tabela-tema tbody td:first-child {
+  font-weight: 600;
+  color: #1e293b;
 }
 
 /* ===== Primeira coluna em destaque ===== */
@@ -199,10 +197,28 @@
   border-bottom: 2px solid #4c9a92;      /* teal */
 }
 
-.grad-subtitle {
-  background: linear-gradient(to right, #2d2f45, #c07068); /* dark → salmon */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}}
+/* ===== Quebra Tabela gtsummary ===== */
+
+.tabela-header table,
+.tabela-body-scroll table,
+.tabela-footer table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+
+.tabela-body-scroll {
+  overflow-y: auto;
+  display: block;
+}
+
+.tabela-header {
+  overflow: hidden;
+  border-bottom: 2px solid #444444;
+}
+
+.tabela-footer {
+  overflow: hidden;
+  border-top: 2px solid #444444;
+}

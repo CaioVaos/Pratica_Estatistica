@@ -1,6 +1,6 @@
 ---
 title: "<span style='color: #ffffff; font-weight: 800; text-shadow: 0 2px 6px rgba(0,0,0,0.6);'>PROJETO I</span>"
-subtitle: "<span class='grad-subtitle'>**ATIVIDADE AVALIATIVA 6**</span>"
+subtitle: "**ATIVIDADE AVALIATIVA 6**"
 author: "Caio Salviano (<caiosalviano@id.uff.br>)"
 date: 2026-05-11
 date-format: "DD/MM/YYYY"
@@ -24,6 +24,7 @@ format:
 
 ```{r setup, include=FALSE}
 library(tidyverse)
+library(scales)
 ```
 
 
@@ -81,7 +82,7 @@ library(tidyverse)
   - Aumentou;
   - Diminuiu; 
   - Não alterou;
-  - Não consumo.
+  - <span class="highlight-purple">Não consumo</span>.
   
 :::
 
@@ -115,15 +116,17 @@ library(tidyverse)
 
 ::: {.column width="48%"}
 
-::: {.box-purple style="font-size: 0.7em;"}
+::: {.box-purple style="font-size: 0.6em;"}
 
 <u>**Origem**</u>
 
-- questionário online aplicado em 2022
+- Dados provenientes de questionário online;
+- Coletados por alunas da pós-graduação em Nutrição na UFF;
+- Aplicado no ano de 2022;
 
 <u>**Amostra**</u>
 
-- 2310 indivíduos
+- 2310 indivíduos.
 
 :::
 
@@ -175,6 +178,8 @@ library(tidyverse)
 | IMC                         | Numérica        | Contínua                        |
 | Sentimentos Pandemia        | Qualitativa     | Variável aberta                 |
 | Doces                       | Categórica      | Nominal politômica (resposta)   |
+
+: {.tabela-tema}
 
 :::
 
@@ -241,24 +246,40 @@ library(tidyverse)
 
 ## Proporção do Consumo de Doces
 
-::: box-purple
+```{r }
+#| cache: true
+#| fig-align: center
+#| out-width: "100%"
+#| out-height: "80%"
 
-```{r cache=TRUE}
-plot_porp_doce_1 <- readRDS("data/plot_porp_doce_1.rds")
-plot_porp_doce_1
+plot_prop_doce_1 <- readRDS("data/plot_prop_doce_1.rds")
+plot_prop_doce_1
 ```
-
-:::
 
 ## Categóricas
 
-::: {style="max-height: 500px; overflow-y: auto; position: relative;"}
-```{r cache=TRUE}
-tabela_categorica <- readRDS("data/tabela_categorica.rds")
-tabela_categorica
-```
+```{r }
+#| cache: true
+cabecalho <- readRDS("data/tabela_categorica_cabecalho.rds")
+corpo     <- readRDS("data/tabela_categorica_corpo.rds")
+rodape    <- readRDS("data/tabela_categorica_rodape.rds")
 
-:::
+altura_scroll <- "420px"
+
+htmltools::HTML(paste0(
+  '<div class="tabela-header">',
+    '<table class="gt_table">', cabecalho, '</table>',
+  '</div>',
+  
+  '<div class="tabela-body-scroll" style="max-height:', altura_scroll, ';">',
+    '<table class="gt_table">', corpo, '</table>',
+  '</div>',
+  
+  '<div class="tabela-footer">',
+    '<table class="gt_table">', rodape, '</table>',
+  '</div>'
+))
+```
 
 ## Numérica
 
@@ -266,18 +287,38 @@ tabela_categorica
 
 ### ANOVA
 
-::: {style="max-height: 500px; overflow-y: auto; position: relative;"}
+```{r }
+#| cache: true
+cabecalho <- readRDS("data/tabela_categorica_cabecalho.rds")
+corpo     <- readRDS("data/tabela_numerica_corpo.rds")
+rodape    <- readRDS("data/tabela_numerica_rodape.rds")
 
-```{r cache=TRUE}
-tabela_numerica <- readRDS("data/tabela_numerica.rds")
-tabela_numerica
+altura_scroll <- "350px"  # ← controle aqui
+
+htmltools::HTML(paste0(
+  '<div class="tabela-header">',
+    '<table class="gt_table">', cabecalho, '</table>',
+  '</div>',
+  
+  '<div class="tabela-body-scroll" style="max-height:', altura_scroll, ';">',
+    '<table class="gt_table">', corpo, '</table>',
+  '</div>',
+  
+  '<div class="tabela-footer">',
+    '<table class="gt_table">', rodape, '</table>',
+  '</div>'
+))
 ```
-
-:::
 
 ### Grupos
 
-```{r cache=TRUE}
+```{r}
+#| cache: true
+#| fig-align: center
+#| out-width: "100%"
+#| out-height: "80%"
+#| fig-height: 4.5
+
 plot_medias_rect <- readRDS("data/plot_medias_rect.rds")
 plot_medias_rect
 ```
@@ -286,8 +327,8 @@ plot_medias_rect
 
 ## Aberta
 
-## Resultados
+# Conclusão
 
-### Conclusão
+## Achados
 
 # Fim. {.unnumbered}
