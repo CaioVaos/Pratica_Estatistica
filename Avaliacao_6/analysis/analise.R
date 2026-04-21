@@ -77,18 +77,6 @@ plot_prop_doce_1 <- ggplot(df, aes(x = Doces)) +
 
 # saveRDS(plot_prop_doce_1, file = "Avaliacao_6/data/plot_prop_doce_1.rds")
 
-plot_prop_doce_2 <- ggplot(df %>% filter(Doces != "Não consumo"), aes(x = Doces)) +
-  geom_bar(aes(y = after_stat(prop), group = 1),
-           fill = "#c07068") +
-  scale_y_continuous(labels = percent_format()) +
-  labs(title = "Mudança no consumo de doces (%)",
-       x = NULL,
-       y = "Proporção") +
-  theme_classic()+
-  theme(plot.title = element_text(hjust = 0.5))
-
-# saveRDS(plot_prop_doce_2, file = "Avaliacao_6/data/plot_prop_doce_2.rds")
-
 # Qualitativa ------------------------------------------------------------------
 
 df_quali <- df %>% select(1:15, "Doces")
@@ -144,10 +132,6 @@ tbl_summary(
       Escolaridade ~ "fisher.test",
       Raca_cor     ~ "fisher.test",
       everything() ~ "chisq.test"
-    ),
-    test.args = list(
-      Escolaridade = list(simulate.p.value = TRUE, B = 1000),
-      Raca_cor     = list(simulate.p.value = TRUE, B = 1000)
     )
   ) %>% 
   bold_p(t = 0.05)
@@ -264,7 +248,7 @@ tabela <- tbl_summary(
                          (variable == "Dificuldade_Financeira" & label %in% c("Não", "Sim"))                         |
                          (variable == "Acesso_Alimento"        & label %in% c("Não", "Sim"))                         |
                          (variable == "Tempo_Preparo_Refeicao" & label %in% c("Diminuiu", "Não alterou"))            |
-                         (variable == "atividade_fisica_pandemia" & label == "Não alterou")
+                         (variable == "atividade_fisica_pandemia" & label %in% c("Diminuiu", "Não alterou"))
   ) %>%
   
   # stat_4 = Não consumo
@@ -282,7 +266,13 @@ tabela <- tabela %>%
   tab_style(
     style = cell_fill(color = "#fef9c3"),
     locations = cells_body(
-      rows = p.value < 0.05
+      rows = p.value < 0.05 & variable != "cigarro"
+    )
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "#fefce8"),
+    locations = cells_body(
+      rows = p.value < 0.05 & variable == "cigarro"
     )
   ) %>%
   gt::fmt_markdown(
@@ -415,6 +405,7 @@ df_quant <- df %>% select(16:19, "Doces")
 ### Normalidade ----
 # Amostra grande; Shapiro rejeita
 # Amostra grande; TCL garante Normalidade
+# Normais: Altura
 
 #### Idade ----
 # Não Normais
@@ -436,6 +427,13 @@ ggplot(df_quant, aes(sample = Idade)) +
   theme_bw() +
   theme(text = element_text(size = 14))
 by(df_quant$Idade, df_quant$Doces, shapiro.test)
+
+library(nortest)
+by(df_quant$Idade, df_quant$Doces, ad.test)
+by(df_quant$Idade, df_quant$Doces, lillie.test)
+by(df_quant$Idade, df_quant$Doces, function(x) {
+  ks.test(x, "pnorm", mean = mean(x), sd = sd(x))
+})
 
 #### Altura ----
 # Normais
@@ -501,8 +499,8 @@ ggplot(df_quant, aes(sample = IMC)) +
 by(df_quant$IMC, df_quant$Doces, shapiro.test)
 
 ### Homocedasticidade ----
-# Homocedasticidade: Peso
-# Heterocedasticidade: Idade, Altura, Peso
+# Homocedasticidade: Peso, IMC
+# Heterocedasticidade: Idade, Altura
 
 #### Idade ----
 # bartlett.test(formula = Idade~Doces,data = df_quant)

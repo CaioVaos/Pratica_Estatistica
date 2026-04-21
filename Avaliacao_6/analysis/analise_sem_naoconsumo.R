@@ -96,7 +96,6 @@ df_quali_sem_ind <- df_quali %>%
                            "Indígena" = "Outro"))
 
 chisq.test(df_quali_sem_ind$Raca_cor,df_quali_sem_ind$Doces)$expected # casela menor que 5
-fisher.test(df_quali_sem_ind$Raca_cor,df_quali_sem_ind$Doces)
 
 df_quali <- df_quali %>%
   mutate(Raca_cor = recode(Raca_cor,
@@ -109,6 +108,9 @@ df_quali_sem_ana <- df_quali %>%
 
 chisq.test(df_quali_sem_ana$Escolaridade,df_quali_sem_ana$Doces)$expected # casela menor que 5
 
+df_quali <- df_quali %>%
+  filter(Escolaridade != "Analfabeto")
+
 ## Tabela com o pvalor ----------------------------------------------------------
 tbl_summary(
   data = df_quali,
@@ -117,7 +119,6 @@ tbl_summary(
 ) %>%
   add_p(
     test = list(
-      Escolaridade ~ "fisher.test",
       Raca_cor     ~ "fisher.test",
       everything() ~ "chisq.test"
     )
@@ -204,49 +205,47 @@ tabela <- tbl_summary(
   ### negrito nas caselas ----
 # stat_1 = Aumentou
 modify_table_styling(columns = stat_1, text_format = "bold",
-                     rows = (variable == "Genero"                 & label %in% c("Feminino", "Masculino"))             |
-                       (variable == "Regiao"                 & label %in% c("Centro-oeste", "Norte", "Sudeste"))   |
-                       (variable == "Isolamento"             & label %in% c("Não", "Sim"))                         |
-                       (variable == "Profissional_Saude"     & label %in% c("Não", "Sim"))                         |
-                       (variable == "Renda_familiar"         & label == "entre R$ 1.255 - R$ 8.640")               |
-                       (variable == "Escolaridade"           & label %in% c("Ensino Médio Completo", "Pós-graduação")) |
-                       (variable == "Dificuldade_Financeira" & label %in% c("Não", "Sim"))                         |
-                       (variable == "Tempo_Preparo_Refeicao" & label %in% c("Diminuiu", "Não alterou"))            |
+                     rows =
+                       (variable == "Genero"                  & label %in% c("Feminino", "Masculino"))                          |
+                       (variable == "Raca_cor"                & label %in% c("Branca", "Parda"))                                |
+                       (variable == "Regiao"                  & label == "Norte")                                               |
+                       (variable == "Isolamento"              & label %in% c("Não", "Sim"))                                     |
+                       (variable == "Profissional_Saude"      & label %in% c("Não", "Sim"))                                     |
+                       (variable == "Renda_familiar"          & label %in% c("até R$ 1254,00", "entre R$ 1.255 - R$ 8.640"))   |
+                       (variable == "Escolaridade"            & label == "Ensino Médio Completo")                               |
+                       (variable == "Dificuldade_Financeira"  & label %in% c("Não", "Sim"))                                     |
+                       (variable == "Tempo_Preparo_Refeicao"  & label %in% c("Diminuiu", "Não alterou"))                       |
                        (variable == "atividade_fisica_pandemia" & label %in% c("Aumentou", "Diminuiu", "Não alterou"))
 ) %>%
   
   # stat_2 = Diminuiu
   modify_table_styling(columns = stat_2, text_format = "bold",
-                       rows = (variable == "Trabalha"               & label %in% c("Não", "Sim"))                         |
-                         (variable == "Profissional_Saude"     & label %in% c("Não", "Sim"))                         |
-                         (variable == "Renda_familiar"         & label == "até R$ 1254,00")                           |
-                         (variable == "Escolaridade"           & label %in% c("Ensino Médio Completo", "Pós-graduação")) |
-                         (variable == "Dificuldade_Financeira" & label %in% c("Não", "Sim"))                         |
-                         (variable == "Acesso_Alimento"        & label %in% c("Não", "Sim"))                         |
+                       rows =
+                         (variable == "Raca_cor"                & label %in% c("Branca", "Parda", "Preta"))                       |
+                         (variable == "Regiao"                  & label == "Norte")                                               |
+                         (variable == "Trabalha"                & label %in% c("Não", "Sim"))                                     |
+                         (variable == "Profissional_Saude"      & label %in% c("Não", "Sim"))                                     |
+                         (variable == "Renda_familiar"          & label == "até R$ 1254,00")                                      |
+                         (variable == "Escolaridade"            & label %in% c("Ensino Médio Completo", "Pós-graduação"))         |
+                         (variable == "Dificuldade_Financeira"  & label %in% c("Não", "Sim"))                                     |
+                         (variable == "Acesso_Alimento"         & label %in% c("Não", "Sim"))                                     |
                          (variable == "atividade_fisica_pandemia" & label %in% c("Aumentou", "Diminuiu"))
   ) %>%
   
   # stat_3 = Não alterou
   modify_table_styling(columns = stat_3, text_format = "bold",
-                       rows = (variable == "Genero"                 & label %in% c("Feminino", "Masculino"))              |
-                         (variable == "Regiao"                 & label == "Centro-oeste")                             |
-                         (variable == "Isolamento"             & label %in% c("Não", "Sim"))                         |
-                         (variable == "Trabalha"               & label %in% c("Não", "Sim"))                         |
-                         (variable == "Renda_familiar"         & label == "mais de R$ 8.640")                         |
-                         (variable == "Escolaridade"           & label %in% c("Ensino Médio Completo", "Pós-graduação")) |
-                         (variable == "Consulta_Nutricionista" & label %in% c("Não", "Sim"))                         |
-                         (variable == "Dificuldade_Financeira" & label %in% c("Não", "Sim"))                         |
-                         (variable == "Acesso_Alimento"        & label %in% c("Não", "Sim"))                         |
-                         (variable == "Tempo_Preparo_Refeicao" & label %in% c("Diminuiu", "Não alterou"))            |
-                         (variable == "atividade_fisica_pandemia" & label == "Não alterou")
-  ) %>%
-  
-  # stat_4 = Não consumo
-  modify_table_styling(columns = stat_4, text_format = "bold",
-                       rows = (variable == "Genero"                 & label %in% c("Feminino", "Masculino"))              |
-                         (variable == "Regiao"                 & label == "Centro-oeste")                             |
-                         (variable == "Consulta_Nutricionista" & label %in% c("Não", "Sim"))                         |
-                         (variable == "cigarro"                & label %in% c("Não", "Sim"))
+                       rows =
+                         (variable == "Genero"                  & label %in% c("Feminino", "Masculino"))                          |
+                         (variable == "Regiao"                  & label == "Centro-oeste")                                        |
+                         (variable == "Isolamento"              & label %in% c("Não", "Sim"))                                     |
+                         (variable == "Trabalha"                & label %in% c("Não", "Sim"))                                     |
+                         (variable == "Renda_familiar"          & label == "mais de R$ 8.640")                                    |
+                         (variable == "Escolaridade"            & label %in% c("Ensino Médio Completo", "Pós-graduação"))         |
+                         (variable == "Consulta_Nutricionista"  & label %in% c("Não", "Sim"))                                     |
+                         (variable == "Dificuldade_Financeira"  & label %in% c("Não", "Sim"))                                     |
+                         (variable == "Acesso_Alimento"         & label %in% c("Não", "Sim"))                                     |
+                         (variable == "Tempo_Preparo_Refeicao"  & label %in% c("Aumentou", "Diminuiu", "Não alterou"))           |
+                         (variable == "atividade_fisica_pandemia" & label %in% c("Diminuiu", "Não alterou"))
   )
 
 ### rmd ----
@@ -279,100 +278,9 @@ tabela <- tabela %>%
 
 # saveRDS(tabela_categorica, file = "Avaliacao_6/data/tabela_categorica.rds")
 
-### Colorindo -------------------------------------------------------------------
-
-tabela <- tabela %>%
-  
-  # ── stat_1 = Aumentou ────────────────────────────────────────────────────────
-  tab_style(style = cell_fill(color = "#d1fae5"),   # ↑ verde
-            locations = cells_body(columns = stat_1, rows = label %in% c("Feminino") & variable == "Genero" |
-                                     label == "Sudeste"                 & variable == "Regiao"                  |
-                                     label == "Sim"                     & variable == "Isolamento"               |
-                                     label == "Sim"                     & variable == "Profissional_Saude"       |
-                                     label == "entre R$ 1.255 - R$ 8.640" & variable == "Renda_familiar"        |
-                                     label == "Ensino Médio Completo"   & variable == "Escolaridade"             |
-                                     label == "Não"                     & variable == "Dificuldade_Financeira"   |
-                                     label == "Diminuiu"                & variable == "Tempo_Preparo_Refeicao"   |
-                                     label == "Diminuiu"                & variable == "atividade_fisica_pandemia"
-            )) %>%
-  tab_style(style = cell_fill(color = "#fee2e2"),   # ↓ vermelho
-            locations = cells_body(columns = stat_1, rows =
-                                     label == "Masculino"               & variable == "Genero"                   |
-                                     label %in% c("Centro-oeste","Norte") & variable == "Regiao"                 |
-                                     label == "Não"                     & variable == "Isolamento"               |
-                                     label == "Não"                     & variable == "Profissional_Saude"       |
-                                     label == "Pós-graduação"           & variable == "Escolaridade"             |
-                                     label == "Sim"                     & variable == "Dificuldade_Financeira"   |
-                                     label == "Não alterou"             & variable == "Tempo_Preparo_Refeicao"   |
-                                     label %in% c("Aumentou","Não alterou") & variable == "atividade_fisica_pandemia"
-            )) %>%
-  
-  # ── stat_2 = Diminuiu ────────────────────────────────────────────────────────
-  tab_style(style = cell_fill(color = "#d1fae5"),   # ↑ verde
-            locations = cells_body(columns = stat_2, rows =
-                                     label == "Não"                     & variable == "Trabalha"                 |
-                                     label == "Não"                     & variable == "Profissional_Saude"       |
-                                     label == "até R$ 1254,00"          & variable == "Renda_familiar"           |
-                                     label == "Ensino Médio Completo"   & variable == "Escolaridade"             |
-                                     label == "Sim"                     & variable == "Dificuldade_Financeira"   |
-                                     label == "Sim"                     & variable == "Acesso_Alimento"          |
-                                     label == "Aumentou"                & variable == "atividade_fisica_pandemia"
-            )) %>%
-  tab_style(style = cell_fill(color = "#fee2e2"),   # ↓ vermelho
-            locations = cells_body(columns = stat_2, rows =
-                                     label == "Sim"                     & variable == "Trabalha"                 |
-                                     label == "Sim"                     & variable == "Profissional_Saude"       |
-                                     label == "Pós-graduação"           & variable == "Escolaridade"             |
-                                     label == "Não"                     & variable == "Dificuldade_Financeira"   |
-                                     label == "Não"                     & variable == "Acesso_Alimento"          |
-                                     label == "Diminuiu"                & variable == "atividade_fisica_pandemia"
-            )) %>%
-  
-  # ── stat_3 = Não alterou ─────────────────────────────────────────────────────
-  tab_style(style = cell_fill(color = "#d1fae5"),   # ↑ verde
-            locations = cells_body(columns = stat_3, rows =
-                                     label == "Masculino"               & variable == "Genero"                   |
-                                     label %in% c("Centro-oeste")       & variable == "Regiao"                   |
-                                     label == "Não"                     & variable == "Isolamento"               |
-                                     label == "Sim"                     & variable == "Trabalha"                 |
-                                     label == "mais de R$ 8.640"        & variable == "Renda_familiar"           |
-                                     label == "Pós-graduação"           & variable == "Escolaridade"             |
-                                     label == "Não"                     & variable == "Consulta_Nutricionista"   |
-                                     label == "Não"                     & variable == "Dificuldade_Financeira"   |
-                                     label == "Não"                     & variable == "Acesso_Alimento"          |
-                                     label == "Não alterou"             & variable == "Tempo_Preparo_Refeicao"   |
-                                     label == "Não alterou"             & variable == "atividade_fisica_pandemia"
-            )) %>%
-  tab_style(style = cell_fill(color = "#fee2e2"),   # ↓ vermelho
-            locations = cells_body(columns = stat_3, rows =
-                                     label == "Feminino"                & variable == "Genero"                   |
-                                     label == "Sim"                     & variable == "Isolamento"               |
-                                     label == "Não"                     & variable == "Trabalha"                 |
-                                     label == "Ensino Médio Completo"   & variable == "Escolaridade"             |
-                                     label == "Sim"                     & variable == "Consulta_Nutricionista"   |
-                                     label == "Sim"                     & variable == "Dificuldade_Financeira"   |
-                                     label == "Sim"                     & variable == "Acesso_Alimento"          |
-                                     label == "Diminuiu"                & variable == "Tempo_Preparo_Refeicao"
-            )) %>%
-  
-  # ── stat_4 = Não consumo ─────────────────────────────────────────────────────
-  tab_style(style = cell_fill(color = "#d1fae5"),   # ↑ verde
-            locations = cells_body(columns = stat_4, rows =
-                                     label == "Masculino"               & variable == "Genero"                   |
-                                     label == "Centro-oeste"            & variable == "Regiao"                   |
-                                     label == "Sim"                     & variable == "Consulta_Nutricionista"   |
-                                     label == "Sim"                     & variable == "cigarro"
-            )) %>%
-  tab_style(style = cell_fill(color = "#fee2e2"),   # ↓ vermelho
-            locations = cells_body(columns = stat_4, rows =
-                                     label == "Feminino"                & variable == "Genero"                   |
-                                     label == "Não"                     & variable == "Consulta_Nutricionista"   |
-                                     label == "Não"                     & variable == "cigarro"
-            ))
-
 # Quantitativa -----------------------------------------------------------------
 
-df_quant <- df %>% select(16:19, "Doces")
+df_quant <- df %>% select(16:19, "Doces") %>% filter(Doces != "Não consumo")
 
 ## Teste t -----------------------------------------------------------------------
 
@@ -467,8 +375,8 @@ ggplot(df_quant, aes(sample = IMC)) +
 by(df_quant$IMC, df_quant$Doces, shapiro.test)
 
 ### Homocedasticidade ----
-# Homocedasticidade: Peso
-# Heterocedasticidade: Idade, Altura, Peso
+# Homocedasticidade: Peso, IMC
+# Heterocedasticidade: Idade, Altura
 
 #### Idade ----
 # bartlett.test(formula = Idade~Doces,data = df_quant)

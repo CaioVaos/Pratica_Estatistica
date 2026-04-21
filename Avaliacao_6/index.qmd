@@ -253,7 +253,6 @@ library(scales)
 ## Proporção do Consumo de Doces
 
 ```{r }
-#| cache: true
 #| fig-align: center
 #| out-width: "100%"
 #| out-height: "80%"
@@ -265,7 +264,6 @@ plot_prop_doce_1
 ## Categóricas
 
 ```{r }
-#| cache: true
 cabecalho_categorica <- readRDS("data/tabela_categorica_cabecalho.rds")
 corpo_categorica <- readRDS("data/tabela_categorica_corpo.rds")
 rodape_categorica <- readRDS("data/tabela_categorica_rodape.rds")
@@ -294,7 +292,6 @@ htmltools::HTML(paste0(
 ### ANOVA
 
 ```{r }
-#| cache: true
 cabecalho_numerica <- readRDS("data/tabela_numerica_cabecalho.rds")
 corpo_numerica <- readRDS("data/tabela_numerica_corpo.rds")
 rodape_numerica <- readRDS("data/tabela_numerica_rodape.rds")
@@ -319,7 +316,6 @@ htmltools::HTML(paste0(
 ### Grupos
 
 ```{r}
-#| cache: true
 #| fig-align: center
 #| out-width: "100%"
 #| out-height: "80%"
@@ -337,4 +333,4 @@ plot_medias_rect
 
 ## Achados
 
-# Fim. {.unnumbered}
+# Fim. {.unnumbered .final-slide}

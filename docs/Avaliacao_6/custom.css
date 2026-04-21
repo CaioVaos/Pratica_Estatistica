@@ -120,6 +120,27 @@
   padding: 1em;
 }
 
+/* ===== Slide Final ===== */
+.reveal .final-slide {
+  background: linear-gradient(
+      135deg,
+      rgba(45, 47, 69, 0.88),
+      rgba(92, 96, 122, 0.78),
+      rgba(92, 96, 122, 0.55)
+    ),
+    url("media/final.png");
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.reveal .final-slide h1,
+.reveal .final-slide h2,
+.reveal .final-slide p {
+  color: white;
+}
+
 /* ===== Rodapé ===== */
 .reveal .footer {
   font-size: 0.5em;
