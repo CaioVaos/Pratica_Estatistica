@@ -3,9 +3,9 @@
 library(stringr)
 
 # Gera o HTML completo da tabela
-# tabela_0 <- tabela_categorica
+# tabela_0 <- tabela_categorica_colorida
 
-html_completo <- tabela_categorica %>% as_raw_html()
+html_completo <- tabela_categorica_colorida %>% as_raw_html()
 
 # Extrai o cabeçalho (thead)
 cabecalho <- str_extract(html_completo, "(?s)<thead[^>]*>.*?</thead>")

@@ -124,6 +124,8 @@ library(scales)
 - Coletados por alunas da pós-graduação em Nutrição na UFF;
 - Aplicado no ano de 2022;
 
+---
+
 <u>**Amostra**</u>
 
 - 2310 indivíduos.
@@ -151,8 +153,7 @@ library(scales)
 
 ::: {.column width="48%"}
 
-::: {.box-salmon style="font-size: 0.75em; max-height: 550px; overflow-y: auto;"}
-
+::: {.box-salmon style="font-size: 0.75em;"}
 <u>**Estutura das variáveis**</u>
 
 | Variável                     | Tipo            | Classificação                    |
@@ -178,9 +179,7 @@ library(scales)
 | IMC                         | Numérica        | Contínua                        |
 | Sentimentos Pandemia        | Qualitativa     | Variável aberta                 |
 | **Doces**                   | Categórica      | Ordinal politômica (resposta)   |
-
-: {.tabela-tema}
-
+: {.tabela-tema .tabela-scroll}
 :::
 
 :::
@@ -321,7 +320,7 @@ htmltools::HTML(paste0(
 #| out-height: "80%"
 #| fig-height: 4.5
 
-plot_medias_rect <- readRDS("data/plot_medias_rect.rds")
+plot_medias_rect <- readRDS("data/plot_medias_rect_2.rds")
 plot_medias_rect
 ```
 

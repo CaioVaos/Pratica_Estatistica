@@ -156,7 +156,7 @@
   overflow: hidden;
 }
 
-/* ===== Cabeçalho ===== */
+/* ===== Tema: cabeçalho ===== */
 .reveal table.tabela-tema thead th {
   background-color: #4c9a92 !important;
   color: #ffffff !important;
@@ -164,27 +164,56 @@
   padding: 10px;
   text-align: left;
   border-bottom: 3px solid #c07068;
+  /* sticky incorporado aqui — sem conflito de cor */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
+
+/* ===== Tema: corpo ===== */
 .reveal table.tabela-tema tbody td {
   padding: 8px 10px;
   border-bottom: 1px solid #e5e7eb;
 }
+
 .reveal table.tabela-tema tbody tr:nth-child(even) {
   background-color: #f8fafc;
 }
+
 .reveal table.tabela-tema tbody tr:hover {
   background-color: #e0f2fe;
-  transition: 0.2s;
+  transition: background-color 0.2s;
 }
+
+/* primeira coluna em negrito (unificado) */
 .reveal table.tabela-tema tbody td:first-child {
   font-weight: 600;
   color: #1e293b;
 }
 
-/* ===== Primeira coluna em destaque ===== */
-.reveal table tbody td:first-child {
-  font-weight: 600;
-  color: #1e293b;
+/* ===== Scroll apenas no tbody ===== */
+.tabela-scroll {
+  display: block;
+  width: 100%;
+}
+
+.tabela-scroll thead {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tabela-scroll tbody {
+  display: block;
+  max-height: 450px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.tabela-scroll tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
 
 /* ===== TABSET ===== */

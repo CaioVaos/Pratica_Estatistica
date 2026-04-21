@@ -276,7 +276,8 @@ tabela <- tabela %>%
 
 ### salvar ----
 
-# saveRDS(tabela_categorica, file = "Avaliacao_6/data/tabela_categorica.rds")
+# tabela_categorica_sem_naoconsumo <- tabela
+# saveRDS(tabela_categorica_sem_naoconsumo, file = "Avaliacao_6/data/tabela_categorica_sem_naoconsumo.rds")
 
 # Quantitativa -----------------------------------------------------------------
 
