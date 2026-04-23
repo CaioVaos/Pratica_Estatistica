@@ -501,7 +501,7 @@
     "href": "Avaliacao_6/index.html#a-pesquisa",
     "title": "PROJETO I",
     "section": "1.1 A Pesquisa",
-    "text": "1.1 A Pesquisa\n\nContexto\n\nA pandemia de COVID-19 impactou profundamente a vida da população;\nMudanças sociais, econômicas e comportamentais ;\nMedidas de isolamento social alteraram a rotina diária.\n\n\n\n\nMotivação\n\nMudanças na rotina influenciaram o comportamento alimentar;\nFatores emocionais (estresse, ansiedade) ganharam relevância;\nPossível aumento no consumo de alimentos ultraprocessados;\nDestaque para o consumo de doces."
+    "text": "1.1 A Pesquisa\n\nContexto\n\nA pandemia de COVID-19 impactou profundamente a vida da população;\nMudanças sociais, econômicas e comportamentais;\nMedidas de isolamento social alteraram a rotina diária.\n\n\n\n\nMotivação\n\nMudanças na rotina influenciaram o comportamento alimentar;\nFatores emocionais (estresse, ansiedade) ganharam relevância;\nPossível aumento no consumo de alimentos ultraprocessados;\nDestaque para o consumo de doces."
   },
   {
     "objectID": "Avaliacao_6/index.html#objetivo",
@@ -579,5 +579,12 @@
     "title": "PROJETO I",
     "section": "1.1 Categóricas",
     "text": "1.1 Categóricas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariáveis\n\nMudança no consumo de doces\n\nValor-p\nCramér\n\n\nAumentou\n1042 (45%)\nDiminuiu\n476 (21%)\nNão alterou\n683 (30%)\nNão consumo\n109 (4,7%)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdadeW\n30 (11)\n34 (15)\n36 (13)\n39 (15)\n&lt;0,001\nAumentou = a\nDiminuiu = b\nNão alterou = bc\nNão consumo = c\n\n\nAlturaW\n1,65 (0,08)\n1,65 (0,09)\n1,67 (0,09)\n1,67 (0,09)\n&lt;0,001\nAumentou = a\nDiminuiu = ab\nNão alterou = b\nNão consumo = ab\n\n\nPesoA\n69 (16)\n70 (16)\n70 (16)\n70 (16)\n0,817\nAumentou = a\nDiminuiu = a\nNão alterou = a\nNão consumo = a\n\n\nIMCA\n25,5 (5,1)\n25,4 (5,3)\n25,1 (4,8)\n25,2 (4,9)\n0,555\nAumentou = a\nDiminuiu = a\nNão alterou = a\nNão consumo = a\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA: ANOVA One-Way;\nW: ANOVA de Welch;\nValores em negrito indicam significância estatística (p &lt; 0,05);\nComparação múltipla aplicada: Games-Howell"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#nuvem-de-palavras",
+    "href": "Avaliacao_6/index.html#nuvem-de-palavras",
+    "title": "PROJETO I",
+    "section": "3.4 Nuvem de palavras",
+    "text": "3.4 Nuvem de palavras\n\nVer gráfico de barras\n\n\n\nFechar"
   }
 ]
