@@ -1,5 +1,5 @@
 ---
-title: "<span style='color: #ffffff; font-weight: 800; text-shadow: 0 2px 6px rgba(0,0,0,0.6);'>PROJETO I</span>"
+title: "<span style='display: inline-block; transform: translateY(-20px);color: #ffffff; font-weight: 800; text-shadow: 0 3px 8px rgba(0,0,0,0.9);'>PROJETO I</span>"
 subtitle: "**ATIVIDADE AVALIATIVA 6**"
 author: "Caio Salviano (<caiosalviano@id.uff.br>)"
 date: 2026-05-11
@@ -20,6 +20,7 @@ format:
     title-slide-attributes:
       data-background-image: "media/capa.png"
       data-background-size: cover
+      style: "transform: translateY(-50px);"
 ---
 
 ```{r }
@@ -339,7 +340,7 @@ style="
   padding:6px 12px;
   border-radius:8px;
   border:none;
-  background:#4c9a92;            /* teal do seu tema */
+  background:#4c9a92;
   color:#ffffff;
   font-weight:600;
   box-shadow: 0 4px 10px rgba(45, 47, 69, 0.15);
@@ -363,7 +364,7 @@ onmouseout="this.style.background='#4c9a92'">Ver gráfico de barras</button>
   z-index:9999;
   overflow:hidden;
   box-shadow: 0 10px 30px rgba(45, 47, 69, 0.25);
-  border-left: 8px solid #4c9a92;   /* igual suas boxes */
+  border-left: 8px solid #4c9a92;
 ">
 
 <button onclick="document.getElementById('popup').style.display='none'"
@@ -375,7 +376,7 @@ style="
   padding:4px 10px;
   border-radius:6px;
   border:none;
-  background:#c07068;              /* salmon */
+  background:#c07068;
   color:white;
   font-weight:600;
   cursor:pointer;

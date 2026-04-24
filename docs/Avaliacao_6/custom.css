@@ -124,21 +124,23 @@
 .reveal .final-slide {
   background: linear-gradient(
       135deg,
-      rgba(45, 47, 69, 0.88),
-      rgba(92, 96, 122, 0.78),
-      rgba(92, 96, 122, 0.55)
+      rgba(45, 47, 69, 0.65),
+      rgba(92, 96, 122, 0.45),
+      rgba(92, 96, 122, 0.25)
     ),
     url("media/final.png");
 
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+
   color: white;
 }
-
-.reveal .final-slide h1,
-.reveal .final-slide h2,
-.reveal .final-slide p {
-  color: white;
+.reveal section.title-slide.final-slide,
+.reveal section.title-slide.final-slide h1 {
+  background: none !important;
+  background-color: transparent !important;
+  font-size: 2.5em !important;
+  background-image: none !important;
 }
 
 /* ===== Rodapé ===== */
