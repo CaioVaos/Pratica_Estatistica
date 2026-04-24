@@ -329,7 +329,7 @@ plot_medias_rect
 
 :::
 
-## Nuvem de palavras {background-color="#2d2f45" style="color: #ffffff;"}
+## Nuvem de palavras doces {background-color="#2d2f45" style="color: #ffffff;"}
 
 <button onclick="document.getElementById('popup').style.display='block'" 
 style="
@@ -397,6 +397,14 @@ plot_palavras_ranking
 plot_nuvem_facet <- readRDS("data/plot_nuvem_facet.rds")
 plot_nuvem_facet
 ```
+
+## Nuvem de palavras pandêmicas {background-color="#2d2f45" style="color: #ffffff;"}
+
+<div style="text-align: center;">
+  <iframe 
+    src="media/plot_nuvem_pandemica.html" width="100%" height="600px">
+  </iframe>
+</div>
 
 # Conclusão
 

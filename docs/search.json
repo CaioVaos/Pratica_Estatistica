@@ -459,7 +459,7 @@
     "href": "Avaliacao_5/index.html#comparação-da-estatística",
     "title": "ANOVA de Welch e Games-Howell",
     "section": "2.2 Comparação da Estatística",
-    "text": "2.2 Comparação da Estatística\n\n\\[\nF =\n\\frac{\n\\color{blue}{QM_{\\text{Entre}}}\n}{\n\\color{red}{QM_{\\text{Dentro}}}\n}\n=\n\\frac{\n\\color{blue}{\\frac{SQ_{\\text{Entre}}}{k-1}}\n}{\n\\color{red}{\\frac{SQ_{\\text{Dentro}}}{N-k}}\n}\n=\n\\frac{\n\\color{blue}{\n\\frac{1}{\\color{purple}{k-1}}\n\\sum_{i=1}^k\n\\color{orange}{n_i}\n(\\bar{y}_i - \\color{green}{\\bar{y}})^2\n}\n}{\n\\color{red}{\n\\frac{1}{\\color{purple}{N-k}}\n\\sum_{i=1}^k \\sum_{j=1}^{\\color{orange}{n_i}}\n(y_{ij} - \\bar{y}_i)^2\n}\n}\n\\]\n\n\\[\nF_W =\n\\frac{\n\\color{blue}{\n\\frac{1}{\\color{purple}{k-1}}\n\\sum\n\\color{orange}{w_i}\n(\\bar{y}_i - \\color{green}{\\bar{y}_w})^2\n}\n}{\n\\color{red}{\n1 +\n\\frac{2(\\color{purple}{k-2})}{k^2-1}\n\\sum\n\\frac{1}{\\color{orange}{n_i - 1}}\n\\left(\n1 - \\frac{\\color{orange}{w_i}}{\\sum \\color{orange}{w_i}}\n\\right)^2\n}\n}\n\\]"
+    "text": "2.2 Comparação da Estatística\n\n\\[\nF\n=\n\\frac{\n\\color{blue}{\\frac{SQ_{\\text{Entre}}}{k-1}}\n}{\n\\color{red}{\\frac{SQ_{\\text{Dentro}}}{N-k}}\n}\n=\n\\frac{\n\\color{blue}{\n\\frac{1}{\\color{purple}{k-1}}\n\\sum_{i=1}^k\n\\color{orange}{n_i}\n(\\bar{y}_i - \\color{green}{\\bar{y}})^2\n}\n}{\n\\color{red}{\n\\frac{1}{\\color{purple}{N-k}}\n\\sum_{i=1}^k \\sum_{j=1}^{\\color{orange}{n_i}}\n(y_{ij} - \\bar{y}_i)^2\n}\n}\n\\sim\nF_{\\color{purple}{k-1},\\,\\color{purple}{N-k}}\n\\]\n\n\\[\nF_W =\n\\frac{\n\\color{blue}{\n\\frac{1}{\\color{purple}{k-1}}\n\\sum\n\\color{orange}{w_i}\n(\\bar{y}_i - \\color{green}{\\bar{y}_w})^2\n}\n}{\n\\color{red}{\n1 +\n\\frac{2(\\color{purple}{k-2})}{\\color{purple}{k^2-1}}\n\\sum\n\\frac{1}{\\color{orange}{n_i - 1}}\n\\left(\n1 - \\frac{\\color{orange}{w_i}}{\\sum \\color{orange}{w_i}}\n\\right)^2\n}\n}\n\\sim\nF_{\\color{purple}{k-1},\\,\\color{purple}{\\nu}}\n\\\\\n\\text{com } \\;\n\\color{purple}{\n\\nu \\approx\n\\frac{\\color{purple}{k^2 - 1}}{\n3 \\sum \\frac{(1 - w_i/\\sum w_i)^2}{n_i - 1}\n}\n}\n\\]"
   },
   {
     "objectID": "Avaliacao_5/index.html#anova-de-welch-1",
@@ -480,14 +480,14 @@
     "href": "Avaliacao_5/index.html#lógica",
     "title": "ANOVA de Welch e Games-Howell",
     "section": "3.2 Lógica",
-    "text": "3.2 Lógica\n\n\n\nANOVA\n\nUma única variância para todos os grupos\nHomocedasticidade\nPós teste de Tukey\n\n\n\n\n\n\nWelch\n\nVariância por grupo\n\nPonderação pela precisão\n\n\n\n\n\n\nGames-Howell\n\nVariância por grupo\nComparação múltipla\n\n\n\n\n\nFlexibilidade ↑ Suposições ↓"
+    "text": "3.2 Lógica\n\n\n\nANOVA\n\nUma única variância para todos os grupos\nHomocedasticidade\nPós teste de Tukey\n\n\n\n\n\n\nWelch\n\nVariância por grupo\n\nPonderação pela precisão\n\n\n\n\n\n\nGames-Howell\n\nVariância por grupo\nComparação múltipla\n\n\n\n\n\nSuposições ↓ Flexibilidade ↑"
   },
   {
     "objectID": "Avaliacao_5/index.html#comparação-das-comparações-múltiplas",
     "href": "Avaliacao_5/index.html#comparação-das-comparações-múltiplas",
     "title": "ANOVA de Welch e Games-Howell",
     "section": "3.1 Comparação das comparações múltiplas",
-    "text": "3.1 Comparação das comparações múltiplas\n\n\n\nLimitação do Tukey\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\\frac{\\color{red}{QM_{\\text{Dentro}}}}{n}}}\n\\]\n\nNecessita de homocedasticidade\n\nUsa o mesmo erro para todos os pares\n\n\n\n\n\n\nEstatística de Games-Howell\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\color{orange}{\n\\frac{s_i^2}{n_i} + \\frac{s_j^2}{n_j}\n}\n}}\n\\]\n\nCada par \\((i,j)\\) usa variância específica\n\nNão existe variância comum\n\nGeneraliza o teste t de Welch"
+    "text": "3.1 Comparação das comparações múltiplas\n\n\n\nLimitação do Tukey\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\frac{\\color{red}{QM_{\\text{Dentro}}}}{n}\n}}\n\\]\n\nNecessita de homocedasticidade\n\nUsa o mesmo erro para todos os pares\n\n\n\n\n\n\nEstatística de Games-Howell\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\color{orange}{\n\\frac{s_i^2}{n_i} + \\frac{s_j^2}{n_j}\n}\n}}\n\\]\n\nCada par \\((i,j)\\) usa variância específica\n\nNão existe variância comum\n\nGeneraliza o teste t de Welch"
   },
   {
     "objectID": "Avaliacao_6/index.html#slide1",
@@ -600,5 +600,19 @@
     "title": "PROJETO I",
     "section": "1.1 1.1",
     "text": "1.1 1.1"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#nuvem-de-palavras-doces",
+    "href": "Avaliacao_6/index.html#nuvem-de-palavras-doces",
+    "title": "PROJETO I",
+    "section": "3.4 Nuvem de palavras doces",
+    "text": "3.4 Nuvem de palavras doces\n\nVer gráfico de barras\n\n\n\nFechar"
+  },
+  {
+    "objectID": "Avaliacao_6/index.html#nuvem-de-palavras-pandêmicas",
+    "href": "Avaliacao_6/index.html#nuvem-de-palavras-pandêmicas",
+    "title": "PROJETO I",
+    "section": "3.5 Nuvem de palavras pandêmicas",
+    "text": "3.5 Nuvem de palavras pandêmicas"
   }
 ]

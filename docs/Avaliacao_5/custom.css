@@ -90,7 +90,6 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* (opcional manter outras cores mais neutras) */
 .box-gray {
   border-left: 8px solid #94a3b8;
   background: #f1f5f9;
@@ -153,4 +152,27 @@
   border-radius: 12px;
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.box-gray-arrow {
+  padding: 0.7em 1.2em;
+  border-left: 8px solid #94a3b8;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  background: linear-gradient(
+    to right,
+    #f1f5f9 0%,
+    #e2e8f0 60%,
+    #cbd5e1 80%,
+    #94a3b8 100%
+  );
+  
+  clip-path: polygon(
+    0% 0%, 
+    90% 0%, 
+    100% 50%, 
+    90% 100%, 
+    0% 100%
+  );
 }

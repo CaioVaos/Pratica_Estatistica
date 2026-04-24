@@ -312,12 +312,7 @@ w_i = \frac{n_i}{s_i^2}
 <h2><span class="header-section-number">2.2</span> Comparação da Estatística</h2>
 <div class="box-gray">
 <p><span class="math display">\[
-F =
-\frac{
-\color{blue}{QM_{\text{Entre}}}
-}{
-\color{red}{QM_{\text{Dentro}}}
-}
+F
 =
 \frac{
 \color{blue}{\frac{SQ_{\text{Entre}}}{k-1}}
@@ -339,6 +334,8 @@ F =
 (y_{ij} - \bar{y}_i)^2
 }
 }
+\sim
+F_{\color{purple}{k-1},\,\color{purple}{N-k}}
 \]</span></p>
 <hr>
 <p><span class="math display">\[
@@ -353,12 +350,22 @@ F_W =
 }{
 \color{red}{
 1 +
-\frac{2(\color{purple}{k-2})}{k^2-1}
+\frac{2(\color{purple}{k-2})}{\color{purple}{k^2-1}}
 \sum
 \frac{1}{\color{orange}{n_i - 1}}
 \left(
 1 - \frac{\color{orange}{w_i}}{\sum \color{orange}{w_i}}
 \right)^2
+}
+}
+\sim
+F_{\color{purple}{k-1},\,\color{purple}{\nu}}
+\\
+\text{com } \;
+\color{purple}{
+\nu \approx
+\frac{\color{purple}{k^2 - 1}}{
+3 \sum \frac{(1 - w_i/\sum w_i)^2}{n_i - 1}
 }
 }
 \]</span></p>
@@ -378,7 +385,9 @@ F_W =
 <p><span class="math display">\[
 q_{ij} =
 \frac{\bar{y}_i - \bar{y}_j}
-{\sqrt{\frac{\color{red}{QM_{\text{Dentro}}}}{n}}}
+{\sqrt{
+\frac{\color{red}{QM_{\text{Dentro}}}}{n}
+}}
 \]</span></p>
 <ul>
 <li>Necessita de <strong>homocedasticidade</strong><br>
@@ -445,23 +454,22 @@ q_{ij} =
 </div>
 </div></div>
 <p><br></p>
-<div class="box-gray" style="text-align: center; font-size: 0.9em;">
-<p>Flexibilidade ↑ Suposições ↓</p>
+<div class="box-gray-arrow" style="text-align: center; font-size: 0.9em;">
+<p>Suposições ↓ Flexibilidade ↑</p>
 </div>
 </section></section>
 <section id="referências" class="title-slide slide level1 glass center" data-number="4">
 <h1><span class="header-section-number">4</span> Referências</h1>
 <ul>
+<li><p>FISHER, R. A. (1925). <em>Statistical Methods for Research Workers</em>. Edinburgh: Oliver &amp; Boyd.</p></li>
+<li><p>TUKEY, J. W. (1949). <em>Comparing individual means in the analysis of variance</em>. Biometrics, 5(2), 99–114.</p></li>
 <li><p>WELCH, B. L. (1951). <em>On the comparison of several mean values: An alternative approach</em>. Biometrika, 38(3/4), 330–336.</p></li>
 <li><p>GAMES, P. A.; HOWELL, J. F. (1976). <em>Pairwise multiple comparison procedures with unequal n’s and/or variances: A Monte Carlo study</em>. Journal of Educational Statistics, 1(2), 113–125.</p></li>
-<li><p>MONTGOMERY, D. C. (2019). <em>Design and Analysis of Experiments</em>. 10th ed.&nbsp;New York: Wiley.</p></li>
-<li><p>KUTNER, M. H.; NACHTSHEIM, C. J.; NETER, J.; LI, W. (2005). <em>Applied Linear Statistical Models</em>. 5th ed.&nbsp;McGraw-Hill.</p></li>
-<li><p>FIELD, A. (2013). <em>Discovering Statistics Using IBM SPSS Statistics</em>. 4th ed.&nbsp;Sage Publications.</p></li>
 </ul>
 </section>
 
-<section id="fim" class="title-slide slide level1 unnumbered center">
-<h1>Fim</h1>
+<section id="fim." class="title-slide slide level1 unnumbered center">
+<h1>Fim.</h1>
 
 
 </section>
