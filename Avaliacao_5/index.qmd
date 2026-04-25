@@ -1,6 +1,6 @@
 ---
-title: "<span style='color: #FFC107;'>ANOVA de Welch e Games-Howell</span>"
-subtitle: "<span class='grad-subtitle'>**ATIVIDADE AVALIATIVA 5**</span>"
+title: "<span style='color: #FFC107; font-size: 50px;'>**ANOVA de Welch e Games-Howell**</span>"
+subtitle: "<span style='font-size: 26px;'>**ATIVIDADE AVALIATIVA 5**</span>"
 author: "Caio Salviano (<caiosalviano@id.uff.br>) <br> Milena Labre (<milenalabre@id.uff.br>)"
 date: 2026-04-27
 date-format: "DD/MM/YYYY"
@@ -20,9 +20,10 @@ format:
     title-slide-attributes:
       data-background-image: "media/capa.jpeg"
       data-background-size: cover
+      style: "transform: translateY(-15px);"
 ---
 
-# Contextualização: 
+# Contextualização
 
 ## ANOVA Clássica
 
@@ -301,7 +302,7 @@ F_W =
 }
 \sim
 F_{\color{purple}{k-1},\,\color{purple}{\nu}}
-\\
+\;;\;
 \text{com } \;
 \color{purple}{
 \nu \approx
@@ -331,6 +332,7 @@ q_{ij} =
 {\sqrt{
 \frac{\color{red}{QM_{\text{Dentro}}}}{n}
 }}
+\sim q_{k,\color{red}{gl}}
 $$
 
 - Necessita de **homocedasticidade**  
@@ -358,6 +360,7 @@ q_{ij} =
 \frac{s_i^2}{n_i} + \frac{s_j^2}{n_j}
 }
 }}
+\sim q_{k,\color{orange}{gl_{ij}}}
 $$
 
 - Cada par $(i,j)$ usa **variância específica**  

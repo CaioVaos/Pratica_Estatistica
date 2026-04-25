@@ -130,9 +130,9 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="media/capa.jpeg" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title"><span style="color: #FFC107;">ANOVA de Welch e Games-Howell</span></h1>
-  <p class="subtitle"><span class="grad-subtitle"><strong>ATIVIDADE AVALIATIVA 5</strong></span></p>
+<section id="title-slide" data-background-image="media/capa.jpeg" data-background-size="cover" style="transform: translateY(-15px);" class="quarto-title-block center">
+  <h1 class="title"><span style="color: #FFC107; font-size: 50px;"><strong>ANOVA de Welch e Games-Howell</strong></span></h1>
+  <p class="subtitle"><span style="font-size: 26px;"><strong>ATIVIDADE AVALIATIVA 5</strong></span></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -149,7 +149,7 @@ Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalvian
 </section>
 <section>
 <section id="contextualização" class="title-slide slide level1 center" data-number="1">
-<h1><span class="header-section-number">1</span> Contextualização:</h1>
+<h1><span class="header-section-number">1</span> Contextualização</h1>
 
 </section>
 <section id="anova-clássica" class="slide level2" data-number="1.1">
@@ -360,7 +360,7 @@ F_W =
 }
 \sim
 F_{\color{purple}{k-1},\,\color{purple}{\nu}}
-\\
+\;;\;
 \text{com } \;
 \color{purple}{
 \nu \approx
@@ -388,6 +388,7 @@ q_{ij} =
 {\sqrt{
 \frac{\color{red}{QM_{\text{Dentro}}}}{n}
 }}
+\sim q_{k,\color{red}{gl}}
 \]</span></p>
 <ul>
 <li>Necessita de <strong>homocedasticidade</strong><br>
@@ -408,6 +409,7 @@ q_{ij} =
 \frac{s_i^2}{n_i} + \frac{s_j^2}{n_j}
 }
 }}
+\sim q_{k,\color{orange}{gl_{ij}}}
 \]</span></p>
 <ul>
 <li>Cada par <span class="math inline">\((i,j)\)</span> usa <strong>variância específica</strong><br>
