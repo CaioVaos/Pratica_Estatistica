@@ -400,11 +400,39 @@ plot_nuvem_facet
 
 ## Nuvem de palavras pandêmicas {background-color="#2d2f45" style="color: #ffffff;"}
 
-<div style="text-align: center;">
-  <iframe 
-    src="media/plot_nuvem_pandemica.html" width="100%" height="600px">
-  </iframe>
-</div>
+```{r}
+htmltools::tagList(
+  htmltools::tags$div(
+    style = "margin-top: 80px; height: 75vh; width: 100%;",
+    htmltools::tags$iframe(
+      id    = "nuvem-iframe",
+      src   = "",
+      `data-src` = "media/plot_nuvem_pandemica.html",
+      style = "width:100%; height:100%; border:none; background:#2d2f45; overflow:hidden; display:block;",
+      scrolling = "no"
+    )
+  ),
+  htmltools::tags$script(htmltools::HTML("
+    function carregarNuvem() {
+      var iframe = document.getElementById('nuvem-iframe');
+      if (iframe && iframe.src === window.location.href) {
+        iframe.src = iframe.getAttribute('data-src');
+      }
+    }
+
+    Reveal.on('slidechanged', function(event) {
+      var iframe = document.getElementById('nuvem-iframe');
+      if (iframe && event.currentSlide.contains(iframe)) {
+        iframe.src = iframe.getAttribute('data-src');
+      }
+    });
+
+    Reveal.on('ready', function(event) {
+      carregarNuvem();
+    });
+  "))
+)
+```
 
 # Conclusão
 

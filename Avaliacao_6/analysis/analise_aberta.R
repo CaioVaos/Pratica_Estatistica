@@ -51,7 +51,6 @@ frequencia_palavras_Doces <- frequencia_palavras_Doces %>%
 
 # Barras -----------------------------------------------------------------------
 
-library(tidyverse)
 library(ggtext)
 
 ## Processamento ---------------------------------------------------------------
