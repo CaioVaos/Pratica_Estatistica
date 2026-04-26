@@ -39,10 +39,17 @@ library(scales)
 
 <u>**Contexto**</u>
 
+::: {style="display:flex; align-items:center; gap:1em;"}
+
+::: {style="flex:1;"}
 - A **pandemia de COVID-19** impactou profundamente a vida da população; 
 - Mudanças sociais, econômicas e comportamentais;
 - Medidas de isolamento social alteraram a rotina diária.
+:::
 
+<div style="flex-shrink:0; width:80px; height:80px; margin-right:100px;  margin-bottom:50px; align-self:center;border-radius:50%; background:rgba(192,112,104,0.25); display:flex; align-items:center; justify-content:center; font-size:2.5em; filter: sepia(0.4) saturate(1.2);">🦠</div>
+
+:::
 :::
 
 <br>
@@ -51,14 +58,18 @@ library(scales)
 
 <u>**Motivação**</u>
 
+::: {style="display:flex; align-items:center; gap:1em;"}
+
+::: {style="flex:1;"}
 - Mudanças na rotina influenciaram o **comportamento alimentar**;
-
-- Fatores emocionais (estresse, ansiedade) ganharam relevância;
-
+- Fatores emocionais (ansiedade, estresse) ganharam relevância;
 - Possível aumento no consumo de alimentos ultraprocessados;
-
 - Destaque para o **consumo de doces**.
+:::
 
+<div style="flex-shrink:0; width:80px; height:80px; margin-right:100px; margin-bottom:50px; align-self:center; border-radius:50%; background:rgba(92,96,122,0.25); display:flex; align-items:center; justify-content:center; font-size:2.5em; filter: sepia(0.2) hue-rotate(200deg) saturate(1.2);">🍬</div>
+
+:::
 :::
 
 ## Objetivo
@@ -67,8 +78,15 @@ library(scales)
 
 <u>**Problema de pesquisa**</u>
 
-- Quais fatores estão associados às mudanças no consumo de doces?  
+::: {style="display:flex; align-items:center; gap:1em;"}
 
+::: {style="flex:1;"}
+- Quais fatores estão associados às mudanças no consumo de doces? 
+:::
+
+<div style="flex-shrink:0; width:58px; height:58px; margin-bottom:35px; border-radius:50%; background:rgba(192,112,104,0.25); display:flex; align-items:center; justify-content:center; font-size:1.5em; filter: sepia(0.4) saturate(1.2); margin-right:30px;">🔍</div>
+
+:::
 :::
 
 <br>
