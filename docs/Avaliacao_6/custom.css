@@ -111,6 +111,10 @@
   font-weight: 700;
 }
 
+.highlight-gray {
+  color: #6b7280;
+  font-weight: 700;
+}
 /* ===== Código ===== */
 .reveal pre code {
   font-size: 0.78em;

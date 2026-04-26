@@ -1,5 +1,5 @@
 ---
-title: "<span style='display: inline-block; transform: translateY(-20px);color: #ffffff; font-weight: 800; text-shadow: 0 3px 8px rgba(0,0,0,0.9);'>PROJETO I</span>"
+title: "<span style='display: inline-block; transform: translateY(-20px);color: #ffffff; font-weight: 800; text-shadow: 0 3px 8px rgba(0,0,0,0.9);'>**PROJETO I**</span>"
 subtitle: "**ATIVIDADE AVALIATIVA 6**"
 author: "Caio Salviano (<caiosalviano@id.uff.br>)"
 date: 2026-05-11
@@ -85,7 +85,7 @@ library(scales)
   - Aumentou;
   - Diminuiu; 
   - Não alterou;
-  - <span class="highlight-purple">Não consumo</span>.
+  - [Não consumo]{.highlight-gray}.
   
 :::
 
@@ -211,11 +211,11 @@ library(scales)
 
 ::: box-purple
 
-<u>**Variáveis categóricas**</u>
+[**Variáveis categóricas**]{style="text-decoration: underline; color: #5c607a;"}
 
 - Teste qui-quadrado;
 - Teste exato de Fisher;  
-- Coeficiente de Cramer; 
+- Coeficiente de Cramér; 
 - <span style="font-size: 0.75em;">Análise de resíduos padronizados.</span>
 
 :::
@@ -226,7 +226,7 @@ library(scales)
 
 ::: box-salmon
 
-<u>**Variáveis numéricas**</u>
+[**Variáveis numéricas**]{style="text-decoration: underline; color: #c07068;"}
 
 - ANOVA one-way;
 - ANOVA de Welch;  
@@ -240,7 +240,7 @@ library(scales)
 
 ::: box-teal
 
-<u>**Variável aberta**</u>
+[**Variável aberta**]{style="text-decoration: underline; color: #4c9a92;"}
 
 - Nuvem de palavras.
 
@@ -298,7 +298,7 @@ cabecalho_numerica <- readRDS("data/tabela_numerica_cabecalho.rds")
 corpo_numerica <- readRDS("data/tabela_numerica_corpo.rds")
 rodape_numerica <- readRDS("data/tabela_numerica_rodape.rds")
 
-altura_scroll <- "350px"  # ← controle aqui
+altura_scroll <- "350px"
 
 htmltools::HTML(paste0(
   '<div class="tabela-header">',
@@ -403,7 +403,7 @@ plot_nuvem_facet
 ```{r}
 htmltools::tagList(
   htmltools::tags$div(
-    style = "margin-top: 80px; height: 75vh; width: 100%;",
+    style = "margin-top: 40px; height: 75vh; width: 100%;",
     htmltools::tags$iframe(
       id    = "nuvem-iframe",
       src   = "",
@@ -436,6 +436,42 @@ htmltools::tagList(
 
 # Conclusão
 
-## Achados
+## Principais Achados
+
+::: {.box-teal style="font-size: 0.9em;"}
+[Ansiedade]{.highlight-teal} foi o **sentimento mais comum** na pandemia — sem diferença significativa entre os grupos de consumo de doces.
+:::
+
+<br>
+
+:::: .columns 
+::: {.column width="45%"}
+::: {.box-salmon style="font-size: 0.9em;"}
+[Idade]{.highlight-salmon} e [altura]{.highlight-salmon} apresentaram diferenças entre os grupos de consumo.
+
+[Mais jovem → aumentou o consumo]{style="background:rgba(192,112,104,0.12); padding:0.2em 0.6em; border-radius:6px; display:inline-block;color: #c07068;"}
+:::
+
+<br>
+
+::: {.box-gray style="display:flex; align-items:center; gap:1em; font-size:0.8em;"}
+<div style="flex-shrink:0; width:52px; height:52px; border-radius:50%; background:rgba(107,114,128,0.15); display:flex; align-items:center; justify-content:center; font-size:1.15em; font-weight:700; color:#6b7280;">~½</div>
+<div>Aproximadamente **metade da amostra** relatou aumento no consumo de doces durante a pandemia.</div>
+:::
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="51%"}
+::: {.box-purple style="font-size: 0.8em;"}
+[Diversas variáveis]{.highlight-purple} categóricas foram significativas, porém com **Cramér baixo/moderado**. Sendo as mais relevantes:
+
+[Gênero feminino → aumentou o consumo]{style="background:rgba(92,96,122,0.12); padding:0.2em 0.7em; border-radius:6px; display:inline-block; margin-bottom:0.3em; color: #5c607a;"}
+
+[Sem dificuldade financeira → aumentou o consumo]{style="background:rgba(92,96,122,0.12); padding:0.2em 0.7em; border-radius:6px; display:inline-block; margin-bottom:0.3em; color: #5c607a;"}
+:::
+:::
+::::
 
 # Fim. {.unnumbered .final-slide}

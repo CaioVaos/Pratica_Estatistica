@@ -121,7 +121,7 @@ tabela <- tbl_summary(
     Escolaridade              ~ "Escolaridade<sup>F</sup>",
     Consulta_Nutricionista    ~ "Consulta ao Nutricionista<sup>Q</sup>",
     Dificuldade_Financeira    ~ "Dificuldade Financeira<sup>Q</sup>",
-    Acesso_Alimento           ~ "Acesso ao Alimento<sup>Q</sup>",
+    Acesso_Alimento           ~ "Acesso a Alimento<sup>Q</sup>",
     Tempo_Preparo_Refeicao    ~ "Tempo de Preparo da Refeição<sup>Q</sup>",
     cigarro                   ~ "Cigarro<sup>Q</sup>",
     atividade_fisica_pandemia ~ "Atividade Física na Pandemia<sup>Q</sup>"
