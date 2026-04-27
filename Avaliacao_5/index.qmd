@@ -146,8 +146,7 @@ $$
 F =
 \frac{QM_{Entre}}{\color{red}{QM_{Dentro}}}
 =
-\frac{\frac{SQ_{Entre}}{k-1}}
-{\frac{\color{red}{SQ_{Dentro}}}{N-k}}
+\frac{\frac{SQ_{Entre}}{k-1}}{\color{red}{\frac{SQ_{Dentro}}{N-k}}}
 $$
 
 :::
@@ -176,7 +175,7 @@ $$
 
 <br>
 
-::: {.box-yellow style="font-size: 0.70em;"}
+::: {.box-yellow style="font-size: 0.7em;"}
 
 **O problema da heterogeneidade:**
 
