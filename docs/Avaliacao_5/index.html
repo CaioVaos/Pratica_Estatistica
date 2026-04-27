@@ -202,8 +202,26 @@ E(QM_{Dentro}) = \sigma^2
 </div>
 </div></div>
 </section>
-<section id="homogeneidade-na-anova-clássica" class="slide level2" data-number="1.2">
-<h2><span class="header-section-number">1.2</span> Homogeneidade na ANOVA clássica:</h2>
+<section id="teste-de-tukey" class="slide level2" data-number="1.2">
+<h2><span class="header-section-number">1.2</span> Teste de Tukey</h2>
+<div class="box-gray">
+<p><strong>Objetivo:</strong></p>
+<p>Identificar <strong>quais médias diferem</strong> após rejeitar a ANOVA</p>
+<hr>
+<p><strong>Estatística:</strong></p>
+<p><span class="math display">\[
+q_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{\frac{{QM_{Dentro}}}{n}}}
+\]</span></p>
+<ul>
+<li>Compara pares de médias <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span></li>
+<li>Valores altos de <span class="math inline">\(q_{ij}\)</span> indicam diferença significativa</li>
+</ul>
+</div>
+</section>
+<section id="o-papel-da-homogeneidade" class="slide level2" data-number="1.3">
+<h2><span class="header-section-number">1.3</span> O papel da Homogeneidade:</h2>
 <div class="columns">
 <div class="column" style="width:45%;">
 <div class="box-blue">
@@ -227,7 +245,18 @@ F =
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:50%;">
-<div class="box-yellow">
+<div class="box-blue">
+<p><strong>Em Tukey:</strong></p>
+<p><span class="math display">\[
+q_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{
+\frac{\color{red}{QM_{\text{Dentro}}}}{n}
+}}
+\]</span></p>
+</div>
+<p><br></p>
+<div class="box-yellow" style="font-size: 0.70em;">
 <p><strong>O problema da heterogeneidade:</strong></p>
 <p>Se:</p>
 <p><span class="math display">\[
@@ -240,24 +269,6 @@ F =
 </ul>
 </div>
 </div></div>
-</section>
-<section id="teste-de-tukey" class="slide level2" data-number="1.3">
-<h2><span class="header-section-number">1.3</span> Teste de Tukey</h2>
-<div class="box-gray">
-<p><strong>Objetivo:</strong></p>
-<p>Identificar <strong>quais médias diferem</strong> após rejeitar a ANOVA</p>
-<hr>
-<p><strong>Estatística:</strong></p>
-<p><span class="math display">\[
-q_{ij} =
-\frac{\bar{y}_i - \bar{y}_j}
-{\sqrt{\frac{{QM_{Dentro}}}{n}}}
-\]</span></p>
-<ul>
-<li>Compara pares de médias <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span></li>
-<li>Valores altos de <span class="math inline">\(q_{ij}\)</span> indicam diferença significativa</li>
-</ul>
-</div>
 </section></section>
 <section>
 <section id="anova-de-welch" class="title-slide slide level1 center" data-number="2">

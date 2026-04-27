@@ -423,8 +423,8 @@
     "objectID": "Avaliacao_5/index.html#teste-de-tukey",
     "href": "Avaliacao_5/index.html#teste-de-tukey",
     "title": "ANOVA de Welch e Games-Howell",
-    "section": "1.3 Teste de Tukey",
-    "text": "1.3 Teste de Tukey\n\nObjetivo:\nIdentificar quais médias diferem após rejeitar a ANOVA\n\nEstatística:\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\\frac{{QM_{Dentro}}}{n}}}\n\\]\n\nCompara pares de médias \\(i\\) e \\(j\\)\nValores altos de \\(q_{ij}\\) indicam diferença significativa"
+    "section": "1.2 Teste de Tukey",
+    "text": "1.2 Teste de Tukey\n\nObjetivo:\nIdentificar quais médias diferem após rejeitar a ANOVA\n\nEstatística:\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\\frac{{QM_{Dentro}}}{n}}}\n\\]\n\nCompara pares de médias \\(i\\) e \\(j\\)\nValores altos de \\(q_{ij}\\) indicam diferença significativa"
   },
   {
     "objectID": "Avaliacao_5/index.html#teste-de-tukey-comparações-múltiplas",
@@ -628,5 +628,12 @@
     "title": "PROJETO I",
     "section": "4.1 Principais Achados",
     "text": "4.1 Principais Achados\n\nAnsiedade foi o sentimento mais comum na pandemia — sem diferença significativa entre os grupos de consumo de doces.\n\n\n\n\n\nIdade e altura apresentaram diferenças entre os grupos de consumo.\nMais jovem → aumentou o consumo\n\n\n\n\n~½\n\n\nAproximadamente metade da amostra relatou aumento no consumo de doces durante a pandemia.\n\n\n\n\n\n\nDiversas variáveis categóricas foram significativas, porém com Cramér baixo/moderado. Sendo as mais relevantes:\nGênero feminino → aumentou o consumo\nSem dificuldade financeira → aumentou o consumo"
+  },
+  {
+    "objectID": "Avaliacao_5/index.html#o-papel-da-homogeneidade",
+    "href": "Avaliacao_5/index.html#o-papel-da-homogeneidade",
+    "title": "ANOVA de Welch e Games-Howell",
+    "section": "1.3 O papel da Homogeneidade:",
+    "text": "1.3 O papel da Homogeneidade:\n\n\n\nOnde é usada?\nNo denominador:\n\\[\nQM_{\\text{Dentro}}\n\\]\n\nEstima uma variância comum\n\n\n\\[\nF =\n\\frac{QM_{Entre}}{\\color{red}{QM_{Dentro}}}\n=\n\\frac{\\frac{SQ_{Entre}}{k-1}}\n{\\frac{\\color{red}{SQ_{Dentro}}}{N-k}}\n\\]\n\n\n\n\n\nEm Tukey:\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\frac{\\color{red}{QM_{\\text{Dentro}}}}{n}\n}}\n\\]\n\n\n\nO problema da heterogeneidade:\nSe:\n\\[\n\\sigma_i^2 \\neq \\sigma_j^2\n\\]\n\n\\(QM_{\\text{Dentro}}\\) não representa bem o erro\n\nA estatística F perde validade"
   }
 ]

@@ -99,7 +99,30 @@ $$
 
 ::::
 
-## Homogeneidade na ANOVA clássica:
+## Teste de Tukey
+
+::: box-gray
+
+**Objetivo:**  
+
+Identificar **quais médias diferem** após rejeitar a ANOVA
+
+---
+
+**Estatística:**
+
+$$
+q_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{\frac{{QM_{Dentro}}}{n}}}
+$$
+
+- Compara pares de médias $i$ e $j$
+- Valores altos de $q_{ij}$ indicam diferença significativa  
+
+:::
+
+## O papel da Homogeneidade:
 
 :::: columns
 
@@ -137,7 +160,23 @@ $$
 
 ::: {.column width="50%"}
 
-::: box-yellow
+::: box-blue
+
+**Em Tukey:**
+
+$$
+q_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{
+\frac{\color{red}{QM_{\text{Dentro}}}}{n}
+}}
+$$
+
+::: 
+
+<br>
+
+::: {.box-yellow style="font-size: 0.70em;"}
 
 **O problema da heterogeneidade:**
 
@@ -155,29 +194,6 @@ $$
 :::
 
 ::::
-
-## Teste de Tukey
-
-::: box-gray
-
-**Objetivo:**  
-
-Identificar **quais médias diferem** após rejeitar a ANOVA
-
----
-
-**Estatística:**
-
-$$
-q_{ij} =
-\frac{\bar{y}_i - \bar{y}_j}
-{\sqrt{\frac{{QM_{Dentro}}}{n}}}
-$$
-
-- Compara pares de médias $i$ e $j$
-- Valores altos de $q_{ij}$ indicam diferença significativa  
-
-:::
 
 # ANOVA de Welch
 
