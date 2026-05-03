@@ -746,3 +746,141 @@ plot_medias_rect_2 <- ggplot(df_summary, aes(x = as.numeric(Doces), y = media)) 
 plot_medias_rect_2
 
 # saveRDS(plot_medias_rect_2, file = "Avaliacao_6/data/plot_medias_rect_2.rds")
+
+### Com retangulo 3 ----
+library(tidyverse)
+library(ggtext)
+
+grupos <- tribble(
+  ~Variavel, ~Doces,           ~grupo,
+  "Idade",   "Aumentou",       "a",
+  "Idade",   "Diminuiu",       "b",
+  "Idade",   "Não alterou",    "b",
+  "Idade",   "Não alterou",    "c",
+  "Idade",   "Não consumo",    "c",
+  "Altura",  "Aumentou",       "a",
+  "Altura",  "Diminuiu",       "a",
+  "Altura",  "Diminuiu",       "b",
+  "Altura",  "Não alterou",    "b",
+  "Altura",  "Não consumo",    "a",
+  "Altura",  "Não consumo",    "b",
+  "Peso",    "Aumentou",       "a",
+  "Peso",    "Diminuiu",       "a",
+  "Peso",    "Não alterou",    "a",
+  "Peso",    "Não consumo",    "a",
+  "IMC",     "Aumentou",       "a",
+  "IMC",     "Diminuiu",       "a",
+  "IMC",     "Não alterou",    "a",
+  "IMC",     "Não consumo",    "a"
+) %>%
+  mutate(
+    Doces    = factor(Doces, levels = c("Aumentou", "Diminuiu", "Não alterou", "Não consumo")),
+    Variavel = factor(Variavel, levels = c("Idade", "Altura", "Peso", "IMC"))
+  )
+
+
+cor_letras <- c(
+  "a" = "#c07068",
+  "b" = "#5c607a",
+  "c" = "#4c9a92"
+)
+
+
+grupos_label <- grupos %>%
+  group_by(Variavel, Doces) %>%
+  summarise(
+    label_html = {
+      letras <- sort(unique(grupo))
+      paste(
+        sprintf("<b style='color:%s'>%s</b>", cor_letras[letras], letras),
+        collapse = ""
+      )
+    },
+    .groups = "drop"
+  )
+
+
+df_long <- df_quant %>%
+  pivot_longer(
+    cols      = c(Idade, Altura, Peso, IMC),
+    names_to  = "Variavel",
+    values_to = "Valor"
+  ) %>%
+  mutate(
+    Doces    = factor(Doces, levels = c("Aumentou", "Diminuiu", "Não alterou", "Não consumo")),
+    Variavel = factor(Variavel, levels = c("Idade", "Altura", "Peso", "IMC"))
+  )
+df_summary <- df_long %>%
+  group_by(Variavel, Doces) %>%
+  summarise(
+    media = mean(Valor, na.rm = TRUE),
+    se    = sd(Valor, na.rm = TRUE) / sqrt(n()),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    ic_inf = media - 1.96 * se,
+    ic_sup = media + 1.96 * se
+  )
+
+df_summary_label <- df_summary %>%
+  left_join(grupos_label, by = c("Variavel", "Doces"))
+plot_medias_letras <- ggplot(
+  df_summary_label,
+  aes(x = as.numeric(Doces), y = media)
+) +
+  
+  geom_errorbar(
+    aes(ymin = ic_inf, ymax = ic_sup),
+    width     = 0.15,
+    color     = "#2d2f45",
+    linewidth = 0.6
+  ) +
+  
+  geom_point(
+    size  = 2.8,
+    color = "#2d2f45"
+  ) +
+  
+  # Letras coloridas na lateral direita do ponto
+  geom_richtext(
+    aes(x = as.numeric(Doces) + 0.12, y = media, label = label_html),
+    hjust         = 0,
+    vjust         = 0.5,
+    size          = 3.8,
+    label.colour  = NA,       # sem borda no box
+    fill          = NA,       # sem fundo
+    family        = "Inter"
+  ) +
+  
+  scale_x_continuous(
+    breaks = 1:4,
+    labels = c("Aumentou", "Diminuiu", "Não alterou", "Não consumo"),
+    guide  = guide_axis(n.dodge = 2),
+    expand = expansion(add = c(0.4, 0.7))  # espaço à direita para as letras
+  ) +
+  
+  facet_wrap(~ Variavel, scales = "free_y", ncol = 2) +
+  
+  labs(
+    x       = NULL,
+    y       = "Média (IC 95%)",
+    caption = "Letras iguais indicam ausência de diferença significativa (Games-Howell, α = 0,05).\nIC 95% individual exibido apenas para referência descritiva."
+  ) +
+  
+  theme_minimal(base_family = "Inter") +
+  
+  theme(
+    axis.text          = element_text(color = "#2d2f45"),
+    axis.title.y       = element_text(color = "#5c607a"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor   = element_blank(),
+    panel.grid.major.y = element_line(color = "#e5e7eb", linewidth = 0.6),
+    axis.line          = element_line(color = "#2d2f45"),
+    strip.text         = element_text(face = "bold", color = "#2d2f45", size = 12),
+    legend.position    = "none",
+    plot.caption       = element_text(hjust = 0, color = "#666666", size = 7.2)
+  )
+
+plot_medias_letras
+
+# saveRDS(plot_medias_letras, file = "Avaliacao_6/data/plot_medias_letras.rds")

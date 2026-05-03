@@ -341,8 +341,8 @@ htmltools::HTML(paste0(
 #| out-height: "80%"
 #| fig-height: 4.5
 
-plot_medias_rect <- readRDS("data/plot_medias_rect_2.rds")
-plot_medias_rect
+plot_medias_letras <- readRDS("data/plot_medias_letras.rds")
+plot_medias_letras
 ```
 
 :::
