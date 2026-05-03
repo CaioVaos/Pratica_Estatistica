@@ -73,11 +73,9 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 ::: {.grid}
 
 ::: {.g-col-4}
+#### 🎤 Avaliação 7
 
-#### 📊 Avaliação 7
-
-[Em breve]{.btn .btn-secondary}
-
+<span class="badge bg-info">Oratória da AV6</span>
 :::
 
 ::: {.g-col-4}

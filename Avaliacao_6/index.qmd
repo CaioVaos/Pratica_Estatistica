@@ -474,7 +474,7 @@ htmltools::tagList(
 
 ::: {.box-gray style="display:flex; align-items:center; gap:1em; font-size:0.8em;"}
 <div style="flex-shrink:0; width:52px; height:52px; border-radius:50%; background:rgba(107,114,128,0.15); display:flex; align-items:center; justify-content:center; font-size:1.15em; font-weight:700; color:#6b7280;">~½</div>
-<div>Aproximadamente **metade da amostra** relatou aumento no consumo de doces durante a pandemia.</div>
+<div>Aproximadamente metade da amostra relatou **aumento no consumo de doces** durante a pandemia.</div>
 :::
 :::
 
