@@ -3,7 +3,9 @@
 # Setup ------------------------------------------------------------------------
 library(tidyverse)
 
-df <- openxlsx::read.xlsx("Avaliacao_6/data/Nutricao.xlsx") %>%  select(1:20, "Doces")
+df <- openxlsx::read.xlsx("Avaliacao_6/data/Nutricao.xlsx") %>% 
+  select(1:20, "Doces") %>%
+  mutate(Doces = factor(Doces, levels = c("Aumentou", "Não alterou", "Diminuiu", "Não consumo")))
 
 # Plot -------------------------------------------------------------------------
 
@@ -66,5 +68,6 @@ plot_prop_doce_1 <- ggplot(df, aes(x = Doces)) +
     
     legend.position = "none"
   )
+plot_prop_doce_1
 
 # saveRDS(plot_prop_doce_1, file = "Avaliacao_6/data/plot_prop_doce_1.rds")
