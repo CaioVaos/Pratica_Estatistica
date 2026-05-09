@@ -213,9 +213,13 @@ library(scales)
 
 <u>**Verificação de Suposições**</u>
 
-- Normalidade: avaliação gráfica (Densidade e QQ-plot);
+- Normalidade: avaliação gráfica (
+<span title="geom_density() {ggplot2}">Densidade</span> e 
+<span title="stat_qq() {qqplotr}">QQ-plot</span>);
 
-- Homocedasticidade: testes de Levene e Bartlett;
+- Homocedasticidade: testes de 
+<span title="LeveneTest() {DescTools}">Levene</span> e 
+<span title="bartlett.test()">Bartlett</span>;
 
 - Independência: assumida com base no delineamento do estudo.
 
@@ -231,10 +235,10 @@ library(scales)
 
 [**Variáveis categóricas**]{style="text-decoration: underline; color: #5c607a;"}
 
-- Teste qui-quadrado;
-- Teste exato de Fisher;  
-- Coeficiente de Cramér; 
-- <span style="font-size: 0.75em;">Análise de resíduos padronizados.</span>
+- <span title="chisq.test()">Teste qui-quadrado</span>;
+- <span title="fisher.test()">Teste exato de Fisher</span>;  
+- <span title="cramer_v {rstatix}">Coeficiente de Cramér</span>; 
+- <span title="chisq.test()$stdres" style="font-size: 0.75em;">Análise de resíduos padronizados.</span>
 
 :::
 
@@ -246,9 +250,9 @@ library(scales)
 
 [**Variáveis numéricas**]{style="text-decoration: underline; color: #c07068;"}
 
-- ANOVA one-way;
-- ANOVA de Welch;  
-- <span style="font-size: 0.75em;">Comparações múltiplas de Games-Howell.</span>
+- <span title="oneway.test()">ANOVA one-way</span>;
+- <span title="oneway.test(list(var.equal = F))">ANOVA de Welch</span>;  
+- <span title="games_howell_test()" style="font-size: 0.75em;">Comparações múltiplas de Games-Howell.</span>
 
 :::
 
@@ -260,7 +264,7 @@ library(scales)
 
 [**Variável aberta**]{style="text-decoration: underline; color: #4c9a92;"}
 
-- Nuvem de palavras.
+- <span title="ggwordcloud(); wordcloud2()">Nuvem de palavras</span>.
 
 :::
 

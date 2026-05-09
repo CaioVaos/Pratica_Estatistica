@@ -529,7 +529,7 @@
     "href": "Avaliacao_6/index.html#testes-aplicados",
     "title": "PROJETO I",
     "section": "2.2 Testes aplicados",
-    "text": "2.2 Testes aplicados\n\nVerificação de Suposições\n\nNormalidade: avaliação gráfica (Densidade e QQ-plot);\nHomocedasticidade: testes de Levene e Bartlett;\nIndependência: assumida com base no delineamento do estudo.\n\n\n\n\n\n\nVariáveis categóricas\n\nTeste qui-quadrado;\nTeste exato de Fisher;\n\nCoeficiente de Cramér;\nAnálise de resíduos padronizados.\n\n\n\n\nVariáveis numéricas\n\nANOVA one-way;\nANOVA de Welch;\n\nComparações múltiplas de Games-Howell.\n\n\n\n\nVariável aberta\n\nNuvem de palavras."
+    "text": "2.2 Testes aplicados\n\nVerificação de Suposições\n\nNormalidade: avaliação gráfica ( Densidade e QQ-plot);\nHomocedasticidade: testes de Levene e Bartlett;\nIndependência: assumida com base no delineamento do estudo.\n\n\n\n\n\n\nVariáveis categóricas\n\nTeste qui-quadrado;\nTeste exato de Fisher;\n\nCoeficiente de Cramér;\nAnálise de resíduos padronizados.\n\n\n\n\nVariáveis numéricas\n\nANOVA one-way;\nANOVA de Welch;\n\nComparações múltiplas de Games-Howell.\n\n\n\n\nVariável aberta\n\nNuvem de palavras."
   },
   {
     "objectID": "Avaliacao_6/index.html#proporção-do-consumo-de-doces",

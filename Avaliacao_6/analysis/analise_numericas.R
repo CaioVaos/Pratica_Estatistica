@@ -747,7 +747,7 @@ plot_medias_rect_2
 
 # saveRDS(plot_medias_rect_2, file = "Avaliacao_6/data/plot_medias_rect_2.rds")
 
-### Com retangulo 3 ----
+### Com letras ----
 library(tidyverse)
 library(ggtext)
 

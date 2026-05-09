@@ -401,8 +401,8 @@ Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalvian
 <div class="box-gray" style="font-size: 0.8em;">
 <p><u><strong>Verificação de Suposições</strong></u></p>
 <ul>
-<li><p>Normalidade: avaliação gráfica (Densidade e QQ-plot);</p></li>
-<li><p>Homocedasticidade: testes de Levene e Bartlett;</p></li>
+<li><p>Normalidade: avaliação gráfica ( <span title="geom_density() {ggplot2}">Densidade</span> e <span title="stat_qq() {qqplotr}">QQ-plot</span>);</p></li>
+<li><p>Homocedasticidade: testes de <span title="LeveneTest() {DescTools}">Levene</span> e <span title="bartlett.test()">Bartlett</span>;</p></li>
 <li><p>Independência: assumida com base no delineamento do estudo.</p></li>
 </ul>
 </div>
@@ -412,28 +412,28 @@ Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalvian
 <div class="box-purple">
 <p><span style="text-decoration: underline; color: #5c607a;"><strong>Variáveis categóricas</strong></span></p>
 <ul>
-<li>Teste qui-quadrado;</li>
-<li>Teste exato de Fisher;<br>
+<li><span title="chisq.test()">Teste qui-quadrado</span>;</li>
+<li><span title="fisher.test()">Teste exato de Fisher</span>;<br>
 </li>
-<li>Coeficiente de Cramér;</li>
-<li><span style="font-size: 0.75em;">Análise de resíduos padronizados.</span></li>
+<li><span title="cramer_v {rstatix}">Coeficiente de Cramér</span>;</li>
+<li><span title="chisq.test()$stdres" style="font-size: 0.75em;">Análise de resíduos padronizados.</span></li>
 </ul>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="box-salmon">
 <p><span style="text-decoration: underline; color: #c07068;"><strong>Variáveis numéricas</strong></span></p>
 <ul>
-<li>ANOVA one-way;</li>
-<li>ANOVA de Welch;<br>
+<li><span title="oneway.test()">ANOVA one-way</span>;</li>
+<li><span title="oneway.test(list(var.equal = F))">ANOVA de Welch</span>;<br>
 </li>
-<li><span style="font-size: 0.75em;">Comparações múltiplas de Games-Howell.</span></li>
+<li><span title="games_howell_test()" style="font-size: 0.75em;">Comparações múltiplas de Games-Howell.</span></li>
 </ul>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="box-teal">
 <p><span style="text-decoration: underline; color: #4c9a92;"><strong>Variável aberta</strong></span></p>
 <ul>
-<li>Nuvem de palavras.</li>
+<li><span title="ggwordcloud(); wordcloud2()">Nuvem de palavras</span>.</li>
 </ul>
 </div>
 </div></div>
