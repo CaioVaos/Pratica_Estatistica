@@ -278,3 +278,9 @@
   overflow: hidden;
   border-top: 2px solid #444444;
 }
+
+/* =====hover===== */
+[title] {
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
