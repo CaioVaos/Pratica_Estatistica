@@ -8,6 +8,34 @@ format:
     page-layout: full
 ---
 
+<style>
+.g-col-4 {
+  text-align: center;
+}
+.av-destaque,
+.av-destaque-2 {
+  position: relative;
+  border-radius: 8px;
+  background-color: #1a3a4a;
+  margin: 1.5rem 0;
+}
+.av-destaque::before,
+.av-destaque-2::before {
+  position: absolute;
+  top: -1px;
+  right: 12px;
+  background: #b58900;
+  color: #fdf6e3;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 0 0 6px 6px;
+  z-index: 1;
+}
+.av-destaque::before  { content: "Projeto 1"; }
+.av-destaque-2::before { content: "Projeto 2"; }
+</style>
+
 ---
 
 ## 📚 Sobre
@@ -62,8 +90,8 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 [Vizualizar](Avaliacao_5/){.btn .btn-primary}
 :::
 
-::: {.g-col-4}
-#### 📊 Avaliação 6
+::: {.g-col-4 .av-destaque}
+#### 📊 Avaliação 6/7  
 
 [Vizualizar](Avaliacao_6/){.btn .btn-primary}
 :::
@@ -73,12 +101,6 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 ::: {.grid}
 
 ::: {.g-col-4}
-#### 🎤 Avaliação 7
-
-<span class="badge bg-info">Oratória da AV6</span>
-:::
-
-::: {.g-col-4}
 #### 📊 Avaliação 8
 
 [Em breve]{.btn .btn-secondary}
@@ -86,6 +108,12 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 
 ::: {.g-col-4}
 #### 📊 Avaliação 9
+
+[Em breve]{.btn .btn-secondary}
+:::
+
+::: {.g-col-4 .av-destaque-2}
+#### 📊 Avaliação 10  
 
 [Em breve]{.btn .btn-secondary}
 :::
