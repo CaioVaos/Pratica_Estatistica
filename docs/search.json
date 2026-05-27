@@ -635,5 +635,12 @@
     "title": "ANOVA de Welch e Games-Howell",
     "section": "1.3 O papel da Homogeneidade:",
     "text": "1.3 O papel da Homogeneidade:\n\n\n\nOnde é usada?\nNo denominador:\n\\[\nQM_{\\text{Dentro}}\n\\]\n\nEstima uma variância comum\n\n\n\\[\nF =\n\\frac{QM_{Entre}}{\\color{red}{QM_{Dentro}}}\n=\n\\frac{\\frac{SQ_{Entre}}{k-1}}{\\color{red}{\\frac{SQ_{Dentro}}{N-k}}}\n\\]\n\n\n\n\n\nEm Tukey:\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\frac{\\color{red}{QM_{\\text{Dentro}}}}{n}\n}}\n\\]\n\n\n\nO problema da heterogeneidade:\nSe:\n\\[\n\\sigma_i^2 \\neq \\sigma_j^2\n\\]\n\n\\(QM_{\\text{Dentro}}\\) não representa bem o erro\n\nA estatística F perde validade"
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#introdução-1",
+    "href": "Avaliacao_9/index.html#introdução-1",
+    "title": "read_health_region()& read_indigenous_land()",
+    "section": "1.1 Introdução",
+    "text": "1.1 Introdução\n\n\n\nread_health_region()\nRegiões de Saúde\n\nAgrupamentos de municípios com identidade cultural e redes de comunicação compartilhadas para organizar a atenção à saúde.\n\nDelimitar as regiões interfederativas de planejamento e gestão do SUS, conforme Portaria MS 4.279/2010.\n\nPlanejamento de serviços de saúde · Análise epidemiológica regional · Distribuição de recursos do SUS\n\nMinistério da Saúde\n\nSubnacional — municípios agrupados dentro dos estados brasileiros\n\n\n\n\n\nO que a base representa\n\nObjetivo das geometrias\n\nPossíveis aplicações práticas\n\nÓrgão responsável\n\nNível territorial envolvido\n\n\n\n\n\nread_indigenous_land()\nTerras Indígenas\n\nPolígonos das terras indígenas brasileiras em diferentes estágios de demarcação, distribuídas por todo o território nacional.\n\nRepresentar a delimitação oficial das terras habitadas por povos indígenas, reconhecidas pela União Federal.\n\nPolíticas indigenistas · Sobreposição com biomas e desmatamento · Estudos de conservação ambiental\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\nNacional — polígonos dispersos pelo território, sem hierarquia administrativa fixa"
   }
 ]

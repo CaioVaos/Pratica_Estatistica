@@ -1,0 +1,141 @@
+/* ===== Base ===== */
+.reveal {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 30px;
+  background-color: #ffffff;
+  color: #1e3028;
+}
+.reveal .slides section li {
+  text-align: justify;
+}
+.reveal .slides {
+  text-align: justify;
+}
+
+/* ===== Títulos ===== */
+.reveal h1 {
+  font-size: 2.4em;
+  font-weight: 800;
+  color: #1e3028;
+}
+.reveal h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #3d6b52;
+}
+.reveal h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #b5622a;
+}
+
+/* ===== Slide de título ===== */
+.reveal .title-slide {
+  background: linear-gradient(
+      135deg,
+      rgba(30, 48, 40, 0.90),
+      rgba(61, 107, 82, 0.78),
+      rgba(45, 138, 106, 0.50)
+    ),
+    url("media/transicao.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+.reveal .slides section.glass {
+  background: rgba(61, 107, 82, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.reveal .title-slide h1,
+.reveal .title-slide h2,
+.reveal .title-slide p {
+  color: #ffffff;
+}
+
+/* ===== Texto ===== */
+.reveal p,
+.reveal li {
+  line-height: 1.45;
+}
+
+/* ===== Listas ===== */
+.reveal ul li::marker {
+  color: #1e3028;
+}
+
+/* ===== Caixas ===== */
+
+.box-terracotta {
+  border-left: 8px solid #b5622a;
+  background: rgba(181, 98, 42, 0.08);
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(30, 48, 40, 0.10);
+}
+
+.box-blue {
+  border-left: 8px solid #1a6fa8;
+  background: rgba(26, 111, 168, 0.09);
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(30, 48, 40, 0.10);
+}
+
+.box-gray {
+  border-left: 8px solid #6b7280;
+  background: rgba(107, 114, 128, 0.08);
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(30, 48, 40, 0.08);
+}
+
+/* ===== Destaques inline ===== */
+.highlight-terracotta {
+  color: #b5622a;
+  font-weight: 700;
+}
+.highlight-blue {
+  color: #1a6fa8;
+  font-weight: 700;
+}
+.highlight-gray {
+  color: #6b7280;
+  font-weight: 700;
+}
+
+/* ===== Código ===== */
+.reveal pre code {
+  font-size: 0.78em;
+  background: #1e3028;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+/* ===== Slide Final ===== */
+.reveal .final-slide {
+  background: linear-gradient(
+      135deg,
+      rgba(30, 48, 40, 0.70),
+      rgba(61, 107, 82, 0.50),
+      rgba(45, 138, 106, 0.28)
+    ),
+    url("media/final.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.reveal section.title-slide.final-slide,
+.reveal section.title-slide.final-slide h1 {
+  background: none !important;
+  background-color: transparent !important;
+  font-size: 2.5em !important;
+  background-image: none !important;
+}
+
+/* ===== Rodapé ===== */
+.reveal .footer {
+  font-size: 0.5em;
+  color: rgba(61, 107, 82, 0.70);
+}

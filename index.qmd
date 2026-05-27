@@ -103,7 +103,7 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 ::: {.g-col-4}
 #### 📊 Avaliação 8
 
-[Em breve]{.btn .btn-secondary}
+[Vizualizar](Avaliacao_8/Gabarito_AV_8.pdf){.btn .btn-primary}
 :::
 
 ::: {.g-col-4}
@@ -113,7 +113,7 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 :::
 
 ::: {.g-col-4 .av-destaque-2}
-#### 📊 Avaliação 10  
+#### 📊 Avaliação 10/11
 
 [Em breve]{.btn .btn-secondary}
 :::
