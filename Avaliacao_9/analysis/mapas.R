@@ -10,6 +10,14 @@ library(ggspatial)  # Rosa dos ventos e escala
 library(sf)         # Leitura de shapefiles fora do geobr
 library(ggiraph)    # Mapas interativos
 
+# Sys.unsetenv("GITHUB_PAT")
 remotes::install_github("ipeaGIT/geobr", subdir = "r-package")
 
 devtools::install_github("yutannihilation/ggsflabel")
+
+# read_health_region -----------------------------------------------------------
+
+Dados <- read_health_region(year = 2025,
+                            geometry_level = "micro")
+Dados <- Dados[!st_is_empty(Dados),]
+ggplot(Dados)+geom_sf()

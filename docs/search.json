@@ -11,7 +11,7 @@
     "href": "index.html#avaliações",
     "title": "Prática Estatística II",
     "section": "🎓 Avaliações",
-    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nVisualizar\n\n\n\n\n📊 Avaliação 4\nVizualizar\n\n\n📊 Avaliação 5\nVizualizar\n\n\n📊 Avaliação 6/7\nVizualizar\n\n\n\n\n📊 Avaliação 8\nEm breve\n\n\n📊 Avaliação 9\nEm breve\n\n\n📊 Avaliação 10\nEm breve"
+    "text": "🎓 Avaliações\n\n\n📊 Avaliação 1\nVisualizar\n\n\n📊 Avaliação 2\nVizualizar\n\n\n📊 Avaliação 3\nVisualizar\n\n\n\n\n📊 Avaliação 4\nVizualizar\n\n\n📊 Avaliação 5\nVizualizar\n\n\n📊 Avaliação 6/7\nVizualizar\n\n\n\n\n📊 Avaliação 8\nVizualizar\n\n\n📊 Avaliação 9\nVizualizar\n\n\n📊 Avaliação 10/11\nEm breve"
   },
   {
     "objectID": "Avaliacao_2/index.html#objetivo",
@@ -639,8 +639,85 @@
   {
     "objectID": "Avaliacao_9/index.html#introdução-1",
     "href": "Avaliacao_9/index.html#introdução-1",
-    "title": "read_health_region()& read_indigenous_land()",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "2.1 Introdução",
+    "text": "2.1 Introdução\n\n\n\nO que a base representa?\nRegiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.\n\nObjetivo da geometria\nRepresentar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).\n\nAplicações práticas\n\nPlanejamento hospitalar;\nOrganização da rede SUS;\nRegionalização dos serviços de saúde;\nGestão pública em saúde.\n\n\n\n\n\n\nÓrgão responsável\nMinistério da Saúde.\n\nNível territorial envolvido\n\nMunicípios;\nRegiões de Saúde;\nMacrorregiões de Saúde."
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#introdução",
+    "href": "Avaliacao_9/index.html#introdução",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
     "section": "1.1 Introdução",
-    "text": "1.1 Introdução\n\n\n\nread_health_region()\nRegiões de Saúde\n\nAgrupamentos de municípios com identidade cultural e redes de comunicação compartilhadas para organizar a atenção à saúde.\n\nDelimitar as regiões interfederativas de planejamento e gestão do SUS, conforme Portaria MS 4.279/2010.\n\nPlanejamento de serviços de saúde · Análise epidemiológica regional · Distribuição de recursos do SUS\n\nMinistério da Saúde\n\nSubnacional — municípios agrupados dentro dos estados brasileiros\n\n\n\n\n\nO que a base representa\n\nObjetivo das geometrias\n\nPossíveis aplicações práticas\n\nÓrgão responsável\n\nNível territorial envolvido\n\n\n\n\n\nread_indigenous_land()\nTerras Indígenas\n\nPolígonos das terras indígenas brasileiras em diferentes estágios de demarcação, distribuídas por todo o território nacional.\n\nRepresentar a delimitação oficial das terras habitadas por povos indígenas, reconhecidas pela União Federal.\n\nPolíticas indigenistas · Sobreposição com biomas e desmatamento · Estudos de conservação ambiental\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\nNacional — polígonos dispersos pelo território, sem hierarquia administrativa fixa"
+    "text": "1.1 Introdução\n\n\n\nO que é o geobr?\nPacote R que disponibiliza bases geográficas oficiais brasileiras em formato espacial.\n\nObjetivos da atividade\n\nExplorar funções do pacote geobr;\nTrabalhar com objetos espaciais;\nProduzir mapas simples;\nInterpretar geometrias territoriais.\n\n\nBases disponíveis\n\nMunicípios\nEstados\nRegiões de Saúde\nTerras Indígenas\nBiomas\nFavelas\n\n\n\n\n\n\nAplicações\n\nSaúde pública;\nPlanejamento territorial;\nGestão pública;\nMeio ambiente;\nEstudos populacionais.\n\n\n\n\nO pacote geobr facilita o acesso a bases geográficas oficiais brasileiras sem necessidade de download manual dos arquivos espaciais."
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#exploração-da-função",
+    "href": "Avaliacao_9/index.html#exploração-da-função",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "2.2 Exploração da Função",
+    "text": "2.2 Exploração da Função\n\n\n\nPrincipais argumentos\n\nyear\ncode_state\ngeometry_level\nsimplified\n\n\nAnos disponíveis\nConforme disponibilidade da base no geobr.\n\nNíveis disponíveis\n\nmunicipality\nmicro\nmacro\n\n\n\n\n\n\nTipo de geometria retornada\n\nMULTIPOLYGON\n\n\nEstrutura do objeto espacial\n\nObjeto espacial sf\nData frame espacial\n\n\n\n\nInformações disponíveis nas colunas\nAs colunas da base foram exploradas utilizando a função names(), permitindo identificar os atributos descritivos e a geometria associada a cada unidade espacial."
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#visualização-espacial",
+    "href": "Avaliacao_9/index.html#visualização-espacial",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "3.1 Visualização Espacial",
+    "text": "3.1 Visualização Espacial\n\n\n\nMapa 1\nRegiões de Saúde do Estado do Rio de Janeiro\n\n\n\n\n\nInterpretação\nCada polígono representa uma Região de Saúde utilizada no planejamento territorial dos serviços do SUS."
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#sobreposição-de-camadas",
+    "href": "Avaliacao_9/index.html#sobreposição-de-camadas",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "3.2 Sobreposição de Camadas",
+    "text": "3.2 Sobreposição de Camadas\n\n\n\nMapa 2\nRegiões de Saúde + Macrorregiões de Saúde\n\n\n\n\n\nInterpretação\nAs Macrorregiões agrupam várias Regiões de Saúde e concentram serviços de maior complexidade, como hospitais de referência."
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#introdução-2",
+    "href": "Avaliacao_9/index.html#introdução-2",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "4.1 Introdução",
+    "text": "4.1 Introdução\n\n\n\nO que a base representa?\nTerras Indígenas brasileiras em diferentes estágios de demarcação.\n\nObjetivo da geometria\nRepresentar espacialmente os territórios indígenas oficialmente reconhecidos.\n\nAplicações práticas\n\nConservação ambiental;\nPlanejamento territorial;\nEstudos populacionais;\nFormulação de políticas públicas.\n\n\n\n\n\n\nÓrgão responsável\nFUNAI – Fundação Nacional dos Povos Indígenas.\n\nNível territorial envolvido\nTerras Indígenas."
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#exploração-da-função-1",
+    "href": "Avaliacao_9/index.html#exploração-da-função-1",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "4.2 Exploração da Função",
+    "text": "4.2 Exploração da Função\n\n\n\nPrincipais argumentos\n\nyear\ncode_state\nsimplified\n\n\nAnos disponíveis\nConforme disponibilidade da base no geobr.\n\n\n\n\n\nTipo de geometria retornada\n\nMULTIPOLYGON\n\n\nEstrutura do objeto espacial\n\nObjeto espacial sf\nData frame espacial\n\n\n\n\nInformações disponíveis nas colunas\nAs colunas da base foram exploradas utilizando a função names(), permitindo identificar os atributos descritivos e a geometria associada a cada Terra Indígena."
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#visualização-espacial-1",
+    "href": "Avaliacao_9/index.html#visualização-espacial-1",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "5.1 Visualização Espacial",
+    "text": "5.1 Visualização Espacial\n\n\n\nMapa 3\nTerras Indígenas do Estado do Amazonas\n\n\n\n\n\nInterpretação\nO mapa permite visualizar a distribuição espacial das Terras Indígenas no Amazonas, estado que concentra algumas das maiores áreas indígenas do país."
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#sobreposição-de-camadas-1",
+    "href": "Avaliacao_9/index.html#sobreposição-de-camadas-1",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "5.2 Sobreposição de Camadas",
+    "text": "5.2 Sobreposição de Camadas\n\n\n\nMapa 4\nEstado do Amazonas + Terras Indígenas\n\n\n\n\n\nInterpretação\nA sobreposição permite localizar as Terras Indígenas dentro do território estadual e compreender sua distribuição espacial."
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#principais-resultados",
+    "href": "Avaliacao_9/index.html#principais-resultados",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "6.1 Principais Resultados",
+    "text": "6.1 Principais Resultados\n\n\n\nPacote geobr\n\nBases oficiais brasileiras;\nObjetos espaciais;\nIntegração com R.\n\n\n\n\n\n\nread_health_region()\n\nRegiões de Saúde;\nMacrorregiões;\nPlanejamento do SUS.\n\n\n\n\n\n\nread_indigenous_land()\n\nTerras Indígenas;\nPlanejamento territorial;\nConservação ambiental.\n\n\n\n6.1.1 Conclusão\n\nExploramos duas funções do pacote geobr;\nTrabalhamos com objetos espaciais do tipo sf;\nInvestigamos diferentes geometrias territoriais brasileiras;\nConstruímos mapas simples e organizados;\nAplicamos sobreposição de camadas;\nInterpretamos estruturas territoriais relacionadas à saúde pública e aos territórios indígenas.\n\nAs funções read_health_region() e read_indigenous_land() demonstram como o pacote geobr facilita o acesso a bases geográficas oficiais e permite a visualização e interpretação de diferentes organizações territoriais brasileiras."
+  },
+  {
+    "objectID": "Avaliacao_9/antigo.html",
+    "href": "Avaliacao_9/antigo.html",
+    "title": "read_health_region()& read_indigenous_land()",
+    "section": "",
+    "text": "read_health_region()\nRegiões de Saúde\n\nAgrupamentos de municípios com identidade cultural e redes de comunicação compartilhadas para organizar a atenção à saúde.\n\nDelimitar as regiões interfederativas de planejamento e gestão do SUS, conforme Portaria MS 4.279/2010.\n\nPlanejamento de serviços de saúde · Análise epidemiológica regional · Distribuição de recursos do SUS\n\nMinistério da Saúde\n\nSubnacional — municípios agrupados dentro dos estados brasileiros\n\n\n\n\n\nO que a base representa\n\nObjetivo das geometrias\n\nPossíveis aplicações práticas\n\nÓrgão responsável\n\nNível territorial envolvido\n\n\n\n\n\nread_indigenous_land()\nTerras Indígenas\n\nPolígonos das terras indígenas brasileiras em diferentes estágios de demarcação, distribuídas por todo o território nacional.\n\nRepresentar a delimitação oficial das terras habitadas por povos indígenas, reconhecidas pela União Federal.\n\nPolíticas indigenistas · Sobreposição com biomas e desmatamento · Estudos de conservação ambiental\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\nNacional — polígonos dispersos pelo território, sem hierarquia administrativa fixa"
+  },
+  {
+    "objectID": "Avaliacao_9/antigo.html#introdução-1",
+    "href": "Avaliacao_9/antigo.html#introdução-1",
+    "title": "read_health_region()& read_indigenous_land()",
+    "section": "",
+    "text": "read_health_region()\nRegiões de Saúde\n\nAgrupamentos de municípios com identidade cultural e redes de comunicação compartilhadas para organizar a atenção à saúde.\n\nDelimitar as regiões interfederativas de planejamento e gestão do SUS, conforme Portaria MS 4.279/2010.\n\nPlanejamento de serviços de saúde · Análise epidemiológica regional · Distribuição de recursos do SUS\n\nMinistério da Saúde\n\nSubnacional — municípios agrupados dentro dos estados brasileiros\n\n\n\n\n\nO que a base representa\n\nObjetivo das geometrias\n\nPossíveis aplicações práticas\n\nÓrgão responsável\n\nNível territorial envolvido\n\n\n\n\n\nread_indigenous_land()\nTerras Indígenas\n\nPolígonos das terras indígenas brasileiras em diferentes estágios de demarcação, distribuídas por todo o território nacional.\n\nRepresentar a delimitação oficial das terras habitadas por povos indígenas, reconhecidas pela União Federal.\n\nPolíticas indigenistas · Sobreposição com biomas e desmatamento · Estudos de conservação ambiental\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\nNacional — polígonos dispersos pelo território, sem hierarquia administrativa fixa"
   }
 ]

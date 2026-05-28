@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Caio Salviano (caiosalviano@id.uff.br)   Milena Labre (milenalabre@id.uff.br)">
 
-<title>Prática Estatística II</title>
+<title>read_health_region() &amp;  read_indigenous_land()</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,22 +27,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-ca1cb3032aa6b9181247695f27e2facc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-25594543a0b82430c9b0b047752f0dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-067f8ab80d092ae3595f7402c2c9b667.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ece42c8223ec2bf36298a08f122c9a68.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -77,24 +78,45 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="antigo.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Prática Estatística II</h1>
-<p class="subtitle lead">Hub de Avaliações</p>
+<h1 class="title"><span style="color: #FFC107; font-size: 50px;"><strong>read_health_region()<br>&amp;<br> read_indigenous_land()</strong></span></h1>
+<p class="subtitle lead"><span style="font-size: 26px;"><strong>ATIVIDADE AVALIATIVA 9</strong></span></p>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalviano@id.uff.br</a>) <br> Milena Labre (<a href="mailto:milenalabre@id.uff.br" class="email">milenalabre@id.uff.br</a>) </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Universidade Federal Fluminense
+          </p>
+      </div>
+  </div>
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">27/04/2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -104,88 +126,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style>
-.g-col-4 {
-  text-align: center;
-}
-.av-destaque,
-.av-destaque-2 {
-  position: relative;
-  border-radius: 8px;
-  background-color: #1a3a4a;
-  margin: 1.5rem 0;
-}
-.av-destaque::before,
-.av-destaque-2::before {
-  position: absolute;
-  top: -1px;
-  right: 12px;
-  background: #b58900;
-  color: #fdf6e3;
-  font-size: 0.65rem;
-  font-weight: 600;
-  padding: 2px 10px;
-  border-radius: 0 0 6px 6px;
-  z-index: 1;
-}
-.av-destaque::before  { content: "Projeto 1"; }
-.av-destaque-2::before { content: "Projeto 2"; }
-</style>
+<section id="introdução" class="level1">
+<h1>Introdução</h1>
+<section id="introdução-1" class="level2">
+<h2 class="anchored" data-anchor-id="introdução-1">Introdução</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="box-blue" style="font-size: 0.6em;">
+<p><strong><code>read_health_region()</code></strong></p>
+<p><strong>Regiões de Saúde</strong></p>
 <hr>
-<section id="sobre" class="level2">
-<h2 class="anchored" data-anchor-id="sobre">📚 Sobre</h2>
-<p>Este hub reúne as avaliações da disciplina <strong>Prática Estatística II</strong>.</p>
-<ul>
-<li><p><strong>Instituição:</strong> Universidade Federal Fluminense (UFF)</p></li>
-<li><p><strong>Autores:</strong> Caio Salviano &amp; Milena Labre</p></li>
-<li><p><strong>Período:</strong> 2026.1</p></li>
-</ul>
+<p>Agrupamentos de municípios com identidade cultural e redes de comunicação compartilhadas para organizar a atenção à saúde.</p>
 <hr>
-</section>
-<section id="avaliações" class="level2">
-<h2 class="anchored" data-anchor-id="avaliações">🎓 Avaliações</h2>
-<div class="grid">
-<section id="avaliação-1" class="level4 g-col-4">
-<h4 class="anchored" data-anchor-id="avaliação-1">📊 Avaliação 1</h4>
-<p><a href="Avaliacao_1/" class="btn btn-primary">Visualizar</a></p>
-</section>
-<section id="avaliação-2" class="level4 g-col-4">
-<h4 class="anchored" data-anchor-id="avaliação-2">📊 Avaliação 2</h4>
-<p><a href="Avaliacao_2/" class="btn btn-primary">Vizualizar</a></p>
-</section>
-<section id="avaliação-3" class="level4 g-col-4">
-<h4 class="anchored" data-anchor-id="avaliação-3">📊 Avaliação 3</h4>
-<p><a href="Avaliacao_3/Gabarito_AV3.pdf" class="btn btn-primary">Visualizar</a></p>
-</section>
+<p>Delimitar as regiões interfederativas de planejamento e gestão do SUS, conforme Portaria MS 4.279/2010.</p>
+<hr>
+<p>Planejamento de serviços de saúde · Análise epidemiológica regional · Distribuição de recursos do SUS</p>
+<hr>
+<p>Ministério da Saúde</p>
+<hr>
+<p><strong>Subnacional</strong> — municípios agrupados dentro dos estados brasileiros</p>
 </div>
-<div class="grid">
-<section id="avaliação-4" class="level4 g-col-4">
-<h4 class="anchored" data-anchor-id="avaliação-4">📊 Avaliação 4</h4>
-<p><a href="Avaliacao_4/" class="btn btn-primary">Vizualizar</a></p>
-</section>
-<section id="avaliação-5" class="level4 g-col-4">
-<h4 class="anchored" data-anchor-id="avaliação-5">📊 Avaliação 5</h4>
-<p><a href="Avaliacao_5/" class="btn btn-primary">Vizualizar</a></p>
-</section>
-<section id="avaliação-67" class="level4 g-col-4 av-destaque">
-<h4 class="anchored" data-anchor-id="avaliação-67">📊 Avaliação 6/7</h4>
-<p><a href="Avaliacao_6/" class="btn btn-primary">Vizualizar</a></p>
-</section>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:10%;">
+<div class="box-gray" style="font-size: 0.6em; text-align: center;">
+<p>O que a base representa</p>
+<hr>
+<p>Objetivo das geometrias</p>
+<hr>
+<p>Possíveis aplicações práticas</p>
+<hr>
+<p>Órgão responsável</p>
+<hr>
+<p>Nível territorial envolvido</p>
 </div>
-<div class="grid">
-<section id="avaliação-8" class="level4 g-col-4">
-<h4 class="anchored" data-anchor-id="avaliação-8">📊 Avaliação 8</h4>
-<p><a href="Avaliacao_8/Gabarito_AV_8.pdf" class="btn btn-primary">Vizualizar</a></p>
-</section>
-<section id="avaliação-9" class="level4 g-col-4">
-<h4 class="anchored" data-anchor-id="avaliação-9">📊 Avaliação 9</h4>
-<p><a href="Avaliacao_9/" class="btn btn-primary">Vizualizar</a></p>
-</section>
-<section id="avaliação-1011" class="level4 g-col-4 av-destaque-2">
-<h4 class="anchored" data-anchor-id="avaliação-1011">📊 Avaliação 10/11</h4>
-<p><span class="btn btn-secondary">Em breve</span></p>
-</section>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:40%;">
+<div class="box-terracotta" style="font-size: 0.6em;">
+<p><strong><code>read_indigenous_land()</code></strong></p>
+<p><strong>Terras Indígenas</strong></p>
+<hr>
+<p>Polígonos das terras indígenas brasileiras em diferentes estágios de demarcação, distribuídas por todo o território nacional.</p>
+<hr>
+<p>Representar a delimitação oficial das terras habitadas por povos indígenas, reconhecidas pela União Federal.</p>
+<hr>
+<p>Políticas indigenistas · Sobreposição com biomas e desmatamento · Estudos de conservação ambiental</p>
+<hr>
+<p>FUNAI — Fundação Nacional dos Povos Indígenas</p>
+<hr>
+<p><strong>Nacional</strong> — polígonos dispersos pelo território, sem hierarquia administrativa fixa</p>
 </div>
+</div>
+</div>
+</section>
+</section>
+<section id="explorando-as-funções" class="level1">
+<h1>Explorando as Funções</h1>
+</section>
+<section id="contrução-dos-mapas" class="level1">
+<h1>Contrução dos Mapas</h1>
+</section>
+<section id="fim." class="level1 unnumbered final-slide">
+<h1 class="unnumbered final-slide">Fim.</h1>
 
 
 </section>

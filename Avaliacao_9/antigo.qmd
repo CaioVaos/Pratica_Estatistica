@@ -1,0 +1,130 @@
+---
+title: "<span style='color: #FFC107; font-size: 50px;'>**read_health_region()<br>&<br> read_indigenous_land()**</span>"
+subtitle: "<span style='font-size: 26px;'>**ATIVIDADE AVALIATIVA 9**</span>"
+author: "Caio Salviano (<caiosalviano@id.uff.br>) <br> Milena Labre (<milenalabre@id.uff.br>)"
+date: 2026-04-27
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: custom.css
+    slide-number: true
+    incremental: false
+    transition: slide
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    number-sections: true
+    title-slide-attributes:
+      data-background-image: "media/capa.jpeg"
+      data-background-size: cover
+---
+
+```{r }
+#| label: setup
+#| include: false
+library(tidyverse)
+library(scales)
+```
+
+
+# Introdução
+
+## Introdução
+
+:::: columns
+
+::: {.column width="40%"}
+::: {.box-blue style="font-size: 0.6em;"}
+**`read_health_region()`**
+
+**Regiões de Saúde**
+
+---
+
+Agrupamentos de municípios com identidade cultural e redes de comunicação compartilhadas para organizar a atenção à saúde.
+
+---
+
+Delimitar as regiões interfederativas de planejamento e gestão do SUS, conforme Portaria MS 4.279/2010.
+
+---
+
+Planejamento de serviços de saúde · Análise epidemiológica regional · Distribuição de recursos do SUS
+
+---
+
+Ministério da Saúde
+
+---
+
+**Subnacional** — municípios agrupados dentro dos estados brasileiros
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="10%"}
+::: {.box-gray style="font-size: 0.6em; text-align: center;"}
+O que a base representa
+
+---
+
+Objetivo das geometrias
+
+---
+
+Possíveis aplicações práticas
+
+---
+
+Órgão responsável
+
+---
+
+Nível territorial envolvido
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+::: {.box-terracotta style="font-size: 0.6em;"}
+**`read_indigenous_land()`**
+
+**Terras Indígenas**
+
+---
+
+Polígonos das terras indígenas brasileiras em diferentes estágios de demarcação, distribuídas por todo o território nacional.
+
+---
+
+Representar a delimitação oficial das terras habitadas por povos indígenas, reconhecidas pela União Federal.
+
+---
+
+Políticas indigenistas · Sobreposição com biomas e desmatamento · Estudos de conservação ambiental
+
+---
+
+FUNAI — Fundação Nacional dos Povos Indígenas
+
+---
+
+**Nacional** — polígonos dispersos pelo território, sem hierarquia administrativa fixa
+:::
+:::
+
+::::
+
+
+# Explorando as Funções
+
+# Contrução dos Mapas
+
+# Fim. {.unnumbered .final-slide}

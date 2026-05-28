@@ -10,7 +10,8 @@
   <meta name="generator" content="quarto-1.9.32">
 
   <meta name="author" content="Caio Salviano (caiosalviano@id.uff.br)   Milena Labre (milenalabre@id.uff.br)">
-  <title>read_health_region() &amp;  read_indigenous_land()</title>
+  <meta name="dcterms.date" content="2026-01-06">
+  <title>Pacote geobr: Regiões de Saúde e Terras Indígenas</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -130,8 +131,8 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="media/capa.jpeg" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title"><span style="color: #FFC107; font-size: 50px;"><strong>read_health_region()<br>&amp;<br> read_indigenous_land()</strong></span></h1>
+<section id="title-slide" data-background-image="media/capa.png" data-background-size="cover" style="transform: translateY(-15px);" class="quarto-title-block center">
+  <h1 class="title"><span style="color: #c49a3a; font-size: 50px;"><strong>Pacote geobr: Regiões de Saúde e Terras Indígenas</strong></span></h1>
   <p class="subtitle"><span style="font-size: 26px;"><strong>ATIVIDADE AVALIATIVA 9</strong></span></p>
 
 <div class="quarto-title-authors">
@@ -145,79 +146,347 @@ Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalvian
     </div>
 </div>
 
-  <p class="date">27/04/2026</p>
+  <p class="date">01/06/2026</p>
 </section>
 <section>
-<section id="introdução" class="title-slide slide level1 center" data-number="1">
-<h1><span class="header-section-number">1</span> Introdução</h1>
+<section id="o-pacote-geobr" class="title-slide slide level1 center" data-number="1">
+<h1><span class="header-section-number">1</span> O Pacote geobr</h1>
 
 </section>
-<section id="introdução-1" class="slide level2" data-number="1.1">
+<section id="introdução" class="slide level2" data-number="1.1">
 <h2><span class="header-section-number">1.1</span> Introdução</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
-<div class="box-blue" style="font-size: 0.6em;">
-<p><strong><code>read_health_region()</code></strong></p>
-<p><strong>Regiões de Saúde</strong></p>
+<div class="column" style="width:55%;">
+<div class="box-blue">
+<p><strong>O que é o geobr?</strong></p>
+<p>Pacote R que disponibiliza bases geográficas oficiais brasileiras em formato espacial.</p>
 <hr>
-<p>Agrupamentos de municípios com identidade cultural e redes de comunicação compartilhadas para organizar a atenção à saúde.</p>
+<p><strong>Objetivos da atividade</strong></p>
+<ul>
+<li>Explorar funções do pacote geobr;</li>
+<li>Trabalhar com objetos espaciais;</li>
+<li>Produzir mapas simples;</li>
+<li>Interpretar geometrias territoriais.</li>
+</ul>
 <hr>
-<p>Delimitar as regiões interfederativas de planejamento e gestão do SUS, conforme Portaria MS 4.279/2010.</p>
-<hr>
-<p>Planejamento de serviços de saúde · Análise epidemiológica regional · Distribuição de recursos do SUS</p>
-<hr>
-<p>Ministério da Saúde</p>
-<hr>
-<p><strong>Subnacional</strong> — municípios agrupados dentro dos estados brasileiros</p>
+<p><strong>Bases disponíveis</strong></p>
+<ul>
+<li>Municípios</li>
+<li>Estados</li>
+<li>Regiões de Saúde</li>
+<li>Terras Indígenas</li>
+<li>Biomas</li>
+<li>Favelas</li>
+</ul>
 </div>
-</div><div class="column" style="width:5%;">
+</div><div class="column" style="width:3%;">
 
-</div><div class="column" style="width:10%;">
-<div class="box-gray" style="font-size: 0.6em; text-align: center;">
-<p>O que a base representa</p>
-<hr>
-<p>Objetivo das geometrias</p>
-<hr>
-<p>Possíveis aplicações práticas</p>
-<hr>
-<p>Órgão responsável</p>
-<hr>
-<p>Nível territorial envolvido</p>
+</div><div class="column" style="width:42%;">
+<div class="box-yellow">
+<p><strong>Aplicações</strong></p>
+<ul>
+<li>Saúde pública;</li>
+<li>Planejamento territorial;</li>
+<li>Gestão pública;</li>
+<li>Meio ambiente;</li>
+<li>Estudos populacionais.</li>
+</ul>
 </div>
-</div><div class="column" style="width:5%;">
-
-</div><div class="column" style="width:40%;">
-<div class="box-terracotta" style="font-size: 0.6em;">
-<p><strong><code>read_indigenous_land()</code></strong></p>
-<p><strong>Terras Indígenas</strong></p>
-<hr>
-<p>Polígonos das terras indígenas brasileiras em diferentes estágios de demarcação, distribuídas por todo o território nacional.</p>
-<hr>
-<p>Representar a delimitação oficial das terras habitadas por povos indígenas, reconhecidas pela União Federal.</p>
-<hr>
-<p>Políticas indigenistas · Sobreposição com biomas e desmatamento · Estudos de conservação ambiental</p>
-<hr>
-<p>FUNAI — Fundação Nacional dos Povos Indígenas</p>
-<hr>
-<p><strong>Nacional</strong> — polígonos dispersos pelo território, sem hierarquia administrativa fixa</p>
+<p><br></p>
+<div class="box-gray" style="font-size: 0.70em;">
+<p>O pacote geobr facilita o acesso a bases geográficas oficiais brasileiras sem necessidade de download manual dos arquivos espaciais.</p>
 </div>
 </div></div>
 </section></section>
-<section id="explorando-as-funções" class="title-slide slide level1 center" data-number="2">
-<h1><span class="header-section-number">2</span> Explorando as Funções</h1>
+<section>
+<section id="função-read_health_region" class="title-slide slide level1 center" data-number="2">
+<h1><span class="header-section-number">2</span> Função read_health_region()</h1>
 
 </section>
+<section id="introdução-1" class="slide level2" data-number="2.1">
+<h2><span class="header-section-number">2.1</span> Introdução</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="box-blue">
+<p><strong>O que a base representa?</strong></p>
+<p>Regiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.</p>
+<hr>
+<p><strong>Objetivo da geometria</strong></p>
+<p>Representar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).</p>
+<hr>
+<p><strong>Aplicações práticas</strong></p>
+<ul>
+<li>Planejamento hospitalar;</li>
+<li>Organização da rede SUS;</li>
+<li>Regionalização dos serviços de saúde;</li>
+<li>Gestão pública em saúde.</li>
+</ul>
+</div>
+</div><div class="column" style="width:3%;">
 
-<section id="contrução-dos-mapas" class="title-slide slide level1 center" data-number="3">
-<h1><span class="header-section-number">3</span> Contrução dos Mapas</h1>
+</div><div class="column" style="width:42%;">
+<div class="box-yellow">
+<p><strong>Órgão responsável</strong></p>
+<p>Ministério da Saúde.</p>
+<hr>
+<p><strong>Nível territorial envolvido</strong></p>
+<ul>
+<li>Municípios;</li>
+<li>Regiões de Saúde;</li>
+<li>Macrorregiões de Saúde.</li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="exploração-da-função" class="slide level2" data-number="2.2">
+<h2><span class="header-section-number">2.2</span> Exploração da Função</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="box-blue">
+<p><strong>Principais argumentos</strong></p>
+<ul>
+<li><code>year</code></li>
+<li><code>code_state</code></li>
+<li><code>geometry_level</code></li>
+<li><code>simplified</code></li>
+</ul>
+<hr>
+<p><strong>Anos disponíveis</strong></p>
+<p>Conforme disponibilidade da base no geobr.</p>
+<hr>
+<p><strong>Níveis disponíveis</strong></p>
+<ul>
+<li>municipality</li>
+<li>micro</li>
+<li>macro</li>
+</ul>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:50%;">
+<div class="box-blue">
+<p><strong>Tipo de geometria retornada</strong></p>
+<ul>
+<li>MULTIPOLYGON</li>
+</ul>
+<hr>
+<p><strong>Estrutura do objeto espacial</strong></p>
+<ul>
+<li>Objeto espacial <code>sf</code></li>
+<li>Data frame espacial</li>
+</ul>
+</div>
+<p><br></p>
+<div class="box-yellow" style="font-size: 0.7em;">
+<p><strong>Informações disponíveis nas colunas</strong></p>
+<p>As colunas da base foram exploradas utilizando a função <code>names()</code>, permitindo identificar os atributos descritivos e a geometria associada a cada unidade espacial.</p>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="regiões-de-saúde" class="title-slide slide level1 center" data-number="3">
+<h1><span class="header-section-number">3</span> Regiões de Saúde</h1>
 
 </section>
+<section id="visualização-espacial" class="slide level2" data-number="3.1">
+<h2><span class="header-section-number">3.1</span> Visualização Espacial</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="box-gray">
+<p><strong>Mapa 1</strong></p>
+<p>Regiões de Saúde do Estado do Rio de Janeiro</p>
+</div>
+</div><div class="column" style="width:3%;">
 
-<section id="fim." class="title-slide slide level1 unnumbered final-slide center">
-<h1>Fim.</h1>
+</div><div class="column" style="width:47%;">
+<div class="box-yellow">
+<p><strong>Interpretação</strong></p>
+<p>Cada polígono representa uma Região de Saúde utilizada no planejamento territorial dos serviços do SUS.</p>
+</div>
+</div></div>
+</section>
+<section id="sobreposição-de-camadas" class="slide level2" data-number="3.2">
+<h2><span class="header-section-number">3.2</span> Sobreposição de Camadas</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="box-blue">
+<p><strong>Mapa 2</strong></p>
+<p>Regiões de Saúde + Macrorregiões de Saúde</p>
+</div>
+</div><div class="column" style="width:3%;">
 
+</div><div class="column" style="width:47%;">
+<div class="box-yellow">
+<p><strong>Interpretação</strong></p>
+<p>As Macrorregiões agrupam várias Regiões de Saúde e concentram serviços de maior complexidade, como hospitais de referência.</p>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="função-read_indigenous_land" class="title-slide slide level1 center" data-number="4">
+<h1><span class="header-section-number">4</span> Função read_indigenous_land()</h1>
 
 </section>
+<section id="introdução-2" class="slide level2" data-number="4.1">
+<h2><span class="header-section-number">4.1</span> Introdução</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="box-blue">
+<p><strong>O que a base representa?</strong></p>
+<p>Terras Indígenas brasileiras em diferentes estágios de demarcação.</p>
+<hr>
+<p><strong>Objetivo da geometria</strong></p>
+<p>Representar espacialmente os territórios indígenas oficialmente reconhecidos.</p>
+<hr>
+<p><strong>Aplicações práticas</strong></p>
+<ul>
+<li>Conservação ambiental;</li>
+<li>Planejamento territorial;</li>
+<li>Estudos populacionais;</li>
+<li>Formulação de políticas públicas.</li>
+</ul>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:42%;">
+<div class="box-yellow">
+<p><strong>Órgão responsável</strong></p>
+<p>FUNAI – Fundação Nacional dos Povos Indígenas.</p>
+<hr>
+<p><strong>Nível territorial envolvido</strong></p>
+<p>Terras Indígenas.</p>
+</div>
+</div></div>
+</section>
+<section id="exploração-da-função-1" class="slide level2" data-number="4.2">
+<h2><span class="header-section-number">4.2</span> Exploração da Função</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="box-blue">
+<p><strong>Principais argumentos</strong></p>
+<ul>
+<li><code>year</code></li>
+<li><code>code_state</code></li>
+<li><code>simplified</code></li>
+</ul>
+<hr>
+<p><strong>Anos disponíveis</strong></p>
+<p>Conforme disponibilidade da base no geobr.</p>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:50%;">
+<div class="box-blue">
+<p><strong>Tipo de geometria retornada</strong></p>
+<ul>
+<li>MULTIPOLYGON</li>
+</ul>
+<hr>
+<p><strong>Estrutura do objeto espacial</strong></p>
+<ul>
+<li>Objeto espacial <code>sf</code></li>
+<li>Data frame espacial</li>
+</ul>
+</div>
+<p><br></p>
+<div class="box-yellow" style="font-size: 0.7em;">
+<p><strong>Informações disponíveis nas colunas</strong></p>
+<p>As colunas da base foram exploradas utilizando a função <code>names()</code>, permitindo identificar os atributos descritivos e a geometria associada a cada Terra Indígena.</p>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="terras-indígenas" class="title-slide slide level1 center" data-number="5">
+<h1><span class="header-section-number">5</span> Terras Indígenas</h1>
+
+</section>
+<section id="visualização-espacial-1" class="slide level2" data-number="5.1">
+<h2><span class="header-section-number">5.1</span> Visualização Espacial</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="box-gray">
+<p><strong>Mapa 3</strong></p>
+<p>Terras Indígenas do Estado do Amazonas</p>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:47%;">
+<div class="box-yellow">
+<p><strong>Interpretação</strong></p>
+<p>O mapa permite visualizar a distribuição espacial das Terras Indígenas no Amazonas, estado que concentra algumas das maiores áreas indígenas do país.</p>
+</div>
+</div></div>
+</section>
+<section id="sobreposição-de-camadas-1" class="slide level2" data-number="5.2">
+<h2><span class="header-section-number">5.2</span> Sobreposição de Camadas</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="box-blue">
+<p><strong>Mapa 4</strong></p>
+<p>Estado do Amazonas + Terras Indígenas</p>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:47%;">
+<div class="box-yellow">
+<p><strong>Interpretação</strong></p>
+<p>A sobreposição permite localizar as Terras Indígenas dentro do território estadual e compreender sua distribuição espacial.</p>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="conclusão" class="title-slide slide level1 center" data-number="6">
+<h1><span class="header-section-number">6</span> Conclusão</h1>
+
+</section>
+<section id="principais-resultados" class="slide level2" data-number="6.1">
+<h2><span class="header-section-number">6.1</span> Principais Resultados</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="box-anova">
+<p><strong>Pacote geobr</strong></p>
+<ul>
+<li>Bases oficiais brasileiras;</li>
+<li>Objetos espaciais;</li>
+<li>Integração com R.</li>
+</ul>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:30%;">
+<div class="box-welch">
+<p><strong>read_health_region()</strong></p>
+<ul>
+<li>Regiões de Saúde;</li>
+<li>Macrorregiões;</li>
+<li>Planejamento do SUS.</li>
+</ul>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:30%;">
+<div class="box-gh">
+<p><strong>read_indigenous_land()</strong></p>
+<ul>
+<li>Terras Indígenas;</li>
+<li>Planejamento territorial;</li>
+<li>Conservação ambiental.</li>
+</ul>
+</div>
+</div></div>
+<h3 data-number="6.1.1" id="conclusão-1"><span class="header-section-number">6.1.1</span> Conclusão</h3>
+<ul>
+<li>Exploramos duas funções do pacote geobr;</li>
+<li>Trabalhamos com objetos espaciais do tipo <code>sf</code>;</li>
+<li>Investigamos diferentes geometrias territoriais brasileiras;</li>
+<li>Construímos mapas simples e organizados;</li>
+<li>Aplicamos sobreposição de camadas;</li>
+<li>Interpretamos estruturas territoriais relacionadas à saúde pública e aos territórios indígenas.</li>
+</ul>
+<p>As funções <code>read_health_region()</code> e <code>read_indigenous_land()</code> demonstram como o pacote geobr facilita o acesso a bases geográficas oficiais e permite a visualização e interpretação de diferentes organizações territoriais brasileiras.</p>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -433,82 +702,6 @@ Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalvian
         ]
       });
     </script>
-    
-
-    <script>
-
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
-      // slide changes (different for each slide format).
-
-      (function () {
-
-        // dispatch for htmlwidgets
-
-        function fireSlideEnter() {
-
-          const event = window.document.createEvent("Event");
-
-          event.initEvent("slideenter", true, true);
-
-          window.document.dispatchEvent(event);
-
-        }
-
-    
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          fireSlideEnter();
-
-    
-
-          // dispatch for shiny
-
-          if (window.jQuery) {
-
-            if (previousSlide) {
-
-              window.jQuery(previousSlide).trigger("hidden");
-
-            }
-
-            if (currentSlide) {
-
-              window.jQuery(currentSlide).trigger("shown");
-
-            }
-
-          }
-
-        }
-
-    
-
-        // hookup for slidy
-
-        if (window.w3c_slidy) {
-
-          window.w3c_slidy.add_observer(function (slide_num) {
-
-            // slide_num starts at position 1
-
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
-          });
-
-        }
-
-    
-
-      })();
-
-    </script>
-
-    
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
