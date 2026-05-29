@@ -202,15 +202,13 @@ Argumentos
 
 <div style="display:flex; flex-wrap:wrap; gap:4px;">
 
-<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`year`</span>
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:2.5px solid #b08d1a;">`year`</span>
 
-<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`code_state`</span>
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:2.5px solid #b08d1a;">`code_state`</span>
 
-<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`geometry_level`</span>
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:2.5px solid #b08d1a;">`geometry_level`</span>
 
-<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`macro`</span>
-
-<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`simplified`</span>
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:2.5px solid #b08d1a;">`simplified`</span>
 
 <span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`output`</span>
 
@@ -401,11 +399,11 @@ Argumentos
 
 <div style="display:flex; flex-wrap:wrap; gap:4px;">
 
-<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`year`</span>
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:2.5px solid #b08d1a;">`year`</span>
 
-<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`code_state`</span>
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:2.5px solid #b08d1a;">`code_state`</span>
 
-<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`simplified`</span>
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:2.5px solid #b08d1a">`simplified`</span>
 
 <span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`output`</span>
 
