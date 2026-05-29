@@ -640,8 +640,8 @@
     "objectID": "Avaliacao_9/index.html#introdução-1",
     "href": "Avaliacao_9/index.html#introdução-1",
     "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
-    "section": "2.1 Introdução",
-    "text": "2.1 Introdução\n\n\n\nO que a base representa?\nRegiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.\n\nObjetivo da geometria\nRepresentar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).\n\nAplicações práticas\n\nPlanejamento hospitalar;\nOrganização da rede SUS;\nRegionalização dos serviços de saúde;\nGestão pública em saúde.\n\n\n\n\n\n\nÓrgão responsável\nMinistério da Saúde.\n\nNível territorial envolvido\n\nMunicípios;\nRegiões de Saúde;\nMacrorregiões de Saúde."
+    "section": "1.1 Introdução",
+    "text": "1.1 Introdução\n\n\n\n\n\n\n1.1.1 Regiões de Saúde\n\n\n🗺️\n\n\nO que representa\n\n\nRegiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPlanejamento hospitalar Organização da rede SUS\nRegionalização dos serviços de saúde\n\n\n\n\n\n🏥\n\n\nÓrgão responsável\n\n\nDataSUS - Ministério da Saúde\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nMunicípios · Regiões de Saúde · Macrorregiões de Saúde\n\n\n\n\n\n\n\n\n\n\n\n1.1.2 Terras Indígenas\n\n\n🗺️\n\n\nO que representa\n\n\nTerras Indígenas brasileiras em diferentes estágios de demarcação.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar espacialmente os territórios indígenas oficialmente reconhecidos.\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPolíticas indigenistas Sobreposição com biomas\nConservação ambiental\n\n\n\n\n\n🏛️\n\n\nÓrgão responsável\n\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nNacional fixa"
   },
   {
     "objectID": "Avaliacao_9/index.html#introdução",
@@ -719,5 +719,26 @@
     "title": "read_health_region()& read_indigenous_land()",
     "section": "",
     "text": "read_health_region()\nRegiões de Saúde\n\nAgrupamentos de municípios com identidade cultural e redes de comunicação compartilhadas para organizar a atenção à saúde.\n\nDelimitar as regiões interfederativas de planejamento e gestão do SUS, conforme Portaria MS 4.279/2010.\n\nPlanejamento de serviços de saúde · Análise epidemiológica regional · Distribuição de recursos do SUS\n\nMinistério da Saúde\n\nSubnacional — municípios agrupados dentro dos estados brasileiros\n\n\n\n\n\nO que a base representa\n\nObjetivo das geometrias\n\nPossíveis aplicações práticas\n\nÓrgão responsável\n\nNível territorial envolvido\n\n\n\n\n\nread_indigenous_land()\nTerras Indígenas\n\nPolígonos das terras indígenas brasileiras em diferentes estágios de demarcação, distribuídas por todo o território nacional.\n\nRepresentar a delimitação oficial das terras habitadas por povos indígenas, reconhecidas pela União Federal.\n\nPolíticas indigenistas · Sobreposição com biomas e desmatamento · Estudos de conservação ambiental\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\nNacional — polígonos dispersos pelo território, sem hierarquia administrativa fixa"
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#função",
+    "href": "Avaliacao_9/index.html#função",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "2.1 Função",
+    "text": "2.1 Função\n\n\n\n\n\n2.1.1 Regiões de Saúde\n\n read_health_region() \n\n\n🗺️\n\n\nArgumentos\n\n\nyear\ncode_state\ngeometry_level\nmacro\nsimplified\noutput\nshowProgress\ncache\nverbose\n\n\n\n\n\n📅\n\n\nAnos disponíveis\n\n\n1991 —\n1994 —\n1997 —\n2001 —\n2005 —\n2013 —\n2023 —\n2024 —\n2025\n\n\n\n\n\n\n📐\n\n\nTipo de geometria\n\nMULTIPOLYGON\n\n\n\n\n🏥\n\n\nEstrutura\n\nObjeto espacial sf\n\n\n\n\n\n🌐\n\n\nInformações disponíveis nas colunas\n\n\n code_health_region \n name_health_region \n abbrev_state \n geometry \n\n\n\n\n\n\n\n\n\n\n2.1.2 Terras Indígenas\n\n read_indigenous_land() \n\n\n🗺️\n\n\nArgumentos\n\n\nyear\ncode_state\nsimplified\noutput\nshowProgress\ncache\nverbose\n\n\n\n\n\n📅\n\n\nAnos disponíveis\n\n\n2016 —\n2017 —\n2018 —\n2019 —\n2022 —\n2024 —\n2025\n\n\n\n\n\n\n📐\n\n\nTipo de geometria\n\nMULTIPOLYGON\n\n\n\n\n🏥\n\n\nEstrutura\n\nObjeto espacial sf\n\n\n\n\n\n🌐\n\n\nInformações disponíveis nas colunas\n\n\n code_health_region \n name_health_region \n abbrev_state \n geometry"
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#regiões-de-saúde-1",
+    "href": "Avaliacao_9/index.html#regiões-de-saúde-1",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "3.1 Regiões de Saúde",
+    "text": "3.1 Regiões de Saúde"
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#terras-indígenas-1",
+    "href": "Avaliacao_9/index.html#terras-indígenas-1",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "3.2 Terras Indígenas",
+    "text": "3.2 Terras Indígenas"
   }
 ]

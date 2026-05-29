@@ -22,522 +22,506 @@ format:
       data-background-size: cover
       style: "transform: translateY(-15px);"
 ---
-# O Pacote geobr
+# Introdução
 
 ## Introdução
 
-:::: columns
+:::: {.columns}
 
-::: {.column width="55%"}
+::: {.column width="49%"}
+<div style="background:#e6f2fb; border:1.5px solid #1a6fa8; border-radius:12px; padding:0.75rem 0.9rem; display:flex; flex-direction:column; gap:0; font-size:0.7em;">
+<div style="display:flex; justify-content:center; width:100%;">
 
-::: box-blue
+</div>
 
-**O que é o geobr?**
-
-Pacote R que disponibiliza bases geográficas oficiais brasileiras em formato espacial.
-
----
-
-**Objetivos da atividade**
-
-- Explorar funções do pacote geobr;
-- Trabalhar com objetos espaciais;
-- Produzir mapas simples;
-- Interpretar geometrias territoriais.
+### Regiões de Saúde {style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0 0 6px 0;"}
 
 ---
 
-**Bases disponíveis**
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="color:#1a6fa8; margin-top:2px;">🗺️</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">O que representa</div>
+<div>Regiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.</div>
+</div>
+</div>
 
-- Municípios
-- Estados
-- Regiões de Saúde
-- Terras Indígenas
-- Biomas
-- Favelas
+---
+
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="color:#1a6fa8; margin-top:2px;">🎯</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Objetivo</div>
+<div>Representar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).</div>
+</div>
+</div>
+
+---
+
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="color:#1a6fa8; margin-top:2px;">💡</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Aplicações</div>
+<div style="display:flex; flex-wrap:wrap; gap:3px; margin-top:2px; max-width:520px;">
+<span style="flex:0 0 calc(50% - 3px); font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">Planejamento hospitalar</span>
+<span style="flex:0 0 calc(50% - 3px); font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">Organização da rede SUS</span>
+
+
+<span style="flex:0 0 calc(50% - 3px); font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">Regionalização dos serviços de saúde</span>
+</div>
+</div>
+</div>
+
+---
+
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="color:#1a6fa8; margin-top:2px;">🏥</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Órgão responsável</div>
+<div>DataSUS - Ministério da Saúde</div>
+</div>
+</div>
+
+---
+
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="color:#1a6fa8; margin-top:2px;">🌐</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Nível territorial</div>
+<div>Municípios · Regiões de Saúde · Macrorregiões de Saúde</div>
+</div>
+</div>
+
+</div>
+:::
+
+::: {.column width="2%"}
 
 :::
 
-:::
+::: {.column width="49%"}
+<div style="background:#faf0e8; border:1.5px solid #b5622a; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap:0; font-size:0.7em;">
 
-::: {.column width="3%"}
+<div style="display:flex; justify-content:center; width:100%;">
+</div>
 
-:::
+### Terras Indígenas {style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0 0 10px 0;"}
 
-::: {.column width="42%"}
+---
 
-::: box-yellow
+<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<span style="color:#b5622a; margin-top:2px;">🗺️</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">O que representa</div>
+<div>Terras Indígenas brasileiras em diferentes estágios de demarcação.</div>
+</div>
+</div>
 
-**Aplicações**
+---
 
-- Saúde pública;
-- Planejamento territorial;
-- Gestão pública;
-- Meio ambiente;
-- Estudos populacionais.
+<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<span style="color:#b5622a; margin-top:2px;">🎯</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Objetivo</div>
+<div>Representar espacialmente os territórios indígenas oficialmente reconhecidos.</div>
+</div>
+</div>
 
-:::
+---
 
-<br>
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="color:#1a6fa8; margin-top:2px;">💡</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Aplicações</div>
+<div style="display:flex; flex-wrap:wrap; gap:3px; margin-top:2px; max-width:520px;">
+<span style="flex:0 0 calc(50% - 3px); font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">Políticas indigenistas</span>
+<span style="flex:0 0 calc(50% - 3px); font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">Sobreposição com biomas</span>
 
-::: {.box-gray style="font-size: 0.70em;"}
 
-O pacote geobr facilita o acesso a bases geográficas oficiais brasileiras sem necessidade de download manual dos arquivos espaciais.
+<span style="flex:0 0 calc(50% - 3px); font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">Conservação ambiental</span>
+</div>
+</div>
+</div>
 
-:::
+---
 
+<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<span style="color:#b5622a; margin-top:2px;">🏛️</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Órgão responsável</div>
+<div>FUNAI — Fundação Nacional dos Povos Indígenas</div>
+</div>
+</div>
+
+---
+
+<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<span style="color:#b5622a; margin-top:2px;">🌐</span>
+<div>
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Nível territorial</div>
+<div>Nacional  fixa</div>
+</div>
+</div>
+
+</div>
 :::
 
 ::::
 
-# Função read_health_region()
+# Explorando as Funções
 
-## Introdução
+## Funções
 
-:::: columns
+:::: {.columns}
 
-::: {.column width="55%"}
+::: {.column width="49%"}
 
-::: box-blue
+<div style="background:#e6f2fb; border:1.5px solid #1a6fa8; border-radius:12px; padding:0.75rem 0.9rem; display:flex; flex-direction:column; gap:10px; font-size:0.6em;">
 
-**O que a base representa?**
+<div style="display:flex; align-items:center; justify-content:center; gap:10px;">
 
-Regiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.
+<h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0;">
+2.1.1 Regiões de Saúde
+</h3>
 
----
+<span style="font-family:'Courier New',monospace; font-size:0.95em; font-weight:700; padding:3px 8px; border-radius:5px; background:#cce7ff; color:#1a6fa8; white-space:nowrap;">
+`read_health_region()`
+</span>
 
-**Objetivo da geometria**
+</div>
 
-Representar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
----
+<span style="color:#1a6fa8; margin-top:2px;">🗺️</span>
 
-**Aplicações práticas**
+<div>
 
-- Planejamento hospitalar;
-- Organização da rede SUS;
-- Regionalização dos serviços de saúde;
-- Gestão pública em saúde.
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
+Argumentos
+</div>
 
-:::
+<div style="display:flex; flex-wrap:wrap; gap:4px;">
 
-:::
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`year`</span>
 
-::: {.column width="3%"}
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`code_state`</span>
 
-:::
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`geometry_level`</span>
 
-::: {.column width="42%"}
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`macro`</span>
 
-::: box-yellow
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`simplified`</span>
 
-**Órgão responsável**
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`output`</span>
 
-Ministério da Saúde.
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`showProgress`</span>
 
----
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`cache`</span>
 
-**Nível territorial envolvido**
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);">`verbose`</span>
 
-- Municípios;
-- Regiões de Saúde;
-- Macrorregiões de Saúde.
+</div>
+</div>
+</div>
 
-:::
+<!-- ANOS -->
 
-:::
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-::::
+<span style="color:#1a6fa8; margin-top:2px;">📅</span>
 
-## Exploração da Função
+<div style="width:100%;">
 
-:::: columns
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:6px;">
+Anos disponíveis
+</div>
 
-::: {.column width="45%"}
+<div style="display:flex; align-items:center; flex-wrap:wrap; gap:4px; font-size:0.8em;">
 
-::: box-blue
+<span style="font-weight:700; color:#1a4a62;">1991</span>
+<span style="color:#7aa7c7;">—</span>
 
-**Principais argumentos**
+<span style="font-weight:700; color:#1a4a62;">1994</span>
+<span style="color:#7aa7c7;">—</span>
 
-- `year`
-- `code_state`
-- `geometry_level`
-- `simplified`
+<span style="font-weight:700; color:#1a4a62;">1997</span>
+<span style="color:#7aa7c7;">—</span>
 
----
+<span style="font-weight:700; color:#1a4a62;">2001</span>
+<span style="color:#7aa7c7;">—</span>
 
-**Anos disponíveis**
+<span style="font-weight:700; color:#1a4a62;">2005</span>
+<span style="color:#7aa7c7;">—</span>
 
-Conforme disponibilidade da base no geobr.
+<span style="font-weight:700; color:#1a4a62;">2013</span>
+<span style="color:#7aa7c7;">—</span>
 
----
+<span style="font-weight:700; color:#1a4a62;">2023</span>
+<span style="color:#7aa7c7;">—</span>
 
-**Níveis disponíveis**
+<span style="font-weight:700; color:#1a4a62;">2024</span>
+<span style="color:#7aa7c7;">—</span>
 
-- municipality
-- micro
-- macro
+<span style="font-weight:700; color:#1a4a62;">2025</span>
 
-:::
+</div>
+</div>
+</div>
 
-:::
+:::: {.columns}
 
-::: {.column width="5%"}
+::: {.column width="50%"}
+
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+
+<span style="color:#1a6fa8; margin-top:2px;">📐</span>
+
+<div>
+
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
+Tipo de geometria
+</div>
+
+MULTIPOLYGON
+
+</div>
+</div>
 
 :::
 
 ::: {.column width="50%"}
 
-::: box-blue
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-**Tipo de geometria retornada**
+<span style="color:#1a6fa8; margin-top:2px;">🏥</span>
 
-- MULTIPOLYGON
+<div>
 
----
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
+Estrutura
+</div>
 
-**Estrutura do objeto espacial**
+Objeto espacial `sf`
 
-- Objeto espacial `sf`
-- Data frame espacial
-
-:::
-
-<br>
-
-::: {.box-yellow style="font-size: 0.7em;"}
-
-**Informações disponíveis nas colunas**
-
-As colunas da base foram exploradas utilizando a função `names()`, permitindo identificar os atributos descritivos e a geometria associada a cada unidade espacial.
-
-:::
+</div>
+</div>
 
 :::
 
 ::::
 
-# Regiões de Saúde
+<!-- COLUNAS -->
 
-## Visualização Espacial
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-:::: columns
+<span style="color:#1a6fa8; margin-top:2px;">🌐</span>
+
+<div>
+
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
+Informações disponíveis nas colunas
+</div>
+
+<div style="display:flex; flex-wrap:wrap; gap:4px;">
+
+<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
+code_health_region
+</span>
+
+<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
+name_health_region
+</span>
+
+<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
+abbrev_state
+</span>
+
+<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
+geometry
+</span>
+
+</div>
+</div>
+</div>
+
+</div>
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="49%"}
+
+<div style="background:#faf0e8; border:1.5px solid #b5622a; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap:0; font-size:0.6em;">
+
+<div style="display:flex; align-items:center; justify-content:center; gap:10px;">
+
+<h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0;">
+2.1.2 Terras Indígenas
+</h3>
+
+<span style="font-family:'Courier New',monospace; font-size:0.95em; font-weight:700; padding:3px 8px; border-radius:5px; background:#d98c4a; color:#fff; white-space:nowrap;">
+`read_indigenous_land()`
+</span>
+
+</div>
+
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+
+<span style="color:#1a6fa8; margin-top:2px;">🗺️</span>
+
+<div>
+
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
+Argumentos
+</div>
+
+<div style="display:flex; flex-wrap:wrap; gap:4px;">
+
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`year`</span>
+
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`code_state`</span>
+
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`simplified`</span>
+
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`output`</span>
+
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`showProgress`</span>
+
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`cache`</span>
+
+<span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">`verbose`</span>
+
+</div>
+</div>
+</div>
+
+<!-- ANOS -->
+
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+
+<span style="color:#1a6fa8; margin-top:2px;">📅</span>
+
+<div style="width:100%;">
+
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:6px;">
+Anos disponíveis
+</div>
+
+<div style="display:flex; align-items:center; flex-wrap:wrap; gap:4px; font-size:0.9em;">
+
+<span style="font-weight:700; color:#1a4a62;">2016</span>
+<span style="color:#7aa7c7;">—</span>
+
+<span style="font-weight:700; color:#1a4a62;">2017</span>
+<span style="color:#7aa7c7;">—</span>
+
+<span style="font-weight:700; color:#1a4a62;">2018</span>
+<span style="color:#7aa7c7;">—</span>
+
+<span style="font-weight:700; color:#1a4a62;">2019</span>
+<span style="color:#7aa7c7;">—</span>
+
+<span style="font-weight:700; color:#1a4a62;">2022</span>
+<span style="color:#7aa7c7;">—</span>
+
+<span style="font-weight:700; color:#1a4a62;">2024</span>
+<span style="color:#7aa7c7;">—</span>
+
+<span style="font-weight:700; color:#1a4a62;">2025</span>
+
+</div>
+</div>
+</div>
+
+:::: {.columns}
 
 ::: {.column width="50%"}
 
-::: box-gray
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-**Mapa 1**
+<span style="color:#1a6fa8; margin-top:2px;">📐</span>
 
-Regiões de Saúde do Estado do Rio de Janeiro
+<div>
 
-:::
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
+Tipo de geometria
+</div>
 
-:::
+MULTIPOLYGON
 
-::: {.column width="3%"}
-
-:::
-
-::: {.column width="47%"}
-
-::: box-yellow
-
-**Interpretação**
-
-Cada polígono representa uma Região de Saúde utilizada no planejamento territorial dos serviços do SUS.
-
-:::
-
-:::
-
-::::
-
-## Sobreposição de Camadas
-
-:::: columns
-
-::: {.column width="50%"}
-
-::: box-blue
-
-**Mapa 2**
-
-Regiões de Saúde + Macrorregiões de Saúde
-
-:::
-
-:::
-
-::: {.column width="3%"}
-
-:::
-
-::: {.column width="47%"}
-
-::: box-yellow
-
-**Interpretação**
-
-As Macrorregiões agrupam várias Regiões de Saúde e concentram serviços de maior complexidade, como hospitais de referência.
-
-:::
-
-:::
-
-::::
-
-# Função read_indigenous_land()
-
-## Introdução
-
-:::: columns
-
-::: {.column width="55%"}
-
-::: box-blue
-
-**O que a base representa?**
-
-Terras Indígenas brasileiras em diferentes estágios de demarcação.
-
----
-
-**Objetivo da geometria**
-
-Representar espacialmente os territórios indígenas oficialmente reconhecidos.
-
----
-
-**Aplicações práticas**
-
-- Conservação ambiental;
-- Planejamento territorial;
-- Estudos populacionais;
-- Formulação de políticas públicas.
-
-:::
-
-:::
-
-::: {.column width="3%"}
-
-:::
-
-::: {.column width="42%"}
-
-::: box-yellow
-
-**Órgão responsável**
-
-FUNAI – Fundação Nacional dos Povos Indígenas.
-
----
-
-**Nível territorial envolvido**
-
-Terras Indígenas.
-
-:::
-
-:::
-
-::::
-
-## Exploração da Função
-
-:::: columns
-
-::: {.column width="45%"}
-
-::: box-blue
-
-**Principais argumentos**
-
-- `year`
-- `code_state`
-- `simplified`
-
----
-
-**Anos disponíveis**
-
-Conforme disponibilidade da base no geobr.
-
-:::
-
-:::
-
-::: {.column width="5%"}
+</div>
+</div>
 
 :::
 
 ::: {.column width="50%"}
 
-::: box-blue
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-**Tipo de geometria retornada**
+<span style="color:#1a6fa8; margin-top:2px;">🏥</span>
 
-- MULTIPOLYGON
+<div>
 
----
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
+Estrutura
+</div>
 
-**Estrutura do objeto espacial**
+Objeto espacial `sf`
 
-- Objeto espacial `sf`
-- Data frame espacial
-
-:::
-
-<br>
-
-::: {.box-yellow style="font-size: 0.7em;"}
-
-**Informações disponíveis nas colunas**
-
-As colunas da base foram exploradas utilizando a função `names()`, permitindo identificar os atributos descritivos e a geometria associada a cada Terra Indígena.
-
-:::
+</div>
+</div>
 
 :::
 
 ::::
 
-# Terras Indígenas
+<!-- COLUNAS -->
 
-## Visualização Espacial
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-:::: columns
+<span style="color:#1a6fa8; margin-top:2px;">🌐</span>
 
-::: {.column width="50%"}
+<div>
 
-::: box-gray
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
+Informações disponíveis nas colunas
+</div>
 
-**Mapa 3**
+<div style="display:flex; flex-wrap:wrap; gap:4px;">
 
-Terras Indígenas do Estado do Amazonas
+<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
+code_health_region
+</span>
 
-:::
+<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
+name_health_region
+</span>
 
-:::
+<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
+abbrev_state
+</span>
 
-::: {.column width="3%"}
+<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
+geometry
+</span>
 
-:::
+</div>
+</div>
+</div>
 
-::: {.column width="47%"}
-
-::: box-yellow
-
-**Interpretação**
-
-O mapa permite visualizar a distribuição espacial das Terras Indígenas no Amazonas, estado que concentra algumas das maiores áreas indígenas do país.
-
-:::
-
-:::
-
-::::
-
-## Sobreposição de Camadas
-
-:::: columns
-
-::: {.column width="50%"}
-
-::: box-blue
-
-**Mapa 4**
-
-Estado do Amazonas + Terras Indígenas
-
-:::
-
-:::
-
-::: {.column width="3%"}
-
-:::
-
-::: {.column width="47%"}
-
-::: box-yellow
-
-**Interpretação**
-
-A sobreposição permite localizar as Terras Indígenas dentro do território estadual e compreender sua distribuição espacial.
-
-:::
+</div>
 
 :::
 
 ::::
 
-# Conclusão
+# Mapas
 
-## Principais Resultados
+## Regiões de Saúde
 
-:::: columns
+## Terras Indígenas
 
-::: {.column width="30%"}
-
-::: box-anova
-
-**Pacote geobr**
-
-- Bases oficiais brasileiras;
-- Objetos espaciais;
-- Integração com R.
-
-:::
-
-:::
-
-::: {.column width="3%"}
-
-:::
-
-::: {.column width="30%"}
-
-::: box-welch
-
-**read_health_region()**
-
-- Regiões de Saúde;
-- Macrorregiões;
-- Planejamento do SUS.
-
-:::
-
-:::
-
-::: {.column width="3%"}
-
-:::
-
-::: {.column width="30%"}
-
-::: box-gh
-
-**read_indigenous_land()**
-
-- Terras Indígenas;
-- Planejamento territorial;
-- Conservação ambiental.
-
-:::
-
-:::
-
-::::
-
-### Conclusão
-
-- Exploramos duas funções do pacote geobr;
-- Trabalhamos com objetos espaciais do tipo `sf`;
-- Investigamos diferentes geometrias territoriais brasileiras;
-- Construímos mapas simples e organizados;
-- Aplicamos sobreposição de camadas;
-- Interpretamos estruturas territoriais relacionadas à saúde pública e aos territórios indígenas.
-
-As funções `read_health_region()` e `read_indigenous_land()` demonstram como o pacote geobr facilita o acesso a bases geográficas oficiais e permite a visualização e interpretação de diferentes organizações territoriais brasileiras.
+# Fim. {.unnumbered .final-slide}

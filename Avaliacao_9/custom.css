@@ -2,8 +2,8 @@
 .reveal {
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 30px;
-  background-color: #f2f5fb;
-  color: #0d1b35;
+  background-color: #f0f5f7;
+  color: #0a2535;
 }
 .reveal .slides section li {
   text-align: justify;
@@ -16,26 +16,26 @@
 .reveal h1 {
   font-size: 2.4em;
   font-weight: 800;
-  color: #0d1b35;
+  color: #0a2535;
 }
 .reveal h2 {
   font-size: 1.7em;
   font-weight: 700;
-  color: #1e3a6e;
+  color: #1a4a62;
 }
 .reveal h3 {
   font-size: 1.3em;
   font-weight: 600;
-  color: #c49a3a;
+  color: #b5622a;
 }
 
 /* ===== Slide de título ===== */
 .reveal .title-slide {
   background: linear-gradient(
       135deg,
-      rgba(13, 27, 53, 0.88),
-      rgba(30, 58, 110, 0.75),
-      rgba(196, 154, 58, 0.55)
+      rgba(10, 37, 53, 0.90),
+      rgba(26, 74, 98, 0.78),
+      rgba(181, 98, 42, 0.55)
     ),
     url("media/transicao.png");
   background-size: cover;
@@ -43,7 +43,7 @@
   color: #ffffff;
 }
 .reveal .slides section.glass {
-  background: rgba(13, 27, 53, 0.28);
+  background: rgba(10, 37, 53, 0.28);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -61,50 +61,57 @@
 
 /* ===== Listas ===== */
 .reveal ul li::marker {
-  color: #c49a3a;
+  color: #b5622a;
 }
 
 /* ===== Caixas coloridas ===== */
 .box-blue {
-  border-left: 8px solid #1e3a6e;
-  background: #eaf0fb;
+  border-left: 8px solid #1a6fa8;
+  background: #e6f2fb;
   padding: 0.7em;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(13, 27, 53, 0.10);
+  box-shadow: 0 4px 12px rgba(10, 37, 53, 0.10);
 }
 .box-yellow {
-  border-left: 8px solid #c49a3a;
-  background: #fdf7e8;
+  border-left: 8px solid #b5622a;
+  background: #faf0e8;
   padding: 0.7em;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(13, 27, 53, 0.08);
+  box-shadow: 0 4px 12px rgba(10, 37, 53, 0.08);
 }
 .box-gray {
   border-left: 8px solid #64748b;
-  background: #f1f5f9;
+  background: #f0f4f7;
   padding: 0.7em;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(13, 27, 53, 0.07);
+  box-shadow: 0 4px 12px rgba(10, 37, 53, 0.07);
+}
+.box-terracotta {
+  border-left: 8px solid #b5622a;
+  background: rgba(181, 98, 42, 0.08);
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(10, 37, 53, 0.10);
 }
 
 /* ===== Destaques ===== */
 .highlight-blue {
-  color: #1e3a6e;
+  color: #1a6fa8;
   font-weight: 700;
 }
 .highlight-yellow {
-  color: #c49a3a;
+  color: #b5622a;
   font-weight: 700;
 }
 .highlight-teal {
-  color: #2d6555;
+  color: #1a4a62;
   font-weight: 700;
 }
 
 /* ===== Código ===== */
 .reveal pre code {
   font-size: 0.78em;
-  background: #0d1b35;
+  background: #0a2535;
   color: #e8edf5;
   border-radius: 10px;
   padding: 1em;
@@ -113,5 +120,28 @@
 /* ===== Rodapé ===== */
 .reveal .footer {
   font-size: 0.5em;
-  color: #4a6080;
+  color: #4a6a7a;
+}
+
+/* ===== Slide Final ===== */
+.reveal .final-slide {
+  background: linear-gradient(
+      135deg,
+      rgba(10, 37, 53, 0.90),
+      rgba(26, 74, 98, 0.78),
+      rgba(181, 98, 42, 0.55)
+    ),
+    url("media/transicao.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+.reveal section.title-slide.final-slide,
+.reveal section.title-slide.final-slide h1 {
+  background: none !important;
+  background-color: transparent !important;
+  font-size: 2.5em !important;
+  background-image: none !important;
 }
