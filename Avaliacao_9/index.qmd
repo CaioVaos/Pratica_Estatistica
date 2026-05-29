@@ -178,7 +178,7 @@ format:
 
 <div style="background:#e6f2fb; border:1.5px solid #1a6fa8; border-radius:12px; padding:0.75rem 0.9rem; display:flex; flex-direction:column; gap:10px; font-size:0.6em;">
 
-<div style="display:flex; align-items:center; justify-content:center; gap:10px;">
+<div style="display:flex; align-items:center; justify-content:left; gap:10px;">
 
 <h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0;">
 2.1.1 Regiões de Saúde
@@ -192,7 +192,7 @@ format:
 
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">🗺️</span>
+<span style="color:#1a6fa8; margin-top:2px;">⚙️️</span>
 
 <div>
 
@@ -282,7 +282,7 @@ Anos disponíveis
 Tipo de geometria
 </div>
 
-MULTIPOLYGON
+POLYGON / MULTIPOLYGON
 
 </div>
 </div>
@@ -293,7 +293,7 @@ MULTIPOLYGON
 
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">🏥</span>
+<span style="color:#1a6fa8; margin-top:2px;">🧱</span>
 
 <div>
 
@@ -314,34 +314,55 @@ Objeto espacial `sf`
 
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">🌐</span>
+<span style="color:#1a6fa8; margin-top:2px;">🗂️</span>
 
-<div>
+<div style="width:100%;">
 
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 Informações disponíveis nas colunas
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:4px;">
-
-<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
-code_health_region
-</span>
-
-<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
-name_health_region
-</span>
-
-<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
-abbrev_state
-</span>
-
-<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
-geometry
-</span>
-
 </div>
 </div>
+
+<div style="
+width:100%;
+overflow-x:auto;
+margin-top:4px;
+border-radius:8px;
+">
+
+```{r}
+library(tibble)
+library(knitr)
+library(kableExtra)
+
+Dados_saude <- tibble::tibble(
+  code_health_region = c(11001),
+  name_health_region = c(
+    "Vale do Jamari - RO"
+  ),
+  code_state = c(11),
+  abbrev_state = c("RO"),
+  name_state = c(
+    "Rondônia"
+  ),
+  code_region = c(1),
+  name_region = c(
+    "Norte"
+  ),
+  year = c(2025),
+  geometry = c(
+    "POLYGON (...)"
+  )
+)
+
+kable(
+  Dados_saude,
+  align = "c",
+)
+```
+
 </div>
 
 </div>
@@ -356,7 +377,7 @@ geometry
 
 <div style="background:#faf0e8; border:1.5px solid #b5622a; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap:0; font-size:0.6em;">
 
-<div style="display:flex; align-items:center; justify-content:center; gap:10px;">
+<div style="display:flex; align-items:center; justify-content:left; gap:10px;">
 
 <h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0;">
 2.1.2 Terras Indígenas
@@ -370,7 +391,7 @@ geometry
 
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">🗺️</span>
+<span style="color:#1a6fa8; margin-top:2px;">⚙️️</span>
 
 <div>
 
@@ -450,7 +471,7 @@ Anos disponíveis
 Tipo de geometria
 </div>
 
-MULTIPOLYGON
+POLYGON / MULTIPOLYGON
 
 </div>
 </div>
@@ -461,7 +482,7 @@ MULTIPOLYGON
 
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">🏥</span>
+<span style="color:#1a6fa8; margin-top:2px;">🧱</span>
 
 <div>
 
@@ -482,34 +503,76 @@ Objeto espacial `sf`
 
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">🌐</span>
+<span style="color:#1a6fa8; margin-top:2px;">🗂️</span>
 
-<div>
+<div style="width:100%;">
 
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 Informações disponíveis nas colunas
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:4px;">
-
-<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
-code_health_region
-</span>
-
-<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
-name_health_region
-</span>
-
-<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
-abbrev_state
-</span>
-
-<span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;">
-geometry
-</span>
-
 </div>
 </div>
+
+<div style="
+width:100%;
+overflow-x:auto;
+margin-top:4px;
+border-radius:8px;
+">
+
+```{r}
+library(tibble)
+library(knitr)
+library(kableExtra)
+
+Dados_indigenas <- tibble::tibble(
+  code_indigenous_land = c(16101),
+  name_indigenous_land = c(
+    "Igarapé Lage"
+  ),
+  code_state = c(11),
+  abbrev_state = c("RO"),
+  name_state = c(
+    "Rondônia"
+  ),
+  code_region = c(1),
+  name_region = c(
+    "Norte"
+  ),
+  area_ha = c(107321.18),
+  fase_ti = c(
+    "Regularizada"
+  ),
+  modalidade = c(
+    "Tradicionalmente ocupada"
+  ),
+  coordination_region = c(
+    "Coordenação Regional de Guajará-Mirim"
+  ),
+  faixa_fron = c(
+    "Sim"
+  ),
+  code_adm_unit = c(30202000000),
+  name_adm_unit = c(
+    "Coordenação Regional de Guajará-Mirim"
+  ),
+  abbrev_adm_unit = c(
+    "CR-GJM"
+  ),
+  year = c(2024),
+  date = c(20240823),
+  geometry = c(
+    "POLYGON (...)"
+  )
+)
+
+kable(
+  Dados_indigenas,
+  align = "c"
+)
+```
+
 </div>
 
 </div>

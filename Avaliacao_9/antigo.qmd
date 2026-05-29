@@ -1,13 +1,54 @@
+<!-- COLUNAS -->
+
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<span style="color:#1a6fa8; margin-top:2px;">💡</span>
-<div>
-<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Aplicações</div>
-<div style="display:flex; flex-wrap:wrap; gap:3px; margin-top:2px; max-width:520px;">
-<span style="flex:0 0 calc(50% - 3px); font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">Políticas indigenistas</span>
-<span style="flex:0 0 calc(50% - 3px); font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">Sobreposição com biomas</span>
 
+<span style="color:#1a6fa8; margin-top:2px;">🗂️</span>
 
-<span style="flex:0 0 calc(50% - 3px); font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);">Conservação ambiental</span>
+<div style="width:100%;">
+
+<div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
+Informações disponíveis nas colunas
+</div>
+
 </div>
 </div>
+
+<div style="
+width:100%;
+overflow-x:auto;
+margin-top:4px;
+border-radius:8px;
+">
+
+```{r}
+library(tibble)
+library(knitr)
+
+Dados_saude <- tibble::tibble(
+  code_health_region = c(11001, 11006),
+  name_health_region = c(
+    "Vale do Jamari - RO",
+    "Cone Sul - RO"
+  ),
+  code_state = c(11, 11),
+  abbrev_state = c("RO", "RO"),
+  name_state = c(
+    "Rondônia",
+    "Rondônia"
+  ),
+  code_region = c(1, 1),
+  name_region = c(
+    "Norte",
+    "Norte"
+  ),
+  year = c(2025, 2025),
+  geometry = c(
+    "POLYGON (...)",
+    "POLYGON (...)"
+  )
+)
+
+kable(Dados_saude)
+```
+
 </div>

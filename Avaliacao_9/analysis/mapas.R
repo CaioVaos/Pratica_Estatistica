@@ -15,6 +15,8 @@ remotes::install_github("ipeaGIT/geobr", subdir = "r-package")
 devtools::install_github("yutannihilation/ggsflabel")
 
 # read_health_region -----------------------------------------------------------
+
+
 args(read_health_region)
 
 Dados <- read_health_region(year = 2025,
@@ -25,3 +27,22 @@ ggplot(Dados)+geom_sf()
 
 # read_indigenous_land -----------------------------------------------------------
 args(read_indigenous_land)
+
+Dados <- read_indigenous_land(year = 2024,
+                              simplified = T)
+glimpse(Dados)
+
+
+
+
+Dados_1 <- read_health_region(year = 2025,
+                            geometry_level = "micro",
+                            simplified = T)
+
+Dados_2 <- read_indigenous_land(year = 2024,
+                              simplified = T)
+
+class(Dados_1)
+class(Dados_2)
+unique(sf::st_geometry_type(Dados_1))
+unique(sf::st_geometry_type(Dados_2))

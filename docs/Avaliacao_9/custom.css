@@ -2,7 +2,12 @@
 .reveal {
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 30px;
-  background-color: #f0f5f7;
+  background: radial-gradient(
+  circle at top left,
+  #eef7fb 0%,
+  #edf4f7 45%,
+  #f5ede7 100%
+  );
   color: #0a2535;
 }
 .reveal .slides section li {

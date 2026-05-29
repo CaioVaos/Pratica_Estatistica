@@ -297,23 +297,23 @@ Nacional fixa
 </div></div>
 </section></section>
 <section>
-<section id="exploração-das-funções" class="title-slide slide level1 center" data-number="2">
-<h1><span class="header-section-number">2</span> Exploração das Funções</h1>
+<section id="explorando-as-funções" class="title-slide slide level1 center" data-number="2">
+<h1><span class="header-section-number">2</span> Explorando as Funções</h1>
 
 </section>
-<section id="função" class="slide level2" data-number="2.1">
-<h2><span class="header-section-number">2.1</span> Função</h2>
+<section id="funções" class="slide level2" data-number="2.1">
+<h2><span class="header-section-number">2.1</span> Funções</h2>
 <div class="columns">
 <div class="column" style="width:49%;">
 <div style="background:#e6f2fb; border:1.5px solid #1a6fa8; border-radius:12px; padding:0.75rem 0.9rem; display:flex; flex-direction:column; gap:10px; font-size:0.6em;">
-<div style="display:flex; align-items:center; justify-content:center; gap:10px;">
+<div style="display:flex; align-items:center; justify-content:left; gap:10px;">
 <h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0;">
 2.1.1 Regiões de Saúde
 </h3>
 <p><span style="font-family:'Courier New',monospace; font-size:0.95em; font-weight:700; padding:3px 8px; border-radius:5px; background:#cce7ff; color:#1a6fa8; white-space:nowrap;"> <code>read_health_region()</code> </span></p>
 </div>
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<p><span style="color:#1a6fa8; margin-top:2px;">🗺️</span></p>
+<p><span style="color:#1a6fa8; margin-top:2px;">⚙️️</span></p>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 <p>Argumentos</p>
@@ -359,12 +359,12 @@ Nacional fixa
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
 <p>Tipo de geometria</p>
 </div>
-<p>MULTIPOLYGON</p>
+<p>POLYGON / MULTIPOLYGON</p>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<p><span style="color:#1a6fa8; margin-top:2px;">🏥</span></p>
+<p><span style="color:#1a6fa8; margin-top:2px;">🧱</span></p>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
 <p>Estrutura</p>
@@ -375,16 +375,60 @@ Nacional fixa
 </div></div>
 <!-- COLUNAS -->
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<p><span style="color:#1a6fa8; margin-top:2px;">🌐</span></p>
-<div>
+<p><span style="color:#1a6fa8; margin-top:2px;">🗂️</span></p>
+<div style="width:100%;">
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 <p>Informações disponíveis nas colunas</p>
 </div>
-<div style="display:flex; flex-wrap:wrap; gap:4px;">
-<p><span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;"> code_health_region </span></p>
-<p><span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;"> name_health_region </span></p>
-<p><span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;"> abbrev_state </span></p>
-<p><span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;"> geometry </span></p>
+</div>
+</div>
+<div style="
+width:100%;
+overflow-x:auto;
+margin-top:4px;
+border-radius:8px;
+">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 16%">
+<col style="width: 9%">
+<col style="width: 11%">
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 4%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">code_health_region</th>
+<th style="text-align: center;">name_health_region</th>
+<th style="text-align: center;">code_state</th>
+<th style="text-align: center;">abbrev_state</th>
+<th style="text-align: center;">name_state</th>
+<th style="text-align: center;">code_region</th>
+<th style="text-align: center;">name_region</th>
+<th style="text-align: center;">year</th>
+<th style="text-align: center;">geometry</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">11001</td>
+<td style="text-align: center;">Vale do Jamari - RO</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">RO</td>
+<td style="text-align: center;">Rondônia</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Norte</td>
+<td style="text-align: center;">2025</td>
+<td style="text-align: center;">POLYGON (…)</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -393,14 +437,14 @@ Nacional fixa
 
 </div><div class="column" style="width:49%;">
 <div style="background:#faf0e8; border:1.5px solid #b5622a; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap:0; font-size:0.6em;">
-<div style="display:flex; align-items:center; justify-content:center; gap:10px;">
+<div style="display:flex; align-items:center; justify-content:left; gap:10px;">
 <h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0;">
 2.1.2 Terras Indígenas
 </h3>
 <p><span style="font-family:'Courier New',monospace; font-size:0.95em; font-weight:700; padding:3px 8px; border-radius:5px; background:#d98c4a; color:#fff; white-space:nowrap;"> <code>read_indigenous_land()</code> </span></p>
 </div>
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<p><span style="color:#1a6fa8; margin-top:2px;">🗺️</span></p>
+<p><span style="color:#1a6fa8; margin-top:2px;">⚙️️</span></p>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 <p>Argumentos</p>
@@ -442,12 +486,12 @@ Nacional fixa
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
 <p>Tipo de geometria</p>
 </div>
-<p>MULTIPOLYGON</p>
+<p>POLYGON / MULTIPOLYGON</p>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<p><span style="color:#1a6fa8; margin-top:2px;">🏥</span></p>
+<p><span style="color:#1a6fa8; margin-top:2px;">🧱</span></p>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
 <p>Estrutura</p>
@@ -458,16 +502,87 @@ Nacional fixa
 </div></div>
 <!-- COLUNAS -->
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<p><span style="color:#1a6fa8; margin-top:2px;">🌐</span></p>
-<div>
+<p><span style="color:#1a6fa8; margin-top:2px;">🗂️</span></p>
+<div style="width:100%;">
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 <p>Informações disponíveis nas colunas</p>
 </div>
-<div style="display:flex; flex-wrap:wrap; gap:4px;">
-<p><span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;"> code_health_region </span></p>
-<p><span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;"> name_health_region </span></p>
-<p><span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;"> abbrev_state </span></p>
-<p><span style="padding:1px 6px; border-radius:99px; background:#cce7ff; color:#1a4a62; font-family:'Courier New', monospace;"> geometry </span></p>
+</div>
+</div>
+<div style="
+width:100%;
+overflow-x:auto;
+margin-top:4px;
+border-radius:8px;
+">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 12%">
+<col style="width: 5%">
+<col style="width: 1%">
+<col style="width: 3%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">code_indigenous_land</th>
+<th style="text-align: center;">name_indigenous_land</th>
+<th style="text-align: center;">code_state</th>
+<th style="text-align: center;">abbrev_state</th>
+<th style="text-align: center;">name_state</th>
+<th style="text-align: center;">code_region</th>
+<th style="text-align: center;">name_region</th>
+<th style="text-align: center;">area_ha</th>
+<th style="text-align: center;">fase_ti</th>
+<th style="text-align: center;">modalidade</th>
+<th style="text-align: center;">coordination_region</th>
+<th style="text-align: center;">faixa_fron</th>
+<th style="text-align: center;">code_adm_unit</th>
+<th style="text-align: center;">name_adm_unit</th>
+<th style="text-align: center;">abbrev_adm_unit</th>
+<th style="text-align: center;">year</th>
+<th style="text-align: center;">date</th>
+<th style="text-align: center;">geometry</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">16101</td>
+<td style="text-align: center;">Igarapé Lage</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">RO</td>
+<td style="text-align: center;">Rondônia</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Norte</td>
+<td style="text-align: center;">107321.2</td>
+<td style="text-align: center;">Regularizada</td>
+<td style="text-align: center;">Tradicionalmente ocupada</td>
+<td style="text-align: center;">Coordenação Regional de Guajará-Mirim</td>
+<td style="text-align: center;">Sim</td>
+<td style="text-align: center;">3.0202e+10</td>
+<td style="text-align: center;">Coordenação Regional de Guajará-Mirim</td>
+<td style="text-align: center;">CR-GJM</td>
+<td style="text-align: center;">2024</td>
+<td style="text-align: center;">20240823</td>
+<td style="text-align: center;">POLYGON (…)</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -475,8 +590,8 @@ Nacional fixa
 </div></div>
 </section></section>
 <section>
-<section id="mapa" class="title-slide slide level1 center" data-number="3">
-<h1><span class="header-section-number">3</span> Mapa</h1>
+<section id="mapas" class="title-slide slide level1 center" data-number="3">
+<h1><span class="header-section-number">3</span> Mapas</h1>
 
 </section>
 <section id="regiões-de-saúde-1" class="slide level2" data-number="3.1">
@@ -705,6 +820,82 @@ Nacional fixa
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
