@@ -159,7 +159,7 @@ format:
 <span style="color:#b5622a; margin-top:2px;">🌐</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Nível territorial</div>
-<div>Nacional  fixa</div>
+<div>Nacional</div>
 </div>
 </div>
 
@@ -583,8 +583,16 @@ kable(
 
 # Mapas
 
-## Regiões de Saúde
+## Regiões de Saúde - Brasil {background-color="#d4ebff"}
 
-## Terras Indígenas
+![](media/mapa_saude_brasil.png){width=100% fig-align="center"}
+
+## Regiões de Saúde - Rio de Janeiro {background-color="#d4ebff"}
+
+![](media/mapa_saude_rj.png){width=100% fig-align="center"}
+
+## Terras Indígenas {background-color="#e7cfbf"}
+
+![](media/mapa_indigena.png){width=100% fig-align="center"}
 
 # Fim. {.unnumbered .final-slide}

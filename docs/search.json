@@ -641,7 +641,7 @@
     "href": "Avaliacao_9/index.html#introdução-1",
     "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
     "section": "1.1 Introdução",
-    "text": "1.1 Introdução\n\n\n\n\n\n\n1.1.1 Regiões de Saúde\n\n\n🗺️\n\n\nO que representa\n\n\nRegiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPlanejamento hospitalar Organização da rede SUS\nRegionalização dos serviços de saúde\n\n\n\n\n\n🏥\n\n\nÓrgão responsável\n\n\nDataSUS - Ministério da Saúde\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nMunicípios · Regiões de Saúde · Macrorregiões de Saúde\n\n\n\n\n\n\n\n\n\n\n\n1.1.2 Terras Indígenas\n\n\n🗺️\n\n\nO que representa\n\n\nTerras Indígenas brasileiras em diferentes estágios de demarcação.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar espacialmente os territórios indígenas oficialmente reconhecidos.\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPolíticas indigenistas Sobreposição com biomas\nConservação ambiental\n\n\n\n\n\n🏛️\n\n\nÓrgão responsável\n\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nNacional fixa"
+    "text": "1.1 Introdução\n\n\n\n\n\n\n1.1.1 Regiões de Saúde\n\n\n🗺️\n\n\nO que representa\n\n\nRegiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPlanejamento hospitalar Organização da rede SUS\nRegionalização dos serviços de saúde\n\n\n\n\n\n🏥\n\n\nÓrgão responsável\n\n\nDataSUS - Ministério da Saúde\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nMunicípios · Regiões de Saúde · Macrorregiões de Saúde\n\n\n\n\n\n\n\n\n\n\n\n1.1.2 Terras Indígenas\n\n\n🗺️\n\n\nO que representa\n\n\nTerras Indígenas brasileiras em diferentes estágios de demarcação.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar espacialmente os territórios indígenas oficialmente reconhecidos.\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPolíticas indigenistas Sobreposição com biomas\nConservação ambiental\n\n\n\n\n\n🏛️\n\n\nÓrgão responsável\n\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nNacional"
   },
   {
     "objectID": "Avaliacao_9/index.html#introdução",
@@ -738,8 +738,8 @@
     "objectID": "Avaliacao_9/index.html#terras-indígenas-1",
     "href": "Avaliacao_9/index.html#terras-indígenas-1",
     "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
-    "section": "3.2 Terras Indígenas",
-    "text": "3.2 Terras Indígenas"
+    "section": "3.3 Terras Indígenas",
+    "text": "3.3 Terras Indígenas"
   },
   {
     "objectID": "Avaliacao_9/index.html#funções",
@@ -747,5 +747,19 @@
     "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
     "section": "2.1 Funções",
     "text": "2.1 Funções\n\n\n\n\n\n2.1.1 Regiões de Saúde\n\n read_health_region() \n\n\n⚙️️\n\n\nArgumentos\n\n\nyear\ncode_state\ngeometry_level\nmacro\nsimplified\noutput\nshowProgress\ncache\nverbose\n\n\n\n\n\n📅\n\n\nAnos disponíveis\n\n\n1991 —\n1994 —\n1997 —\n2001 —\n2005 —\n2013 —\n2023 —\n2024 —\n2025\n\n\n\n\n\n\n📐\n\n\nTipo de geometria\n\nPOLYGON / MULTIPOLYGON\n\n\n\n\n🧱\n\n\nEstrutura\n\nObjeto espacial sf\n\n\n\n\n\n🗂️\n\n\nInformações disponíveis nas colunas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncode_health_region\nname_health_region\ncode_state\nabbrev_state\nname_state\ncode_region\nname_region\nyear\ngeometry\n\n\n\n\n11001\nVale do Jamari - RO\n11\nRO\nRondônia\n1\nNorte\n2025\nPOLYGON (…)\n\n\n\n\n\n\n\n\n\n\n\n\n\n2.1.2 Terras Indígenas\n\n read_indigenous_land() \n\n\n⚙️️\n\n\nArgumentos\n\n\nyear\ncode_state\nsimplified\noutput\nshowProgress\ncache\nverbose\n\n\n\n\n\n📅\n\n\nAnos disponíveis\n\n\n2016 —\n2017 —\n2018 —\n2019 —\n2022 —\n2024 —\n2025\n\n\n\n\n\n\n📐\n\n\nTipo de geometria\n\nPOLYGON / MULTIPOLYGON\n\n\n\n\n🧱\n\n\nEstrutura\n\nObjeto espacial sf\n\n\n\n\n\n🗂️\n\n\nInformações disponíveis nas colunas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncode_indigenous_land\nname_indigenous_land\ncode_state\nabbrev_state\nname_state\ncode_region\nname_region\narea_ha\nfase_ti\nmodalidade\ncoordination_region\nfaixa_fron\ncode_adm_unit\nname_adm_unit\nabbrev_adm_unit\nyear\ndate\ngeometry\n\n\n\n\n16101\nIgarapé Lage\n11\nRO\nRondônia\n1\nNorte\n107321.2\nRegularizada\nTradicionalmente ocupada\nCoordenação Regional de Guajará-Mirim\nSim\n3.0202e+10\nCoordenação Regional de Guajará-Mirim\nCR-GJM\n2024\n20240823\nPOLYGON (…)"
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#regiões-de-saúde---brasil",
+    "href": "Avaliacao_9/index.html#regiões-de-saúde---brasil",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "3.1 Regiões de Saúde - Brasil",
+    "text": "3.1 Regiões de Saúde - Brasil"
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#regiões-de-saúde---rio-de-janeiro",
+    "href": "Avaliacao_9/index.html#regiões-de-saúde---rio-de-janeiro",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "3.2 Regiões de Saúde - Rio de Janeiro",
+    "text": "3.2 Regiões de Saúde - Rio de Janeiro"
   }
 ]
