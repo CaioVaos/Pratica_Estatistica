@@ -126,6 +126,26 @@
       margin-right: 0; 
     }
   </style>
+  <link href="../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+
+  <script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+  <link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+
+  <script src="../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+
+  <script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+  <link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+  <link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+
+  <script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+
+  <link href="../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+
+  <script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -157,11 +177,11 @@ Caio Salviano (<a href="mailto:caiosalviano@id.uff.br" class="email">caiosalvian
 <h2><span class="header-section-number">1.1</span> Introdução</h2>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div style="background:#e6f2fb; border:1.5px solid #1a6fa8; border-radius:12px; padding:0.75rem 0.9rem; display:flex; flex-direction:column; gap:0; font-size:0.7em;">
+<div style="background:#e6f2fb; border:1.5px solid #1a6fa8; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap:0; font-size:0.7em;">
 <div style="display:flex; justify-content:center; width:100%;">
 
 </div>
-<h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0 0 6px 0;" data-number="1.1.1" id="regiões-de-saúde"><span class="header-section-number">1.1.1</span> Regiões de Saúde</h3>
+<h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0 0 10px 0;" data-number="1.1.1" id="regiões-de-saúde"><span class="header-section-number">1.1.1</span> Regiões de Saúde</h3>
 <hr>
 <div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 <span style="color:#1a6fa8; margin-top:2px;">🗺️</span>
@@ -200,7 +220,7 @@ Aplicações
 </div>
 </div>
 <hr>
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
 <span style="color:#1a6fa8; margin-top:2px;">🏥</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
@@ -212,7 +232,7 @@ DataSUS - Ministério da Saúde
 </div>
 </div>
 <hr>
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
 <span style="color:#1a6fa8; margin-top:2px;">🌐</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
@@ -233,7 +253,7 @@ Municípios · Regiões de Saúde · Macrorregiões de Saúde
 </div>
 <h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0 0 10px 0;" data-number="1.1.2" id="terras-indígenas"><span class="header-section-number">1.1.2</span> Terras Indígenas</h3>
 <hr>
-<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 <span style="color:#b5622a; margin-top:2px;">🗺️</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">
@@ -318,11 +338,13 @@ Nacional
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 <p>Argumentos</p>
 </div>
-<div style="display:flex; flex-wrap:wrap; gap:4px;">
+<div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:4px;">
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:2.5px solid #b08d1a;"><code>year</code></span></p>
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:2.5px solid #b08d1a;"><code>code_state</code></span></p>
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:2.5px solid #b08d1a;"><code>geometry_level</code></span></p>
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:2.5px solid #b08d1a;"><code>simplified</code></span></p>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:4px;">
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);"><code>output</code></span></p>
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);"><code>showProgress</code></span></p>
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(26,111,168,0.12); color:#1a4a62; border:0.5px solid rgba(26,111,168,0.3);"><code>cache</code></span></p>
@@ -389,45 +411,8 @@ border-radius:8px;
 ">
 <div class="cell">
 <div class="cell-output-display">
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 16%">
-<col style="width: 9%">
-<col style="width: 11%">
-<col style="width: 9%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 4%">
-<col style="width: 11%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">code_health_region</th>
-<th style="text-align: center;">name_health_region</th>
-<th style="text-align: center;">code_state</th>
-<th style="text-align: center;">abbrev_state</th>
-<th style="text-align: center;">name_state</th>
-<th style="text-align: center;">code_region</th>
-<th style="text-align: center;">name_region</th>
-<th style="text-align: center;">year</th>
-<th style="text-align: center;">geometry</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">11001</td>
-<td style="text-align: center;">Vale do Jamari - RO</td>
-<td style="text-align: center;">11</td>
-<td style="text-align: center;">RO</td>
-<td style="text-align: center;">Rondônia</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Norte</td>
-<td style="text-align: center;">2025</td>
-<td style="text-align: center;">POLYGON (…)</td>
-</tr>
-</tbody>
-</table>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3187099462563fea473c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3187099462563fea473c">{"x":{"filter":"none","vertical":false,"data":[[11001],["Vale do Jamari - RO"],[11],["RO"],["Rondônia"],[1],["Norte"],[2025],["POLYGON (...)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>code_health_region<\/th>\n      <th>name_health_region<\/th>\n      <th>code_state<\/th>\n      <th>abbrev_state<\/th>\n      <th>name_state<\/th>\n      <th>code_region<\/th>\n      <th>name_region<\/th>\n      <th>year<\/th>\n      <th>geometry<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"autoWidth":true,"dom":"t","pageLength":5,"initComplete":"function(settings, json) {\n      var table = this.api().table().container();\n      $(table).find('td, th').css('background-color', 'white');\n      $(table).css('background-color', 'white');\n    }","columnDefs":[{"className":"dt-right","targets":[0,2,5,7]},{"name":"code_health_region","targets":0},{"name":"name_health_region","targets":1},{"name":"code_state","targets":2},{"name":"abbrev_state","targets":3},{"name":"name_state","targets":4},{"name":"code_region","targets":5},{"name":"name_region","targets":6},{"name":"year","targets":7},{"name":"geometry","targets":8}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":["options.initComplete"],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -448,10 +433,12 @@ border-radius:8px;
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 <p>Argumentos</p>
 </div>
-<div style="display:flex; flex-wrap:wrap; gap:4px;">
+<div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:4px;">
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:2.5px solid #b08d1a;"><code>year</code></span></p>
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:2.5px solid #b08d1a;"><code>code_state</code></span></p>
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:2.5px solid #b08d1a"><code>simplified</code></span></p>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:4px;">
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);"><code>output</code></span></p>
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);"><code>showProgress</code></span></p>
 <p><span style="font-size:0.85em; padding:1px 7px; border-radius:99px; font-weight:500; background:rgba(181,98,42,0.1); color:#7a3e15; border:0.5px solid rgba(181,98,42,0.3);"><code>cache</code></span></p>
@@ -516,72 +503,8 @@ border-radius:8px;
 ">
 <div class="cell">
 <div class="cell-output-display">
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 7%">
-<col style="width: 7%">
-<col style="width: 3%">
-<col style="width: 4%">
-<col style="width: 3%">
-<col style="width: 4%">
-<col style="width: 4%">
-<col style="width: 3%">
-<col style="width: 4%">
-<col style="width: 8%">
-<col style="width: 12%">
-<col style="width: 3%">
-<col style="width: 4%">
-<col style="width: 12%">
-<col style="width: 5%">
-<col style="width: 1%">
-<col style="width: 3%">
-<col style="width: 4%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">code_indigenous_land</th>
-<th style="text-align: center;">name_indigenous_land</th>
-<th style="text-align: center;">code_state</th>
-<th style="text-align: center;">abbrev_state</th>
-<th style="text-align: center;">name_state</th>
-<th style="text-align: center;">code_region</th>
-<th style="text-align: center;">name_region</th>
-<th style="text-align: center;">area_ha</th>
-<th style="text-align: center;">fase_ti</th>
-<th style="text-align: center;">modalidade</th>
-<th style="text-align: center;">coordination_region</th>
-<th style="text-align: center;">faixa_fron</th>
-<th style="text-align: center;">code_adm_unit</th>
-<th style="text-align: center;">name_adm_unit</th>
-<th style="text-align: center;">abbrev_adm_unit</th>
-<th style="text-align: center;">year</th>
-<th style="text-align: center;">date</th>
-<th style="text-align: center;">geometry</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">16101</td>
-<td style="text-align: center;">Igarapé Lage</td>
-<td style="text-align: center;">11</td>
-<td style="text-align: center;">RO</td>
-<td style="text-align: center;">Rondônia</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Norte</td>
-<td style="text-align: center;">107321.2</td>
-<td style="text-align: center;">Regularizada</td>
-<td style="text-align: center;">Tradicionalmente ocupada</td>
-<td style="text-align: center;">Coordenação Regional de Guajará-Mirim</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">3.0202e+10</td>
-<td style="text-align: center;">Coordenação Regional de Guajará-Mirim</td>
-<td style="text-align: center;">CR-GJM</td>
-<td style="text-align: center;">2024</td>
-<td style="text-align: center;">20240823</td>
-<td style="text-align: center;">POLYGON (…)</td>
-</tr>
-</tbody>
-</table>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-dfb7fd9bb4cdd9bcc80f" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-dfb7fd9bb4cdd9bcc80f">{"x":{"filter":"none","vertical":false,"data":[[16101],["Igarapé Lage"],[11],["RO"],["Rondônia"],[1],["Norte"],[107321.18],["Regularizada"],["Tradicionalmente ocupada"],["Coordenação Regional de Guajará-Mirim"],["Sim"],[30202000000],["Coordenação Regional de Guajará-Mirim"],["CR-GJM"],[2024],[20240823],["POLYGON (...)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>code_indigenous_land<\/th>\n      <th>name_indigenous_land<\/th>\n      <th>code_state<\/th>\n      <th>abbrev_state<\/th>\n      <th>name_state<\/th>\n      <th>code_region<\/th>\n      <th>name_region<\/th>\n      <th>area_ha<\/th>\n      <th>fase_ti<\/th>\n      <th>modalidade<\/th>\n      <th>coordination_region<\/th>\n      <th>faixa_fron<\/th>\n      <th>code_adm_unit<\/th>\n      <th>name_adm_unit<\/th>\n      <th>abbrev_adm_unit<\/th>\n      <th>year<\/th>\n      <th>date<\/th>\n      <th>geometry<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"autoWidth":true,"dom":"t","pageLength":5,"initComplete":"function(settings, json) {\n      var table = this.api().table().container();\n      $(table).find('td, th').css('background-color', 'white');\n      $(table).css('background-color', 'white');\n    }","columnDefs":[{"className":"dt-right","targets":[0,2,5,7,12,15,16]},{"name":"code_indigenous_land","targets":0},{"name":"name_indigenous_land","targets":1},{"name":"code_state","targets":2},{"name":"abbrev_state","targets":3},{"name":"name_state","targets":4},{"name":"code_region","targets":5},{"name":"name_region","targets":6},{"name":"area_ha","targets":7},{"name":"fase_ti","targets":8},{"name":"modalidade","targets":9},{"name":"coordination_region","targets":10},{"name":"faixa_fron","targets":11},{"name":"code_adm_unit","targets":12},{"name":"name_adm_unit","targets":13},{"name":"abbrev_adm_unit","targets":14},{"name":"year","targets":15},{"name":"date","targets":16},{"name":"geometry","targets":17}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":["options.initComplete"],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
