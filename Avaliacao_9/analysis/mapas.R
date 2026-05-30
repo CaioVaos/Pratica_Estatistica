@@ -91,7 +91,7 @@ mapa_saude_brasil <- ggplot(Dados_plot) +
     style = north_arrow_fancy_orienteering(
       text_col = "#0a2535",
       line_col = "#0a2535",
-      fill = c("#5b8db8", "white")
+      fill = c("#5b8db8", "#eaf2f8")
     ),
     height = unit(1, "cm"),
     width = unit(1, "cm")
@@ -155,7 +155,7 @@ mapa_saude_brasil <- ggplot(Dados_plot) +
       color = NA
     ),
     panel.background = element_rect(
-      fill = "white",
+      fill = "#eaf2f8",
       color = NA
     )
     
@@ -235,7 +235,7 @@ mapa_saude_rj <- ggplot(Dados_plot) +
     style = north_arrow_fancy_orienteering(
       text_col = "#0a2535",
       line_col = "#0a2535",
-      fill = c("#5b8db8", "white")
+      fill = c("#5b8db8", "#eaf2f8")
     ),
     height = unit(1, "cm"),
     width = unit(1, "cm")
@@ -299,7 +299,7 @@ mapa_saude_rj <- ggplot(Dados_plot) +
       color = NA
     ),
     panel.background = element_rect(
-      fill = "white",
+      fill = "#eaf2f8",
       color = NA
     ),
     strip.background = element_rect(
