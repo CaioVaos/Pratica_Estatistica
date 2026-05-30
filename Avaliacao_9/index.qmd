@@ -31,11 +31,18 @@ format:
 
 ::: {.column width="49%"}
 <div style="background:#e6f2fb; border:1.5px solid #1a6fa8; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap:0; font-size:0.7em;">
-<div style="display:flex; justify-content:center; width:100%;">
+
+<div style="display:flex; align-items:center; justify-content:left; gap:10px;">
+
+<h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0;">
+1.1.1 Regiões de Saúde
+</h3>
+
+<span style="font-family:'Courier New',monospace; font-size:0.95em; font-weight:700; padding:3px 8px; border-radius:5px; background:#cce7ff; color:#1a6fa8; white-space:nowrap;">
+`read_health_region()`
+</span>
 
 </div>
-
-### Regiões de Saúde {style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0 0 10px 0;"}
 
 ---
 
@@ -103,10 +110,17 @@ format:
 ::: {.column width="49%"}
 <div style="background:#faf0e8; border:1.5px solid #b5622a; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap:0; font-size:0.7em;">
 
-<div style="display:flex; justify-content:center; width:100%;">
-</div>
+<div style="display:flex; align-items:center; justify-content:left; gap:10px;">
 
-### Terras Indígenas {style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0 0 10px 0;"}
+<h3 style="font-size:1.3em; font-weight:700; color:#0a2535; margin:0;">
+1.1.2 Terras Indígenas
+</h3>
+
+<span style="font-family:'Courier New',monospace; font-size:0.95em; font-weight:700; padding:3px 8px; border-radius:5px; background:#d98c4a; color:#fff; white-space:nowrap;">
+`read_indigenous_land()`
+</span>
+
+</div>
 
 ---
 

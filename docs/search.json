@@ -641,7 +641,7 @@
     "href": "Avaliacao_9/index.html#introdução-1",
     "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
     "section": "1.1 Introdução",
-    "text": "1.1 Introdução\n\n\n\n\n\n\n1.1.1 Regiões de Saúde\n\n\n🗺️\n\n\nO que representa\n\n\nRegiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPlanejamento hospitalar Organização da rede SUS\nRegionalização dos serviços de saúde\n\n\n\n\n\n🏥\n\n\nÓrgão responsável\n\n\nDataSUS - Ministério da Saúde\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nMunicípios · Regiões de Saúde · Macrorregiões de Saúde\n\n\n\n\n\n\n\n\n\n\n\n1.1.2 Terras Indígenas\n\n\n🗺️\n\n\nO que representa\n\n\nTerras Indígenas brasileiras em diferentes estágios de demarcação.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar espacialmente os territórios indígenas oficialmente reconhecidos.\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPolíticas indigenistas Sobreposição com biomas\nConservação ambiental\n\n\n\n\n\n🏛️\n\n\nÓrgão responsável\n\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nNacional"
+    "text": "1.1 Introdução\n\n\n\n\n\n1.1.1 Regiões de Saúde\n\n read_health_region() \n\n\n\n🗺️\n\n\nO que representa\n\n\nRegiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPlanejamento hospitalar Organização da rede SUS\nRegionalização dos serviços de saúde\n\n\n\n\n\n🏥\n\n\nÓrgão responsável\n\n\nDataSUS - Ministério da Saúde\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nMunicípios · Regiões de Saúde · Macrorregiões de Saúde\n\n\n\n\n\n\n\n\n\n\n1.1.2 Terras Indígenas\n\n read_indigenous_land() \n\n\n\n🗺️\n\n\nO que representa\n\n\nTerras Indígenas brasileiras em diferentes estágios de demarcação.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar espacialmente os territórios indígenas oficialmente reconhecidos.\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPolíticas indigenistas Sobreposição com biomas\nConservação ambiental\n\n\n\n\n\n🏛️\n\n\nÓrgão responsável\n\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nNacional"
   },
   {
     "objectID": "Avaliacao_9/index.html#introdução",
@@ -768,5 +768,12 @@
     "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
     "section": "1.1 Introdução",
     "text": "1.1 Introdução\n\n\n\n\n\n\n1.1.1 Regiões de Saúde\n\n\n🗺️\n\n\nO que representa\n\n\nRegiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPlanejamento hospitalar Organização da rede SUS\nRegionalização dos serviços de saúde\n\n\n\n\n\n🏥\n\n\nÓrgão responsável\n\n\nDataSUS - Ministério da Saúde\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nMunicípios · Regiões de Saúde · Macrorregiões de Saúde\n\n\n\n\n\n\n\n\n\n\n\n1.1.2 Terras Indígenas\n\n\n🗺️\n\n\nO que representa\n\n\nTerras Indígenas brasileiras em diferentes estágios de demarcação.\n\n\n\n\n\n🎯\n\n\nObjetivo\n\n\nRepresentar espacialmente os territórios indígenas oficialmente reconhecidos.\n\n\n\n\n\n💡\n\n\nAplicações\n\n\nPolíticas indigenistas Sobreposição com biomas\nConservação ambiental\n\n\n\n\n\n🏛️\n\n\nÓrgão responsável\n\n\nFUNAI — Fundação Nacional dos Povos Indígenas\n\n\n\n\n\n🌐\n\n\nNível territorial\n\n\nNacional"
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#terras-indígenas",
+    "href": "Avaliacao_9/index.html#terras-indígenas",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "3.3 Terras Indígenas",
+    "text": "3.3 Terras Indígenas\n\n\n\n\n\n\n\n\n\n\n637\n\n\n\n\n\n\n\n141"
   }
 ]
