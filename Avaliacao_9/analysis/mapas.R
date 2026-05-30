@@ -14,10 +14,11 @@ devtools::install_github("yutannihilation/ggsflabel")
 
 # Estrutura --------------------------------------------------------------------
 Dados_1 <- read_health_region(year = 2025,
-                              geometry_level = "micro",
+                              geometry_level = "municipality",
                               simplified = T)
 
 Dados_2 <- read_indigenous_land(year = 2024,
+                                code_state = 33,
                                 simplified = T)
 
 class(Dados_1)

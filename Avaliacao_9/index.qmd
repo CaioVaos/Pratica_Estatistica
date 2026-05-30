@@ -341,27 +341,23 @@ Informações disponíveis nas colunas
 
 ```{r}
 library(tibble)
-library(knitr)
 library(DT)
+library(htmlwidgets)
 
-Dados_saude <- tibble::tibble(
-  code_health_region = c(11001),
-  name_health_region = c(
-    "Vale do Jamari - RO"
-  ),
-  code_state = c(11),
-  abbrev_state = c("RO"),
-  name_state = c(
-    "Rondônia"
-  ),
-  code_region = c(1),
-  name_region = c(
-    "Norte"
-  ),
-  year = c(2025),
-  geometry = c(
-    "POLYGON (...)"
-  )
+Dados_saude <- tibble(
+  code_muni = 1100015,
+  name_muni = "Alta Floresta d'Oeste",
+  code_health_region = 11005,
+  name_health_region = "Zona da Mata - RO",
+  code_health_macroregion = 1101,
+  name_health_macroregion = "Macrorregional II (Cacoal)",
+  code_state = 11,
+  abbrev_state = "RO",
+  name_state = "Rondônia",
+  code_region = 1,
+  name_region = "Norte",
+  year = 2025,
+  geometry = "POLYGON ((...))"
 )
 
 datatable(
