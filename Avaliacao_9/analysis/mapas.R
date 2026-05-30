@@ -18,7 +18,7 @@ Dados_1 <- read_health_region(year = 2025,
                               simplified = T)
 
 Dados_2 <- read_indigenous_land(year = 2024,
-                                code_state = 33,
+                                code_state = 11,
                                 simplified = T)
 
 class(Dados_1)
@@ -341,7 +341,7 @@ contorno_am     <- read_state(code_state = 13, year = 2025, simplified = TRUE)
 
 plot_brasil <- ggplot() +
   geom_sf(data = contorno_brasil,
-          fill = NA, color = "#0a2535", linewidth = 0.2) +
+          fill = "white", color = "#0a2535", linewidth = 0.2) +
   geom_sf(data = Dados_brasil,
           fill = "#b5622a", color = "white", linewidth = 0.03) +
   annotation_north_arrow(
@@ -352,7 +352,7 @@ plot_brasil <- ggplot() +
     style = north_arrow_fancy_orienteering(
       text_col = "#0a2535",
       line_col = "#0a2535",
-      fill = c("#b5622a", "white")
+      fill = c("#b5622a", "#f5f0ea")
     ),
     height = unit(1, "cm"),
     width  = unit(1, "cm")
@@ -376,7 +376,7 @@ plot_brasil <- ggplot() +
     axis.title       = element_blank(),
     axis.ticks       = element_blank(),
     plot.background  = element_rect(fill = "#e7cfbf", color = NA),
-    panel.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "#f5f0ea", color = NA),
     panel.border = element_rect(
       color     = "#d9d9d9",
       fill      = NA,
@@ -387,7 +387,7 @@ plot_brasil
 
 plot_am <- ggplot() +
   geom_sf(data = contorno_am,
-          fill = NA, color = "#0a2535", linewidth = 0.3) +
+          fill = "white", color = "#0a2535", linewidth = 0.3) +
   geom_sf(data = Dados_am,
           fill = "#b5622a", color = "white", linewidth = 0.25) +
   annotation_north_arrow(
@@ -398,7 +398,7 @@ plot_am <- ggplot() +
     style = north_arrow_fancy_orienteering(
       text_col = "#0a2535",
       line_col = "#0a2535",
-      fill = c("#b5622a", "white")
+      fill = c("#b5622a", "#f5f0ea")
     ),
     height = unit(1, "cm"),
     width  = unit(1, "cm")
@@ -422,7 +422,7 @@ plot_am <- ggplot() +
     axis.title       = element_blank(),
     axis.ticks       = element_blank(),
     plot.background  = element_rect(fill = "#e7cfbf", color = NA),
-    panel.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "#f5f0ea", color = NA),
     panel.border = element_rect(
       color     = "#d9d9d9",
       fill      = NA,
