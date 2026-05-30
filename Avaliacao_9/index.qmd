@@ -9,7 +9,7 @@ format:
   revealjs:
     css: custom.css
     slide-number: true
-    incremental: false
+    incremental: true
     transition: slide
     background-transition: fade
     width: 1280
@@ -22,9 +22,10 @@ format:
       data-background-size: cover
       style: "transform: translateY(-15px);"
 ---
+
 # Introdução
 
-## Introdução
+## Introdução {data-autoslide="500"}
 
 :::: {.columns}
 
@@ -38,8 +39,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<span style="color:#1a6fa8; margin-top:2px;">🗺️</span>
+<div class="fragment fade-up" data-fragment-index="1" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="background:#dbeeff; border-radius:6px; padding:2px 5px; margin-top:2px;">🗺️</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">O que representa</div>
 <div>Regiões de Saúde e Macrorregiões de Saúde utilizadas no planejamento regional e estadual dos serviços de saúde.</div>
@@ -48,8 +49,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<span style="color:#1a6fa8; margin-top:2px;">🎯</span>
+<div class="fragment fade-up" data-fragment-index="2" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="background:#dbeeff; border-radius:6px; padding:2px 5px; margin-top:2px;">🎯</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Objetivo</div>
 <div>Representar a organização territorial utilizada pelo Sistema Único de Saúde (SUS).</div>
@@ -58,8 +59,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<span style="color:#1a6fa8; margin-top:2px;">💡</span>
+<div class="fragment fade-up" data-fragment-index="3" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="background:#dbeeff; border-radius:6px; padding:2px 5px; margin-top:2px;">💡</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Aplicações</div>
 <div style="display:flex; flex-wrap:wrap; gap:3px; margin-top:2px; max-width:520px;">
@@ -74,8 +75,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
-<span style="color:#1a6fa8; margin-top:2px;">🏥</span>
+<div class="fragment fade-up" data-fragment-index="4" style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<span style="background:#dbeeff; border-radius:6px; padding:2px 5px; margin-top:2px;">🏥</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Órgão responsável</div>
 <div>DataSUS - Ministério da Saúde</div>
@@ -84,8 +85,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
-<span style="color:#1a6fa8; margin-top:2px;">🌐</span>
+<div class="fragment fade-up" data-fragment-index="5" data-autoslide="0" style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<span style="background:#dbeeff; border-radius:6px; padding:2px 5px; margin-top:2px;">🌐</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Nível territorial</div>
 <div>Municípios · Regiões de Saúde · Macrorregiões de Saúde</div>
@@ -109,8 +110,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<span style="color:#b5622a; margin-top:2px;">🗺️</span>
+<div class="fragment fade-up" data-fragment-index="1" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">🗺️</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">O que representa</div>
 <div>Terras Indígenas brasileiras em diferentes estágios de demarcação.</div>
@@ -119,8 +120,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
-<span style="color:#b5622a; margin-top:2px;">🎯</span>
+<div class="fragment fade-up" data-fragment-index="2" style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">🎯</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Objetivo</div>
 <div>Representar espacialmente os territórios indígenas oficialmente reconhecidos.</div>
@@ -129,8 +130,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-<span style="color:#1a6fa8; margin-top:2px;">💡</span>
+<div class="fragment fade-up" data-fragment-index="3" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">💡</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Aplicações</div>
 <div style="display:flex; flex-wrap:wrap; gap:3px; margin-top:2px; max-width:520px;">
@@ -145,8 +146,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
-<span style="color:#b5622a; margin-top:2px;">🏛️</span>
+<div class="fragment fade-up" data-fragment-index="4" style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">🏛️</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Órgão responsável</div>
 <div>FUNAI — Fundação Nacional dos Povos Indígenas</div>
@@ -155,8 +156,8 @@ format:
 
 ---
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
-<span style="color:#b5622a; margin-top:2px;">🌐</span>
+<div class="fragment fade-up" data-fragment-index="5" data-autoslide="0" style="display:flex; gap:8px; align-items:flex-start; padding:5px 0;">
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">🌐</span>
 <div>
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:2px;">Nível territorial</div>
 <div>Nacional</div>
@@ -170,7 +171,7 @@ format:
 
 # Explorando as Funções
 
-## Funções
+## Funções {data-autoslide="500"}
 
 :::: {.columns}
 
@@ -190,9 +191,9 @@ format:
 
 </div>
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div class="fragment fade-up" data-fragment-index="1" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">⚙️️</span>
+<span style="background:#dbeeff; border-radius:6px; padding:2px 5px; margin-top:2px;">⚙️️</span>
 
 <div>
 
@@ -227,9 +228,9 @@ Argumentos
 
 <!-- ANOS -->
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div class="fragment fade-up" data-fragment-index="2" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">📅</span>
+<span style="background:#dbeeff; border-radius:6px; padding:2px 5px; margin-top:2px;">📅</span>
 
 <div style="width:100%;">
 
@@ -273,9 +274,9 @@ Anos disponíveis
 
 ::: {.column width="50%"}
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div class="fragment fade-up" data-fragment-index="3" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">📐</span>
+<span style="background:#dbeeff; border-radius:6px; padding:2px 5px; margin-top:2px;">📐</span>
 
 <div>
 
@@ -292,9 +293,9 @@ POLYGON / MULTIPOLYGON
 
 ::: {.column width="50%"}
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div class="fragment fade-up" data-fragment-index="4" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">🧱</span>
+<span style="background:#dbeeff; border-radius:6px; padding:2px 5px; margin-top:2px;">🧱</span>
 
 <div>
 
@@ -313,25 +314,16 @@ Objeto espacial `sf`
 
 <!-- COLUNAS -->
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-
-<span style="color:#1a6fa8; margin-top:2px;">🗂️</span>
-
+<div class="fragment fade-up" data-fragment-index="5" data-autoslide="0" style="display:flex; flex-direction:column; gap:8px; padding:3px 0;">
+<div style="display:flex; gap:8px; align-items:flex-start;">
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">🗂️</span>
 <div style="width:100%;">
-
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 Informações disponíveis nas colunas
 </div>
-
 </div>
 </div>
-
-<div style="
-width:100%;
-overflow-x:auto;
-margin-top:4px;
-border-radius:8px;
-">
+<div style="width:100%; overflow-x:auto; margin-top:4px; border-radius:8px;">
 
 ```{r}
 library(tibble)
@@ -376,6 +368,7 @@ datatable(
 ```
 
 </div>
+</div>
 
 </div>
 
@@ -401,9 +394,9 @@ datatable(
 
 </div>
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div class="fragment fade-up" data-fragment-index="1" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">⚙️️</span>
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">⚙️️</span>
 
 <div>
 
@@ -436,9 +429,9 @@ Argumentos
 
 <!-- ANOS -->
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div class="fragment fade-up" data-fragment-index="2" class="fragment fade-up" data-fragment-index="2" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">📅</span>
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">📅</span>
 
 <div style="width:100%;">
 
@@ -476,9 +469,9 @@ Anos disponíveis
 
 ::: {.column width="50%"}
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div class="fragment fade-up" data-fragment-index="3" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">📐</span>
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">📐</span>
 
 <div>
 
@@ -495,9 +488,9 @@ POLYGON / MULTIPOLYGON
 
 ::: {.column width="50%"}
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
+<div class="fragment fade-up" data-fragment-index="4" style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
 
-<span style="color:#1a6fa8; margin-top:2px;">🧱</span>
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">🧱</span>
 
 <div>
 
@@ -516,25 +509,16 @@ Objeto espacial `sf`
 
 <!-- COLUNAS -->
 
-<div style="display:flex; gap:8px; align-items:flex-start; padding:3px 0;">
-
-<span style="color:#1a6fa8; margin-top:2px;">🗂️</span>
-
+<div class="fragment fade-up" data-fragment-index="5" data-autoslide="0" style="display:flex; flex-direction:column; gap:8px; padding:3px 0;">
+<div style="display:flex; gap:8px; align-items:flex-start;">
+<span style="background:#fde3cc; border-radius:6px; padding:2px 5px; margin-top:2px;">🗂️</span>
 <div style="width:100%;">
-
 <div style="font-size:0.85em; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#4a6a7a; margin-bottom:4px;">
 Informações disponíveis nas colunas
 </div>
-
 </div>
 </div>
-
-<div style="
-width:100%;
-overflow-x:auto;
-margin-top:4px;
-border-radius:8px;
-">
+<div style="width:100%; overflow-x:auto; margin-top:4px; border-radius:8px;">
 
 ```{r}
 library(tibble)
@@ -600,6 +584,8 @@ datatable(
 ```
 
 </div>
+</div> 
+
 
 </div>
 
@@ -613,12 +599,118 @@ datatable(
 
 ![](media/mapa_saude_brasil.png){width=100% fig-align="center"}
 
+:::: {.columns}
+
+::: {.column width="30%"}
+
+<div style="background:white; border-radius:8px; padding:8px 10px; text-align:center;">
+<div style="font-size:0.45em; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#4a6a7a;">Macrorregiões</div>
+<div style="font-size:1.6em; font-weight:700; color:#1a6fa8;">120</div>
+</div>
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="30%"}
+
+<div style="background:white; border-radius:8px; padding:8px 10px; text-align:center;">
+<div style="font-size:0.45em; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#4a6a7a;">Microrregiões</div>
+<div style="font-size:1.6em; font-weight:700; color:#1a6fa8;">439</div>
+</div>
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="30%"}
+
+<div style="background:white; border-radius:8px; padding:8px 10px; text-align:center;">
+<div style="font-size:0.45em; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#4a6a7a;">Municípios</div>
+<div style="font-size:1.6em; font-weight:700; color:#1a6fa8;">5571</div>
+</div>
+
+:::
+
+::::
+
 ## Regiões de Saúde - Rio de Janeiro {background-color="#d4ebff"}
 
 ![](media/mapa_saude_rj.png){width=100% fig-align="center"}
 
+:::: {.columns}
+
+::: {.column width="30%"}
+
+<div style="background:white; border-radius:8px; padding:8px 10px; text-align:center;">
+<div style="font-size:0.45em; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#4a6a7a;">Macrorregiões</div>
+<div style="font-size:1.6em; font-weight:700; color:#1a6fa8;">1</div>
+</div>
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="30%"}
+
+<div style="background:white; border-radius:8px; padding:8px 10px; text-align:center;">
+<div style="font-size:0.45em; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#4a6a7a;">Microrregiões</div>
+<div style="font-size:1.6em; font-weight:700; color:#1a6fa8;">9</div>
+</div>
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="30%"}
+
+<div style="background:white; border-radius:8px; padding:8px 10px; text-align:center;">
+<div style="font-size:0.45em; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#4a6a7a;">Municípios</div>
+<div style="font-size:1.6em; font-weight:700; color:#1a6fa8;">92</div>
+</div>
+
+:::
+
+::::
+
 ## Terras Indígenas {background-color="#e7cfbf"}
 
 ![](media/mapa_indigena.png){width=100% fig-align="center"}
+
+<div style="margin-top:-2rem;">
+
+:::: {.columns}
+
+::: {.column width="43%"}
+
+<div style="background:white; border-radius:8px; padding:8px 10px; text-align:center;">
+<div style="font-size:1.2em; font-weight:700; color:#b5622a;">637</div>
+</div>
+
+:::
+
+::: {.column width="3%"}
+
+:::
+
+::: {.column width="54%"}
+
+<div style="background:white; border-radius:8px; padding:8px 10px; text-align:center;">
+<div style="font-size:1.2em; font-weight:700; color:#b5622a;">141</div>
+</div>
+
+:::
+
+::::
+
+</div>
 
 # Fim. {.unnumbered .final-slide}

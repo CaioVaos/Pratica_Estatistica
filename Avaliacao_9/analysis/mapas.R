@@ -1,5 +1,3 @@
-#########Analise das variaveis numericas########################################
-
 # Setup ------------------------------------------------------------------------
 library(tidyverse)      # Manipulação de bases de dados
 library(ggplot2)    # Gráficos
@@ -31,6 +29,19 @@ unique(sf::st_geometry_type(Dados_2))
 args(read_health_region)
 
 ## Brasil ----
+
+n_macro_br <- read_health_region(year = 2025, geometry_level = "macro") |>
+  filter(!st_is_empty(geometry)) |> nrow()
+
+n_micro_br <- read_health_region(year = 2025, geometry_level = "micro") |>
+  filter(!st_is_empty(geometry)) |> nrow()
+
+n_muni_br <- read_health_region(year = 2025, geometry_level = "municipality") |>
+  filter(!st_is_empty(geometry)) |> nrow()
+
+n_macro_br
+n_micro_br
+n_muni_br
 
 ### Dados ----
 Dados_muni <- read_health_region(
@@ -159,6 +170,18 @@ ggsave(
 )
 
 ## RJ ----
+n_macro_rj <- read_health_region(year = 2025, code_state = 33, geometry_level = "macro") |>
+  filter(!st_is_empty(geometry)) |> nrow()
+
+n_micro_rj <- read_health_region(year = 2025, code_state = 33, geometry_level = "micro") |>
+  filter(!st_is_empty(geometry)) |> nrow()
+
+n_muni_rj <- read_health_region(year = 2025, code_state = 33, geometry_level = "municipality") |>
+  filter(!st_is_empty(geometry)) |> nrow()
+
+n_macro_rj
+n_micro_rj
+n_muni_rj
 
 ### Dados ----
 Dados_muni <- read_health_region(
@@ -296,6 +319,15 @@ ggsave(
 
 # read_indigenous_land -----------------------------------------------------------
 args(read_indigenous_land)
+
+n_ti_brasil <- read_indigenous_land(year = 2025) |>
+  filter(!st_is_empty(geometry)) |> nrow()
+
+n_ti_am <- read_indigenous_land(year = 2025, code_state = 13) |>
+  filter(!st_is_empty(geometry)) |> nrow()
+
+n_ti_brasil
+n_ti_am
 
 ## Geral ----
 
