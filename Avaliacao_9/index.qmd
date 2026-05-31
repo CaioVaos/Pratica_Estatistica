@@ -725,13 +725,13 @@ datatable(
 
 # Conclusão
 
-## Concusão
+## Concusão {data-autoslide="500"}
 
 :::: {.columns}
 
 ::: {.column width="49%"}
 
-<div style="background:#e6f2fb; border:1.5px solid #1a6fa8; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap:10px; font-size:0.6em;">
+<div class="fragment fade-up" data-fragment-index="1" style="background:#e6f2fb; border:1.5px solid #1a6fa8; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap:10px; font-size:0.6em;">
 <div style="display:flex; align-items:center; justify-content:left; gap:10px;">
 <h3 style="font-size:1.8em; font-weight:700; color:#0a2535; margin:0;">
 4.1.1 Regiões de Saúde
@@ -751,7 +751,7 @@ datatable(
 
 ::: {.column width="49%"}
 
-<div style="background:#faf0e8; border:1.5px solid #b5622a; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap: 10px; font-size:0.6em;">
+<div class="fragment fade-up" data-fragment-index="1" style="background:#faf0e8; border:1.5px solid #b5622a; border-radius:12px; padding:1.25rem 1.1rem; display:flex; flex-direction:column; gap: 10px; font-size:0.6em;">
 <div style="display:flex; align-items:center; justify-content:left; gap:10px;">
 <h3 style="font-size:1.8em; font-weight:700; color:#0a2535; margin:0;">
 4.1.2 Terras Indígenas
@@ -769,7 +769,7 @@ datatable(
 
 <br>
 
-<div style="margin-top:12px; background:#f2f2f0; border:1.5px solid #9a9a94; border-radius:12px; padding:0.75rem 1rem; font-size:0.6em;">
+<div class="fragment fade-up" data-fragment-index="2" data-autoslide="0" style="margin-top:12px; background:#f2f2f0; border:1.5px solid #9a9a94; border-radius:12px; padding:0.75rem 1rem; font-size:0.6em;">
 <div style="text-align:center; margin-bottom:8px;">
 <img src="media/logo_geobr.png" style="height:150px; margin-bottom:4px;">
 <div style="font-style:italic; color:#888; font-size:1em; margin-bottom:8px;">"Easy access to official spatial data sets of Brazil"</div>
