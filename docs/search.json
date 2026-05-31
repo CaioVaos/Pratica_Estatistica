@@ -775,5 +775,19 @@
     "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
     "section": "3.3 Terras Indígenas",
     "text": "3.3 Terras Indígenas\n\n\n\n\n\n\n\n\n\n\n637\n\n\n\n\n\n\n\n141"
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#concusão",
+    "href": "Avaliacao_9/index.html#concusão",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "4.1 Concusão",
+    "text": "4.1 Concusão\n\n\n\n\n\n4.1.1 Regiões de Saúde\n\n read_health_region() \n\nEvidencia uma lógica de gestão e planejamento dos serviços públicos de saúde no território.\n\n\n\n\n\n\n\n4.1.2 Terras Indígenas\n\n read_indigenous_land() \n\nReflete processos históricos de ocupação e reconhecimento territorial dos povos indígenas.\n\n\n\n\n\n\n\n“Easy access to official spatial data sets of Brazil”\n\n\nAlém de simples polígonos\n\n\ninformações relevantes para a análise social e demográfica do Brasil"
+  },
+  {
+    "objectID": "Avaliacao_9/index.html#conclusão-1",
+    "href": "Avaliacao_9/index.html#conclusão-1",
+    "title": "Pacote geobr: Regiões de Saúde e Terras Indígenas",
+    "section": "4.1 Conclusão",
+    "text": "4.1 Conclusão\n\n\n\n\n4.1.1 Regiões de Saúde\n\nread_health_region()\n\n\n\n\n\n120\n\n\nMacrorregiões\n\n\n\n\n439\n\n\nMicrorregiões\n\n\n\n\n5571\n\n\nMunicípios\n\n\n\n\n9\n\n\nAnos disponíveis\n\n\n\n\nEvidenciam uma lógica de gestão e planejamento dos serviços públicos.\n\n\n\n\n4.1.2 Terras Indígenas\n\nread_indigenous_land()\n\n\n\n\n\n637\n\n\nTerras totais\n\n\n\n\n141\n\n\nEm demarcação\n\n\n\n\n7\n\n\nAnos disponíveis\n\n\n\n\n5\n\n\nFases TI\n\n\n\n\nRefletem processos históricos de ocupação e reconhecimento territorial.\n\n\n\n\n💡 Além de simples polígonos — informações relevantes para a análise social e demográfica do Brasil\n\n\n\n\n📊\n\n\nAnálises estatísticas\n\n\n\n\n🏛️\n\n\nPolíticas públicas\n\n\n\n\n🌎\n\n\nVisualização no R\n\n\n\n\n\nFim."
   }
 ]
