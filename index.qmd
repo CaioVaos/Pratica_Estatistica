@@ -115,7 +115,7 @@ Este hub reúne as avaliações da disciplina **Prática Estatística II**.
 ::: {.g-col-4 .av-destaque-2}
 #### 📊 Avaliação 10/11
 
-[Em breve]{.btn .btn-secondary}
+[Vizualizar](https://019e9dda-7c87-6fee-0c4a-8677ea5012ff.share.connect.posit.cloud/){.btn .btn-primary}
 :::
 
 :::

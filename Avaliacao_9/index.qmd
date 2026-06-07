@@ -587,24 +587,7 @@ datatable(
       var table = this.api().table().container();
       $(table).find('td, th').css('background-color', 'white');
       $(table).css('background-color', 'white');
-    }"),
-    headerCallback = JS("function(thead, data, start, end, display) {
-  var tooltips = {
-    'fase_ti': 'Delimitada · Em estudo · Declarada · Homologada · Regularizada',
-    'modalidade': 'Tradicionalmente ocupada · Reserva indígena · Dominial · Interditada'
-  };
-  $(thead).find('th').each(function() {
-    var colName = $(this).text().trim();
-    if (tooltips[colName]) {
-      $(this).attr('title', tooltips[colName])
-             .css({
-               'cursor': 'help',
-               'border-bottom': '1.5px dashed #b5622a',
-               'text-decoration': 'none'
-             });
-    }
-  });
-}")
+    }")
   ),
   rownames = FALSE
 )
