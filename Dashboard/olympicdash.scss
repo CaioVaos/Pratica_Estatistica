@@ -1,0 +1,355 @@
+/*-- scss:defaults --*/
+
+// tipografia
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+$font-family-base: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "DM Serif Display", serif;
+$font-size-base: 0.92rem;
+$headings-font-weight: 600;
+$headings-color: #2e2d38;
+
+// cores
+$navbar-bg: #2e2d38;
+$navbar-fg: #F0F0F0;
+
+$link-color: #ae8b2d;
+$hover-color: lighten($link-color, 40%);
+
+$body-bg: #f4f2ec;
+$card-bg: #fffffe;
+$card-border-color: #e0ddd4;
+
+/*-- scss:rules --*/
+
+// ── Navbar ────────────────────────────────────────────────────────────────────
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  border-bottom: 3px solid #ae8b2d;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: #ae8b2d !important;
+}
+
+.navbar .nav-link {
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.navbar .nav-link.active {
+  color: #ae8b2d !important;
+  border-bottom: 2px solid #ae8b2d;
+}
+
+.navbar .nav-buttons .nav-link {
+  opacity: 0.75;
+  transition: opacity 0.2s;
+
+  &:hover { opacity: 1; }
+}
+
+// ── Cards ─────────────────────────────────────────────────────────────────────
+
+.card-header {
+  background-color: #ae8b2d18;
+  border-bottom: 1.5px solid #ae8b2d55;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #2e2d38;
+}
+
+.card {
+  border: 0.5px solid #d8d5cc;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.13);
+    transform: translateY(-1px);
+  }
+}
+
+.card-body p {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: #3a3947;
+}
+
+.card-body li {
+  font-size: 0.87rem;
+  line-height: 1.7;
+  color: #3a3947;
+}
+
+.card-body h2,
+.card-body h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #2e2d38;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.card-body hr {
+  border-color: #ae8b2d40;
+  margin: 0.75rem 0;
+}
+
+.card-body a {
+  color: #ae8b2d;
+  text-decoration: none;
+  border-bottom: 1px solid #ae8b2d44;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: #ae8b2d;
+  }
+}
+
+// ── Abas (tabset) ─────────────────────────────────────────────────────────────
+
+.nav-item > a:hover {
+  color: #ae8b2d;
+}
+
+.nav-link {
+  color: #F0F0F0;
+}
+
+.tabset .nav-link {
+  color: #6b6a77;
+  font-size: 0.85rem;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.2s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ae8b2d;
+    transition: width 0.25s ease;
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 100%;
+  }
+}
+
+.tabset .nav-link.active {
+  color: #ae8b2d;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-bottom: none;
+}
+
+// ── Value Boxes ───────────────────────────────────────────────────────────────
+
+.value-box {
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border-top: 3px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.value-box .value-box-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.value-box .value-box-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+}
+
+// ── Sidebar ───────────────────────────────────────────────────────────────────
+
+.sidebar {
+  background-color: #eceae0;
+  border-right: 2px solid #d8d5cc;
+  font-size: 0.87rem;
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+}
+
+.sidebar label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #2e2d38;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #7a7870;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+// ── Inputs Shiny — Select ─────────────────────────────────────────────────────
+
+.sidebar .selectize-input {
+  border: 1px solid #c8c4b8;
+  border-radius: 4px;
+  background-color: #faf9f5;
+  font-size: 0.84rem;
+  box-shadow: none;
+
+  &.focus {
+    border-color: #ae8b2d;
+    box-shadow: 0 0 0 2px #ae8b2d22;
+  }
+}
+
+.sidebar .selectize-dropdown {
+  border: 1px solid #c8c4b8;
+  border-radius: 4px;
+  font-size: 0.84rem;
+}
+
+.sidebar .selectize-dropdown-content .option.selected,
+.sidebar .selectize-dropdown-content .option:hover {
+  background-color: #ae8b2d22;
+  color: #2e2d38;
+}
+
+// ── Inputs Shiny — Slider ─────────────────────────────────────────────────────
+
+.shiny-input-container {
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+}
+
+.irs,
+.irs-with-grid {
+  overflow: visible !important;
+}
+
+.irs--shiny .irs-bar {
+  background: #ae8b2d;
+  border-top: 1px solid #ae8b2d;
+  border-bottom: 1px solid #ae8b2d;
+}
+
+.irs--shiny .irs-handle {
+  border: 2px solid #ae8b2d;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.irs--shiny .irs-from,
+.irs--shiny .irs-to,
+.irs--shiny .irs-single {
+  background: #ae8b2d;
+  font-size: 0.75rem;
+}
+
+// ── Botão Play ────────────────────────────────────────────────────────────────
+
+.btn-default {
+  border: 1px solid #c8c4b8;
+  background-color: #faf9f5;
+  color: #2e2d38;
+  border-radius: 4px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #ae8b2d22;
+    border-color: #ae8b2d;
+    color: #ae8b2d;
+  }
+}
+
+.btn-default:active,
+.btn-default.active {
+  background-color: #ae8b2d22;
+  border-color: #ae8b2d;
+  color: #ae8b2d;
+  box-shadow: 0 0 0 3px #ae8b2d33;
+}
+
+// ── Código inline ─────────────────────────────────────────────────────────────
+
+code {
+  background-color: #ae8b2d14;
+  color: #7a5f1a;
+  border: 1px solid #ae8b2d33;
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  font-size: 0.82rem;
+}
+
+// ── Scrollbar ─────────────────────────────────────────────────────────────────
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0ede4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8c4b8;
+  border-radius: 3px;
+
+  &:hover {
+    background: #ae8b2d;
+  }
+}
+
+// ── Textos — contraste melhorado ──────────────────────────────────────────────
+
+.text-muted,
+.text-secondary {
+  color: #475569 !important;
+}
+
+// ── Ícones nas páginas da navbar ─────────────────────────────────────────────
+
+.navbar .nav-link[href="#contexto"]::before {
+  font-family: "bootstrap-icons";
+  content: "\F431";  // info
+  margin-right: 4px;
+}
+
+.navbar .nav-link[href="#taxas-de-mortalidade"]::before {
+  font-family: "bootstrap-icons";
+  content: "\F17E";  // chart
+  margin-right: 4px;
+}
+
+.navbar .nav-link[href="#rio-de-janeiro"]::before {
+  font-family: "bootstrap-icons";
+  content: "\F3E7";  // geo
+  margin-right: 4px;
+}
+
+// ── Suavização mapa ─────────────────────────────────────────────
+
+.shiny-plot-output {
+  transition: opacity 0.3s ease;
+  
+  &.recalculating {
+    opacity: 0.4;
+  }
+}
